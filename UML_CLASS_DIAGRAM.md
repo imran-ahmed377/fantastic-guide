@@ -28,6 +28,17 @@ classDiagram
         +calculate_rental_cost(days)
     }
 
+    class Customer {
+        +get_role()
+        +request_rental(rental_service, vehicle, days)
+    }
+
+    class Admin {
+        +get_role()
+        +add_vehicle(vehicle_service, vehicle)
+        +remove_vehicle(vehicle_service, vehicle)
+    }
+
     class MainCar {
         +vehicle_id
         +brand
@@ -36,7 +47,23 @@ classDiagram
         +is_available
     }
 
+    class RentalService {
+        <<not implemented>>
+        +process_rental(customer, vehicle, days)
+    }
+
+    class VehicleService {
+        <<not implemented>>
+        +add_vehicle(vehicle)
+        +remove_vehicle(vehicle)
+    }
+
     AppModelsCar --|> Vehicle : inherits
+    Customer --|> User : inherits
+    Admin --|> User : inherits
+
+    Customer ..> RentalService : uses
+    Admin ..> VehicleService : uses
 
     note for AppModelsCar "Represents app/models/car.py::Car"
     note for MainCar "Represents main.py::Car (script-local class)"
@@ -44,7 +71,6 @@ classDiagram
 
 ## Notes
 
-- `app/models/admin.py` is currently empty.
-- `app/models/customer.py` is currently empty.
 - `app/models/rental.py` is currently empty.
-- No associations/compositions are currently implemented between user/rental/vehicle entities.
+- `app/services/rental_service.py` is currently empty.
+- `RentalService` and `VehicleService` in the diagram are inferred from method calls in user models and are not implemented as classes yet.
