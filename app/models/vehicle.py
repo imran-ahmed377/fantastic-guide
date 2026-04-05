@@ -2,7 +2,8 @@
 from abc import ABC, abstractmethod
 
 
-class Vehicle(ABC):  # Defining an abstract class named Vehicle that inherits from ABC
+# Defining an abstract class named Vehicle that inherits from ABC
+class Vehicle(ABC):
     def __init__(self, vehicle_id, brand, model, price_per_day):
         self.vehicle_id = vehicle_id  # Initializing the vehicle_id attribute
         self.brand = brand  # Initializing the brand attribute
@@ -10,6 +11,7 @@ class Vehicle(ABC):  # Defining an abstract class named Vehicle that inherits fr
         self.price_per_day = price_per_day  # Initializing the price_per_day attribute
         self._is_available = True  # Initializing the _is_available attribute to True
 
+    # Defining an abstract method to calculate rental cost, which must be implemented by any subclass of Vehicle
     @abstractmethod
     def calculate_rental_cost(self, days):
         pass  # Abstract method to calculate rental cost, to be implemented by subclasses

@@ -8,6 +8,7 @@ class Car:
         self.is_available = True
 
 
+# Method to calculate rental cost based on the number of days
 car1 = Car(1, 'Toyota', 'Camry', 50)
 car2 = Car(2, 'Honda', 'Civic', 45)
 car3 = Car(3, 'Ford', 'Mustang', 100)
