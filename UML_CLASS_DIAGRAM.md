@@ -66,7 +66,12 @@ classDiagram
     }
 
     class Rental {
-        <<missing implementation>>
+        +_rental_id
+        +_customer
+        +_vehicle
+        +_days
+        +_total_cost
+        +get_summary()
     }
 
     User <|-- Customer
@@ -78,6 +83,8 @@ classDiagram
     UserService ..> User : manages
     VehicleService ..> Vehicle : manages
     RentalService ..> Rental : depends on
+    Rental ..> Vehicle : uses
+    Rental ..> Customer : uses
 
     note for AppModelsCar "Represents app/models/car.py::Car"
     note for MainCar "Represents main.py::Car (script-local class)"
@@ -88,5 +95,6 @@ classDiagram
 - `app/models/customer.py` and `app/models/admin.py` inherit from `User`.
 - `app/services/user_service.py.py` defines `UserService`.
 - `app/services/vehicle_service.py` defines `VehicleService`.
-- `app/services/rental_service.py` defines `RentalService` and imports `Rental` from an empty `app/models/rental.py`.
+- `app/models/rental.py` defines `Rental`.
+- `app/services/rental_service.py` defines `RentalService` and imports `Rental`.
 - `app/models/customer.py` still calls `rental_service.process_rental(...)`, while `RentalService` currently exposes `create_rental(...)`.
