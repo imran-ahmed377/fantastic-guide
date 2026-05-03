@@ -126,13 +126,13 @@
 
 # Machine Learning Q&A
 
-## What is Overfitting?
+## Overfitting
 - **Definition**: High training accuracy caused by noise and random patterns in training data, resulting in low test accuracy.
 
-## What is Underfitting?
+## Underfitting
 - **Definition**: The model is too simple to capture the underlying patterns. It performs poorly on both training and testing data.
 
-## What is Bias and Variance?
+## Bias and Variance
 - **Bias**: Error due to overly simple assumptions (causes **underfitting**).
 - **Variance**: Error due to too much complexity (causes **overfitting**).
 
@@ -169,3 +169,47 @@
 
 ## F1 Score
 - **Definition**: The harmonic mean of precision and recall, providing a balance between the two metrics.
+
+
+# ML Ops Q&A
+
+## Versioning Dataset, Code, and Model
+*   **Git**: Used for versioning code.
+*   **DVC (Data Version Control)**: Used for versioning datasets and large files.
+*   **MLflow**: Used for tracking experiments and versioning models.
+
+---
+
+## MLOps Lifecycle
+The standard lifecycle follows these key stages:
+1.  **Data Collection**
+2.  **Preprocessing**
+3.  **Training**
+4.  **Evaluation**
+5.  **Deployment**
+6.  **Monitoring**
+
+---
+
+## Deploying Model into Production
+*   **Containerization**: Use **Docker** to package the model and its dependencies.
+*   **API Exposure**: Use frameworks like FastAPI or Flask to expose the model via an API.
+*   **Orchestration**: Deploy and manage containers using **Kubernetes**.
+
+---
+
+## Monitoring Model in Production
+To ensure the model remains reliable, track the following metrics:
+*   **Accuracy**: Is the model still making correct predictions?
+*   **Latency**: How long does it take for the model to respond?
+*   **Errors**: Monitoring for system crashes or failed requests.
+*   **Drift**: Monitoring changes in data or model performance over time.
+*   **Tools**: Use Dashboards (Grafana), Logging (ELK stack), and Alerts.
+
+---
+
+## Monitoring Data Drift
+Data drift occurs when the input data changes over time, leading to model decay.
+*   **Continuous Monitoring**: Watch for statistical shifts in input features.
+*   **Regular Retraining**: Schedule model training sessions on new data.
+*   **Trigger Alerts**: Automatically notify the team when performance drops below a threshold.
