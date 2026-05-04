@@ -153,7 +153,10 @@
 - **Example**: K-Fold Cross Validation.
 
 ## Regularization
-- **Definition**: Adding a penalty term to the model complexity to reduce overfitting.
+- **Definition**: Adding a penalty term to the model complexity to reduce overfitting. It slightly “punishes” large weights (coefficients), so the model avoids relying too heavily on any one feature.
+- Imagine you’re packing a bag:
+    - L1 (Lasso): You throw out some items completely → lighter bag
+    - L2 (Ridge): You keep everything but reduce weight of each item → more balanced bag
 
 ## Precision & Recall
 - **Precision**: Out of all predicted positives, how many are actually correct.
@@ -170,8 +173,60 @@
 ## F1 Score
 - **Definition**: The harmonic mean of precision and recall, providing a balance between the two metrics.
 
+## scikit-learn vs XGBoost
+- scikit-learn is a general ML library. XGBoost is specialized for fast, high-performance gradient boosting.
 
-# ML Ops Q&A
+## Gradient boosting (high level)
+- Build models sequentially. Each new model focuses on correcting errors from the previous ones, combining them into a strong final model.
+
+## Hyperparameters
+- Hyperparameters are settings you choose before training the model (not learned automatically).
+Examples:
+
+    - Learning rate (how fast the model learns)
+    - Number of trees in a model
+    - Regularization strength (L1/L2)
+
+### Common tuning methods
+#### Grid Search
+
+    Try all combinations of values. Example:
+    - Learning rate: [0.01, 0.1]
+    - Regularization: [0.1, 1]
+
+    Try:
+
+    (0.01, 0.1)\
+    (0.01, 1)\
+    (0.1, 0.1)\
+    (0.1, 1)
+
+    👉 Best but can be slow
+
+#### Random Search
+
+    Try random combinations instead of all.
+
+    👉 Faster, often works just as well
+
+#### Smarter methods (advanced)
+    Bayesian optimization (chooses better values based on past results)
+
+    Imagine baking a cake:
+
+    Hyperparameters: Oven temperature, Baking time
+
+    You try:
+
+    180°C for 30 min
+    200°C for 25 min
+    170°C for 40 min
+
+    👉 Then taste each cake and pick the best one.
+
+
+
+# MLOps Q&A
 
 ## Versioning Dataset, Code, and Model
 *   **Git**: Used for versioning code.
@@ -213,3 +268,11 @@ Data drift occurs when the input data changes over time, leading to model decay.
 *   **Continuous Monitoring**: Watch for statistical shifts in input features.
 *   **Regular Retraining**: Schedule model training sessions on new data.
 *   **Trigger Alerts**: Automatically notify the team when performance drops below a threshold.
+
+When would you use a simple model (like linear regression) over a complex one? Explain the assumptions of linear regression. What is regularization? Difference between L1 and L2? How do you optimize a slow SQL query? Difference between GROUP BY and window functions? What is the difference between scikit-learn and XGBoost? How does gradient boosting work at a high level? How do you tune hyperparameters? How would you evaluate a recommendation system? What’s the difference between collaborative filtering and content-based filtering? How do you translate a business problem into a data science problem? Tell me about a time your model impacted business decisions. What is data drift and how do you detect it? Experience with APIs or batch vs real-time systems? How do you design an A/B test? How do you determine statistical significance? How would you test a pricing strategy change? How do you handle ambiguity? Describe a time you had no clear data or direction. How would you allocate inventory across warehouses? How would you predict which books to purchase? How would you recommend products to wholesale customers? How would you optimize pricing across multiple sales channels?
+
+
+# SQL
+
+## Slow Query to Fast Query
+- Add indexes, reduce unnecessary columns, filter early, avoid subqueries if possible, use proper joins, and check execution plans.
