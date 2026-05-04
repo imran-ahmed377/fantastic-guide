@@ -204,7 +204,7 @@ To ensure the model remains reliable, track the following metrics:
 *   **Latency**: How long does it take for the model to respond?
 *   **Errors**: Monitoring for system crashes or failed requests.
 *   **Drift**: Monitoring changes in data or model performance over time.
-*   **Tools**: Use Dashboards (Grafana), Logging (ELK stack), and Alerts.
+*   **Tools**: Use Dashboards, Logging, and Alerts.
 
 ---
 
