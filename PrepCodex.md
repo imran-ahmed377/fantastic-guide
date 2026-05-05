@@ -269,6 +269,11 @@ Data drift occurs when the input data changes over time, leading to model decay.
 *   **Regular Retraining**: Schedule model training sessions on new data.
 *   **Trigger Alerts**: Automatically notify the team when performance drops below a threshold.
 
+    ### Data Drift Detection Techniques
+    1. Compare averages (mean): Check if the average value of a feature has changed.
+    2. Compare distributions (histograms): Look at how values are spread, not just the average.
+    3. Statistical tests: Use math tests to check if two datasets are different. Example: Kolmogorov-Smirnov (KS) Test 
+
 ---
     How do you translate a business problem into a data science problem? 
 
