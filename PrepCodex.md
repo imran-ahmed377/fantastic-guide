@@ -4,6 +4,13 @@
 - [Steps of Data Preprocessing for ML Models](#steps-of-data-preprocessing-for-ml-models)
   - [Missing Value Handling](#missing-value-handling)
 - [Machine Learning Q&A](#machine-learning-qa)
+- [MLOps Q&A](#mlops-qa)
+- [SQL](#sql)
+- [A/B Testing](#ab-testing)
+
+
+# Python Basics
+
 
 # Python OOP Concepts
 
@@ -272,19 +279,16 @@ Data drift occurs when the input data changes over time, leading to model decay.
     ### Data Drift Detection Techniques
     1. Compare averages (mean): Check if the average value of a feature has changed.
     2. Compare distributions (histograms): Look at how values are spread, not just the average.
-    3. Statistical tests: Use math tests to check if two datasets are different. Example: Kolmogorov-Smirnov (KS) Test 
+    3. Statistical tests: Example: Kolmogorov-Smirnov (KS) Test Compare two dataset cumulative distribution (CDF) curves at every point, check the difference between them.
+
 
 ---
     How do you translate a business problem into a data science problem? 
 
     Tell me about a time your model impacted business decisions. 
 
-    What is data drift and how do you detect it? 
-
     Experience with APIs or batch vs real-time systems? 
-
-    How do you design an A/B test? 
-    
+   
     How do you determine statistical significance? 
     
     How would you test a pricing strategy change? 
@@ -306,3 +310,141 @@ Data drift occurs when the input data changes over time, leading to model decay.
 
 ## Slow Query to Fast Query
 - Add indexes, reduce unnecessary columns, filter early, avoid subqueries if possible, use proper joins, and check execution plans.
+---
+
+# A/B Testing
+## ⚡ One-line intuition
+
+**A/B testing = “Show two versions to similar users and check if the difference is real or just luck.”**
+
+## 🎯 Scenario
+
+You run an e-commerce app and want to test:
+
+**Does a new checkout button increase purchases?**
+
+---
+
+## 1. Define the hypothesis
+
+Keep it very clear and measurable.
+
+- **Null hypothesis (H₀):** New button does not change conversion rate  
+- **Alternative (H₁):** New button increases conversion rate  
+
+**Example:**  
+Current conversion = 10%  
+You expect → 12%
+
+---
+
+## 2. Choose your metric
+
+Pick one primary metric (don’t overcomplicate).
+
+**Example:**
+- Primary: % of users who complete purchase  
+- Secondary (optional): revenue per user  
+
+---
+
+## 3. Decide group split (A vs B)
+
+Most common: **50/50 split**
+
+- Group A → old button  
+- Group B → new button  
+
+**Why 50/50?**
+- Fastest way to get results  
+- Balanced comparison  
+
+Sometimes companies use 90/10 for safer rollout, but 50/50 is standard for testing.
+
+---
+
+## 4. Determine sample size (how many users you need)
+
+You need enough users to detect a real difference.
+
+**Key inputs:**
+- Baseline = 10%  
+- Expected improvement = +2% (to 12%)  
+- Confidence level = 95%  
+- Power = 80%  
+
+Using a calculator or stats tool:
+
+👉 You’ll need roughly **~4,000–5,000 users per group**
+
+_(You don’t calculate this manually in practice—tools do it.)_
+
+---
+
+## 5. Determine experiment duration
+
+Duration depends on traffic.
+
+**Example:**
+- You get 1,000 users/day  
+- Need 5,000 per group → 10,000 total  
+
+👉 Duration ≈ **10 days**
+
+**Add buffer:**
+- Run at least 1–2 full weeks to capture weekday/weekend behavior  
+
+👉 Final: **2 weeks**
+
+---
+
+## 6. Run the experiment properly
+
+**Rules:**
+- Randomly assign users  
+- Keep conditions the same (no other changes)  
+- Don’t stop early just because results “look good”  
+
+---
+
+## 7. Analyze results
+
+Compare conversion rates using a statistical test like a t-test or proportion test.
+
+**Example result:**
+- A = 10%  
+- B = 12%  
+- p-value < 0.05 → significant  
+
+👉 New button wins  
+
+---
+
+## 8. Decide rollout strategy
+
+Don’t always go straight to 100%.
+
+**Typical rollout:**
+- Step 1: 10% users  
+- Step 2: 50% users  
+- Step 3: 100% users  
+
+**Why gradual?**
+- Catch bugs or unexpected issues  
+- Reduce risk  
+
+---
+
+## 🧠 Simple summary (memory version)
+
+- Hypothesis: what you expect to change  
+- Metric: what you measure  
+- Split: usually 50/50  
+- Sample size: enough users to detect change  
+- Duration: based on traffic (usually 1–2 weeks min)  
+- Run test: random + controlled  
+- Analyze: is difference real?  
+- Rollout: gradual release  
+
+---
+
