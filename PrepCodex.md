@@ -269,9 +269,34 @@ Data drift occurs when the input data changes over time, leading to model decay.
 *   **Regular Retraining**: Schedule model training sessions on new data.
 *   **Trigger Alerts**: Automatically notify the team when performance drops below a threshold.
 
-When would you use a simple model (like linear regression) over a complex one? Explain the assumptions of linear regression. What is regularization? Difference between L1 and L2? How do you optimize a slow SQL query? Difference between GROUP BY and window functions? What is the difference between scikit-learn and XGBoost? How does gradient boosting work at a high level? How do you tune hyperparameters? How would you evaluate a recommendation system? What’s the difference between collaborative filtering and content-based filtering? How do you translate a business problem into a data science problem? Tell me about a time your model impacted business decisions. What is data drift and how do you detect it? Experience with APIs or batch vs real-time systems? How do you design an A/B test? How do you determine statistical significance? How would you test a pricing strategy change? How do you handle ambiguity? Describe a time you had no clear data or direction. How would you allocate inventory across warehouses? How would you predict which books to purchase? How would you recommend products to wholesale customers? How would you optimize pricing across multiple sales channels?
+---
+    How do you translate a business problem into a data science problem? 
 
+    Tell me about a time your model impacted business decisions. 
 
+    What is data drift and how do you detect it? 
+
+    Experience with APIs or batch vs real-time systems? 
+
+    How do you design an A/B test? 
+    
+    How do you determine statistical significance? 
+    
+    How would you test a pricing strategy change? 
+
+    How do you handle ambiguity? 
+
+    Describe a time you had no clear data or direction. 
+
+    How would you allocate inventory across warehouses? 
+
+    How would you predict which books to purchase? 
+
+    How would you recommend products to wholesale customers? 
+
+    How would you optimize pricing across multiple sales channels?
+
+---
 # SQL
 
 ## Slow Query to Fast Query
