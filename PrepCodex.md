@@ -283,7 +283,7 @@ Data drift occurs when the input data changes over time, leading to model decay.
 
 
 ---
-    How do you translate a business problem into a data science problem? 
+
 
     Tell me about a time your model impacted business decisions. 
 
@@ -414,7 +414,7 @@ Compare conversion rates using a statistical test like a t-test or proportion te
 **Example result:**
 - A = 10%  
 - B = 12%  
-- p-value < 0.05 → significant  
+- (Chance of result is random, low p-value is good) p-value < 0.05 → significant  
 
 👉 New button wins  
 
@@ -448,3 +448,16 @@ Don’t always go straight to 100%.
 
 ---
 
+# Product & Business 
+
+1. Translate a business problem into a data science problem? 
+
+- Clarify the goal
+- define success metrics, 
+- identify target variable, 
+- gather relevant data, 
+- frame it as a predictive or analytical problem.
+
+2. Tell me about a time your model impacted business decisions.
+- Built an A/B test model improving conversion by 5%, 
+- leading the team to adopt the new design and increase revenue.
