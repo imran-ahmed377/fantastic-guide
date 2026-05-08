@@ -9,8 +9,11 @@
 - [A/B Testing](#ab-testing)
 - [Product & Business](#product--business)
 - [Data Science Intro](#data-science-intro)
+- [Aspire Ontario](#aspire-ontario)
+- [Meallens](#meallens)
 - [Retail Pricing Optimization Model](#retail-pricing-optimization-model)
 - [Inventory Demand Forecasting System](#inventory-demand-forecasting-system)
+- [Questions](#questions)
 
 
 # Python Basics
@@ -342,8 +345,11 @@ Data drift occurs when the input data changes over time, leading to model decay.
 - [A/B Testing](#ab-testing)
 - [Product & Business](#product--business)
 - [Data Science Intro](#data-science-intro)
+- [Aspire Ontario](#aspire-ontario)
+- [Meallens](#meallens)
 - [Retail Pricing Optimization Model](#retail-pricing-optimization-model)
 - [Inventory Demand Forecasting System](#inventory-demand-forecasting-system)
+- [Questions](#questions)
 
 ---
 
@@ -510,6 +516,7 @@ Don’t always go straight to 100%.
 - Explore available data, 
 - Prioritize quick experiments, 
 - Iterate while aligning with stakeholders for direction.
+---
 
 # Data Science Intro
 
@@ -520,6 +527,40 @@ I build models and dashboards that help teams make better decisions. I mainly wo
 What I enjoy most about data science is finding useful insights from data and explaining them in a simple way that helps teams take action.
 
 I’m interested in this role because I’d like to work on bigger data challenges and collaborate with different teams to build impactful solutions.
+
+---
+
+# Aspire Ontario
+At Aspire Ontario, I worked on developing an AI assistant for a Pharma CRM platform to help users quickly retrieve business insights using natural language and voice interaction.
+
+The main goal was to reduce the time users spent manually searching through CRM data and reports. I built a RAG-based system where CRM data was processed using Python, Pandas, and NumPy on Azure Machine Learning, and stored in Azure Blob Storage.
+
+For the retrieval layer, I used Azure AI Search as the vector database with the text-embedding-3-small model for embeddings. I implemented hybrid search combining vector similarity and keyword search to improve answer relevance. The retrieved context was then passed to GPT-4o-mini to generate responses with lower latency and cost.
+
+I also integrated voice capabilities using Azure Speech-to-Text and Text-to-Speech so users could interact with the assistant conversationally.
+
+For monitoring and quality evaluation, I tracked metrics like Top-K accuracy, MRR, response precision, recall, and latency using Azure Monitor and Application Insights. I also added confidence thresholds and fallback handling for cases where relevant insights were not found.
+
+The project had a strong business impact — it reduced insight retrieval time by about 40%, improved response relevance, and increased user adoption because of the natural language and voice-enabled experience.
+
+---
+
+# Meallens
+I worked on building a smart food assistant that could detect food items from images and recommend recipes in real time. The goal was to create an interactive AI experience where users could simply show food ingredients and get cooking guidance instantly.
+
+I was responsible for developing the end-to-end computer vision pipeline and integrating it with the backend and mobile application. I processed and cleaned over 200GB of food image data using Python, then trained and combined multiple AI models for better accuracy.
+
+For object detection, I used YOLO because it supports fast real-time detection. Then I used SAM/SAM2 for image segmentation to get precise object boundaries, and CLIP for image-text matching and food classification. The pipeline worked like this: YOLO detected the food items, SAM refined the detected regions, CLIP identified the food category, and then the OpenAI API generated recipe suggestions based on the detected ingredients.
+
+I also integrated speech-to-text so users could interact with the assistant using voice commands and receive step-by-step recipe instructions.
+
+On the deployment side, I collaborated with the backend and mobile teams to deploy the system on DigitalOcean and optimize APIs for low-latency responses.
+
+To evaluate performance, I used metrics like Precision, Recall, and mAP for detection accuracy, and I reduced false positives by tuning confidence thresholds and improving the dataset over time.
+
+The final system was a scalable, real-time food detection and recipe assistant that delivered fast and accurate predictions with a smooth voice-enabled user experience, and it was successfully launched as a working prototype.
+
+---
 
 # Retail Pricing Optimization Model
 The goal of this project was to help retail business set better product prices to improve revenue and stay competitive.
@@ -552,6 +593,14 @@ One challenge was inconsistent sales patterns during holidays and promotions, wh
 ## Success Metrics
 The forecasting accuracy improved significantly based on lower MAE and RMSE scores. I also compared forecasted demand with actual sales over multiple cycles to confirm the predictions were reliable.
 
+
+
+
+# Questions
+- What is your expectation from the new hire in first 3 to 6 months?
+- What are the next steps of the hiring process?
+
+
 # Table of Contents
 
 - [Python OOP Concepts](#python-oop-concepts)
@@ -563,5 +612,8 @@ The forecasting accuracy improved significantly based on lower MAE and RMSE scor
 - [A/B Testing](#ab-testing)
 - [Product & Business](#product--business)
 - [Data Science Intro](#data-science-intro)
+- [Aspire Ontario](#aspire-ontario)
+- [Meallens](#meallens)
 - [Retail Pricing Optimization Model](#retail-pricing-optimization-model)
 - [Inventory Demand Forecasting System](#inventory-demand-forecasting-system)
+- [Questions](#questions)
