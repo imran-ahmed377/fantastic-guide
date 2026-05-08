@@ -505,6 +505,43 @@ Don’t always go straight to 100%.
 - Prioritize quick experiments, 
 - Iterate while aligning with stakeholders for direction.
 
+# Data Science Intro
+
+Hi, I’m Imran Ahmed. I’m a data scientist with experience using data and machine learning to help solve business problems.
+
+I build models and dashboards that help teams make better decisions. I mainly work with tools like Python, SQL, TensorFlow, Microsoft Azure and AWS.
+
+One project I’m really proud of was building a customer churn model that helped the company improve customer retention and make marketing campaigns more effective.
+
+What I enjoy most about data science is finding useful insights from data and explaining them in a simple way that helps teams take action.
+
+I’m interested in this role because I’d like to work on bigger data challenges and collaborate with different teams to build impactful solutions.
+
+# Retail Pricing Optimization Model
+The goal of this project was to help retail business set better product prices to improve revenue and stay competitive.
+
+I noticed that pricing decisions were mostly manual and didn’t always reflect customer demand or market trends. So, I built a machine learning model to predict how price changes would affect sales and revenue.
+
+For the tech stack, I used Python with pandas and NumPy for data cleaning and analysis, XGBoost for the prediction model, and SQL to pull historical sales data. I also used matplotlib and seaborn for visualization.
+
+The model was trained using features like product price, discounts, seasonality, competitor pricing, and past sales trends. I also simulated demand elasticity to understand how sensitive customers were to price changes.
+
+To measure performance, I mainly used RMSE and MAE to compare predicted sales against actual sales. I also tracked revenue prediction accuracy, which improved by about 25% compared to the previous baseline model.
+
+One challenge was overfitting because some products had limited historical data. To fix that, I did feature selection, cross-validation, and hyperparameter tuning. I also cleaned missing and inconsistent pricing data before training the model, which improved stability and accuracy.
+
+# Inventory Demand Forecasting System
+It was a research project to predict product demand more accurately so the company could manage inventory better and reduce overstock issues.
+
+I built a forecasting system to estimate future demand.
+
+For the tech stack, I used Python and SQL. I used pandas and NumPy for data processing, matplotlib for visualization, and scikit-learn for modeling. For forecasting, I mainly used Facebook Prophet and XGBoost.
+
+The model used historical sales data, seasonal trends, promotions, and channel-wise sales information to predict future demand.
+
+To measure performance, I used metrics like MAE and RMSE to compare predicted demand with actual sales. I also tracked business impact, and the system helped reduce overstock risk by around 20%.
+
+One challenge was inconsistent sales patterns during holidays and promotions, which caused prediction errors. To improve accuracy, I added seasonal features, cleaned missing data, and retrained the model regularly using updated sales data.
 
 # Table of Contents
 
@@ -516,3 +553,6 @@ Don’t always go straight to 100%.
 - [SQL](#sql)
 - [A/B Testing](#ab-testing)
 - [Product & Business](#product--business)
+- [Data Science Intro](#data-science-intro)
+- [Retail Pricing Optimization Model](#retail-pricing-optimization-model)
+- [Inventory Demand Forecasting System](#inventory-demand-forecasting-system)
