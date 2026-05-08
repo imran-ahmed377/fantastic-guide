@@ -8,6 +8,9 @@
 - [SQL](#sql)
 - [A/B Testing](#ab-testing)
 - [Product & Business](#product--business)
+- [Data Science Intro](#data-science-intro)
+- [Retail Pricing Optimization Model](#retail-pricing-optimization-model)
+- [Inventory Demand Forecasting System](#inventory-demand-forecasting-system)
 
 
 # Python Basics
@@ -338,6 +341,9 @@ Data drift occurs when the input data changes over time, leading to model decay.
 - [SQL](#sql)
 - [A/B Testing](#ab-testing)
 - [Product & Business](#product--business)
+- [Data Science Intro](#data-science-intro)
+- [Retail Pricing Optimization Model](#retail-pricing-optimization-model)
+- [Inventory Demand Forecasting System](#inventory-demand-forecasting-system)
 
 ---
 
