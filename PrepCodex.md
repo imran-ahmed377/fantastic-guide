@@ -517,7 +517,7 @@ Don’t always go straight to 100%.
 - Prioritize quick experiments, 
 - Iterate while aligning with stakeholders for direction.
 ---
-
+<!-- 
 # Data Science Intro
 
 Hi, I’m Imran Ahmed. I’m a data scientist with experience using data and machine learning to help solve business problems.
@@ -598,7 +598,7 @@ The forecasting accuracy improved significantly based on lower MAE and RMSE scor
 
 # Questions
 - What is your expectation from the new hire in first 3 to 6 months?
-- What are the next steps of the hiring process?
+- What are the next steps of the hiring process? -->
 
 
 # Table of Contents
