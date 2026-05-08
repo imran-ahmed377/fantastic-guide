@@ -327,6 +327,17 @@ Data drift occurs when the input data changes over time, leading to model decay.
     2. Compare distributions (histograms): Look at how values are spread, not just the average.
     3. Statistical tests: Example: Kolmogorov-Smirnov (KS) Test Compare two dataset cumulative distribution (CDF) curves at every point, check the difference between them.
 
+---
+# Table of Contents
+
+- [Python OOP Concepts](#python-oop-concepts)
+- [Steps of Data Preprocessing for ML Models](#steps-of-data-preprocessing-for-ml-models)
+  - [Missing Value Handling](#missing-value-handling)
+- [Machine Learning Q&A](#machine-learning-qa)
+- [MLOps Q&A](#mlops-qa)
+- [SQL](#sql)
+- [A/B Testing](#ab-testing)
+- [Product & Business](#product--business)
 
 ---
 
@@ -494,12 +505,14 @@ Don’t always go straight to 100%.
 - Prioritize quick experiments, 
 - Iterate while aligning with stakeholders for direction.
 
-# Data Science Intro
 
-Hi, I’m Imran Ahmed. I’m a data scientist with about [X years] of experience working with machine learning, statistical analysis, and data visualization to solve business problems.
+# Table of Contents
 
-Currently, I work at Aspire Ontario, where I build predictive models and dashboards that help teams make data-driven decisions. My work has involved tools like Python, SQL, TensorFlow, and cloud platforms such as AWS.
-
-One project I’m particularly proud of was developing a customer churn prediction model that improved retention targeting and increased campaign efficiency by 20%. I enjoy translating complex data into actionable insights that non-technical stakeholders can use.
-
-What interests me about this opportunity is the chance to work on larger-scale data problems and collaborate with cross-functional teams in a product-focused environment.
+- [Python OOP Concepts](#python-oop-concepts)
+- [Steps of Data Preprocessing for ML Models](#steps-of-data-preprocessing-for-ml-models)
+  - [Missing Value Handling](#missing-value-handling)
+- [Machine Learning Q&A](#machine-learning-qa)
+- [MLOps Q&A](#mlops-qa)
+- [SQL](#sql)
+- [A/B Testing](#ab-testing)
+- [Product & Business](#product--business)
