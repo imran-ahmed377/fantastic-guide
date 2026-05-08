@@ -517,8 +517,6 @@ Hi, I’m Imran Ahmed. I’m a data scientist with experience using data and mac
 
 I build models and dashboards that help teams make better decisions. I mainly work with tools like Python, SQL, TensorFlow, Microsoft Azure and AWS.
 
-One project I’m really proud of was building a customer churn model that helped the company improve customer retention and make marketing campaigns more effective.
-
 What I enjoy most about data science is finding useful insights from data and explaining them in a simple way that helps teams take action.
 
 I’m interested in this role because I’d like to work on bigger data challenges and collaborate with different teams to build impactful solutions.
@@ -535,6 +533,8 @@ The model was trained using features like product price, discounts, seasonality,
 To measure performance, I mainly used RMSE and MAE to compare predicted sales against actual sales. I also tracked revenue prediction accuracy, which improved by about 25% compared to the previous baseline model.
 
 One challenge was overfitting because some products had limited historical data. To fix that, I did feature selection, cross-validation, and hyperparameter tuning. I also cleaned missing and inconsistent pricing data before training the model, which improved stability and accuracy.
+## Success Metrics
+The model improved revenue prediction accuracy by around 25% compared to the previous baseline, and RMSE and MAE scores were consistently lower during testing.
 
 # Inventory Demand Forecasting System
 It was a research project to predict product demand more accurately so the company could manage inventory better and reduce overstock issues.
@@ -548,6 +548,9 @@ The model used historical sales data, seasonal trends, promotions, and channel-w
 To measure performance, I used metrics like MAE and RMSE to compare predicted demand with actual sales. I also tracked business impact, and the system helped reduce overstock risk by around 20%.
 
 One challenge was inconsistent sales patterns during holidays and promotions, which caused prediction errors. To improve accuracy, I added seasonal features, cleaned missing data, and retrained the model regularly using updated sales data.
+
+## Success Metrics
+The forecasting accuracy improved significantly based on lower MAE and RMSE scores. I also compared forecasted demand with actual sales over multiple cycles to confirm the predictions were reliable.
 
 # Table of Contents
 
