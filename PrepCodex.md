@@ -493,3 +493,13 @@ Don’t always go straight to 100%.
 - Explore available data, 
 - Prioritize quick experiments, 
 - Iterate while aligning with stakeholders for direction.
+
+# Data Science Intro
+
+Hi, I’m Imran Ahmed. I’m a data scientist with about [X years] of experience working with machine learning, statistical analysis, and data visualization to solve business problems.
+
+Currently, I work at Aspire Ontario, where I build predictive models and dashboards that help teams make data-driven decisions. My work has involved tools like Python, SQL, TensorFlow, and cloud platforms such as AWS.
+
+One project I’m particularly proud of was developing a customer churn prediction model that improved retention targeting and increased campaign efficiency by 20%. I enjoy translating complex data into actionable insights that non-technical stakeholders can use.
+
+What interests me about this opportunity is the chance to work on larger-scale data problems and collaborate with cross-functional teams in a product-focused environment.
