@@ -8,12 +8,12 @@
 - [SQL](#sql)
 - [A/B Testing](#ab-testing)
 - [Product & Business](#product--business)
-- [Data Science Intro](#data-science-intro)
+<!-- - [Data Science Intro](#data-science-intro)
 - [Aspire Ontario](#aspire-ontario)
 - [Meallens](#meallens)
 - [Retail Pricing Optimization Model](#retail-pricing-optimization-model)
 - [Inventory Demand Forecasting System](#inventory-demand-forecasting-system)
-- [Questions](#questions)
+- [Questions](#questions) -->
 
 
 # Python Basics
@@ -344,12 +344,12 @@ Data drift occurs when the input data changes over time, leading to model decay.
 - [SQL](#sql)
 - [A/B Testing](#ab-testing)
 - [Product & Business](#product--business)
-- [Data Science Intro](#data-science-intro)
+<!-- - [Data Science Intro](#data-science-intro)
 - [Aspire Ontario](#aspire-ontario)
 - [Meallens](#meallens)
 - [Retail Pricing Optimization Model](#retail-pricing-optimization-model)
 - [Inventory Demand Forecasting System](#inventory-demand-forecasting-system)
-- [Questions](#questions)
+- [Questions](#questions) -->
 
 ---
 
@@ -611,9 +611,9 @@ The forecasting accuracy improved significantly based on lower MAE and RMSE scor
 - [SQL](#sql)
 - [A/B Testing](#ab-testing)
 - [Product & Business](#product--business)
-- [Data Science Intro](#data-science-intro)
+<!-- - [Data Science Intro](#data-science-intro)
 - [Aspire Ontario](#aspire-ontario)
 - [Meallens](#meallens)
 - [Retail Pricing Optimization Model](#retail-pricing-optimization-model)
 - [Inventory Demand Forecasting System](#inventory-demand-forecasting-system)
-- [Questions](#questions)
+- [Questions](#questions) -->
