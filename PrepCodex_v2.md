@@ -4,20 +4,33 @@
 ## Table of Contents
 
 - [1. Tell us about yourself.](#1-tell-us-about-yourself)
+
 - [2. Why do you want to work at The Globe and Mail?](#2-why-do-you-want-to-work-at-the-globe-and-mail)
+
 - [3. What experience do you have with SQL?](#3-what-experience-do-you-have-with-sql)
-- [4. Have you worked with customer segmentation or marketing campaigns?](#4-have-you-worked-with-customer-segmentation-or-marketing-campaigns)
-- [5. What tools have you used?](#5-what-tools-have-you-used)
+
+
 - [6. Tell us about one achievement you’re proud of.](#6-tell-us-about-one-achievement-youre-proud-of)
+
 - [7. How do you make sure your data is accurate?](#7-how-do-you-make-sure-your-data-is-accurate)
+
 - [8. Do you have experience with A/B testing?](#8-do-you-have-experience-with-ab-testing)
-- [9. How do you handle multiple deadlines?](#9-how-do-you-handle-multiple-deadlines)
+
+
+
 - [10. Have you worked with CRM or customer data platforms?](#10-have-you-worked-with-crm-or-customer-data-platforms)
-- [11. How do you explain technical information to non-technical people?](#11-how-do-you-explain-technical-information-to-non-technical-people)
+
+
 - [12. Why should we hire you?](#12-why-should-we-hire-you)
-- [13. What are your strengths?](#13-what-are-your-strengths)
-- [14. What experience do you have with Python or JavaScript?](#14-what-experience-do-you-have-with-python-or-javascript)
-- [Customer Segmentation and Campaign Analytics System](#customer-segmentation-and-campaign-analytics-system)
+
+
+- [Aspire Ontario Experience](#aspire-ontario-job-role)
+
+- [Project 1: Customer Segmentation](#customer-segmentation-and-campaign-analytics-system)
+
+
+
+- [Project 2: Subscriber Behavior](#project-2-subscriber-behavior)
 
 ## 1. Tell us about yourself.
 
@@ -29,15 +42,7 @@ I like that this role because it combines data, marketing, and customer engageme
 
 ## 3. What experience do you have with SQL?
 
-I use SQL regularly for customer segmentation, reporting, and analyzing campaign data. I’ve worked with Oracle SQL, PL/SQL, PostgreSQL, and Snowflake to create reports, automate workflows, and manage large datasets.
-
-## 4. Have you worked with customer segmentation or marketing campaigns?
-
-Yes. I’ve created customer segments using CRM and behavioral data for email and marketing campaigns. I also worked on projects focused on personalization and improving customer targeting.
-
-## 5. What tools have you used?
-
-I’ve worked with Tableau, Power BI, Amplitude, Excel, SQL databases, and CRM systems. I also have some experience with Python and JavaScript for data analysis and automation.
+I use SQL for customer segmentation, reporting, and analyzing campaign data. I’ve worked with Oracle SQL, PL/SQL, PostgreSQL, and Snowflake to create reports, automate workflows, and manage large datasets.
 
 ## 6. Tell us about one achievement you’re proud of.
 
@@ -51,34 +56,190 @@ I double-check my SQL queries, validate data counts, and test outputs before sha
 
 Yes. I helped run A/B tests for user engagement campaigns and compared the results to see which version performed better. Then I shared insights with the team to improve future campaigns.
 
-## 9. How do you handle multiple deadlines?
 
-I stay organized and prioritize tasks based on deadlines and business impact. I like to plan my work clearly and communicate early if something needs attention.
 
 ## 10. Have you worked with CRM or customer data platforms?
 
 Yes. I’ve worked with CRM data for customer segmentation, campaign reporting, and audience creation. I also helped maintain data quality and consistency across customer datasets.
 
-## 11. How do you explain technical information to non-technical people?
 
-I try to keep things simple and focus on the business impact. Instead of using too many technical terms, I explain what the data means and how it can help improve results.
 
 ## 12. Why should we hire you?
 
 I have hands-on experience with SQL, marketing analytics, dashboards, and customer segmentation that matches this role well. I’m also detail-oriented, easy to work with, and always willing to learn new tools and processes.
 
-## 13. What are your strengths?
 
-My strengths are SQL, problem-solving, attention to detail, and teamwork. I’m also good at organizing data and turning it into useful insights.
 
-## 14. What experience do you have with Python or JavaScript?
 
-I have basic to intermediate experience with Python and JavaScript. I’ve mainly used Python for data analysis and automation tasks in projects.
 
-## Customer Segmentation and Campaign Analytics System
+
+## Aspire Ontario Job Role
+At Aspire Ontario, I worked as a Data Analyst. My main role was to develop an AI powered CRM software.
+
+I built SQL-based customer database in Oracle SQL. I also created automated queries and reports for regular data extraction and tracking.
+
+I also built dashboards in Power BI. These dashboards showed campaign performance, customer behavior, and retention trends.
+
+I used tools like Oracle SQL, Power BI, Excel. I also worked with CRM and marketing systems to manage customer data.
+
+
+
+
+
+
+## Project 1: Customer Segmentation and Campaign Analytics System
 
 The project goal was to improve email campaign targeting using customer segmentation.
 
-I used SQL and Python to analyze user behavior data and create customer segments based on engagement and activity patterns. I also used Tableau to build dashboards for tracking campaign performance like engagement and retention.
+I used SQL and Python to analyze user behavior data and create customer segments based on engagement and activity patterns. I also used PowerBI to build dashboards for tracking campaign performance like engagement and retention.
 
 The main outcome was improving targeting precision by about 30%. The key success metrics were better segmentation accuracy and improved campaign engagement indicators like clicks and retention trends.
+
+## Project 2: Subscriber Behavior
+The main goal was to understand how users were engaging with content and campaigns, and to track their behavior over time.
+
+I used PowerBI to build the dashboard and visualize key metrics. I also used SQL to pull and prepare the data. For some analysis, I used Python to clean and explore user behavior patterns.
+
+The dashboard showed things like user engagement trends, retention, click-through rates, and campaign performance. I also included an A/B testing view to compare different campaign versions.
+
+The main success metrics for the project were:
+
+- Improving decision-making speed by 45% through faster access to insights
+- Better understanding of user engagement trends
+- More accurate comparison of campaign performance using A/B testing
+- Helping teams identify what content or campaigns were performing better
+
+
+# A/B Testing
+## ⚡ One-line intuition
+
+**A/B testing = “Show two versions to similar users and check if the difference is real or just luck.”**
+
+## 🎯 Scenario
+
+You run an e-commerce app and want to test:
+
+**Does a new checkout button increase purchases?**
+
+---
+
+## 1. Define the hypothesis
+
+Keep it very clear and measurable.
+
+- **Null hypothesis (H₀):** New button does not change conversion rate  
+- **Alternative (H₁):** New button increases conversion rate  
+
+**Example:**  
+Current conversion = 10%  
+You expect → 12%
+
+---
+
+## 2. Choose your metric
+
+Pick one primary metric (don’t overcomplicate).
+
+**Example:**
+- Primary: % of users who complete purchase  
+- Secondary (optional): revenue per user  
+
+---
+
+## 3. Decide group split (A vs B)
+
+Most common: **50/50 split**
+
+- Group A → old button  
+- Group B → new button  
+
+**Why 50/50?**
+- Fastest way to get results  
+- Balanced comparison  
+
+Sometimes companies use 90/10 for safer rollout, but 50/50 is standard for testing.
+
+---
+
+## 4. Determine sample size (how many users you need)
+
+You need enough users to detect a real difference.
+
+**Key inputs:**
+- Baseline = 10%  
+- Expected improvement = +2% (to 12%)  
+- Confidence level = 95%  
+- Power = 80%  
+
+Using a calculator or stats tool:
+
+👉 You’ll need roughly **~4,000–5,000 users per group**
+
+_(You don’t calculate this manually in practice—tools do it.)_
+
+---
+
+## 5. Determine experiment duration
+
+Duration depends on traffic.
+
+**Example:**
+- You get 1,000 users/day  
+- Need 5,000 per group → 10,000 total  
+
+👉 Duration ≈ **10 days**
+
+**Add buffer:**
+- Run at least 1–2 full weeks to capture weekday/weekend behavior  
+
+👉 Final: **2 weeks**
+
+---
+
+## 6. Run the experiment properly
+
+**Rules:**
+- Randomly assign users  
+- Keep conditions the same (no other changes)  
+- Don’t stop early just because results “look good”  
+
+---
+
+## 7. Analyze results
+
+Compare conversion rates using a statistical test like a t-test or proportion test.
+
+**Example result:**
+- A = 10%  
+- B = 12%  
+- (Chance of result is random, low p-value is good) p-value < 0.05 → significant  
+
+👉 New button wins  
+
+---
+
+## 8. Decide rollout strategy
+
+Don’t always go straight to 100%.
+
+**Typical rollout:**
+- Step 1: 10% users  
+- Step 2: 50% users  
+- Step 3: 100% users  
+
+**Why gradual?**
+- Catch bugs or unexpected issues  
+- Reduce risk  
+
+---
+
+## 🧠 Simple summary (memory version)
+
+- Hypothesis: what you expect to change  
+- Metric: what you measure  
+- Split: usually 50/50  
+- Sample size: enough users to detect change  
+- Duration: based on traffic (usually 1–2 weeks min)  
+- Run test: random + controlled  
+- Analyze: is difference real?  
+- Rollout: gradual release  
