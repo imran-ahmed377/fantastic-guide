@@ -1,6 +1,3 @@
-
-
-
 ## Table of Contents
 
 - [1. Tell us about yourself.](#1-tell-us-about-yourself)
@@ -17,9 +14,7 @@
 - [8. Do you have experience with A/B testing?](#8-do-you-have-experience-with-ab-testing)
 
 
-
 - [10. Have you worked with CRM or customer data platforms?](#10-have-you-worked-with-crm-or-customer-data-platforms)
-
 
 - [12. Why should we hire you?](#12-why-should-we-hire-you)
 
@@ -31,6 +26,9 @@
 
 
 - [Project 2: Subscriber Behavior](#project-2-subscriber-behavior)
+
+
+- [AB Testing](#ab-testing)
 
 ## 1. Tell us about yourself.
 
@@ -109,6 +107,7 @@ The main success metrics for the project were:
 - More accurate comparison of campaign performance using A/B testing
 - Helping teams identify what content or campaigns were performing better
 
+---
 
 # A/B Testing
 ## ⚡ One-line intuition
@@ -243,3 +242,35 @@ Don’t always go straight to 100%.
 - Run test: random + controlled  
 - Analyze: is difference real?  
 - Rollout: gradual release  
+
+## Table of Contents
+
+- [1. Tell us about yourself.](#1-tell-us-about-yourself)
+
+- [2. Why do you want to work at The Globe and Mail?](#2-why-do-you-want-to-work-at-the-globe-and-mail)
+
+- [3. What experience do you have with SQL?](#3-what-experience-do-you-have-with-sql)
+
+
+- [6. Tell us about one achievement you’re proud of.](#6-tell-us-about-one-achievement-youre-proud-of)
+
+- [7. How do you make sure your data is accurate?](#7-how-do-you-make-sure-your-data-is-accurate)
+
+- [8. Do you have experience with A/B testing?](#8-do-you-have-experience-with-ab-testing)
+
+
+- [10. Have you worked with CRM or customer data platforms?](#10-have-you-worked-with-crm-or-customer-data-platforms)
+
+- [12. Why should we hire you?](#12-why-should-we-hire-you)
+
+
+- [Aspire Ontario Experience](#aspire-ontario-job-role)
+
+- [Project 1: Customer Segmentation](#customer-segmentation-and-campaign-analytics-system)
+
+
+
+- [Project 2: Subscriber Behavior](#project-2-subscriber-behavior)
+
+
+- [AB Testing](#ab-testing)
