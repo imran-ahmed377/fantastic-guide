@@ -4,6 +4,8 @@
 
 - [2. Why do you want to work at The Globe and Mail?](#2-why-do-you-want-to-work-at-the-globe-and-mail)
 
+- [12. Why should we hire you?](#12-why-should-we-hire-you)
+
 - [3. What experience do you have with SQL?](#3-what-experience-do-you-have-with-sql)
 
 
@@ -16,16 +18,16 @@
 
 - [10. Have you worked with CRM or customer data platforms?](#10-have-you-worked-with-crm-or-customer-data-platforms)
 
-- [12. Why should we hire you?](#12-why-should-we-hire-you)
-
-
 - [Aspire Ontario Experience](#aspire-ontario-job-role)
+
+- [MealLens Experience](#meallens-job-role)
 
 - [Project 1: Customer Segmentation](#customer-segmentation-and-campaign-analytics-system)
 
 
-
 - [Project 2: Subscriber Behavior](#project-2-subscriber-behavior)
+
+- [Questions](#questions)
 
 
 - [AB Testing](#ab-testing)
@@ -37,6 +39,11 @@ I am Imran Ahmed, I have experience working with SQL, customer data, and marketi
 ## 2. Why do you want to work at The Globe and Mail?
 
 I like that this role because it combines data, marketing, and customer engagement, which matches my experience and interests. The Globe and Mail is also a well-known and respected company in Canada, so I’d be excited to be part of a team that focuses on data-driven growth and customer experience.
+
+## 12. Why should we hire you?
+
+I have hands-on experience with SQL, marketing analytics, dashboards, and customer segmentation that matches this role well. I’m also detail-oriented, easy to work with, and always willing to learn new tools and processes.
+
 
 ## 3. What experience do you have with SQL?
 
@@ -62,9 +69,6 @@ Yes. I’ve worked with CRM data for customer segmentation, campaign reporting, 
 
 
 
-## 12. Why should we hire you?
-
-I have hands-on experience with SQL, marketing analytics, dashboards, and customer segmentation that matches this role well. I’m also detail-oriented, easy to work with, and always willing to learn new tools and processes.
 
 
 
@@ -262,6 +266,8 @@ Don’t always go straight to 100%.
 
 - [2. Why do you want to work at The Globe and Mail?](#2-why-do-you-want-to-work-at-the-globe-and-mail)
 
+- [12. Why should we hire you?](#12-why-should-we-hire-you)
+
 - [3. What experience do you have with SQL?](#3-what-experience-do-you-have-with-sql)
 
 
@@ -274,16 +280,16 @@ Don’t always go straight to 100%.
 
 - [10. Have you worked with CRM or customer data platforms?](#10-have-you-worked-with-crm-or-customer-data-platforms)
 
-- [12. Why should we hire you?](#12-why-should-we-hire-you)
-
-
 - [Aspire Ontario Experience](#aspire-ontario-job-role)
+
+- [MealLens Experience](#meallens-job-role)
 
 - [Project 1: Customer Segmentation](#customer-segmentation-and-campaign-analytics-system)
 
 
-
 - [Project 2: Subscriber Behavior](#project-2-subscriber-behavior)
+
+- [Questions](#questions)
 
 
 - [AB Testing](#ab-testing)
