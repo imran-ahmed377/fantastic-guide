@@ -22,7 +22,7 @@
 
 - [MealLens Experience](#meallens-job-role)
 
-- [Project 1: Customer Segmentation](#customer-segmentation-and-campaign-analytics-system)
+- [Project 1: Customer Segmentation](#project-1-customer-segmentation-and-campaign-analytics-system)
 
 
 - [Project 2: Subscriber Behavior](#project-2-subscriber-behavior)
@@ -284,8 +284,7 @@ Don’t always go straight to 100%.
 
 - [MealLens Experience](#meallens-job-role)
 
-- [Project 1: Customer Segmentation](#customer-segmentation-and-campaign-analytics-system)
-
+- [Project 1: Customer Segmentation](#project-1-customer-segmentation-and-campaign-analytics-system)
 
 - [Project 2: Subscriber Behavior](#project-2-subscriber-behavior)
 
