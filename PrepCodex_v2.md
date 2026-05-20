@@ -76,7 +76,7 @@ Yes. I’ve worked with CRM data for customer segmentation, campaign reporting, 
 
 
 ## Aspire Ontario Job Role
-At Aspire Ontario, I worked as a Data Analyst. My main role was to develop an AI powered CRM software.
+At Aspire Ontario, My main role was to develop an AI powered CRM software.
 
 I built SQL-based customer database in Oracle SQL. I also created automated queries and reports for regular data extraction and tracking.
 
