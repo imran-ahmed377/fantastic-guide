@@ -81,7 +81,15 @@ I also built dashboards in Power BI. These dashboards showed campaign performanc
 I used tools like Oracle SQL, Power BI, Excel. I also worked with CRM and marketing systems to manage customer data.
 
 
+## MealLens Job Role
 
+At Meallens my main role was to analyze customer and business data to support decision-making.
+
+I created SQL reports for customer engagement and retention analysis. I also built Tableau and Excel dashboards to track performance and automate reporting.
+
+Another important part of my job was cleaning and transforming data to improve accuracy and reliability. I also supported CRM data extraction and customer segmentation for marketing campaigns.
+
+I worked closely with teams to provide insights and make reporting faster and more efficient.
 
 
 
@@ -106,6 +114,11 @@ The main success metrics for the project were:
 - Better understanding of user engagement trends
 - More accurate comparison of campaign performance using A/B testing
 - Helping teams identify what content or campaigns were performing better
+
+## Questions
+- What is your expectation from the new hire in first 3 to 6 months?
+- What are the next steps of the hiring process?
+
 
 ---
 
