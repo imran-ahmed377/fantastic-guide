@@ -1,294 +1,131 @@
-## Table of Contents
-
-- [1. Tell us about yourself.](#1-tell-us-about-yourself)
-
-- [2. Why do you want to work at The Globe and Mail?](#2-why-do-you-want-to-work-at-the-globe-and-mail)
-
-- [12. Why should we hire you?](#12-why-should-we-hire-you)
-
-- [3. What experience do you have with SQL?](#3-what-experience-do-you-have-with-sql)
-
-
-- [6. Tell us about one achievement you’re proud of.](#6-tell-us-about-one-achievement-youre-proud-of)
-
-- [7. How do you make sure your data is accurate?](#7-how-do-you-make-sure-your-data-is-accurate)
-
-- [8. Do you have experience with A/B testing?](#8-do-you-have-experience-with-ab-testing)
-
-
-- [10. Have you worked with CRM or customer data platforms?](#10-have-you-worked-with-crm-or-customer-data-platforms)
-
-- [Aspire Ontario Experience](#aspire-ontario-job-role)
-
-- [MealLens Experience](#meallens-job-role)
-
-- [Project 1: Customer Segmentation](#project-1-customer-segmentation-and-campaign-analytics-system)
-
-
-- [Project 2: Subscriber Behavior](#project-2-subscriber-behavior)
-
-- [Questions](#questions)
-
-
-- [AB Testing](#ab-testing)
-
-## 1. Tell us about yourself.
-
-I am Imran Ahmed, I have experience working with SQL, customer data, and marketing analytics. In my recent role, I built customer segments for marketing campaigns, created dashboards in Tableau and Power BI, and supported A/B testing to improve campaign performance. I enjoy working with data and using it to help businesses make better decisions.
-
-## 2. Why do you want to work at The Globe and Mail?
-
-I like that this role because it combines data, marketing, and customer engagement, which matches my experience and interests. The Globe and Mail is also a well-known and respected company in Canada, so I’d be excited to be part of a team that focuses on data-driven growth and customer experience.
-
-## 12. Why should we hire you?
-
-I have hands-on experience with SQL, marketing analytics, dashboards, and customer segmentation that matches this role well. I’m also detail-oriented, easy to work with, and always willing to learn new tools and processes.
-
-
-## 3. What experience do you have with SQL?
-
-I use SQL for customer segmentation, reporting, and analyzing campaign data. I’ve worked with Oracle SQL, PL/SQL, PostgreSQL, and Snowflake to create reports, automate workflows, and manage large datasets.
-
-## 6. Tell us about one achievement you’re proud of.
-
-In my recent role, I helped improve campaign targeting accuracy by 35% by building automated customer segments in SQL. I also supported A/B testing that increased conversion rates by 20%.
-
-## 7. How do you make sure your data is accurate?
-
-I double-check my SQL queries, validate data counts, and test outputs before sharing results or launching campaigns. I pay close attention to details because even small mistakes can affect reporting and campaign performance.
-
-## 8. Do you have experience with A/B testing?
-
-Yes. I helped run A/B tests for user engagement campaigns and compared the results to see which version performed better. Then I shared insights with the team to improve future campaigns.
-
-
-
-## 10. Have you worked with CRM or customer data platforms?
-
-Yes. I’ve worked with CRM data for customer segmentation, campaign reporting, and audience creation. I also helped maintain data quality and consistency across customer datasets.
-
-
-
-
-
-
-
-
-
-## Aspire Ontario Job Role
-At Aspire Ontario, My main role was to develop an AI powered CRM software.
-
-I built SQL-based customer database in Oracle SQL. I also created automated queries and reports for regular data extraction and tracking.
-
-I also built dashboards in Power BI. These dashboards showed campaign performance, customer behavior, and retention trends.
-
-I used tools like Oracle SQL, Power BI, Excel. I also worked with CRM and marketing systems to manage customer data.
-
-
-## MealLens Job Role
-
-At Meallens my main role was to analyze customer and business data to support decision-making.
-
-I created SQL reports for customer engagement and retention analysis. I also built Tableau and Excel dashboards to track performance and automate reporting.
-
-Another important part of my job was cleaning and transforming data to improve accuracy and reliability. I also supported CRM data extraction and customer segmentation for marketing campaigns.
-
-I worked closely with teams to provide insights and make reporting faster and more efficient.
-
-
-
-## Project 1: Customer Segmentation and Campaign Analytics System
-
-The project goal was to improve email campaign targeting using customer segmentation.
-
-I used SQL and Python to analyze user behavior data and create customer segments based on engagement and activity patterns. I also used PowerBI to build dashboards for tracking campaign performance like engagement and retention.
-
-The main outcome was improving targeting precision by about 30%. The key success metrics were better segmentation accuracy and improved campaign engagement indicators like clicks and retention trends.
-
-## Project 2: Subscriber Behavior
-The main goal was to understand how users were engaging with content and campaigns, and to track their behavior over time.
-
-I used PowerBI to build the dashboard and visualize key metrics. I also used SQL to pull and prepare the data. For some analysis, I used Python to clean and explore user behavior patterns.
-
-The dashboard showed things like user engagement trends, retention, click-through rates, and campaign performance. I also included an A/B testing view to compare different campaign versions.
-
-The main success metrics for the project were:
-
-- Improving decision-making speed by 45% through faster access to insights
-- Better understanding of user engagement trends
-- More accurate comparison of campaign performance using A/B testing
-- Helping teams identify what content or campaigns were performing better
-
-## Questions
-- What is your expectation from the new hire in first 3 to 6 months?
-- What are the next steps of the hiring process?
-
+# Business Systems Developer – Q&A
 
 ---
 
-# A/B Testing
-## ⚡ One-line intuition
+## 1. Can you walk me through your background?
 
-**A/B testing = “Show two versions to similar users and check if the difference is real or just luck.”**
+**Answer:**
 
-## 🎯 Scenario
+I’m a Business Systems Analyst with hands-on experience in SQL, Power BI, Excel automation, and ERP data systems.
 
-You run an e-commerce app and want to test:
+Most recently, I worked at Aspire Ontario Inc., where I built ETL pipelines using SQL and Power Query that improved reporting efficiency by about 45%. I also developed Power BI dashboards for 10+ business units to track operational KPIs and worked on data validation across ERP datasets, reducing reporting errors by around 30%.
 
-**Does a new checkout button increase purchases?**
+Before that, at Meallens, I focused on SQL-based reporting workflows, Power BI dashboards for sales and operations, and system audits to ensure data consistency across internal systems.
 
----
-
-## 1. Define the hypothesis
-
-Keep it very clear and measurable.
-
-- **Null hypothesis (H₀):** New button does not change conversion rate  
-- **Alternative (H₁):** New button increases conversion rate  
-
-**Example:**  
-Current conversion = 10%  
-You expect → 12%
+Overall, my focus is on building reliable data systems, automating reporting, and improving business decision-making through clean, structured data.
 
 ---
 
-## 2. Choose your metric
+## 2. What experience do you have with SQL?
 
-Pick one primary metric (don’t overcomplicate).
+**Answer:**
 
-**Example:**
-- Primary: % of users who complete purchase  
-- Secondary (optional): revenue per user  
+I’ve used SQL extensively for data extraction, transformation, and reporting.
 
----
+At Aspire Ontario, I built SQL-based ETL workflows that pulled data from ERP systems, transformed it, and prepared it for Power BI dashboards. I also optimized queries to improve performance and reduce manual reporting effort.
 
-## 3. Decide group split (A vs B)
+At Meallens, I designed SQL extraction workflows for operational reporting and helped standardize datasets across multiple internal systems.
 
-Most common: **50/50 split**
-
-- Group A → old button  
-- Group B → new button  
-
-**Why 50/50?**
-- Fastest way to get results  
-- Balanced comparison  
-
-Sometimes companies use 90/10 for safer rollout, but 50/50 is standard for testing.
+My SQL work includes joins, aggregations, data cleaning, and building reporting-ready datasets.
 
 ---
 
-## 4. Determine sample size (how many users you need)
+## 3. Have you built Power BI dashboards?
 
-You need enough users to detect a real difference.
+**Answer:**
 
-**Key inputs:**
-- Baseline = 10%  
-- Expected improvement = +2% (to 12%)  
-- Confidence level = 95%  
-- Power = 80%  
+Yes, I’ve built and maintained multiple Power BI dashboards.
 
-Using a calculator or stats tool:
+At Aspire Ontario, I created dashboards tracking KPIs across 10+ business units, focusing on operational and executive reporting. I worked on data modeling, DAX calculations, and integrating SQL queries for automated refresh.
 
-👉 You’ll need roughly **~4,000–5,000 users per group**
+At Meallens, I built dashboards for sales and operational performance tracking.
 
-_(You don’t calculate this manually in practice—tools do it.)_
+In both roles, I focused not just on visualization, but on ensuring the data model was accurate, scalable, and automated.
 
 ---
 
-## 5. Determine experiment duration
+## 4. Have you worked on automation or scripting?
 
-Duration depends on traffic.
+**Answer:**
 
-**Example:**
-- You get 1,000 users/day  
-- Need 5,000 per group → 10,000 total  
+Yes, I’ve worked on automation using Power Query, SQL, and Python.
 
-👉 Duration ≈ **10 days**
+At Aspire Ontario, I automated recurring Excel reporting processes using Power Query and structured ETL workflows, saving over 15 hours per week in manual work.
 
-**Add buffer:**
-- Run at least 1–2 full weeks to capture weekday/weekend behavior  
-
-👉 Final: **2 weeks**
+I’ve also used SQL-based automation to streamline reporting pipelines and used Python for smaller scripting tasks and data processing.
 
 ---
 
-## 6. Run the experiment properly
+## 5. Have you worked with ERP systems or Business Central?
 
-**Rules:**
-- Randomly assign users  
-- Keep conditions the same (no other changes)  
-- Don’t stop early just because results “look good”  
+**Answer:**
 
----
+Yes, I’ve worked with Microsoft Business Central and ERP datasets in reporting environments.
 
-## 7. Analyze results
-
-Compare conversion rates using a statistical test like a t-test or proportion test.
-
-**Example result:**
-- A = 10%  
-- B = 12%  
-- (Chance of result is random, low p-value is good) p-value < 0.05 → significant  
-
-👉 New button wins  
+At Aspire Ontario, I used ERP data as the foundation for reporting and dashboards, ensuring data accuracy across modules and resolving inconsistencies affecting reporting outputs.
 
 ---
 
-## 8. Decide rollout strategy
+## 6. Have you done IT support or user access work?
 
-Don’t always go straight to 100%.
+**Answer:**
 
-**Typical rollout:**
-- Step 1: 10% users  
-- Step 2: 50% users  
-- Step 3: 100% users  
+Yes, I’ve supported system access and user issues.
 
-**Why gradual?**
-- Catch bugs or unexpected issues  
-- Reduce risk  
+At Aspire Ontario, I worked with Azure-based tools for managing user permissions, onboarding, and access control. I also provided support for internal reporting tools and helped users resolve data-related issues.
 
 ---
 
-## 🧠 Simple summary (memory version)
+## 7. How do you handle a manual process that needs automation?
 
-- Hypothesis: what you expect to change  
-- Metric: what you measure  
-- Split: usually 50/50  
-- Sample size: enough users to detect change  
-- Duration: based on traffic (usually 1–2 weeks min)  
-- Run test: random + controlled  
-- Analyze: is difference real?  
-- Rollout: gradual release  
+**Answer:**
 
-## Table of Contents
+I follow a structured approach:
 
-- [1. Tell us about yourself.](#1-tell-us-about-yourself)
+First, I analyze the existing process to understand inputs, outputs, and pain points.
 
-- [2. Why do you want to work at The Globe and Mail?](#2-why-do-you-want-to-work-at-the-globe-and-mail)
+Then, I identify automation opportunities using SQL, Power Query, or Power Automate.
 
-- [12. Why should we hire you?](#12-why-should-we-hire-you)
+Finally, I build and test the solution, validate it with stakeholders, and refine it if needed.
 
-- [3. What experience do you have with SQL?](#3-what-experience-do-you-have-with-sql)
+For example, I automated Excel reporting processes at Aspire Ontario, reducing manual workload significantly and improving consistency.
 
+---
 
-- [6. Tell us about one achievement you’re proud of.](#6-tell-us-about-one-achievement-youre-proud-of)
+## 8. How do you handle unclear requirements?
 
-- [7. How do you make sure your data is accurate?](#7-how-do-you-make-sure-your-data-is-accurate)
+**Answer:**
 
-- [8. Do you have experience with A/B testing?](#8-do-you-have-experience-with-ab-testing)
+I focus on understanding the business goal rather than just the technical request.
 
+I ask clarifying questions about:
+- the purpose of the report or tool
+- who the end users are
+- what data sources are involved
+- and what success looks like
 
-- [10. Have you worked with CRM or customer data platforms?](#10-have-you-worked-with-crm-or-customer-data-platforms)
+If needed, I build a small prototype to confirm expectations before scaling the solution.
 
-- [Aspire Ontario Experience](#aspire-ontario-job-role)
+---
 
-- [MealLens Experience](#meallens-job-role)
+## 9. What’s your experience with Excel?
 
-- [Project 1: Customer Segmentation](#project-1-customer-segmentation-and-campaign-analytics-system)
+**Answer:**
 
-- [Project 2: Subscriber Behavior](#project-2-subscriber-behavior)
+I have advanced Excel experience, especially with Power Query, pivot tables, and formulas.
 
-- [Questions](#questions)
+Most of my work involves automating reporting processes. At Aspire Ontario, I automated recurring Excel reports, saving over 15 hours per week.
 
+I also use Excel for data validation, reconciliation, and preparing datasets for Power BI.
 
-- [AB Testing](#ab-testing)
+---
+
+## 10. Why are you interested in this role?
+
+**Answer:**
+
+This role aligns closely with my experience in SQL, Power BI, and automation.
+
+I enjoy building systems that improve business processes and reduce manual work. This position offers the opportunity to work across data, automation, and system support, which matches the kind of work I’ve already been doing and want to continue growing in.
+
+---
