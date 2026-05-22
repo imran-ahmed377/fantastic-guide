@@ -1,16 +1,59 @@
 # Business Systems Developer – Q&A
 
+## Table of Contents
+
+- [INTRODUCE YOURSELF](#introduce-yourself)
+- [ASPIRE ONTARIO EXP](#aspire-ontario-exp)
+- [MEALENS EXP](#mealens-exp)
+- [PROJECT 1: ERP Reporting Automation System](#project-1-erp-reporting-automation-system)
+- [PROJECT 2: Business Intelligence Dashboard Suite](#project-2-business-intelligence-dashboard-suite)
+- [SQL Experience?](#sql-experience)
+- [Power BI dashboards?](#power-bi-dashboards)
+- [Automation or Scripting?](#automation-or-scripting)
+- [ERP systems or Business Central?](#erp-systems-or-business-central)
+- [Microsoft Excel?](#microsoft-excel)
+- [6. IT support / USER ACCESS work?](#6-it-support-user-access-work)
+- [How do you handle a manual process that needs automation?](#how-do-you-handle-a-manual-process-that-needs-automation)
+- [How do you handle unclear requirements?](#how-do-you-handle-unclear-requirements)
+
+
 ---
 
 ## INTRODUCE YOURSELF
-
-**Answer:**
 
 I am a Business System Analyst with experience in Data Analytics, Data Visualization, Data Modeling and I’ve developed strong experience working with Power BI, Excel, ETL Pipeline.
 
 Most recently, I’ve worked at Aspire Ontario, where I’ve been able to strengthen my skills in Power Query and improving reporting efficiency, and collaborate closely with cross-functional teams like Data Scintist.
 
 I am very excited about this opportunity at Dayus register and grille to contribute to meaningful projects, and be part of a team that values both impact and continuous learning.
+
+---
+
+## ASPIRE ONTARIO EXP
+At Aspire Ontario Inc, I focused on turning raw business data into useful reports. I built automated reporting systems so teams didn’t have to manually compile data, which made reporting much faster and more accurate. I also built dashboards so managers could easily see how different parts of the business were performing. I made sure the data was correct by checking it carefully from different systems. I also helped with urgent report requests and gave quick answers to business questions.
+
+---
+
+## MEALENS EXP
+At Meallens, I helped pull data from different systems and turn it into simple reports. I created dashboards to show sales and business performance in an easy way. I also checked data for mistakes and helped fix issues when users had problems with reporting tools.
+
+---
+
+## PROJECT 1: ERP Reporting Automation System
+In this project, I built an automated reporting system to reduce manual work.
+
+I used SQL to pull data from company systems, Excel Power Query to clean and prepare the data, and Power BI to create reports. These tools were connected in a way that reports could update automatically instead of being done by hand.
+
+This reduced manual reporting work and also helped make the data more accurate.
+
+---
+
+## PROJECT 2: Business Intelligence Dashboard Suite
+In this project, I created dashboards to help teams understand business performance more easily.
+
+I used Power BI to build interactive dashboards, and SQL to get live data from the database. These dashboards showed important business and financial information in a clear and visual way.
+
+This helped managers make faster decisions because they could easily see updated and easy-to-understand reports.
 
 ---
 
@@ -119,5 +162,22 @@ I ask clarifying questions about:
 If needed, I build a small prototype to confirm expectations before scaling the solution.
 
 ---
+
+## Table of Contents
+
+- [INTRODUCE YOURSELF](#introduce-yourself)
+- [ASPIRE ONTARIO EXP](#aspire-ontario-exp)
+- [MEALENS EXP](#mealens-exp)
+- [PROJECT 1: ERP Reporting Automation System](#project-1-erp-reporting-automation-system)
+- [PROJECT 2: Business Intelligence Dashboard Suite](#project-2-business-intelligence-dashboard-suite)
+- [SQL Experience?](#sql-experience)
+- [Power BI dashboards?](#power-bi-dashboards)
+- [Automation or Scripting?](#automation-or-scripting)
+- [ERP systems or Business Central?](#erp-systems-or-business-central)
+- [Microsoft Excel?](#microsoft-excel)
+- [6. IT support / USER ACCESS work?](#6-it-support-user-access-work)
+- [How do you handle a manual process that needs automation?](#how-do-you-handle-a-manual-process-that-needs-automation)
+- [How do you handle unclear requirements?](#how-do-you-handle-unclear-requirements)
+
 
 ---
