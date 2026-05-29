@@ -66,4 +66,17 @@ Overall, this project helped me understand how to combine microservices architec
 
 ---
 
+# What do you know about OMERS?
 
+From what I understand, OMERS is one of Canada’s largest pension plans. It manages retirement savings and investments for municipal employees across Ontario, so its main focus is making sure members have secure and sustainable pensions in the long term.
+
+What stands out to me is that OMERS is also a global investor, so beyond pensions it invests in different asset classes like infrastructure, real estate, and private equity through teams in cities like Toronto and other major global locations.
+
+# Why you want to work here? / What you will learn?
+I want to work here because it combines backend engineering with real-world AI/LLM applications at scale. I will learn how to build and deploy production-grade microservices, work with cloud platforms, and improve my skills in designing and evaluating AI systems like RAG and LLM-based solutions.
+
+# Questions
+
+- What is your expectation from the new hire in first 3 to 6 months?
+- What is the team size?
+- What are the next steps of the hiring process?
