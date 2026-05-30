@@ -1,18 +1,18 @@
 # Introduce
 
-I’m a software engineer with around a year and a half of experience working on backend systems and AI-based applications. I did my Master’s in Applied Computing with a focus on Artificial Intelligence from the University of Windsor.
+I’m a software engineer with experience working on backend systems and AI-based applications. I completed my Master’s in Applied Computing with a focus on Artificial Intelligence from the University of Windsor.
 
-In my recent role at Aspire Ontario, I worked mainly on building backend services using Python and FastAPI. I developed APIs, worked on cloud deployments, and also built features that used AI models for tasks like summarization and classification. I also worked on improving how systems retrieve and use information using something called RAG, which helps AI models give more accurate answers.
+In my recent role at Aspire Ontario, I worked mainly on building backend services using Python and FastAPI. I developed APIs, worked on cloud deployments, and also built features that used AI models for tasks like summarization and classification. I also worked on improving how systems retrieve and use information using RAG, which helps AI models give more accurate answers.
 
 Before that, I worked at Meallens where I focused on backend development using Java and Python, building APIs and working with databases.
 
-Overall, I enjoy building systems that are not just functional but also scalable and intelligent, especially where backend engineering and AI come together. That’s the area I’m looking to grow in.
+I enjoy building systems that are functional, scalable and intelligent, and I am very excited to contribute my backend and AI expertise to a team where I can continue solving challenging problems, building impactful products, and growing as a software engineer.
 
 ---
 
 # Aspire Ontario Exp
 
-At Aspire Ontario, I worked as a Software Engineer on an AI-based CRM platform called Exeevo.
+At Aspire Ontario, I worked on an AI-based CRM platform called Exeevo.
 
 My main responsibility was building backend services and adding AI-powered features to improve how the CRM works. I worked on developing REST APIs using Python and FastAPI, which supported different parts of the application like data processing, user interactions, and AI workflows.
 
@@ -28,7 +28,7 @@ Overall, my work was focused on building scalable backend services and integrati
 
 # Meallens Exp
 
-At Meallens, I worked as a Software Developer focused mainly on backend development and data-driven services.
+At Meallens, I worked on backend development and data-driven services.
 
 My main responsibility was building and maintaining backend systems using Java and Python. I worked on developing REST APIs that supported different parts of the application, including data processing and business workflows. I also worked with SQL databases to design queries, manage data, and support reporting and analytics features.
 
@@ -41,15 +41,15 @@ Overall, my role was focused on building stable backend systems, improving perfo
 ---
 
 # Project 1: LLM-Powered RAG Knowledge System
-- Description: The goal of the project was to build a system that could answer questions more accurately by combining a language model with relevant information retrieved from documents, instead of relying only on the model’s built-in knowledge.
+- **Description**: The goal of the project was to build a system that could answer questions more accurately by combining a language model with relevant information retrieved from documents, instead of relying only on the model’s built-in knowledge.
 
-- Overview: In this project, I built the full pipeline. First, I processed and stored documents, then converted them into embeddings so they could be searched efficiently. When a user asked a question, the system would retrieve the most relevant pieces of information using vector search, and then pass that context to an LLM to generate a more accurate response.
+- **Overview**: In this project, I built the full pipeline. First, I processed and stored documents, then converted them into embeddings so they could be searched efficiently. When a user asked a question, the system would retrieve the most relevant pieces of information using vector search, and then pass that context to an LLM to generate a more accurate response.
 
-- Techincal: I also worked on improving the quality of retrieval by tuning how documents were chunked and ranked, which helped improve the factual accuracy of responses by around 35%. On top of that, I built an evaluation setup to test issues like hallucination and whether the answers were actually grounded in the retrieved data.
+- **Techincal**: I also worked on improving the quality of retrieval by tuning how documents were chunked and ranked, which helped improve the factual accuracy of responses by around 35%. On top of that, I built an evaluation setup to test issues like hallucination and whether the answers were actually grounded in the retrieved data.
 
-- Tools: For tools and technologies, I used Python, LangChain, and vector databases for embeddings and retrieval. I also worked with transformer-based models and integrated LLM APIs. For development and testing, I used FastAPI for exposing the service and Docker for containerizing the application.
+- **Tools**: For tools and technologies, I used Python, LangChain, and vector databases for embeddings and retrieval. I also worked with transformer-based models and integrated LLM APIs. For development and testing, I used FastAPI for exposing the service and Docker for containerizing the application.
 
-- Conclusion: Overall, the project helped me understand how real-world LLM systems are built, especially how retrieval and generation need to work together for better accuracy
+- **Conclusion**: Overall, the project helped me understand how real-world LLM systems are built, especially how retrieval and generation need to work together for better accuracy
 
 ---
 
