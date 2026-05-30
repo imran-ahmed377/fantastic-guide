@@ -1,3 +1,20 @@
+# Table of Contents
+
+- [Introduce](#introduce)
+- [Aspire Ontario Exp](#aspire-ontario-exp)
+- [Meallens Exp](#meallens-exp)
+- [Project 1: LLM-Powered RAG Knowledge System](#project-1-llm-powered-rag-knowledge-system)
+- [Project 2: AI-Enabled Microservices Backend Platform](#project-2-ai-enabled-microservices-backend-platform)
+- [What do you know about OMERS?](#what-do-you-know-about-omers)
+- [Why you want to work here? / What you will learn?](#why-you-want-to-work-here--what-you-will-learn)
+- [Challenge you Faced in a Project](#challenge-you-faced-in-a-project)
+- [Disagree with Teammates](#disagree-with-teammates)
+- [Mistake](#mistake)
+- [Project Didn't Worked as Expected](#project-didnt-worked-as-expected)
+- [Initiative / Improved a process](#initiative--improved-a-process)
+- [Requirement unclear / ambiguity](#requirement-unclear--ambiguity)
+- [Questions](#questions)
+
 # Introduce
 
 I’m a software engineer with experience working on backend systems and AI-based applications. I completed my Master’s in Applied Computing with a focus on Artificial Intelligence from the University of Windsor.
@@ -54,17 +71,37 @@ Overall, my role was focused on building stable backend systems, improving perfo
 ---
 
 # Project 2: AI-Enabled Microservices Backend Platform
-- Description: The idea was to design a scalable system where different services handle different responsibilities, instead of building one large monolithic application. I designed and implemented multiple backend services using Python and FastAPI, and each service handled a specific function like processing requests, generating insights, or managing data flow between components.
+- **Description**: The idea was to design a scalable system where different services handle different responsibilities, instead of building one large monolithic application. I designed and implemented multiple backend services using Python and FastAPI, and each service handled a specific function like processing requests, generating insights, or managing data flow between components.
 
-- Overview: On top of that, I integrated AI capabilities into the system. I connected Azure OpenAI APIs to add features like summarization and classification, so the platform could automatically process and generate insights from incoming data. This made the system more intelligent and reduced manual effort in handling information.
+- **Overview**: On top of that, I integrated AI capabilities into the system. I connected Azure OpenAI APIs to add features like summarization and classification, so the platform could automatically process and generate insights from incoming data. This made the system more intelligent and reduced manual effort in handling information.
 
-- Techincal: I also focused on performance and scalability. I containerized the services using Docker so they could run independently and be deployed easily. By improving how services communicated and were orchestrated, I was able to reduce processing latency by around 25%.
+- **Techincal**: I also focused on performance and scalability. I containerized the services using Docker so they could run independently and be deployed easily. By improving how services communicated and were orchestrated, I was able to reduce processing latency by around 25%.
 
-- Tools: For tools and technologies, I mainly used Python, FastAPI, Docker, and Azure cloud services. I also worked with REST APIs for service communication and used version control and CI/CD practices for deployment and collaboration.
+- **Tools**: For tools and technologies, I mainly used Python, FastAPI, Docker, and Azure cloud services. I also worked with REST APIs for service communication and used version control and CI/CD practices for deployment and collaboration.
 
-- Conclusion: Overall, this project helped me understand how to combine microservices architecture with AI features to build scalable and production-like backend systems.
+- **Conclusion**: Overall, this project helped me understand how to combine microservices architecture with AI features to build scalable and production-like backend systems.
 
 ---
+
+
+
+# Table of Contents
+
+- [Introduce](#introduce)
+- [Aspire Ontario Exp](#aspire-ontario-exp)
+- [Meallens Exp](#meallens-exp)
+- [Project 1: LLM-Powered RAG Knowledge System](#project-1-llm-powered-rag-knowledge-system)
+- [Project 2: AI-Enabled Microservices Backend Platform](#project-2-ai-enabled-microservices-backend-platform)
+- [What do you know about OMERS?](#what-do-you-know-about-omers)
+- [Why you want to work here? / What you will learn?](#why-you-want-to-work-here--what-you-will-learn)
+- [Challenge you Faced in a Project](#challenge-you-faced-in-a-project)
+- [Disagree with Teammates](#disagree-with-teammates)
+- [Mistake](#mistake)
+- [Project Didn't Worked as Expected](#project-didnt-worked-as-expected)
+- [Initiative / Improved a process](#initiative--improved-a-process)
+- [Requirement unclear / ambiguity](#requirement-unclear--ambiguity)
+- [Questions](#questions)
+
 
 # What do you know about OMERS?
 
@@ -75,8 +112,45 @@ What stands out to me is that OMERS is also a global investor, so beyond pension
 # Why you want to work here? / What you will learn?
 I want to work here because it combines backend engineering with real-world AI/LLM applications at scale. I will learn how to build and deploy production-grade microservices, work with cloud platforms, and improve my skills in designing and evaluating AI systems like RAG and LLM-based solutions.
 
+# Challenge you Faced in a Project
+While building a RAG-based chatbot at Aspire Ontario, the AI often returned incorrect answers even though the information existed in our documents. I found that large document chunks were causing poor retrieval. I reduced chunk size and improved chunk overlap using LangChain, which significantly improved answer accuracy.
+
+# Disagree with Teammates
+During an AI project, a teammate wanted to send entire documents to the LLM, while I suggested using retrieval to send only relevant sections. We tested both approaches and compared results. The retrieval-based approach was faster, cheaper, and more accurate, so we decided to use it.
+
+# Mistake
+Early in a FastAPI project, I made a database schema change and forgot to update one API endpoint. This caused errors in testing. I fixed the issue, added migration checks to my workflow, and became more careful about testing all dependent APIs before deployment.
+
+# Project Didn't Worked as Expected
+I built a document summarization feature using Azure OpenAI. The summaries sometimes missed important details from long documents. After investigating, I realized the model was hitting context limits. I split documents into smaller sections and combined the partial summaries, which improved the final output quality.
+
+# Initiative / Improved a process
+I noticed developers were manually testing AI prompts every time we changed the application. I created a small evaluation script in Python that automatically ran a set of test questions and compared outputs. This helped us catch issues faster and saved time during development.
+
+# Requirement unclear / ambiguity
+A stakeholder requested an "AI insights" feature but wasn't clear about the expected output. Instead of starting development immediately, I created a simple prototype with a few example outputs and reviewed it with them. Their feedback helped clarify the requirements and prevented rework later.
+
+
 # Questions
 
 - What is your expectation from the new hire in first 3 to 6 months?
 - What is the team size?
 - What are the next steps of the hiring process?
+
+
+# Table of Contents
+
+- [Introduce](#introduce)
+- [Aspire Ontario Exp](#aspire-ontario-exp)
+- [Meallens Exp](#meallens-exp)
+- [Project 1: LLM-Powered RAG Knowledge System](#project-1-llm-powered-rag-knowledge-system)
+- [Project 2: AI-Enabled Microservices Backend Platform](#project-2-ai-enabled-microservices-backend-platform)
+- [What do you know about OMERS?](#what-do-you-know-about-omers)
+- [Why you want to work here? / What you will learn?](#why-you-want-to-work-here--what-you-will-learn)
+- [Challenge you Faced in a Project](#challenge-you-faced-in-a-project)
+- [Disagree with Teammates](#disagree-with-teammates)
+- [Mistake](#mistake)
+- [Project Didn't Worked as Expected](#project-didnt-worked-as-expected)
+- [Initiative / Improved a process](#initiative--improved-a-process)
+- [Requirement unclear / ambiguity](#requirement-unclear--ambiguity)
+- [Questions](#questions)
