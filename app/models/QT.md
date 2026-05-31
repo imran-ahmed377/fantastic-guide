@@ -27,6 +27,8 @@
 - [CTE](#cte)
 - [DAX](#dax)
 - [Questions](#questions)
+
+
 I have experience in application and production support roles. My work has involved troubleshooting application issues, investigating data problems using SQL, supporting business users, and creating reports and dashboards in Power BI. I've worked closely with operations teams and developers to resolve incidents and improve business processes. What attracted me to this role is the opportunity to combine application support, SQL investigation, Power BI reporting, and business analysis activities in one position.
 
 
@@ -73,6 +75,31 @@ The method I followed was: collect requirements from users, design SQL datasets,
 The result was improved visibility for managers, faster decision-making, and a 40% increase in dashboard usage because users relied on it instead of manual reports.
 
 
+## Table of Contents
+
+- [Introduce](#introduce)
+- [Aspire Ontario Exp (Application Support Analyst)](#aspire-ontario-exp-application-support-analyst)
+- [Meallens Exp (Data Analyst)](#meallens-exp-data-analyst)
+- [Project 1: ERP Data Issue Resolution System](#project-1-erp-data-issue-resolution-system)
+- [Project 2: Power BI Operations Support Dashboard](#project-2-power-bi-operations-support-dashboard)
+- [Zapier](#zapier)
+- [About this company?](#about-this-company)
+- [Why This Company?](#why-this-company)
+- [What you will learn from this job?](#what-you-will-learn-from-this-job)
+- [Handle a production incident](#handle-a-production-incident)
+- [Challenge you faced in a project](#challenge-you-faced-in-a-project)
+- [Biggest mistake](#biggest-mistake)
+- [Project didn’t work as expected](#project-didnt-work-as-expected)
+- [Took initiative](#took-initiative)
+- [Requirement unclear / ambiguous](#requirement-unclear--ambiguous)
+- [Power BI dashboard created](#power-bi-dashboard-created)
+- [Order Missing from ERP](#order-missing-from-erp)
+- [Root Cause Analysis](#root-cause-analysis)
+- [SQL functions use regularly](#sql-functions-use-regularly)
+- [Power BI performance](#power-bi-performance)
+- [CTE](#cte)
+- [DAX](#dax)
+- [Questions](#questions)
 
 
 
@@ -128,7 +155,31 @@ I built an operational dashboard combining ERP (Enterprise Resource Planning) an
 
 
 
+## Table of Contents
 
+- [Introduce](#introduce)
+- [Aspire Ontario Exp (Application Support Analyst)](#aspire-ontario-exp-application-support-analyst)
+- [Meallens Exp (Data Analyst)](#meallens-exp-data-analyst)
+- [Project 1: ERP Data Issue Resolution System](#project-1-erp-data-issue-resolution-system)
+- [Project 2: Power BI Operations Support Dashboard](#project-2-power-bi-operations-support-dashboard)
+- [Zapier](#zapier)
+- [About this company?](#about-this-company)
+- [Why This Company?](#why-this-company)
+- [What you will learn from this job?](#what-you-will-learn-from-this-job)
+- [Handle a production incident](#handle-a-production-incident)
+- [Challenge you faced in a project](#challenge-you-faced-in-a-project)
+- [Biggest mistake](#biggest-mistake)
+- [Project didn’t work as expected](#project-didnt-work-as-expected)
+- [Took initiative](#took-initiative)
+- [Requirement unclear / ambiguous](#requirement-unclear--ambiguous)
+- [Power BI dashboard created](#power-bi-dashboard-created)
+- [Order Missing from ERP](#order-missing-from-erp)
+- [Root Cause Analysis](#root-cause-analysis)
+- [SQL functions use regularly](#sql-functions-use-regularly)
+- [Power BI performance](#power-bi-performance)
+- [CTE](#cte)
+- [DAX](#dax)
+- [Questions](#questions)
 
 
 
@@ -181,3 +232,29 @@ DAX is the formula language used in Power BI for creating calculated columns, me
 - What is your expectation from the new hire in first 3 to 6 months?
 - What is the team size?
 - What are the next steps of the hiring process?
+
+## Table of Contents
+
+- [Introduce](#introduce)
+- [Aspire Ontario Exp (Application Support Analyst)](#aspire-ontario-exp-application-support-analyst)
+- [Meallens Exp (Data Analyst)](#meallens-exp-data-analyst)
+- [Project 1: ERP Data Issue Resolution System](#project-1-erp-data-issue-resolution-system)
+- [Project 2: Power BI Operations Support Dashboard](#project-2-power-bi-operations-support-dashboard)
+- [Zapier](#zapier)
+- [About this company?](#about-this-company)
+- [Why This Company?](#why-this-company)
+- [What you will learn from this job?](#what-you-will-learn-from-this-job)
+- [Handle a production incident](#handle-a-production-incident)
+- [Challenge you faced in a project](#challenge-you-faced-in-a-project)
+- [Biggest mistake](#biggest-mistake)
+- [Project didn’t work as expected](#project-didnt-work-as-expected)
+- [Took initiative](#took-initiative)
+- [Requirement unclear / ambiguous](#requirement-unclear--ambiguous)
+- [Power BI dashboard created](#power-bi-dashboard-created)
+- [Order Missing from ERP](#order-missing-from-erp)
+- [Root Cause Analysis](#root-cause-analysis)
+- [SQL functions use regularly](#sql-functions-use-regularly)
+- [Power BI performance](#power-bi-performance)
+- [CTE](#cte)
+- [DAX](#dax)
+- [Questions](#questions)
