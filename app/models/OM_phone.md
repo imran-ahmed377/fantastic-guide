@@ -125,22 +125,22 @@ What stands out to me is that OMERS is also a global investor, so beyond pension
 I want to work here because it combines backend engineering with real-world AI/LLM applications at scale. I will learn how to build and deploy production-grade microservices, work with cloud platforms, and improve my skills in designing and evaluating AI systems like RAG and LLM-based solutions.
 
 # Challenge you Faced in a Project
-While building a RAG-based chatbot at Aspire Ontario, the AI often returned incorrect answers even though the information existed in our documents. I found that large document chunks were causing poor retrieval. I reduced chunk size and improved chunk overlap using LangChain, which significantly improved answer accuracy.
+At Aspire Ontario, While building a RAG-based chatbot, the AI often returned incorrect answers even though the information existed in our documents. I found that large document chunks were causing poor retrieval. I reduced chunk size and improved chunk overlap using LangChain, which significantly improved answer accuracy.
 
 # Disagree with Teammates
 During an AI project, a teammate wanted to send entire documents to the LLM, while I suggested using retrieval to send only relevant sections. We tested both approaches and compared results. The retrieval-based approach was faster, cheaper, and more accurate, so we decided to use it.
 
 # Mistake
-Early in a FastAPI project, I made a database schema change and forgot to update one API endpoint. This caused errors in testing. I fixed the issue, added migration checks to my workflow, and became more careful about testing all dependent APIs before deployment.
+Once in a FastAPI project, I made a database schema change and forgot to update one API endpoint. This caused errors in testing. I fixed the issue, added migration checks to my workflow, and became more careful about testing all dependent APIs before deployment.
 
 # Project Didn't Worked as Expected
 I built a document summarization feature using Azure OpenAI. The summaries sometimes missed important details from long documents. After investigating, I realized the model was hitting context limits. I split documents into smaller sections and combined the partial summaries, which improved the final output quality.
 
 # Initiative / Improved a process
-I noticed developers were manually testing AI prompts every time we changed the application. I created a small evaluation script in Python that automatically ran a set of test questions and compared outputs. This helped us catch issues faster and saved time during development.
+At Meallens, once I noticed developers were manually testing AI prompts every time we changed the application. I created a small evaluation script in Python that automatically ran a set of test questions and compared outputs. This helped us catch issues faster and saved time during development.
 
 # Requirement unclear / ambiguity
-A stakeholder requested an "AI insights" feature but wasn't clear about the expected output. Instead of starting development immediately, I created a simple prototype with a few example outputs and reviewed it with them. Their feedback helped clarify the requirements and prevented rework later.
+In this type of situation, instead of starting development immediately, I created a simple prototype with a few example outputs and reviewed it with them. Their feedback helped clarify the requirements and prevented rework later.
 
 
 # Questions
