@@ -5,6 +5,7 @@
 - [Meallens Exp](#meallens-exp)
 - [Project 1: LLM-Powered RAG Knowledge System](#project-1-llm-powered-rag-knowledge-system)
 - [Project 2: AI-Enabled Microservices Backend Platform](#project-2-ai-enabled-microservices-backend-platform)
+- [Automation / Zapier](#zapier)
 - [What do you know about OMERS?](#what-do-you-know-about-omers)
 - [Why you want to work here? / What you will learn?](#why-you-want-to-work-here--what-you-will-learn)
 - [Challenge you Faced in a Project](#challenge-you-faced-in-a-project)
@@ -83,6 +84,16 @@ Overall, my role was focused on building stable backend systems, improving perfo
 
 ---
 
+# Zapier
+
+I have worked on an Automated Lead Capture and Follow-Up System project using Zapier. The goal was to reduce manual work and make sure every new lead gets a quick response.
+
+When a customer fills out a form on the Google Forms, Zapier automatically starts the workflow. First, the lead information is saved in Google Sheets.
+
+Then, a notification is sent to the Slack channel so the team know a new lead has arrived. After that, the system automatically sends a personalized welcome email to the customer through Gmail. If a lead meets certain criteria, Zapier automatically assigns that lead to the high-priority for faster follow-up.
+
+
+---
 
 
 # Table of Contents
@@ -92,6 +103,7 @@ Overall, my role was focused on building stable backend systems, improving perfo
 - [Meallens Exp](#meallens-exp)
 - [Project 1: LLM-Powered RAG Knowledge System](#project-1-llm-powered-rag-knowledge-system)
 - [Project 2: AI-Enabled Microservices Backend Platform](#project-2-ai-enabled-microservices-backend-platform)
+- [Automation / Zapier](#zapier)
 - [What do you know about OMERS?](#what-do-you-know-about-omers)
 - [Why you want to work here? / What you will learn?](#why-you-want-to-work-here--what-you-will-learn)
 - [Challenge you Faced in a Project](#challenge-you-faced-in-a-project)
@@ -145,6 +157,7 @@ A stakeholder requested an "AI insights" feature but wasn't clear about the expe
 - [Meallens Exp](#meallens-exp)
 - [Project 1: LLM-Powered RAG Knowledge System](#project-1-llm-powered-rag-knowledge-system)
 - [Project 2: AI-Enabled Microservices Backend Platform](#project-2-ai-enabled-microservices-backend-platform)
+- [Automation / Zapier](#zapier)
 - [What do you know about OMERS?](#what-do-you-know-about-omers)
 - [Why you want to work here? / What you will learn?](#why-you-want-to-work-here--what-you-will-learn)
 - [Challenge you Faced in a Project](#challenge-you-faced-in-a-project)
