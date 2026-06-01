@@ -112,3 +112,8 @@ I also implemented data quality monitoring jobs that ran daily and logged metric
 When a major issue occurred, I would trace it back to the source system using pipeline logs and fix the transformation logic or ingestion rules.
 
 Finally, I added alerts so the team would be notified early if data quality dropped, which helped prevent bad data from reaching reporting or machine learning systems.
+
+# Questions
+- What is your expectation from the new hire in first 3 to 6 months?
+- What is the team size?
+- What are the next steps of the hiring process?

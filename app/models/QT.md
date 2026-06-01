@@ -12,14 +12,14 @@
 - [Why This Company?](#why-this-company)
 - [What you will learn from this job?](#what-you-will-learn-from-this-job)
 - [Handle a production incident](#handle-a-production-incident)
-- [Challenge you faced in a project](#challenge-you-faced-in-a-project)
+- [Production Issue / Challenge you faced in a project](#challenge-you-faced-in-a-project)
 - [Biggest mistake](#biggest-mistake)
 - [Project didn’t work as expected](#project-didnt-work-as-expected)
 - [Took initiative](#took-initiative)
 - [Requirement unclear / ambiguous](#requirement-unclear--ambiguous)
 - [Power BI dashboard created](#power-bi-dashboard-created)
 - [Order Missing from ERP](#order-missing-from-erp)
-- [Root Cause Analysis](#root-cause-analysis)
+- [Troubleshoot / Root Cause Analysis](#root-cause-analysis)
 - [SQL functions use regularly](#sql-functions-use-regularly)
 - [Power BI performance](#power-bi-performance)
 - [CTE](#cte)
@@ -72,6 +72,13 @@ The method I followed was: collect requirements from users, design SQL datasets,
 
 The result was improved visibility for managers, faster decision-making, and a 40% increase in dashboard usage because users relied on it instead of manual reports.
 
+# Zapier
+I have worked on an Automated Lead Capture and Follow-Up System project using Zapier. The goal was to reduce manual work and make sure every new lead gets a quick response.
+
+When a customer fills out a form on the Google Forms, Zapier automatically starts the workflow. First, the lead information is saved in Google Sheets.
+
+Then, a notification is sent to the Slack channel so the team know a new lead has arrived. After that, the system automatically sends a personalized welcome email to the customer through Gmail. If a lead meets certain criteria, Zapier automatically assigns that lead to the high-priority for faster follow-up.
+
 
 ## Table of Contents
 
@@ -85,14 +92,14 @@ The result was improved visibility for managers, faster decision-making, and a 4
 - [Why This Company?](#why-this-company)
 - [What you will learn from this job?](#what-you-will-learn-from-this-job)
 - [Handle a production incident](#handle-a-production-incident)
-- [Challenge you faced in a project](#challenge-you-faced-in-a-project)
+- [Production Issue / Challenge you faced in a project](#challenge-you-faced-in-a-project)
 - [Biggest mistake](#biggest-mistake)
 - [Project didn’t work as expected](#project-didnt-work-as-expected)
 - [Took initiative](#took-initiative)
 - [Requirement unclear / ambiguous](#requirement-unclear--ambiguous)
 - [Power BI dashboard created](#power-bi-dashboard-created)
 - [Order Missing from ERP](#order-missing-from-erp)
-- [Root Cause Analysis](#root-cause-analysis)
+- [Troubleshoot / Root Cause Analysis](#root-cause-analysis)
 - [SQL functions use regularly](#sql-functions-use-regularly)
 - [Power BI performance](#power-bi-performance)
 - [CTE](#cte)
@@ -102,12 +109,7 @@ The result was improved visibility for managers, faster decision-making, and a 4
 
 
 
-# Zapier
-I have worked on an Automated Lead Capture and Follow-Up System project using Zapier. The goal was to reduce manual work and make sure every new lead gets a quick response.
 
-When a customer fills out a form on the Google Forms, Zapier automatically starts the workflow. First, the lead information is saved in Google Sheets.
-
-Then, a notification is sent to the Slack channel so the team know a new lead has arrived. After that, the system automatically sends a personalized welcome email to the customer through Gmail. If a lead meets certain criteria, Zapier automatically assigns that lead to the high-priority for faster follow-up.
 
 # About this company?
 Quantum Lifecycle Partners is Canada’s largest IT asset disposition and electronics recycling company. They focus on securely processing retired IT equipment, data destruction, and recovering materials sustainably.
@@ -121,29 +123,19 @@ From this role, I expect to deepen my experience in supporting enterprise system
 # Handle a production incident
 I first assess impact and priority, then gather details from users and logs. I investigate using SQL queries and application monitoring to identify root cause. If possible, I apply a workaround, communicate updates, and ensure resolution. Finally, I document RCA and work with teams to implement a permanent fix.
 
-
-
-
-
-
 # Challenge you faced in a project
-
 In one project, we had frequent ERP data issues caused by failed integrations. It was hard to identify the root cause quickly. I used SQL to trace data flow and logs, found the failure point, and worked with the team to fix it. This improved system stability.
 
 # Biggest mistake
-
 Early in my role, I once ran a SQL update without fully validating all conditions. It affected more records than expected. I quickly informed the team, rolled back the change, and fixed it properly. After that, I always double-check scripts and use safer validation steps.
 
 # Project didn’t work as expected
-
 In one Power BI dashboard, performance was slow after publishing. Users were frustrated. I reviewed the data model, removed unnecessary columns, optimized DAX, and improved relationships. After optimization, the dashboard loaded faster and became widely used by managers.
 
 # Took initiative
-
 I noticed recurring data issues were being fixed manually every time. I created SQL validation scripts to automatically detect these issues early. This reduced manual effort and helped the team resolve problems faster before they reached users.
 
 # Requirement unclear / ambiguous
-
 In a reporting project, the requirements were not clearly defined by stakeholders. I scheduled a short discussion to clarify expectations, asked specific questions, and created a sample report for confirmation. This helped align everyone and avoided rework later.
 
 
@@ -164,14 +156,14 @@ I built an operational dashboard combining ERP (Enterprise Resource Planning) an
 - [Why This Company?](#why-this-company)
 - [What you will learn from this job?](#what-you-will-learn-from-this-job)
 - [Handle a production incident](#handle-a-production-incident)
-- [Challenge you faced in a project](#challenge-you-faced-in-a-project)
+- [Production Issue / Challenge you faced in a project](#challenge-you-faced-in-a-project)
 - [Biggest mistake](#biggest-mistake)
 - [Project didn’t work as expected](#project-didnt-work-as-expected)
 - [Took initiative](#took-initiative)
 - [Requirement unclear / ambiguous](#requirement-unclear--ambiguous)
 - [Power BI dashboard created](#power-bi-dashboard-created)
 - [Order Missing from ERP](#order-missing-from-erp)
-- [Root Cause Analysis](#root-cause-analysis)
+- [Troubleshoot / Root Cause Analysis](#root-cause-analysis)
 - [SQL functions use regularly](#sql-functions-use-regularly)
 - [Power BI performance](#power-bi-performance)
 - [CTE](#cte)
@@ -209,7 +201,6 @@ I built an operational dashboard combining ERP (Enterprise Resource Planning) an
 - Stored Procedures
 
 # Power BI performance
-
 - Star schema
 - Reduce cardinality
 - Avoid unnecessary columns
@@ -225,7 +216,6 @@ DAX is the formula language used in Power BI for creating calculated columns, me
 
 
 # Questions
-
 - What is your expectation from the new hire in first 3 to 6 months?
 - What is the team size?
 - What are the next steps of the hiring process?
@@ -242,14 +232,14 @@ DAX is the formula language used in Power BI for creating calculated columns, me
 - [Why This Company?](#why-this-company)
 - [What you will learn from this job?](#what-you-will-learn-from-this-job)
 - [Handle a production incident](#handle-a-production-incident)
-- [Challenge you faced in a project](#challenge-you-faced-in-a-project)
+- [Production Issue / Challenge you faced in a project](#challenge-you-faced-in-a-project)
 - [Biggest mistake](#biggest-mistake)
 - [Project didn’t work as expected](#project-didnt-work-as-expected)
 - [Took initiative](#took-initiative)
 - [Requirement unclear / ambiguous](#requirement-unclear--ambiguous)
 - [Power BI dashboard created](#power-bi-dashboard-created)
 - [Order Missing from ERP](#order-missing-from-erp)
-- [Root Cause Analysis](#root-cause-analysis)
+- [Troubleshoot / Root Cause Analysis](#root-cause-analysis)
 - [SQL functions use regularly](#sql-functions-use-regularly)
 - [Power BI performance](#power-bi-performance)
 - [CTE](#cte)
