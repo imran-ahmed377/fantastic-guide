@@ -103,7 +103,6 @@ The result was improved visibility for managers, faster decision-making, and a 4
 
 
 # Zapier
-
 I have worked on an Automated Lead Capture and Follow-Up System project using Zapier. The goal was to reduce manual work and make sure every new lead gets a quick response.
 
 When a customer fills out a form on the Google Forms, Zapier automatically starts the workflow. First, the lead information is saved in Google Sheets.
