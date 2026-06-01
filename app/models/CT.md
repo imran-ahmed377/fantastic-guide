@@ -10,10 +10,17 @@ Before that, I worked at Meallens as a Machine Learning and Data Engineering Dev
 
 Overall, my experience has focused on building reliable data systems, improving data quality, and helping organizations make better decisions using data. I enjoy working with cross-functional teams and solving data-related challenges that create business value.
 
-# Aspire Experience
+# Aspire Experience (Data Engineer)
+At Aspire Ontario, I contributed to building AI-driven solutions for a CRM platform.
 
-# Meallens Experience
-At Meallens, I worked as a Machine Learning and Data Engineering Developer, focusing on building scalable data systems and supporting machine learning workflows.
+One of my key projects was developing an AI-powered voice assistant for the CRM system. I used Azure services like Azure Data Factory, Azure Databricks, and Azure OpenAI integrations to process customer data and support real-time voice interactions.
+
+My role included building data pipelines, preparing structured customer data, and ensuring the AI system had clean and reliable inputs. I also helped integrate the backend data workflows with the assistant so it could respond accurately and quickly.
+
+The impact was improved customer support efficiency and faster access to CRM information through voice commands, reducing manual search effort for users. It also made the CRM system more interactive and easier to use for non-technical teams.
+
+# Meallens Experience (Machine Learning)
+At Meallens, I worked on building scalable data systems and supporting machine learning workflows.
 
 I designed and implemented a data lake architecture using Azure Data Lake and Delta Lake, which helped centralize and organize large volumes of structured and unstructured data. I also built distributed data processing jobs using PySpark for high-volume analytics use cases.
 
