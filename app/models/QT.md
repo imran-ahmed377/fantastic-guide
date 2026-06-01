@@ -1,7 +1,5 @@
 
 
-# Introduce
-
 ## Table of Contents
 
 - [Introduce](#introduce)
@@ -28,7 +26,7 @@
 - [DAX](#dax)
 - [Questions](#questions)
 
-
+# Introduce
 I have experience in application and production support roles. My work has involved troubleshooting application issues, investigating data problems using SQL, supporting business users, and creating reports and dashboards in Power BI. I've worked closely with operations teams and developers to resolve incidents and improve business processes. What attracted me to this role is the opportunity to combine application support, SQL investigation, Power BI reporting, and business analysis activities in one position.
 
 
