@@ -1,4 +1,17 @@
-# Table of Content
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Aspire Experience (Data Engineer)](#aspire-experience-data-engineer)
+- [Meallens Experience (Machine Learning)](#meallens-experience-machine-learning)
+- [Project 1: Enterprise ML Monitoring Platform](#project-1-enterprise-ml-monitoring-platform)
+- [Project 2: Retail Data Lakehouse Architecture](#project-2-retail-data-lakehouse-architecture)
+- [Zapier](#zapier)
+- [Data Pipeline you built](#data-pipeline-you-built)
+- [Machine Learning Model Deploy](#machine-learning-model-deploy)
+- [Model Monitoring After Deployment](#model-monitoring-after-deployment)
+- [Azure Service Used](#azure-service-used)
+- [Handle Data Quality Issue in ETL](#handle-data-quality-issue-in-etl)
+- [Questions](#questions)
 
 
 # Introduction
