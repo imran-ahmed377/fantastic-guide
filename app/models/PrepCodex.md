@@ -215,6 +215,45 @@ Data drift occurs when the input data changes over time, leading to model decay.
     2. Compare distributions (histograms): Look at how values are spread, not just the average.
     3. Statistical tests: Example: Kolmogorov-Smirnov (KS) Test Compare two dataset cumulative distribution (CDF) curves at every point, check the difference between them.
 
+
+# Hallucinations Handling:
+I track hallucinations using RAGAS faithfulness metrics and query logs, and I reduce them through strong retrieval, strict prompting, confidence thresholds, and continuous evaluation.
+
+1. How I Track:
+I used the RAGAS framework to measure answer faithfulness, which checks whether the generated response is actually grounded in the retrieved context. I also monitor context precision and recall to ensure the model was retrieving the right information before generating answers. Also, I logged user queries and flagged cases where the response contained information not present in retrieved documents, The confidence score (similarity score) was below a defined threshold. I occasionally reviewed these failed or low-confidence cases to identify patterns of hallucination. 
+
+2. How I Reduced:
+a. Strong Retrieval (Most Important)
+I improved retrieval quality using top-K vector search with cosine similarity in Azure AI Search. 
+I also used hybrid search (BM25 + vector search) to ensure both semantic and keyword relevance. 
+
+b. Prompt Engineering Controls
+I designed strict system prompts such as:
+“Answer only based on the provided context. If the information is not available, say ‘I don’t have enough data.’” 
+This significantly reduced the model’s tendency to “make up” answers. 
+
+c. Confidence Threshold + Fallback
+I applied a similarity score threshold (e.g., cosine similarity cutoff). 
+If no retrieved documents met the threshold, the system returned a fallback response instead of generating a hallucinated answer. 
+
+d. Context Grounding
+I ensured that only relevant, high-quality chunks (500–1000 tokens) were passed to the model. 
+I avoided overloading the prompt with noisy or irrelevant data, which can increase hallucination risk. 
+
+e. Model Choice
+I used gpt-4o because it has stronger grounding and instruction-following capabilities compared to smaller models, which helped reduce hallucinations. 
+
+f. Continuous Feedback Loop
+I logged hallucinated responses and used them to: 
+Improve prompt design 
+Adjust retrieval parameters (top-K, chunking) 
+Refine embeddings 
+
+Result / Impact
+These techniques significantly improved answer faithfulness and trustworthiness 
+Reduced hallucination cases over time through iterative tuning 
+Increased user confidence in the system for real-time decision-making 
+
 ---
 # Table of Contents
 
