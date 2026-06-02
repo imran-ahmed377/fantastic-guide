@@ -11,6 +11,23 @@
 - [Model Monitoring After Deployment](#model-monitoring-after-deployment)
 - [Azure Service Used](#azure-service-used)
 - [Handle Data Quality Issue in ETL](#handle-data-quality-issue-in-etl)
+- [Data Preprocessing](#data-preprocessing)
+    - [1. Data Collection / Ingestion](#1-data-collection--ingestion)
+    - [2. Data Cleaning](#2-data-cleaning)
+    - [3. Data Integration](#3-data-integration)
+    - [4. Data Transformation](#4-data-transformation)
+    - [5. Feature Engineering](#5-feature-engineering)
+    - [6. Data Validation](#6-data-validation)
+- [Missing Value Handling](#missing-value-handling)
+    - [1. Row Drop](#1-row-drop)
+    - [2. Column Drop](#2-column-drop)
+    - [3. Mean Imputation](#3-mean-imputation)
+    - [4. Median Imputation](#4-median-imputation)
+    - [5. Mode Imputation](#5-mode-imputation)
+- [MLOps Lifecycle](#mlops-lifecycle)
+- [Deploying Model into Production](#deploying-model-into-production)
+- [Monitoring Model in Production](#monitoring-model-in-production)
+- [Monitoring Data Drift](#monitoring-data-drift)
 - [Questions](#questions)
 
 
@@ -20,8 +37,6 @@ I’m a Data Engineer with experience working on Machine Learning and AI-based a
 In my recent role at Aspire Ontario, I worked mainly on building and maintaining data pipelines on Azure that processed over half a million records anually. I also improved data quality, optimized data workflows, and helped deploy machine learning models into production.
 
 I enjoy building systems that are functional, scalable and intelligent, and I am very excited to contribute my expertise to a team where I can continue solving challenging problems, building impactful products, and learn from the experienced engineers.
-
-
 
 
 # Aspire Experience (Data Engineer)
@@ -71,6 +86,38 @@ When a customer fills out a form on the Google Forms, Zapier automatically start
 Then, a notification is sent to the Slack channel so the team know a new lead has arrived. After that, the system automatically sends a personalized welcome email to the customer through Gmail. If a lead meets certain criteria, Zapier automatically assigns that lead to the high-priority for faster follow-up.
 
 
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Aspire Experience (Data Engineer)](#aspire-experience-data-engineer)
+- [Meallens Experience (Machine Learning)](#meallens-experience-machine-learning)
+- [Project 1: Enterprise ML Monitoring Platform](#project-1-enterprise-ml-monitoring-platform)
+- [Project 2: Retail Data Lakehouse Architecture](#project-2-retail-data-lakehouse-architecture)
+- [Zapier](#zapier)
+- [Data Pipeline you built](#data-pipeline-you-built)
+- [Machine Learning Model Deploy](#machine-learning-model-deploy)
+- [Model Monitoring After Deployment](#model-monitoring-after-deployment)
+- [Azure Service Used](#azure-service-used)
+- [Handle Data Quality Issue in ETL](#handle-data-quality-issue-in-etl)
+- [Data Preprocessing](#data-preprocessing)
+    - [1. Data Collection / Ingestion](#1-data-collection--ingestion)
+    - [2. Data Cleaning](#2-data-cleaning)
+    - [3. Data Integration](#3-data-integration)
+    - [4. Data Transformation](#4-data-transformation)
+    - [5. Feature Engineering](#5-feature-engineering)
+    - [6. Data Validation](#6-data-validation)
+- [Missing Value Handling](#missing-value-handling)
+    - [1. Row Drop](#1-row-drop)
+    - [2. Column Drop](#2-column-drop)
+    - [3. Mean Imputation](#3-mean-imputation)
+    - [4. Median Imputation](#4-median-imputation)
+    - [5. Mode Imputation](#5-mode-imputation)
+- [MLOps Lifecycle](#mlops-lifecycle)
+- [Deploying Model into Production](#deploying-model-into-production)
+- [Monitoring Model in Production](#monitoring-model-in-production)
+- [Monitoring Data Drift](#monitoring-data-drift)
+- [Questions](#questions)
+
 # Data Pipeline you built
 At Aspire Ontario, I built data pipeline using Azure Data Factory and Azure Databricks.
 
@@ -96,7 +143,7 @@ After a model is deployed, I monitor both the model's performance and the health
 
 In one project, we used MLflow to track model versions and performance metrics. I monitored metrics such as prediction accuracy, inference latency, and error rates. I also compared new prediction data with the training data to detect data drift or changes in data patterns.
 
-Using Azure Databricks and PySpark, I built automated monitoring jobs that generated daily reports and alerts when metrics crossed predefined thresholds.
+I built automated monitoring jobs using Azure Databricks and PySpark, that generated daily reports and alerts when metrics crossed predefined thresholds.
 
 For example, if model accuracy dropped significantly or prediction response times increased, the team would be notified so we could investigate quickly.
 
@@ -105,13 +152,13 @@ I also worked on an ML monitoring platform that tracked model drift, accuracy, a
 # Azure Service Used
 I have mainly worked with Azure Data Factory, Azure Databricks, Azure Data Lake, Azure Synapse Analytics, and MLflow on Azure.
 
-A typical workflow started with Azure Data Factory, which was used to schedule and orchestrate data movement from source systems. The data was stored in Azure Data Lake, which acted as our central storage layer.
+A typical workflow started with **Azure Data Factory**, which was used to schedule and orchestrate data movement from source systems. The data was stored in Azure Data Lake, which acted as our central storage layer.
 
-Next, Azure Databricks processed the data using PySpark. This included data cleaning, transformation, validation, and feature engineering. The processed data was then stored back in the lake in a structured format.
+Next, **Azure Databricks** processed the data using PySpark. This included data cleaning, transformation, validation, and feature engineering. The processed data was then stored back in the lake in a structured format.
 
-For reporting and analytics, the curated data was made available through Azure Synapse Analytics, where business users and analysts could access it efficiently.
+For reporting and analytics, the curated data was made available through **Azure Synapse Analytics**, where business users and analysts could access it efficiently.
 
-For machine learning projects, we used MLflow to track experiments, manage model versions, and support deployment.
+For machine learning projects, we used **MLflow** to track experiments, manage model versions, and support deployment.
 
 Together, these services created an end-to-end platform that automated data ingestion, processing, analytics, and machine learning workflows while remaining scalable and reliable.
 
@@ -127,6 +174,39 @@ I also implemented data quality monitoring jobs that ran daily and logged metric
 When a major issue occurred, I would trace it back to the source system using pipeline logs and fix the transformation logic or ingestion rules.
 
 Finally, I added alerts so the team would be notified early if data quality dropped, which helped prevent bad data from reaching reporting or machine learning systems.
+
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Aspire Experience (Data Engineer)](#aspire-experience-data-engineer)
+- [Meallens Experience (Machine Learning)](#meallens-experience-machine-learning)
+- [Project 1: Enterprise ML Monitoring Platform](#project-1-enterprise-ml-monitoring-platform)
+- [Project 2: Retail Data Lakehouse Architecture](#project-2-retail-data-lakehouse-architecture)
+- [Zapier](#zapier)
+- [Data Pipeline you built](#data-pipeline-you-built)
+- [Machine Learning Model Deploy](#machine-learning-model-deploy)
+- [Model Monitoring After Deployment](#model-monitoring-after-deployment)
+- [Azure Service Used](#azure-service-used)
+- [Handle Data Quality Issue in ETL](#handle-data-quality-issue-in-etl)
+- [Data Preprocessing](#data-preprocessing)
+    - [1. Data Collection / Ingestion](#1-data-collection--ingestion)
+    - [2. Data Cleaning](#2-data-cleaning)
+    - [3. Data Integration](#3-data-integration)
+    - [4. Data Transformation](#4-data-transformation)
+    - [5. Feature Engineering](#5-feature-engineering)
+    - [6. Data Validation](#6-data-validation)
+- [Missing Value Handling](#missing-value-handling)
+    - [1. Row Drop](#1-row-drop)
+    - [2. Column Drop](#2-column-drop)
+    - [3. Mean Imputation](#3-mean-imputation)
+    - [4. Median Imputation](#4-median-imputation)
+    - [5. Mode Imputation](#5-mode-imputation)
+- [MLOps Lifecycle](#mlops-lifecycle)
+- [Deploying Model into Production](#deploying-model-into-production)
+- [Monitoring Model in Production](#monitoring-model-in-production)
+- [Monitoring Data Drift](#monitoring-data-drift)
+- [Questions](#questions)
+
 
 # Data Preprocessing
 
@@ -220,3 +300,36 @@ Data drift occurs when the input data changes over time, leading to model decay.
 - What is your expectation from the new hire in first 3 to 6 months?
 - What is the team size?
 - What are the next steps of the hiring process?
+
+
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Aspire Experience (Data Engineer)](#aspire-experience-data-engineer)
+- [Meallens Experience (Machine Learning)](#meallens-experience-machine-learning)
+- [Project 1: Enterprise ML Monitoring Platform](#project-1-enterprise-ml-monitoring-platform)
+- [Project 2: Retail Data Lakehouse Architecture](#project-2-retail-data-lakehouse-architecture)
+- [Zapier](#zapier)
+- [Data Pipeline you built](#data-pipeline-you-built)
+- [Machine Learning Model Deploy](#machine-learning-model-deploy)
+- [Model Monitoring After Deployment](#model-monitoring-after-deployment)
+- [Azure Service Used](#azure-service-used)
+- [Handle Data Quality Issue in ETL](#handle-data-quality-issue-in-etl)
+- [Data Preprocessing](#data-preprocessing)
+    - [1. Data Collection / Ingestion](#1-data-collection--ingestion)
+    - [2. Data Cleaning](#2-data-cleaning)
+    - [3. Data Integration](#3-data-integration)
+    - [4. Data Transformation](#4-data-transformation)
+    - [5. Feature Engineering](#5-feature-engineering)
+    - [6. Data Validation](#6-data-validation)
+- [Missing Value Handling](#missing-value-handling)
+    - [1. Row Drop](#1-row-drop)
+    - [2. Column Drop](#2-column-drop)
+    - [3. Mean Imputation](#3-mean-imputation)
+    - [4. Median Imputation](#4-median-imputation)
+    - [5. Mode Imputation](#5-mode-imputation)
+- [MLOps Lifecycle](#mlops-lifecycle)
+- [Deploying Model into Production](#deploying-model-into-production)
+- [Monitoring Model in Production](#monitoring-model-in-production)
+- [Monitoring Data Drift](#monitoring-data-drift)
+- [Questions](#questions)
