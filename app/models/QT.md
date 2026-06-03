@@ -22,7 +22,7 @@
 - [Troubleshoot / Root Cause Analysis](#root-cause-analysis)
 - [SQL functions use regularly](#sql-functions-use-regularly)
 - [Power BI performance](#power-bi-performance)
-- [CTE](#cte)
+- [NON Technical](#non-technical-user-explain)
 - [DAX](#dax)
 - [Questions](#questions)
 
@@ -124,7 +124,14 @@ From this role, I expect to deepen my experience in supporting enterprise system
 I first assess impact and priority, then gather details from users and logs. I investigate using SQL queries and application monitoring to identify root cause. If possible, I apply a workaround, communicate updates, and ensure resolution. Finally, I document RCA and work with teams to implement a permanent fix.
 
 # Challenge you faced in a project
-In one project, we had frequent ERP data issues caused by failed integrations. It was hard to identify the root cause quickly. I used SQL to trace data flow and logs, found the failure point, and worked with the team to fix it. This improved system stability.
+Situation: In my previous role, a user from the purchasing department reported that they were unable to create purchase orders in the ERP system. They were receiving an error message, and it was delaying an urgent order needed for production.
+
+Task: My responsibility was to identify the cause of the issue, restore functionality as quickly as possible, and minimize the impact on business operations.
+
+Action: I first gathered details from the user, including screenshots and the exact steps that produced the error. I reviewed the application's logs and checked the relevant data in the SQL database. During the investigation, I found that a required supplier record contained incomplete information due to a recent data update. I corrected the data issue, tested the process in a non-production environment, and then had the user try the transaction again. I also documented the root cause and resolution in our knowledge base.
+
+Result: The user was able to successfully create the purchase order, production delays were avoided, and the documentation helped the team resolve a similar issue much faster in the future.
+
 
 # Biggest mistake
 Early in my role, I once ran a SQL update without fully validating all conditions. It affected more records than expected. I quickly informed the team, rolled back the change, and fixed it properly. After that, I always double-check scripts and use safer validation steps.
@@ -208,8 +215,10 @@ I built an operational dashboard combining ERP (Enterprise Resource Planning) an
 - Incremental refresh
 - Proper relationships
 
-# CTE
-A CTE (Common Table Expression) in SQL is a temporary, named result set that you can reference within a query. It’s defined using the WITH keyword and exists only for the duration of that query.
+# Non Technical User Explain
+When explaining something to a non-technical user, I avoid technical jargon and focus on the business impact rather than the technology behind it. I try to use simple language, relatable examples, and break the explanation into small steps.
+
+For example, if a user is having trouble accessing an application, instead of talking about authentication protocols or server connectivity, I might say, 'The system isn't recognizing your account information correctly, so we're going to refresh your access and test it again.' This helps them understand what's happening without overwhelming them with technical details.
 
 # DAX
 DAX is the formula language used in Power BI for creating calculated columns, measures, and business calculations.
