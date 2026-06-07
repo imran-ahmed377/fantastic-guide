@@ -1,4 +1,4 @@
-
+<!-- 
 
 ## Table of Contents
 
@@ -253,4 +253,4 @@ DAX is the formula language used in Power BI for creating calculated columns, me
 - [Power BI performance](#power-bi-performance)
 - [CTE](#cte)
 - [DAX](#dax)
-- [Questions](#questions)
+- [Questions](#questions) -->
