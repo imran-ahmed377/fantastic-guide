@@ -116,36 +116,124 @@ Then, a notification is sent to the Slack channel so the team know a new lead ha
 # About this company?
 Quantum Lifecycle Partners is Canada’s largest IT asset disposition and electronics recycling company. They focus on securely processing retired IT equipment, data destruction, and recovering materials sustainably.
 
-# Why This Company?
-I like that Quantum combines technology operations with environmental responsibility. The role also matches my background because it combines application support, SQL analysis, Power BI reporting, and stakeholder interaction, which are areas I enjoy and have experience in.
+    2. Why are you interested in this position?
+    Answer:
 
-# What you will learn from this job?
-From this role, I expect to deepen my experience in supporting enterprise systems like Dynamics 365 and WMS platforms in a real production environment. I also want to strengthen my SQL troubleshooting, Power BI data modeling, and root cause analysis skills while working closely with business users and understanding end-to-end operational processes.
+    "Three things stood out to me.
 
-# Handle a production incident
-I first assess impact and priority, then gather details from users and logs. I investigate using SQL queries and application monitoring to identify root cause. If possible, I apply a workaround, communicate updates, and ensure resolution. Finally, I document RCA and work with teams to implement a permanent fix.
+    - the opportunity to build software that directly impacts businesses instead of working on isolated features.
 
-# Challenge you faced in a project
-Situation: In my previous role, a user from the purchasing department reported that they were unable to create purchase orders in the ERP system. They were receiving an error message, and it was delaying an urgent order needed for production.
+    - the emphasis on AI-assisted development. I already use AI daily, and I'd like to work in a team where it's part of the engineering culture.
 
-Task: My responsibility was to identify the cause of the issue, restore functionality as quickly as possible, and minimize the impact on business operations.
+    - the variety of projects. Working across different portfolio companies sounds like a great opportunity to learn quickly."
 
-Action: I first gathered details from the user, including screenshots and the exact steps that produced the error. I reviewed the application's logs and checked the relevant data in the SQL database. During the investigation, I found that a required supplier record contained incomplete information due to a recent data update. I corrected the data issue, tested the process in a non-production environment, and then had the user try the transaction again. I also documented the root cause and resolution in our knowledge base.
+3. Tell me about a project you're proud of.
+Example:
 
-Result: The user was able to successfully create the purchase order, production delays were avoided, and the documentation helped the team resolve a similar issue much faster in the future.
+"One project I'm particularly proud of was building a web application that automated a manual process.
 
+I designed the backend API using Python, connected it to a SQL database, and built the frontend in React. I also implemented authentication and deployment.
 
-# Biggest mistake
-Early in my role, I once ran a SQL update without fully validating all conditions. It affected more records than expected. I quickly informed the team, rolled back the change, and fixed it properly. After that, I always double-check scripts and use safer validation steps.
+The project taught me how to gather requirements, prioritize features, and iterate based on user feedback."
 
-# Project didn’t work as expected
-In one Power BI dashboard, performance was slow after publishing. Users were frustrated. I reviewed the data model, removed unnecessary columns, optimized DAX, and improved relationships. After optimization, the dashboard loaded faster and became widely used by managers.
+Then mention AI: "Throughout development, I used AI tools for code generation, debugging, and writing documentation, which helped me move faster while still reviewing all generated code."
 
-# Took initiative
-I noticed recurring data issues were being fixed manually every time. I created SQL validation scripts to automatically detect these issues early. This reduced manual effort and helped the team resolve problems faster before they reached users.
+    4. How do you use AI in your development process?
+    "I use AI throughout the software development lifecycle.
 
-# Requirement unclear / ambiguous
-In a reporting project, the requirements were not clearly defined by stakeholders. I scheduled a short discussion to clarify expectations, asked specific questions, and created a sample report for confirmation. This helped align everyone and avoided rework later.
+    During planning, I use it to brainstorm architecture and identify edge cases.
+
+    During implementation, I use it to generate boilerplate code, APIs, database queries, and unit tests.
+
+    During debugging, I ask it to explain errors or suggest alternative approaches.
+
+    I treat AI as a collaborator rather than an authority. I always review, test, and validate the generated code before using it."
+
+5. Have you worked with legacy code before?
+
+Even if you haven't worked in industry:
+
+"While I haven't worked on extremely large legacy systems yet, I've maintained existing projects where understanding unfamiliar code was an important part of adding new features.
+
+My approach is to first understand the architecture, identify dependencies, write tests where possible, and then make incremental improvements rather than attempting a complete rewrite."
+
+    6. Tell me about a time you worked with non-technical people.
+
+    They're testing communication.
+
+    Example:
+
+    "In one project, I worked with users who weren't technical. Rather than discussing implementation details, I focused on understanding their workflow and pain points.
+
+    I translated their needs into technical requirements, built a prototype, gathered feedback, and refined the application based on their input."
+
+7. How do you prioritize when working on multiple tasks?
+
+Answer:
+
+"I first understand which tasks have the highest business impact.
+
+Then I break larger work into smaller milestones and communicate progress regularly.
+
+If priorities change, I discuss trade-offs early so expectations stay aligned."
+
+    8. What programming languages are you strongest in?
+
+    Example:
+
+    "Python is probably my strongest language, followed by JavaScript and TypeScript.
+
+    I'm comfortable working with SQL databases and building REST APIs. More importantly, I'm confident learning new technologies quickly when a project requires them."
+
+9. How comfortable are you learning new technologies?
+
+The job description mentions learning agility repeatedly.
+
+Answer:
+
+"Very comfortable. Technology evolves quickly, especially with AI tools, so I expect continuous learning to be part of the job.
+
+When I encounter something new, I usually build a small proof of concept first, read the documentation, and then apply it to a real project."
+
+    10. Why should we hire you?
+
+    Don't say "I'm hardworking."
+
+    Instead:
+
+    "I think my strengths align well with what you're looking for.
+
+    I enjoy building software that solves real business problems, I'm comfortable using AI to improve development speed, and I communicate well with both technical and non-technical stakeholders.
+
+I'm also someone who learns quickly and enjoys taking ownership of projects from idea to deployment."
+
+11. What's your biggest weakness?
+
+Don't say:
+
+❌ "I'm a perfectionist."
+
+Instead:
+
+"Earlier in my career, I sometimes spent too much time trying to find the perfect solution before moving forward.
+
+I've learned that delivering a solid first version, gathering feedback, and iterating usually leads to better outcomes."
+
+    12. Describe a difficult bug you solved.
+
+    Example:
+
+    "I once had an issue where an API worked locally but failed in production due to environment variable configuration.
+
+    I reproduced the issue, checked the deployment logs, compared the environments, identified the missing configuration, and added validation to prevent similar issues in the future."
+
+13. Why do you want to work with AI-assisted development?
+
+Answer:
+
+"I think AI allows developers to spend less time writing repetitive code and more time solving meaningful problems.
+
+It accelerates implementation, but engineering judgment is still essential for architecture, testing, and reviewing code."
 
 
 
@@ -190,8 +278,7 @@ When explaining something to a non-technical user, I avoid technical jargon and 
 
 
 
-# DAX
-DAX is the formula language used in Power BI for creating calculated columns, measures, and business calculations.
+
 
 
 # Questions
