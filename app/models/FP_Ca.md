@@ -1,4 +1,6 @@
 
+## Topics
+React, Typescript, NodeJS, NextJS, Express, Redis, CrewAI, Prompt Chaining, AutoGen, CRUD Ops
 
 ## Table of Contents
 
