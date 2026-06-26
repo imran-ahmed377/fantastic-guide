@@ -1,4 +1,4 @@
-<!-- 
+
 
 ## Table of Contents
 
@@ -27,7 +27,9 @@
 - [Questions](#questions)
 
 # Introduce
-I have experience in application and production support roles. My work has involved troubleshooting application issues, investigating data problems using SQL, supporting business users, and creating reports and dashboards in Power BI. I've worked closely with operations teams and developers to resolve incidents and improve business processes. What attracted me to this role is the opportunity to combine application support, SQL investigation, Power BI reporting, and business analysis activities in one position.
+I'm a software developer with experience building full-stack applications using Python, JavaScript/TypeScript, SQL, and modern web frameworks. In my recent projects, I've worked on building production-ready applications, REST APIs, and database-driven systems.
+
+I've also integrated AI tools like GitHub Copilot and ChatGPT into my workflow for generating code, debugging, writing tests, and accelerating development. What excites me about this role is that your team treats AI as a core part of software engineering rather than just a productivity tool. I enjoy solving business problems through software and working closely with stakeholders to deliver practical solutions.
 
 
 # Aspire Ontario Exp (Application Support Analyst)
@@ -146,8 +148,7 @@ I noticed recurring data issues were being fixed manually every time. I created 
 In a reporting project, the requirements were not clearly defined by stakeholders. I scheduled a short discussion to clarify expectations, asked specific questions, and created a sample report for confirmation. This helped align everyone and avoided rework later.
 
 
-# Power BI dashboard created
-I built an operational dashboard combining ERP (Enterprise Resource Planning) and WMS (Warehouse Management System) data using SQL and Power BI. It tracked order status, delivery performance, and warehouse efficiency. I created DAX measures for KPIs like on-time delivery and average fulfillment time. The dashboard reduced manual reporting and improved decision-making for operations managers.
+
 
 
 
@@ -180,54 +181,35 @@ I built an operational dashboard combining ERP (Enterprise Resource Planning) an
 
 
 
-# Order Missing from ERP
-- Gather order details
-- Check application logs
-- Query database
-- Verify integration jobs
-- Check whether data was processed successfully
-- Escalate if code defect
 
 
-# Root Cause Analysis
-- Reviewing logs
-- SQL investigation
-- Identifying patterns
-- Checking integrations
-- Reviewing recent changes
-- Determining why issue occurred
-- Preventing recurrence
 
-# SQL functions use regularly
-- JOINs
-- CTEs (Common Table Expressions)
-- Window Functions
-- GROUP BY
-- Aggregate functions
-- CASE statements
-- Stored Procedures
-
-# Power BI performance
-- Star schema
-- Reduce cardinality
-- Avoid unnecessary columns
-- Efficient DAX
-- Incremental refresh
-- Proper relationships
 
 # Non Technical User Explain
 When explaining something to a non-technical user, I avoid technical jargon and focus on the business impact rather than the technology behind it. I try to use simple language, relatable examples, and break the explanation into small steps.
 
-For example, if a user is having trouble accessing an application, instead of talking about authentication protocols or server connectivity, I might say, 'The system isn't recognizing your account information correctly, so we're going to refresh your access and test it again.' This helps them understand what's happening without overwhelming them with technical details.
+
 
 # DAX
 DAX is the formula language used in Power BI for creating calculated columns, measures, and business calculations.
 
 
 # Questions
-- What is your expectation from the new hire in first 3 to 6 months?
-- What is the team size?
+- What would success look like in the first 90 days?
+- What kinds of applications would I be building?
+- Are developers encouraged to experiment with new AI tools and workflows?
 - What are the next steps of the hiring process?
+
+# Bonus Questions
+- "Walk me through your favorite project."
+- "How would you refactor a large legacy application?"
+- "How do you decide whether AI-generated code is safe to use?"
+- "Describe your Git workflow."
+- "How do you write maintainable code?"
+- "Tell me about a time you disagreed with a teammate."
+- "How would you design an internal dashboard for a business?"
+- "What's your experience with SQL and databases?"
+- "How do you measure whether the software you built actually improved the business?"
 
 ## Table of Contents
 
@@ -253,4 +235,4 @@ DAX is the formula language used in Power BI for creating calculated columns, me
 - [Power BI performance](#power-bi-performance)
 - [CTE](#cte)
 - [DAX](#dax)
-- [Questions](#questions) -->
+- [Questions](#questions)
