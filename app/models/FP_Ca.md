@@ -32,31 +32,18 @@ I've also integrated AI tools like GitHub Copilot and ChatGPT into my workflow f
 
 
 # Aspire Ontario Exp (AI-Assisted Software Engineer)(Sept 2025 – Apr 2026)
-- Built internal software platforms and modernized existing applications.
-- Designed and developed full-stack applications using:
-  - Next.js
-  - FastAPI
-  - Python
-- Integrated AI development tools, including **Claude Code**, into the software development workflow.
-- Helped migrate a legacy Django application to a modern **Next.js + FastAPI** architecture.
-- Improved application response time by approximately **40%** through the migration.
-- Built data pipelines using **Python** and **Airflow**.
-- Processed **over 1 million records per day** for operational analytics.
-- Collaborated closely with stakeholders, including **portfolio CEOs**, to:
-  - Gather and understand business requirements.
-  - Translate business needs into technical specifications.
-  - Present working software demos.
-- Automated the development workflow by orchestrating multiple AI agents for:
-  - Code generation
-  - Code review
-  - Testing
-  - Documentation
-- Reduced development time by approximately **50%** through AI-driven automation.
-- Strengthened technical expertise in:
-  - Full-stack development
-  - AI-assisted software engineering
-  - Data engineering
-- Enhanced collaboration and communication skills by working closely with business stakeholders while delivering measurable business outcomes.
+At Aspire Ontario, I worked on building internal software platforms called Exeevo. I worked on developing a full-stack CRM application.
+
+I designed data pipelines, and I collaborated closely with business stakeholders to understand their requirements.
+
+The legacy application was developed using Django, so I used next.js and FastAPI to modernize the internal platform.
+
+I designed workflows using multiple AI agents for code generation, code reviews, testing, and documentation. And it automated around 70% of our repetitive engineering tasks and reduced overall development time.
+
+I worked directly with product managers. And during discovery sessions, I gather business requirements and translate them into clear technical specifications.
+
+I built a Python and Airflow-based data pipeline for processing each day data analytics and reporting.
+
 
 
 # Meallens Exp (Full-Stack Developer) (June 2023 – Sept 2025)
@@ -134,7 +121,7 @@ Then, a notification is sent to the Slack channel so the team know a new lead ha
 
 
 # About this company?
-Quantum Lifecycle Partners is Canada’s largest IT asset disposition and electronics recycling company. They focus on securely processing retired IT equipment, data destruction, and recovering materials sustainably.
+FirePower Capital is a Toronto based company that helps medium-sized businesses grow. They act like a matchmaker to help owners sell or buy other companies. They also act like a flexible bank, directly lending money or investing cash into these businesses when traditional banks won't.
 
     2. Why are you interested in this position?
     Answer:
