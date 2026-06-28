@@ -59,15 +59,16 @@ I've also integrated AI tools like GitHub Copilot and ChatGPT into my workflow f
 - Enhanced collaboration and communication skills by working closely with business stakeholders while delivering measurable business outcomes.
 
 
-# Meallens Exp (Data Analyst)
+# Meallens Exp (Full-Stack Developer) (June 2023 – Sept 2025)
 
-At Meallens, I worked with CRM and ERP systems.
+In my last role at Meallens, I worked as a Full-Stack Developer, and one of the biggest projects I worked on was modernizing the company's inventory management system. I migrated a legacy application to a modern tech stack using TypeScript, React, and Node.js.
 
-My main duty was to troubleshoot application and data issues, support business users, and maintain Power BI reports and datasets.
+I worked on both the frontend and backend, so I built new features, developed APIs, fixed bugs, and improved the overall performance and maintainability of the application. 
 
-I solved problems like incorrect or missing data, reporting errors, and recurring system issues. 
+I used AI tools like Cursor and Claude as part of my development workflow. They helped me speed up repetitive tasks, especially generating CRUD APIs. Because of that, I was able to reduce the time it took to deliver many features from around two weeks to just three days.
 
-I used SQL for data analysis and fixes, Power BI for reporting, and ticketing tools for support tracking.
+Besides coding, I wrote technical documentation, including implementation guides and release notes.
+
 
 # Project 1: ERP Data Issue Resolution System
 
