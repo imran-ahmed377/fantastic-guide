@@ -1,7 +1,4 @@
 
-## Topics
-React, Typescript, NodeJS, NextJS, Express, Redis, CrewAI, Prompt Chaining, AutoGen, CRUD Ops
-
 ## Table of Contents
 
 - [Introduce](#introduce)
@@ -34,12 +31,32 @@ I'm a software developer with experience building full-stack applications using 
 I've also integrated AI tools like GitHub Copilot and ChatGPT into my workflow for generating code, debugging, writing tests, and accelerating development. What excites me about this role is that your team treats AI as a core part of software engineering rather than just a productivity tool. I enjoy solving business problems through software and working closely with stakeholders to deliver practical solutions.
 
 
-# Aspire Ontario Exp (Application Support Analyst)
-At Aspire Ontario, I solved issues in the business systems like ERP, CRM and ensure systems were running smoothly for business users.
-
-I solved problems like missing or incorrect data, failed integrations, and reporting issues. I often used SQL to investigate data and apply fixes, and worked with Power BI for reporting issues.
-
-I used tools like SQL, Power BI, JIRA ticketing systems.
+# Aspire Ontario Exp (AI-Assisted Software Engineer)(Sept 2025 – Apr 2026)
+- Built internal software platforms and modernized existing applications.
+- Designed and developed full-stack applications using:
+  - Next.js
+  - FastAPI
+  - Python
+- Integrated AI development tools, including **Claude Code**, into the software development workflow.
+- Helped migrate a legacy Django application to a modern **Next.js + FastAPI** architecture.
+- Improved application response time by approximately **40%** through the migration.
+- Built data pipelines using **Python** and **Airflow**.
+- Processed **over 1 million records per day** for operational analytics.
+- Collaborated closely with stakeholders, including **portfolio CEOs**, to:
+  - Gather and understand business requirements.
+  - Translate business needs into technical specifications.
+  - Present working software demos.
+- Automated the development workflow by orchestrating multiple AI agents for:
+  - Code generation
+  - Code review
+  - Testing
+  - Documentation
+- Reduced development time by approximately **50%** through AI-driven automation.
+- Strengthened technical expertise in:
+  - Full-stack development
+  - AI-assisted software engineering
+  - Data engineering
+- Enhanced collaboration and communication skills by working closely with business stakeholders while delivering measurable business outcomes.
 
 
 # Meallens Exp (Data Analyst)
