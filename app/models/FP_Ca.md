@@ -2,28 +2,33 @@
 ## Table of Contents
 
 - [Introduce](#introduce)
-- [Aspire Ontario Exp (Application Support Analyst)](#aspire-ontario-exp-application-support-analyst)
-- [Meallens Exp (Data Analyst)](#meallens-exp-data-analyst)
-- [Project 1: ERP Data Issue Resolution System](#project-1-erp-data-issue-resolution-system)
-- [Project 2: Power BI Operations Support Dashboard](#project-2-power-bi-operations-support-dashboard)
+- [Aspire Ontario Exp (AI-Assisted Software Engineer)(Sept 2025 – Apr 2026)](#aspire-ontario-exp-ai-assisted-software-engineersept-2025--apr-2026)
+- [Meallens Exp (Full-Stack Developer) (June 2023 – Sept 2025)](#meallens-exp-full-stack-developer-june-2023--sept-2025)
+- [Project 1: Multi-Agent Code Review Pipeline](#project-1-multi-agent-code-review-pipeline)
+- [Project 2: Legacy to Modern Migration Framework](#project-2-legacy-to-modern-migration-framework)
 - [Zapier](#zapier)
 - [About this company?](#about-this-company)
-- [Why This Company?](#why-this-company)
-- [What you will learn from this job?](#what-you-will-learn-from-this-job)
-- [Handle a production incident](#handle-a-production-incident)
-- [Production Issue / Challenge you faced in a project](#challenge-you-faced-in-a-project)
-- [Biggest mistake](#biggest-mistake)
-- [Project didn’t work as expected](#project-didnt-work-as-expected)
-- [Took initiative](#took-initiative)
-- [Requirement unclear / ambiguous](#requirement-unclear--ambiguous)
-- [Power BI dashboard created](#power-bi-dashboard-created)
-- [Order Missing from ERP](#order-missing-from-erp)
-- [Troubleshoot / Root Cause Analysis](#root-cause-analysis)
-- [SQL functions use regularly](#sql-functions-use-regularly)
-- [Power BI performance](#power-bi-performance)
-- [NON Technical](#non-technical-user-explain)
-- [DAX](#dax)
+- [Why are you interested in this position?](#why-are-you-interested-in-this-position)
+- [Why should we hire you?](#why-should-we-hire-you)
+- [How do you use AI?](#how-do-you-use-ai)
+- [Non-Technical People.](#non-technical-people)
+- [Multiple Task/Project?](#multiple-taskproject)
+- [Strong Programming Language?](#strong-programming-language)
+- [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
+- [What's your biggest weakness?](#whats-your-biggest-weakness)
+- [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
+- [Non Technical User Explain](#non-technical-user-explain)
 - [Questions](#questions)
+- [Bonus Questions](#bonus-questions)
+<!-- - [How would you refactor a large legacy application?](#how-would-you-refactor-a-large-legacy-application)
+- [How do you decide whether AI-generated code is safe to use?](#how-do-you-decide-whether-ai-generated-code-is-safe-to-use)
+- [Describe your Git workflow.](#describe-your-git-workflow)
+- [How do you write maintainable code?](#how-do-you-write-maintainable-code)
+- [Tell me about a time you disagreed with a teammate.](#tell-me-about-a-time-you-disagreed-with-a-teammate)
+- [How would you design an internal dashboard for a business?](#how-would-you-design-an-internal-dashboard-for-a-business)
+- [What's your experience with SQL and databases?](#whats-your-experience-with-sql-and-databases)
+- [How do you measure whether the software you built actually improved the business?](#how-do-you-measure-whether-the-software-you-built-actually-improved-the-business)
+- [Questions](#questions) -->
 
 # Introduce
 I'm a software developer with experience building full-stack applications using Python, JavaScript/TypeScript, SQL, and modern web frameworks. In my recent projects, I've worked on building production-ready applications, REST APIs, and database-driven systems.
@@ -101,11 +106,6 @@ I have worked on an Automated Lead Capture and Follow-Up System project using Za
 When a customer fills out a form on the Google Forms, Zapier automatically starts the workflow. First, the lead information is saved in Google Sheets.
 
 Then, a notification is sent to the Slack channel so the team know a new lead has arrived. After that, the system automatically sends a personalized welcome email to the customer through Gmail. If a lead meets certain criteria, Zapier automatically assigns that lead to the high-priority for faster follow-up.
-
-
-
-
-
 
 
 
@@ -190,23 +190,8 @@ I once had an issue where an API worked locally but failed in production due to 
 I reproduced the issue, checked the deployment logs, compared the environments, identified the missing configuration, and added validation to prevent similar issues in the future.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 # Non Technical User Explain
 When explaining something to a non-technical user, I avoid technical jargon and focus on the business impact rather than the technology behind it. I try to use simple language, relatable examples, and break the explanation into small steps.
-
-
-
 
 
 
@@ -220,13 +205,108 @@ When explaining something to a non-technical user, I avoid technical jargon and 
 - What are the next steps of the hiring process?
 
 # Bonus Questions
-- "Walk me through your favorite project."
-- "How would you refactor a large legacy application?"
-- "How do you decide whether AI-generated code is safe to use?"
-- "Describe your Git workflow."
-- "How do you write maintainable code?"
-- "Tell me about a time you disagreed with a teammate."
-- "How would you design an internal dashboard for a business?"
-- "What's your experience with SQL and databases?"
-- "How do you measure whether the software you built actually improved the business?"
+### 2. How would you refactor a large legacy application?
+
+* Understand business requirements
+* Baseline metrics
+* Identify bottlenecks
+* Incremental migration
+* Feature parity
+* Automated testing
+* CI/CD
+* Code reviews
+* Monitor performance
+* Minimize downtime
+
+### 3. How do you decide whether AI-generated code is safe to use?
+
+* Never trust blindly
+* Manual review
+* Understand generated logic
+* Security validation
+* Edge cases
+* Unit tests
+* Integration tests
+* Static analysis
+* Performance check
+* Coding standards
+
+### 4. Describe your Git workflow.
+
+* Feature branches
+* Small commits
+* Meaningful commit messages
+* Pull requests
+* Code reviews
+* Resolve conflicts
+* CI checks
+* Squash merge
+* Main branch deployment
+
+### 5. How do you write maintainable code?
+
+* Clean architecture
+* SOLID principles
+* Modular design
+* Reusable components
+* Consistent naming
+* TypeScript
+* Documentation
+* Unit testing
+* Code reviews
+* Refactoring
+
+### 6. Tell me about a time you disagreed with a teammate.
+
+* Listen first
+* Understand perspective
+* Data-driven discussion
+* Compare trade-offs
+* Prototype solutions
+* Team alignment
+* Respectful communication
+* Focus on business goals
+* Best solution wins
+
+### 7. How would you design an internal dashboard for a business?
+
+* Discovery sessions
+* User requirements
+* KPIs
+* Wireframes
+* Role-based access
+* Responsive UI
+* Fast API
+* Real-time metrics
+* Filters & search
+* Feedback iteration
+
+### 8. What's your experience with SQL and databases?
+
+* PostgreSQL
+* MySQL
+* SQL queries
+* JOINs
+* Aggregations
+* Indexing
+* Database design
+* Normalization
+* Migrations
+* ORM (Prisma/Django ORM)
+* Performance optimization
+
+### 9. How do you measure whether the software you built actually improved the business?
+
+* Baseline metrics
+* Before vs. after comparison
+* Response time
+* Error rate
+* User adoption
+* Productivity
+* Time saved
+* Customer feedback
+* Business KPIs
+* Continuous monitoring
+* ROI
+
 
