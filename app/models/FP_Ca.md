@@ -187,9 +187,9 @@ I'm comfortable working with SQL databases and building REST APIs. More importan
 
 # Comfortable Learning New Tech?
 
-Very comfortable. Technology evolves quickly, especially with AI tools, so I expect continuous learning to be part of the job.
+I am very comfortable. I expect continuous learning to be part of the job because technology evolves quickly, especially in the AI sector.
 
-When I encounter something new, I usually build a small proof of concept first, read the documentation, and then apply it to a real project.
+When I find something new, I usually build a small proof of concept first, read the documentation, and then apply it to a real project.
 
 # What's your biggest weakness?
 
