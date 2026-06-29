@@ -20,6 +20,8 @@
 - [Non Technical User Explain](#non-technical-user-explain)
 - [Questions](#questions)
 - [Bonus Questions](#bonus-questions)
+
+
 <!-- - [How would you refactor a large legacy application?](#how-would-you-refactor-a-large-legacy-application)
 - [How do you decide whether AI-generated code is safe to use?](#how-do-you-decide-whether-ai-generated-code-is-safe-to-use)
 - [Describe your Git workflow.](#describe-your-git-workflow)
@@ -107,6 +109,28 @@ When a customer fills out a form on the Google Forms, Zapier automatically start
 
 Then, a notification is sent to the Slack channel so the team know a new lead has arrived. After that, the system automatically sends a personalized welcome email to the customer through Gmail. If a lead meets certain criteria, Zapier automatically assigns that lead to the high-priority for faster follow-up.
 
+
+## Table of Contents
+
+- [Introduce](#introduce)
+- [Aspire Ontario Exp (AI-Assisted Software Engineer)(Sept 2025 – Apr 2026)](#aspire-ontario-exp-ai-assisted-software-engineersept-2025--apr-2026)
+- [Meallens Exp (Full-Stack Developer) (June 2023 – Sept 2025)](#meallens-exp-full-stack-developer-june-2023--sept-2025)
+- [Project 1: Multi-Agent Code Review Pipeline](#project-1-multi-agent-code-review-pipeline)
+- [Project 2: Legacy to Modern Migration Framework](#project-2-legacy-to-modern-migration-framework)
+- [Zapier](#zapier)
+- [About this company?](#about-this-company)
+- [Why are you interested in this position?](#why-are-you-interested-in-this-position)
+- [Why should we hire you?](#why-should-we-hire-you)
+- [How do you use AI?](#how-do-you-use-ai)
+- [Non-Technical People.](#non-technical-people)
+- [Multiple Task/Project?](#multiple-taskproject)
+- [Strong Programming Language?](#strong-programming-language)
+- [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
+- [What's your biggest weakness?](#whats-your-biggest-weakness)
+- [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
+- [Non Technical User Explain](#non-technical-user-explain)
+- [Questions](#questions)
+- [Bonus Questions](#bonus-questions)
 
 
 
@@ -203,6 +227,30 @@ When explaining something to a non-technical user, I avoid technical jargon and 
 - Are developers encouraged to experiment with new AI tools and workflows?
   >>> That sounds like an environment I'd really enjoy working in. Thanks for sharing.
 - What are the next steps of the hiring process?
+
+
+## Table of Contents
+
+- [Introduce](#introduce)
+- [Aspire Ontario Exp (AI-Assisted Software Engineer)(Sept 2025 – Apr 2026)](#aspire-ontario-exp-ai-assisted-software-engineersept-2025--apr-2026)
+- [Meallens Exp (Full-Stack Developer) (June 2023 – Sept 2025)](#meallens-exp-full-stack-developer-june-2023--sept-2025)
+- [Project 1: Multi-Agent Code Review Pipeline](#project-1-multi-agent-code-review-pipeline)
+- [Project 2: Legacy to Modern Migration Framework](#project-2-legacy-to-modern-migration-framework)
+- [Zapier](#zapier)
+- [About this company?](#about-this-company)
+- [Why are you interested in this position?](#why-are-you-interested-in-this-position)
+- [Why should we hire you?](#why-should-we-hire-you)
+- [How do you use AI?](#how-do-you-use-ai)
+- [Non-Technical People.](#non-technical-people)
+- [Multiple Task/Project?](#multiple-taskproject)
+- [Strong Programming Language?](#strong-programming-language)
+- [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
+- [What's your biggest weakness?](#whats-your-biggest-weakness)
+- [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
+- [Non Technical User Explain](#non-technical-user-explain)
+- [Questions](#questions)
+- [Bonus Questions](#bonus-questions)
+
 
 # Bonus Questions
 ### 2. How would you refactor a large legacy application?
