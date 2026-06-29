@@ -17,7 +17,6 @@
 - [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
 - [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
-- [Non Technical User Explain](#non-technical-user-explain)
 - [Questions](#questions)
 - [Bonus Questions](#bonus-questions)
 
@@ -110,6 +109,7 @@ When a customer fills out a form on the Google Forms, Zapier automatically start
 Then, a notification is sent to the Slack channel so the team know a new lead has arrived. After that, the system automatically sends a personalized welcome email to the customer through Gmail. If a lead meets certain criteria, Zapier automatically assigns that lead to the high-priority for faster follow-up.
 
 
+
 ## Table of Contents
 
 - [Introduce](#introduce)
@@ -128,7 +128,6 @@ Then, a notification is sent to the Slack channel so the team know a new lead ha
 - [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
 - [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
-- [Non Technical User Explain](#non-technical-user-explain)
 - [Questions](#questions)
 - [Bonus Questions](#bonus-questions)
 
@@ -168,9 +167,8 @@ I treat AI as a collaborator rather than an authority. I always review, test, an
 
 
 # Non-Technical People.
-I worked with users who weren't technical. Rather than discussing implementation details, I focused on understanding their workflow and pain points.
+I worked with users who weren't technical. When explaining something to a non-technical user, I avoid technical jargon and focus on the business impact rather than the technology behind it. I try to use simple language, relatable examples, and break the explanation into small steps.
 
-I translated their needs into technical requirements, built a prototype,gathered feedback, and refined the application based on their input.
 
 
 # Multiple Task/Project?
@@ -214,10 +212,6 @@ I once had an issue where an API worked locally but failed in production due to 
 I reproduced the issue, checked the deployment logs, compared the environments, identified the missing configuration, and added validation to prevent similar issues in the future.
 
 
-# Non Technical User Explain
-When explaining something to a non-technical user, I avoid technical jargon and focus on the business impact rather than the technology behind it. I try to use simple language, relatable examples, and break the explanation into small steps.
-
-
 
 # Questions
 - What would success look like in the first 90 days?
@@ -227,6 +221,7 @@ When explaining something to a non-technical user, I avoid technical jargon and 
 - Are developers encouraged to experiment with new AI tools and workflows?
   >>> That sounds like an environment I'd really enjoy working in. Thanks for sharing.
 - What are the next steps of the hiring process?
+
 
 
 ## Table of Contents
@@ -247,7 +242,6 @@ When explaining something to a non-technical user, I avoid technical jargon and 
 - [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
 - [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
-- [Non Technical User Explain](#non-technical-user-explain)
 - [Questions](#questions)
 - [Bonus Questions](#bonus-questions)
 
