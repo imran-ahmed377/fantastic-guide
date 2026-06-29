@@ -344,3 +344,23 @@ I reproduced the issue, checked the deployment logs, compared the environments, 
 * ROI
 
 
+## Table of Contents
+
+- [Introduce](#introduce)
+- [Aspire Ontario Exp (AI-Assisted Software Engineer)(Sept 2025 – Apr 2026)](#aspire-ontario-exp-ai-assisted-software-engineersept-2025--apr-2026)
+- [Meallens Exp (Full-Stack Developer) (June 2023 – Sept 2025)](#meallens-exp-full-stack-developer-june-2023--sept-2025)
+- [Project 1: Multi-Agent Code Review Pipeline](#project-1-multi-agent-code-review-pipeline)
+- [Project 2: Legacy to Modern Migration Framework](#project-2-legacy-to-modern-migration-framework)
+- [Zapier](#zapier)
+- [About this company?](#about-this-company)
+- [Why are you interested in this position?](#why-are-you-interested-in-this-position)
+- [Why should we hire you?](#why-should-we-hire-you)
+- [How do you use AI?](#how-do-you-use-ai)
+- [Non-Technical People.](#non-technical-people)
+- [Multiple Task/Project?](#multiple-taskproject)
+- [Strong Programming Language?](#strong-programming-language)
+- [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
+- [What's your biggest weakness?](#whats-your-biggest-weakness)
+- [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
+- [Questions](#questions)
+- [Bonus Questions](#bonus-questions)
