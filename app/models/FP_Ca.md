@@ -28,7 +28,11 @@
 # Introduce
 I'm a software developer with experience building full-stack applications using Python, JavaScript/TypeScript, SQL, and modern web frameworks. In my recent projects, I've worked on building production-ready applications, REST APIs, and database-driven systems.
 
-I've also integrated AI tools like GitHub Copilot and ChatGPT into my workflow for generating code, debugging, writing tests, and accelerating development. What excites me about this role is that your team treats AI as a core part of software engineering rather than just a productivity tool. I enjoy solving business problems through software and working closely with stakeholders to deliver practical solutions.
+I've also integrated AI tools like GitHub Copilot, OpenAI and Claude into my workflow for generating code, debugging, writing tests, and accelerating development. 
+
+What excites me about this role is that AI is a core part of software engineering rather than just a productivity tool. I enjoy solving problems using modern tools and technologies. I am always eager to learn and continuously improve my skills to stay current with evolving technologies and contribute effectively to building impactful solutions.
+
+ and working closely with stakeholders to deliver practical solutions.
 
 
 # Aspire Ontario Exp (AI-Assisted Software Engineer)(Sept 2025 – Apr 2026)
