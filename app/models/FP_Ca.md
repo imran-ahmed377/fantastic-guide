@@ -88,9 +88,9 @@ I worked on creating a framework to migrate legacy PHP applications to Python mu
 
 The goal was combining AI tools with a structured workflow to reduce manual migration process.
 
-I designed an agentic workflow using Claude Code along with a set of custom prompts. I broke the migration into smaller steps and avoided converting the entire application at once. such as, I had separate prompts for analyzing the existing PHP code, translating business logic into Python, refactoring the generated code, and validating the output.
+I designed an agentic workflow using Claude Code with a set of custom prompts. I broke the migration into smaller steps and avoided converting the entire application at once. I had separate prompts for analyzing the existing PHP code, translating business logic into Python, refactoring the generated code, and validating the output.
 
-To make sure the migrated code was reliable, I used Codex to generate unit tests and then reviewed and refined those tests. By the end of the project, I achieved around 95% test coverage, which gave me confidence that the migrated application behaved the same as the original.
+I used Codex to generate unit tests and then reviewed and refined those tests to make sure the migrated code was reliable. By the end of the project, I achieved around 95% test coverage, which gave me confidence that the migrated application behaved the same as the original.
 
 **Challenge:**
 
