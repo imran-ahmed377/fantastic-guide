@@ -191,14 +191,6 @@ Very comfortable. Technology evolves quickly, especially with AI tools, so I exp
 
 When I encounter something new, I usually build a small proof of concept first, read the documentation, and then apply it to a real project.
 
-# Why should we hire you?
-
-I think my strengths align well with what you're looking for.
-
-I enjoy building software that solves real business problems, I'm comfortable using AI to improve development speed, and I communicate well with both technical and non-technical stakeholders.
-
-I'm also someone who learns quickly and enjoys taking ownership of projects from idea to deployment.
-
 # What's your biggest weakness?
 
 Earlier in my career, I sometimes spent too much time trying to find the perfect solution before moving forward.
