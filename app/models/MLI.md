@@ -239,109 +239,101 @@ I reproduced the issue, checked the deployment logs, compared the environments, 
 
 
 # Bonus Questions
-### 2. How would you refactor a large legacy application?
+Opening
+Tell me about yourself and why you're interested in this role.
 
-* Understand business requirements
-* Baseline metrics
-* Identify bottlenecks
-* Incremental migration
-* Feature parity
-* Automated testing
-* CI/CD
-* Code reviews
-* Monitor performance
-* Minimize downtime
+"I recently graduated with a degree in Computer Science and have been building AI-powered applications during my studies and internships. I'm excited about this role because it combines backend development with GenAI, which is exactly where I want to grow."
 
-### 3. How do you decide whether AI-generated code is safe to use?
+What drew you to AI/GenAI as a career focus?
 
-* Never trust blindly
-* Manual review
-* Understand generated logic
-* Security validation
-* Edge cases
-* Unit tests
-* Integration tests
-* Static analysis
-* Performance check
-* Coding standards
+"I started experimenting with LLM APIs on a side project and was amazed at what's possible. I realized AI could solve real operational problems at scale, and I wanted to be part of building those solutions professionally."
 
-### 4. Describe your Git workflow.
+Why Manulife specifically?
 
-* Feature branches
-* Small commits
-* Meaningful commit messages
-* Pull requests
-* Code reviews
-* Resolve conflicts
-* CI checks
-* Squash merge
-* Main branch deployment
+"Manulife is applying AI to enterprise operations at a global scale, which is rare for an early-career role. I also appreciate the emphasis on learning and growth mentioned in the job description."
 
-### 5. How do you write maintainable code?
 
-* Clean architecture
-* SOLID principles
-* Modular design
-* Reusable components
-* Consistent naming
-* TypeScript
-* Documentation
-* Unit testing
-* Code reviews
-* Refactoring
+Technical — Python & APIs
+Walk me through a backend service or API you built.
 
-### 6. Tell me about a time you disagreed with a teammate.
+"I built a REST API using FastAPI that took user input, called an OpenAI API, and returned a summarized response. It included error handling, input validation with Pydantic, and was deployed using Docker."
 
-* Listen first
-* Understand perspective
-* Data-driven discussion
-* Compare trade-offs
-* Prototype solutions
-* Team alignment
-* Respectful communication
-* Focus on business goals
-* Best solution wins
+How would you design a REST API endpoint for a given use case?
 
-### 7. How would you design an internal dashboard for a business?
+"I'd start by defining the input and output clearly, then choose the right HTTP method — GET for retrieval, POST for creation. I'd add validation, error responses, and authentication, then document it with something like Swagger."
 
-* Discovery sessions
-* User requirements
-* KPIs
-* Wireframes
-* Role-based access
-* Responsive UI
-* Fast API
-* Real-time metrics
-* Filters & search
-* Feedback iteration
+How do you handle errors and edge cases in an API?
 
-### 8. What's your experience with SQL and databases?
+"I use try/except blocks, return meaningful HTTP status codes like 400 or 500, and log errors for debugging. I also validate inputs early so bad data doesn't reach the core logic."
 
-* PostgreSQL
-* MySQL
-* SQL queries
-* JOINs
-* Aggregations
-* Indexing
-* Database design
-* Normalization
-* Migrations
-* ORM (Prisma/Django ORM)
-* Performance optimization
+What's your experience with FastAPI?
 
-### 9. How do you measure whether the software you built actually improved the business?
+"I've used FastAPI to build a couple of projects. I like it because it's fast, auto-generates docs, and integrates well with Pydantic for data validation."
 
-* Baseline metrics
-* Before vs. after comparison
-* Response time
-* Error rate
-* User adoption
-* Productivity
-* Time saved
-* Customer feedback
-* Business KPIs
-* Continuous monitoring
-* ROI
+
+AI/GenAI Knowledge
+Have you worked with any LLM APIs? What did you build?
+
+"Yes, I used the OpenAI API to build a chatbot that answered questions based on internal documents. I passed context into the prompt and tuned the response format using system messages."
+
+Can you explain RAG in simple terms?
+
+"RAG stands for Retrieval-Augmented Generation. Instead of relying only on what the LLM knows, you first search a knowledge base for relevant documents, then feed those into the prompt so the model answers based on real, up-to-date information."
+
+How do you approach prompt engineering?
+
+"I start with a clear system prompt that defines the role and tone, then structure the user input cleanly. I iterate by testing edge cases and adjusting the prompt until the output is consistent and accurate."
+
+What are the limitations of LLMs in an enterprise setting?
+
+"LLMs can hallucinate, have a knowledge cutoff, and can be expensive at scale. In enterprise settings, you also need to be careful about sending sensitive data to external APIs, which is why private deployments like Azure OpenAI matter."
+
+
+Frontend & Integration
+What's your experience with React?
+
+"I've built a few small React apps — mostly dashboards that fetch data from a backend API and display it dynamically. I'm comfortable with components, hooks, and state management."
+
+Have you integrated a frontend with a backend API?
+
+"Yes, I used fetch and Axios to call REST endpoints from a React frontend. I handled loading states, error messages, and used environment variables to manage API URLs across environments."
+
+
+Collaboration & Process
+Describe your experience in an Agile environment.
+
+"During my internship, we worked in two-week sprints with daily standups. I picked up tickets from the backlog, gave status updates, and participated in retrospectives to improve our process."
+
+Tell me about working with a cross-functional team.
+
+"I worked with a design team and a data analyst on a dashboard project. I handled the API and they handled the visuals and data requirements. Regular syncs helped us stay aligned."
+
+How do you handle feedback on your code?
+
+"I welcome it. I treat code reviews as a learning opportunity. If I disagree with a suggestion, I ask questions to understand the reasoning rather than pushing back defensively."
+
+
+Behavioural
+Tell me about a time you learned a new technology quickly.
+
+"I had to use Docker for the first time midway through a project. I spent a weekend going through the docs and a tutorial, containerized the app, and had it running in our pipeline within two days."
+
+Describe a project that didn't go as planned.
+
+"An API I built kept timing out under load. I hadn't accounted for response time from the LLM. I added async handling and a loading indicator on the frontend, and that fixed the user experience while I worked on optimizing the backend."
+
+How do you prioritize multiple tasks in a sprint?
+
+"I focus on blockers first, then high-impact tasks. I communicate early if something is taking longer than expected so the team can adjust. I also break big tasks into smaller pieces to make progress visible."
+
+
+Closing
+Do you have questions for us?
+
+
+"What does the first 90 days look like for someone in this role?"
+"What GenAI projects is the team currently most excited about?"
+"How does the team balance innovation with the reliability needs of enterprise systems?"
 
 
 ## Table of Contents
