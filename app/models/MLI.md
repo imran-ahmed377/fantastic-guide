@@ -33,13 +33,13 @@ I recently finished my Master's in Applied Computing with a focus on AI at the U
 # Aspire Ontario Exp (AI Application Developer Co-op)(Jan 2025 – Jan 2026)
 So during my co-op at Aspire Ontario, I worked as an AI Application Developer, and my main project was building an AI-powered IT support tool for the team.
 
-On the backend, I used Python and a framework called FastAPI to build the core system, and on the frontend, I built the user interface using React. I worked on both sides of the app.
+On the backend, I used Python and FastAPI to build the core system, and on the frontend, I built the user interface using React. I worked on both sides of the app.
 
-The biggest part of the project was integrating Azure OpenAI's LLM API, so the tool could automatically summarize IT incidents without write that up manually. This feature saved lots of hours every week.
+The biggest part of the project was integrating Azure OpenAI's LLM API, so the tool could automatically summarize IT incidents without writing manually. This feature saved lots of hours every week.
 
-I also used Docker to package the app, so it would run the same way whether it was on my machine or in production and that made deployments a lot smoother. And I worked in an Agile team, doing sprint planning and delivering new features regularly.
+I also used Docker to package the app, so it would run smoothly in local machine and in the deployed server. And I worked in an Agile team, doing sprint planning and delivering new features regularly.
 
-I also wrote automated tests to catch bugs early, which helped cut down production issues. And I got real experience supporting the app after it was live.
+I also wrote automated tests to catch bugs early, which helped cut down production issues. And I got real experience of supporting the app after it was deployed.
 
 Overall, it was a really hands-on role and I got to work across the full stack, build real AI features.
 
@@ -47,7 +47,7 @@ Overall, it was a really hands-on role and I got to work across the full stack, 
 
 # Meallens Exp (Software Developer Intern) (Jan 2023 – Dec 2024)
 
-During my internship at Meallens, I worked as a Full Stack Software Developer, I worked on both the backend and the frontend of their internal dashboard.
+During my internship at Meallens, I worked as a Full Stack Software Developer, I worked on both backend and the frontend of their internal dashboard.
 
 On the backend, I built REST APIs using Python and Flask which are used as the connection points for fetch and send data. 
 
@@ -64,11 +64,11 @@ So the goal of GenAI Incident Analyzer to help solve a common problem in IT supp
 
 **Challenge:**
 
-The challenge was how to get an AI to give accurate, trustworthy answers about our specific IT tickets, instead of just generic guesses. A regular AI model doesn't know anything about our company's past incidents on its own.
+The challenge was how to get an AI to give accurate, trustworthy answers about our specific IT tickets, instead of just generic guesses.
 
-So the best option was using RAG.  Instead of asking the AI to just guess an answer, the system first looks up similar past incidents from our ServiceNow ticket data, and then feeds that real information to the AI model, which was Azure OpenAI. So the AI's answer is grounded in actual past cases, not just a guess.
+So the best option was using RAG. Instead of asking the AI to just guess an answer, the system first looks up similar past incidents from our ServiceNow ticket data, and then feeds that real information to the AI model, which was Azure OpenAI. So the AI's answer is grounded in actual past cases, not just a guess.
 
-When a new incident came in, the system searched through historical tickets to find similar past issues. Then it passed that context to the LLM, which suggested a likely root cause based on what actually worked before. I also wrote and refined the prompts to make the answers more accurate and consistent, and I documented that so the team could reuse it later.
+When a new incident came in, the system searched through historical tickets to find similar past issues and then it passed that context to the LLM, which suggested a likely root cause based on what actually worked before. I also wrote and refined the prompts to make the answers more accurate and consistent, and I documented that so the team could reuse it later.
 
 **Result:**
 The average time to resolve them dropped from about 4 hours down to 45 minutes. So instead of analysts starting from scratch every time, they had the AI pointing them straight to the likely cause, backed by real historical data."
