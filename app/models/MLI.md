@@ -103,6 +103,7 @@ The end result was a system that removed a lot of manual, repetitive work..
 
 
 
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -114,12 +115,10 @@ The end result was a system that removed a lot of manual, repetitive work..
 - [About this company?](#about-this-company)
 - [Why are you interested?](#why-are-you-interested)
 - [What you will learn from this Job?](#what-you-will-learn-from-this-job)
-- [Why should we hire you?](#why-should-we-hire-you)
-- [How do you use AI?](#how-do-you-use-ai)
+- [Unclear Requirement](#unclear-requirement)
 - [Non-Technical People.](#non-technical-people)
 - [Multiple Task/Project?](#multiple-taskproject)
 - [RAG Hallucination](#rag-hallucination)
-- [Strong Programming Language?](#strong-programming-language)
 - [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
 - [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
@@ -209,6 +208,7 @@ I reproduced the issue, checked the deployment logs, compared the environments, 
 
 
 
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -220,12 +220,10 @@ I reproduced the issue, checked the deployment logs, compared the environments, 
 - [About this company?](#about-this-company)
 - [Why are you interested?](#why-are-you-interested)
 - [What you will learn from this Job?](#what-you-will-learn-from-this-job)
-- [Why should we hire you?](#why-should-we-hire-you)
-- [How do you use AI?](#how-do-you-use-ai)
+- [Unclear Requirement](#unclear-requirement)
 - [Non-Technical People.](#non-technical-people)
 - [Multiple Task/Project?](#multiple-taskproject)
 - [RAG Hallucination](#rag-hallucination)
-- [Strong Programming Language?](#strong-programming-language)
 - [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
 - [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
@@ -275,6 +273,7 @@ How do you prioritize multiple tasks in a sprint?
 
 
 
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -286,12 +285,10 @@ How do you prioritize multiple tasks in a sprint?
 - [About this company?](#about-this-company)
 - [Why are you interested?](#why-are-you-interested)
 - [What you will learn from this Job?](#what-you-will-learn-from-this-job)
-- [Why should we hire you?](#why-should-we-hire-you)
-- [How do you use AI?](#how-do-you-use-ai)
+- [Unclear Requirement](#unclear-requirement)
 - [Non-Technical People.](#non-technical-people)
 - [Multiple Task/Project?](#multiple-taskproject)
 - [RAG Hallucination](#rag-hallucination)
-- [Strong Programming Language?](#strong-programming-language)
 - [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
 - [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
