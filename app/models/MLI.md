@@ -1,18 +1,20 @@
 
 ## Table of Contents
 
-- [Introduce](#introduce)
-- [Aspire Ontario Exp (AI-Assisted Software Engineer)(Sept 2025 – Apr 2026)](#aspire-ontario-exp-ai-assisted-software-engineersept-2025--apr-2026)
-- [Meallens Exp (Full-Stack Developer) (June 2023 – Sept 2025)](#meallens-exp-full-stack-developer-june-2023--sept-2025)
-- [Project 1: Multi-Agent Code Review Pipeline](#project-1-multi-agent-code-review-pipeline)
-- [Project 2: Legacy to Modern Migration Framework](#project-2-legacy-to-modern-migration-framework)
+- [Introduction](#introduction)
+- [Aspire Ontario Exp (AI Application Developer Co-op)(Jan 2025 – Jan 2026)](#aspire-ontario-exp-ai-application-developer-co-opjan-2025--jan-2026)
+- [Meallens Exp (Software Developer Intern) (Jan 2023 – Dec 2024)](#meallens-exp-software-developer-intern-jan-2023--dec-2024)
+- [Project 1: GenAI Incident Analyzer (Azure OpenAI + RAG)](#project-1-genai-incident-analyzer-azure-openai--rag)
+- [Project 2: React + FastAPI Observability Dashboard](#project-2-react--fastapi-observability-dashboard)
 - [Zapier](#zapier)
 - [About this company?](#about-this-company)
-- [Why are you interested in this position?](#why-are-you-interested-in-this-position)
+- [Why are you interested?](#why-are-you-interested)
+- [What you will learn from this Job?](#what-you-will-learn-from-this-job)
 - [Why should we hire you?](#why-should-we-hire-you)
 - [How do you use AI?](#how-do-you-use-ai)
 - [Non-Technical People.](#non-technical-people)
 - [Multiple Task/Project?](#multiple-taskproject)
+- [RAG Hallucination](#rag-hallucination)
 - [Strong Programming Language?](#strong-programming-language)
 - [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
@@ -75,15 +77,19 @@ The average time to resolve them dropped from about 4 hours down to 45 minutes. 
 
 
 # Project 2: React + FastAPI Observability Dashboard
-The goal of This project was about building a real-time dashboard that showed the health of our systems — things like whether servers were running fine, or if something was starting to go wrong — all in one place instead of people having to check multiple tools separately.
+The goal of This project was about building a real-time dashboard that showed the health of our systems like if servers were running fine, or if something was starting to go wrong.
 
-The challenge was that the data was coming from different observability tools — basically monitoring systems that track things like performance and errors — and it needed to be pulled together and shown in a way that was easy to understand at a glance, and updated in real time, not just refreshed every so often.
+**Challenge**
 
-For the backend, I used FastAPI to build the service that collected and processed the system health data. For the frontend, I used React to build the actual dashboard — the visual part where you could see metrics and system status update live.
+The challenge was that the data was coming from different tools and it needed to be pulled together and shown in a way that was easy to understand at a glance, and updated in real time.
 
-I also set up a CI/CD pipeline using GitHub Actions, which basically means every time code changes were made, it would automatically get tested and deployed, instead of someone doing that manually every time. That made the whole development process faster and safer.
+For the backend, I used FastAPI to build the service that collected and processed the system health data. For the frontend, I used React to build the actual dashboard to see the metrics and system status update live.
 
-The result was a dashboard that ran reliably in production — we tracked 99% uptime over two months, which means the system stayed healthy and available almost the entire time, and the team had one clear place to check system health instead of jumping between tools."
+I also set up a CI/CD pipeline using GitHub Actions, so every time code changes were made, it would automatically get tested and deployed. That made the whole development process faster and safer.
+
+**Result**
+
+As a result we tracked 99% uptime over two months and the team had one clear place to check system health instead of jumping between tools.
 
 # Zapier
 Zapier is a no-code automation tool that connects different apps together, so they can talk to each other and complete tasks automatically. 
@@ -98,20 +104,23 @@ The end result was a system that removed a lot of manual, repetitive work..
 
 
 
+
 ## Table of Contents
 
-- [Introduce](#introduce)
-- [Aspire Ontario Exp (AI-Assisted Software Engineer)(Sept 2025 – Apr 2026)](#aspire-ontario-exp-ai-assisted-software-engineersept-2025--apr-2026)
-- [Meallens Exp (Full-Stack Developer) (June 2023 – Sept 2025)](#meallens-exp-full-stack-developer-june-2023--sept-2025)
-- [Project 1: Multi-Agent Code Review Pipeline](#project-1-multi-agent-code-review-pipeline)
-- [Project 2: Legacy to Modern Migration Framework](#project-2-legacy-to-modern-migration-framework)
+- [Introduction](#introduction)
+- [Aspire Ontario Exp (AI Application Developer Co-op)(Jan 2025 – Jan 2026)](#aspire-ontario-exp-ai-application-developer-co-opjan-2025--jan-2026)
+- [Meallens Exp (Software Developer Intern) (Jan 2023 – Dec 2024)](#meallens-exp-software-developer-intern-jan-2023--dec-2024)
+- [Project 1: GenAI Incident Analyzer (Azure OpenAI + RAG)](#project-1-genai-incident-analyzer-azure-openai--rag)
+- [Project 2: React + FastAPI Observability Dashboard](#project-2-react--fastapi-observability-dashboard)
 - [Zapier](#zapier)
 - [About this company?](#about-this-company)
-- [Why are you interested in this position?](#why-are-you-interested-in-this-position)
+- [Why are you interested?](#why-are-you-interested)
+- [What you will learn from this Job?](#what-you-will-learn-from-this-job)
 - [Why should we hire you?](#why-should-we-hire-you)
 - [How do you use AI?](#how-do-you-use-ai)
 - [Non-Technical People.](#non-technical-people)
 - [Multiple Task/Project?](#multiple-taskproject)
+- [RAG Hallucination](#rag-hallucination)
 - [Strong Programming Language?](#strong-programming-language)
 - [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
@@ -199,20 +208,23 @@ I reproduced the issue, checked the deployment logs, compared the environments, 
 
 
 
+
 ## Table of Contents
 
-- [Introduce](#introduce)
-- [Aspire Ontario Exp (AI-Assisted Software Engineer)(Sept 2025 – Apr 2026)](#aspire-ontario-exp-ai-assisted-software-engineersept-2025--apr-2026)
-- [Meallens Exp (Full-Stack Developer) (June 2023 – Sept 2025)](#meallens-exp-full-stack-developer-june-2023--sept-2025)
-- [Project 1: Multi-Agent Code Review Pipeline](#project-1-multi-agent-code-review-pipeline)
-- [Project 2: Legacy to Modern Migration Framework](#project-2-legacy-to-modern-migration-framework)
+- [Introduction](#introduction)
+- [Aspire Ontario Exp (AI Application Developer Co-op)(Jan 2025 – Jan 2026)](#aspire-ontario-exp-ai-application-developer-co-opjan-2025--jan-2026)
+- [Meallens Exp (Software Developer Intern) (Jan 2023 – Dec 2024)](#meallens-exp-software-developer-intern-jan-2023--dec-2024)
+- [Project 1: GenAI Incident Analyzer (Azure OpenAI + RAG)](#project-1-genai-incident-analyzer-azure-openai--rag)
+- [Project 2: React + FastAPI Observability Dashboard](#project-2-react--fastapi-observability-dashboard)
 - [Zapier](#zapier)
 - [About this company?](#about-this-company)
-- [Why are you interested in this position?](#why-are-you-interested-in-this-position)
+- [Why are you interested?](#why-are-you-interested)
+- [What you will learn from this Job?](#what-you-will-learn-from-this-job)
 - [Why should we hire you?](#why-should-we-hire-you)
 - [How do you use AI?](#how-do-you-use-ai)
 - [Non-Technical People.](#non-technical-people)
 - [Multiple Task/Project?](#multiple-taskproject)
+- [RAG Hallucination](#rag-hallucination)
 - [Strong Programming Language?](#strong-programming-language)
 - [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
@@ -228,65 +240,57 @@ I reproduced the issue, checked the deployment logs, compared the environments, 
 
 How do you approach prompt engineering?
 
-"I start with a clear system prompt that defines the role and tone, then structure the user input cleanly. I iterate by testing edge cases and adjusting the prompt until the output is consistent and accurate."
+>I start with a clear system prompt that defines the role and tone, then structure the user input cleanly. I iterate by testing edge cases and adjusting the prompt until the output is consistent and accurate.
 
 What are the limitations of LLMs in an enterprise setting?
 
-"LLMs can hallucinate, have a knowledge cutoff, and can be expensive at scale. In enterprise settings, you also need to be careful about sending sensitive data to external APIs, which is why private deployments like Azure OpenAI matter."
+>LLMs can hallucinate, have a knowledge cutoff, and can be expensive at scale. In enterprise settings, you also need to be careful about sending sensitive data to external APIs, which is why private deployments like Azure OpenAI matter.
 
 
-Frontend & Integration
-What's your experience with React?
-
-"I've built a few small React apps — mostly dashboards that fetch data from a backend API and display it dynamically. I'm comfortable with components, hooks, and state management."
-
-Have you integrated a frontend with a backend API?
-
-"Yes, I used fetch and Axios to call REST endpoints from a React frontend. I handled loading states, error messages, and used environment variables to manage API URLs across environments."
-
-
-Collaboration & Process
 Describe your experience in an Agile environment.
 
-"During my internship, we worked in two-week sprints with daily standups. I picked up tickets from the backlog, gave status updates, and participated in retrospectives to improve our process."
+>"During my internship, we worked in two-week sprints with daily standups. I picked up tickets from the backlog, gave status updates, and participated in retrospectives to improve our process."
 
 Tell me about working with a cross-functional team.
 
-"I worked with a design team and a data analyst on a dashboard project. I handled the API and they handled the visuals and data requirements. Regular syncs helped us stay aligned."
+>"I worked with a design team and a data analyst on a dashboard project. I handled the API and they handled the visuals and data requirements. Regular syncs helped us stay aligned."
 
 How do you handle feedback on your code?
 
-"I welcome it. I treat code reviews as a learning opportunity. If I disagree with a suggestion, I ask questions to understand the reasoning rather than pushing back defensively."
+>"I welcome it. I treat code reviews as a learning opportunity. If I disagree with a suggestion, I ask questions to understand the reasoning rather than pushing back defensively."
 
 
 Behavioural
 Tell me about a time you learned a new technology quickly.
 
-"I had to use Docker for the first time midway through a project. I spent a weekend going through the docs and a tutorial, containerized the app, and had it running in our pipeline within two days."
+>"I had to use Docker for the first time midway through a project. I spent a weekend going through the docs and a tutorial, containerized the app, and had it running in our pipeline within two days."
 
 Describe a project that didn't go as planned.
 
-"An API I built kept timing out under load. I hadn't accounted for response time from the LLM. I added async handling and a loading indicator on the frontend, and that fixed the user experience while I worked on optimizing the backend."
+>"An API I built kept timing out under load. I hadn't accounted for response time from the LLM. I added async handling and a loading indicator on the frontend, and that fixed the user experience while I worked on optimizing the backend."
 
 How do you prioritize multiple tasks in a sprint?
 
-"I focus on blockers first, then high-impact tasks. I communicate early if something is taking longer than expected so the team can adjust. I also break big tasks into smaller pieces to make progress visible."
+>"I focus on blockers first, then high-impact tasks. I communicate early if something is taking longer than expected so the team can adjust. I also break big tasks into smaller pieces to make progress visible."
+
 
 
 ## Table of Contents
 
-- [Introduce](#introduce)
-- [Aspire Ontario Exp (AI-Assisted Software Engineer)(Sept 2025 – Apr 2026)](#aspire-ontario-exp-ai-assisted-software-engineersept-2025--apr-2026)
-- [Meallens Exp (Full-Stack Developer) (June 2023 – Sept 2025)](#meallens-exp-full-stack-developer-june-2023--sept-2025)
-- [Project 1: Multi-Agent Code Review Pipeline](#project-1-multi-agent-code-review-pipeline)
-- [Project 2: Legacy to Modern Migration Framework](#project-2-legacy-to-modern-migration-framework)
+- [Introduction](#introduction)
+- [Aspire Ontario Exp (AI Application Developer Co-op)(Jan 2025 – Jan 2026)](#aspire-ontario-exp-ai-application-developer-co-opjan-2025--jan-2026)
+- [Meallens Exp (Software Developer Intern) (Jan 2023 – Dec 2024)](#meallens-exp-software-developer-intern-jan-2023--dec-2024)
+- [Project 1: GenAI Incident Analyzer (Azure OpenAI + RAG)](#project-1-genai-incident-analyzer-azure-openai--rag)
+- [Project 2: React + FastAPI Observability Dashboard](#project-2-react--fastapi-observability-dashboard)
 - [Zapier](#zapier)
 - [About this company?](#about-this-company)
-- [Why are you interested in this position?](#why-are-you-interested-in-this-position)
+- [Why are you interested?](#why-are-you-interested)
+- [What you will learn from this Job?](#what-you-will-learn-from-this-job)
 - [Why should we hire you?](#why-should-we-hire-you)
 - [How do you use AI?](#how-do-you-use-ai)
 - [Non-Technical People.](#non-technical-people)
 - [Multiple Task/Project?](#multiple-taskproject)
+- [RAG Hallucination](#rag-hallucination)
 - [Strong Programming Language?](#strong-programming-language)
 - [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
