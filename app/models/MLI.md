@@ -10,12 +10,10 @@
 - [About this company?](#about-this-company)
 - [Why are you interested?](#why-are-you-interested)
 - [What you will learn from this Job?](#what-you-will-learn-from-this-job)
-- [Why should we hire you?](#why-should-we-hire-you)
-- [How do you use AI?](#how-do-you-use-ai)
+- [Unclear Requirement](#unclear-requirement)
 - [Non-Technical People.](#non-technical-people)
 - [Multiple Task/Project?](#multiple-taskproject)
 - [RAG Hallucination](#rag-hallucination)
-- [Strong Programming Language?](#strong-programming-language)
 - [Comfortable Learning New Tech?](#comfortable-learning-new-tech)
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
 - [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
@@ -150,6 +148,8 @@ I'm excited about the opportunity to build AI solutions at a much larger scale, 
 - I would get the experience of working with engineers across differrent regions
 
 
+# Unclear Requirement
+When the requirements are not clear, I ask questions to understand what the goal is. Then I confirm my understanding with the stakeholders or my team to make sure we're on the same page. If I need to make any assumptions, I write them down and ask for confirmation. I continue working on the parts that are clear. This helps avoid mistakes and reduces the chance of doing the work again.
 
 # Non-Technical People.
 I worked with users who weren't technical. When explaining something to a non-technical user, I avoid technical jargon and focus on the business impact rather than the technology behind it. I try to use simple language, relatable examples, and break the explanation into small steps.
