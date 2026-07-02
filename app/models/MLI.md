@@ -68,10 +68,10 @@ The challenge was how to get an AI to give accurate, trustworthy answers about o
 
 So the best option was using RAG. Instead of asking the AI to just guess an answer, the system first looks up similar past incidents from our ServiceNow ticket data, and then feeds that real information to the AI model, which was Azure OpenAI. So the AI's answer is grounded in actual past cases, not just a guess.
 
-When a new incident came in, the system searched through historical tickets to find similar past issues and then it passed that context to the LLM, which suggested a likely root cause based on what actually worked before. I also wrote and refined the prompts to make the answers more accurate and consistent, and I documented that so the team could reuse it later.
+When a new incident came in, the system searched through historical tickets to find similar past issues and then it passed that context to the LLM, which suggested a likely root cause based on what actually worked before. I also wrote and refined the prompts to make the answers more accurate.
 
 **Result:**
-The average time to resolve them dropped from about 4 hours down to 45 minutes. So instead of analysts starting from scratch every time, they had the AI pointing them straight to the likely cause, backed by real historical data."
+The average time to resolve the problem dropped significantly. So instead of starting from scratch every time, analysts had the AI pointing them straight to the likely cause.
 
 
 # Project 2: React + FastAPI Observability Dashboard
@@ -79,27 +79,24 @@ The goal of This project was about building a real-time dashboard that showed th
 
 **Challenge**
 
-The challenge was that the data was coming from different tools and it needed to be pulled together and shown in a way that was easy to understand at a glance, and updated in real time.
+The challenge was that the data was coming from different tools and it needed to be pulled together and shown in a way that was easy to understand at a glance.
 
-For the backend, I used FastAPI to build the service that collected and processed the system health data. For the frontend, I used React to build the actual dashboard to see the metrics and system status update live.
+For the backend, I used FastAPI to build the service that collected and processed the system health data. For the frontend, I used React to build the actual dashboard to see the metrics and system status.
 
-I also set up a CI/CD pipeline using GitHub Actions, so every time code changes were made, it would automatically get tested and deployed. That made the whole development process faster and safer.
+I also set up a CI/CD pipeline using GitHub Actions, so every time code changes were made, it would automatically get tested and deployed.
 
 **Result**
 
-As a result we tracked 99% uptime over two months and the team had one clear place to check system health instead of jumping between tools.
+As a result we tracked 99% uptime over two months and the team had one place to check system health.
 
 # Zapier
-Zapier is a no-code automation tool that connects different apps together, so they can talk to each other and complete tasks automatically. 
+Zapier is a no-code automation tool that connects different apps together, so they can talk to each other and complete tasks. 
 
-I used Zapier to build an Automated Lead Capture and Follow-Up System. The goal was to cut down manual work and make sure every new lead gets a fast response, without anyone on the team having to act on it right away.
+I used Zapier to build an Automated Lead Capture and Follow-Up System. The goal was to cut down manual work and make sure every new lead gets a fast response.
 
-Here's how it works: when a customer fills out a Google Form, that automatically triggers the Zapier workflow. First, the lead's information gets saved into a Google Sheet, so we have a clean record of every lead. 
+when a customer fills out a Google Form, that automatically triggers the Zapier workflow. First, the lead's information gets saved into a Google Sheet,
 
-Next, Zapier sends a notification to a Slack channel, so the team knows right away that a new lead has come in. Then, it automatically sends a personalized welcome email to the customer through Gmail — so they hear back from us immediately, even before a human follows up. And if a lead matches certain criteria, like a high-value customer, Zapier automatically flags it as high-priority so the team can follow up faster.
-
-The end result was a system that removed a lot of manual, repetitive work..
-
+Then, Zapier sends a notification to a Slack channel, so the team knows right away that a new lead has come in. Then, it automatically sends a personalized welcome email to the customer through Gmail — so they hear back from us immediately, even before a human follows up. And if a lead matches certain criteria, like a high-value customer, then Zapier automatically flags it as high-priority so the team can follow up faster.
 
 
 
