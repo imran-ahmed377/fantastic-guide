@@ -7,6 +7,7 @@
 - [Project 1: GenAI Incident Analyzer (Azure OpenAI + RAG)](#project-1-genai-incident-analyzer-azure-openai--rag)
 - [Project 2: React + FastAPI Observability Dashboard](#project-2-react--fastapi-observability-dashboard)
 - [Zapier](#zapier)
+---
 - [About this company?](#about-this-company)
 - [Why are you interested?](#why-are-you-interested)
 - [What you will learn from this Job?](#what-you-will-learn-from-this-job)
@@ -109,6 +110,7 @@ Then, Zapier sends a notification to a Slack channel, so the team knows right aw
 - [Project 1: GenAI Incident Analyzer (Azure OpenAI + RAG)](#project-1-genai-incident-analyzer-azure-openai--rag)
 - [Project 2: React + FastAPI Observability Dashboard](#project-2-react--fastapi-observability-dashboard)
 - [Zapier](#zapier)
+---
 - [About this company?](#about-this-company)
 - [Why are you interested?](#why-are-you-interested)
 - [What you will learn from this Job?](#what-you-will-learn-from-this-job)
@@ -214,6 +216,7 @@ I reproduced the issue, checked the deployment logs, compared the environments, 
 - [Project 1: GenAI Incident Analyzer (Azure OpenAI + RAG)](#project-1-genai-incident-analyzer-azure-openai--rag)
 - [Project 2: React + FastAPI Observability Dashboard](#project-2-react--fastapi-observability-dashboard)
 - [Zapier](#zapier)
+---
 - [About this company?](#about-this-company)
 - [Why are you interested?](#why-are-you-interested)
 - [What you will learn from this Job?](#what-you-will-learn-from-this-job)
@@ -279,6 +282,7 @@ How do you prioritize multiple tasks in a sprint?
 - [Project 1: GenAI Incident Analyzer (Azure OpenAI + RAG)](#project-1-genai-incident-analyzer-azure-openai--rag)
 - [Project 2: React + FastAPI Observability Dashboard](#project-2-react--fastapi-observability-dashboard)
 - [Zapier](#zapier)
+---
 - [About this company?](#about-this-company)
 - [Why are you interested?](#why-are-you-interested)
 - [What you will learn from this Job?](#what-you-will-learn-from-this-job)
