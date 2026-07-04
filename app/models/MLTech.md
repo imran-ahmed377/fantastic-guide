@@ -6,6 +6,22 @@ The goal was to build a system that could understand the meaning of an incident,
 
 # Phase 1: Building the Knowledge Base (Steps in Detail)
 
+## Typical Project Structure
+
+A simple project layout might look like:
+
+```text
+project/
+│
+├── ingest.py          # Load ServiceNow tickets
+├── preprocess.py      # Clean and chunk text
+├── embed.py           # Generate embeddings
+├── pinecone_db.py     # Create index and upsert vectors
+├── retrieve.py        # Query Pinecone
+├── chatbot.py         # Prompt the LLM
+└── app.py             # User interface
+```
+
 ## Step 1 — Decide What Data You Need and From Where
 
 In ServiceNow, incident data lives mainly in the `incident` table, but the useful "solution" text is spread across a few places:
@@ -158,6 +174,14 @@ This metadata allows filtered searches such as:
 
 > Only search Network tickets from the last year.
 
+## Why Pinecone
+
+- Fully managed and serverless—no infrastructure to deploy or maintain.
+- Very quick to get started, requiring only a few lines of code.
+- Automatically handles scaling, sharding, and backups.
+- **Downside:** Proprietary and cloud-only (SaaS), meaning your data is stored on Pinecone's infrastructure and costs increase with usage.
+- **Best suited for:** Teams that want to move quickly without managing their own infrastructure.
+
 ---
 
 # Phase 2: Answering a New Incident
@@ -258,6 +282,29 @@ A lightweight feedback mechanism (e.g., 👍 / 👎 on suggestions) should also 
 - Improve future recommendations
 
 
+
+---
+---
+---
+
+# Cosine Similarity
+
+Cosine similarity measures how similar two vectors are by looking at the angle between them, not their length. Every piece of text (a query or a ticket) becomes a vector — a long list of numbers positioned somewhere in this high-dimensional "meaning space." Cosine similarity gives you a score between -1 and 1 (in practice usually 0 to 1 for text embeddings): 1 means the vectors point in exactly the same direction (essentially identical meaning), 0 means they're unrelated, and negative means opposite meaning.
+
+
+### Semantic Search
+
+Semantic search is the process built on top of vector embeddings. Instead of matching exact keywords like a traditional database query (e.g., `WHERE description LIKE '%VPN%'`), it compares the **meaning** of a user's query with the meaning of every stored document.
+
+For example, a query such as:
+
+> "Can't connect to remote network"
+
+can successfully retrieve a ticket titled:
+
+> "VPN client failing to authenticate"
+
+Even though the two texts share few or no exact keywords, they express nearly the same idea. Their embedding vectors therefore point in similar directions in vector space, resulting in a high **cosine similarity** score.
 
 ---
 ---
