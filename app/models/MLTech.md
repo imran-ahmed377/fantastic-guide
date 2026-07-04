@@ -1,0 +1,891 @@
+# Project/Exp in Aspire Ontario: GenAI Incident Analyzer
+
+Overview of the Project:
+
+The goal was to build a system that could understand the meaning of an incident, retrieve the most relevant historical resolutions, and use an LLM to generate a grounded recommendation instead of relying on general knowledge.
+
+# Phase 1: Building the Knowledge Base (Steps in Detail)
+
+## Step 1 — Decide What Data You Need and From Where
+
+In ServiceNow, incident data lives mainly in the `incident` table, but the useful "solution" text is spread across a few places:
+
+- `incident.short_description` and `incident.description` — what the problem was
+- `incident.close_notes` — usually the actual fix (this is your gold data)
+- `incident.resolution_code`
+- Work notes / journal entries (`sys_journal_field`) — the back-and-forth troubleshooting steps
+- `incident.category`, `subcategory`, `cmdb_ci` (affected configuration item), `priority`, `assignment_group`
+- Linked `kb_knowledge` articles, if agents formalized fixes into KB entries
+- `sc_task` records if the incident spawned a change or fulfillment task
+
+Not every ticket is useful—many closed tickets have empty or useless close notes (e.g., "fixed" or "resolved via reboot" with no detail). Part of the project is filtering for tickets that actually contain a usable resolution.
+
+---
+
+## Step 2 — Extract the Data
+
+You'll pull data out of ServiceNow using the Table API (REST), which returns JSON.
+
+A typical extraction call looks like:
+
+```http
+GET /api/now/table/incident?sysparm_query=active=false^close_notesISNOTEMPTY&sysparm_fields=number,short_description,description,close_notes,category,subcategory,cmdb_ci,priority,resolution_code,resolved_at&sysparm_limit=500
+```
+
+Each record comes back as JSON:
+
+```json
+{
+  "number": "INC0012345",
+  "short_description": "VPN client fails to connect after Windows update",
+  "description": "User reports Cisco AnyConnect fails with error 442 after latest patch...",
+  "close_notes": "Reinstalled AnyConnect client v4.10, cleared cached profile, reconnected successfully.",
+  "category": "Network",
+  "subcategory": "VPN",
+  "cmdb_ci": "Cisco AnyConnect",
+  "priority": "3",
+  "resolution_code": "Solved (Permanently)",
+  "resolved_at": "2025-11-02 14:32:10"
+}
+```
+
+For a first load, you'd export the last **1–3 years** of closed incidents (however far back the data is still relevant—old tickets referencing decommissioned systems should be excluded).
+
+Options include:
+
+- Scheduled ServiceNow Scripted REST API export
+- An integration user with API access pulling on a schedule
+- ServiceNow's built-in Export to JSON/CSV for a one-time historical load
+
+---
+
+## Step 3 — Clean and Preprocess
+
+Raw ticket text is messy. This step matters more than people expect.
+
+Tasks include:
+
+- Strip HTML tags (ServiceNow rich-text fields often contain `<p>`, `<span style=...>`, etc.)
+- Remove boilerplate/signatures ("Sent from my iPhone," auto-reply footers, email headers pasted into descriptions)
+- Redact PII—usernames, employee IDs, IP addresses, phone numbers—especially important if data may flow into a third-party LLM API
+- Deduplicate—many incidents are near-identical restatements of the same root cause; you don't need 200 copies of "printer offline, restarted print spooler"
+- Filter out low-signal tickets—empty close notes or notes that just say "see KB0001234" without content
+- Normalize fields—consistent category/priority labels and resolved timestamps parsed as real dates
+
+---
+
+## Step 4 — Chunk the Data
+
+This is a key design decision, and incident tickets are simpler than most RAG use cases because they're naturally short and self-contained.
+
+### Option 1: One Chunk per Ticket (Recommended)
+
+Combine:
+
+- `short_description`
+- `description`
+- `close_notes`
+
+into a single text block, and attach metadata (category, CI, priority, date) as filterable fields alongside the vector.
+
+Most tickets are only a few hundred words, so this fits comfortably in one chunk.
+
+### Option 2: Split Long Tickets
+
+If a ticket has extensive work notes (long troubleshooting threads), split it into:
+
+- Problem chunk
+- Resolution chunk
+
+linked by ticket ID so retrieval can surface either.
+
+Each chunk should look like:
+
+```text
+Title: VPN client fails to connect after Windows update
+Category: Network / VPN
+Affected CI: Cisco AnyConnect
+
+Problem:
+User reports Cisco AnyConnect fails with error 442 after latest patch...
+
+Resolution:
+Reinstalled AnyConnect client v4.10, cleared cached profile, reconnected successfully.
+```
+
+---
+
+## Step 5 — Generate Embeddings
+
+Each chunk gets converted into a vector (a list of numbers representing its meaning) using an embedding model.
+
+Possible embedding models include:
+
+- OpenAI `text-embedding-3`
+- Cohere embedding models
+- Open-source models such as:
+  - `bge-large`
+  - `e5-large`
+
+This step is batched—you run it once over your historical data, then incrementally for new tickets.
+
+---
+
+## Step 6 — Store in a Vector Database
+
+The vectors plus their metadata get stored in a vector database that supports similarity search.
+
+Popular options include:
+
+- Pinecone
+- Weaviate
+- Qdrant
+- Milvus
+- `pgvector` (PostgreSQL extension)
+
+Each entry stores:
+
+- The embedding vector
+- The original text chunk
+- Structured metadata:
+  - Ticket number
+  - Category
+  - Configuration Item (CI)
+  - Resolution code
+  - Resolution date
+
+This metadata allows filtered searches such as:
+
+> Only search Network tickets from the last year.
+
+---
+
+# Phase 2: Answering a New Incident
+
+## Step 1 — Analyst Asks a Question
+
+Instead of manually searching, the analyst enters a query such as:
+
+> User reports VPN error 442 after latest Windows patch.
+
+---
+
+## Step 2 — Embed the Query
+
+The **same embedding model** used during ingestion converts the analyst's query into a vector.
+
+This consistency is important—you cannot mix embedding models between indexing and querying.
+
+---
+
+## Step 3 — Vector Search
+
+The vector database compares the query vector against all stored ticket vectors and returns the **top-k** most similar tickets (typically **3–5**), ranked by similarity.
+
+You can also apply metadata filters, for example:
+
+- Only Network category
+- Only tickets resolved in the last 12 months
+
+---
+
+## Step 4 — Construct the LLM Prompt and Generate an Answer
+
+The retrieved ticket texts are inserted into a prompt template together with the new incident description.
+
+Example:
+
+```text
+You are an IT support assistant. A new incident has been reported.
+
+New incident:
+{analyst's description}
+
+Here are similar past resolved incidents:
+
+[INC0012345]
+Problem: ...
+Resolution: ...
+
+[INC0009876]
+Problem: ...
+Resolution: ...
+
+[INC0008321]
+Problem: ...
+Resolution: ...
+
+Based on these past resolutions, suggest a likely fix for the new incident.
+
+Cite which ticket number(s) your suggestion is based on.
+
+If none of the past tickets seem relevant, say so clearly.
+```
+
+This is the **generation** step.
+
+The LLM (via an API or an in-house model) writes a natural-language answer grounded in the retrieved tickets rather than guessing from general knowledge.
+
+---
+
+## Step 5 — Analyst Reviews and Resolves
+
+The analyst receives:
+
+- A suggested fix
+- Source ticket citations
+
+They apply or adapt the recommendation and close the ticket in ServiceNow as normal.
+
+---
+
+## Step 6 — Feedback Loop
+
+The newly closed ticket becomes future training data.
+
+During the next ingestion run it is:
+
+1. Extracted
+2. Embedded
+3. Added to the vector database
+
+The knowledge base therefore grows continuously.
+
+A lightweight feedback mechanism (e.g., 👍 / 👎 on suggestions) should also be implemented to measure answer quality and help:
+
+- Tune retrieval parameters
+- Identify poor-quality source tickets
+- Improve future recommendations
+
+
+
+---
+---
+---
+
+
+# AI Product Analyst Interview Preparation Guide
+
+## What the AI Manager Is Likely Trying to Evaluate
+
+In a 30-minute interview, they'll likely be trying to answer these questions:
+
+- Can this person build software?
+- Do they understand modern GenAI applications beyond just calling ChatGPT?
+- Can they explain technical concepts clearly?
+- Are they curious and coachable?
+
+Since it's a new graduate role, they're **not** expecting someone who has deployed enterprise AI systems. They're looking for someone with strong fundamentals and the ability to learn quickly.
+
+---
+
+# Priority 1: Be Able to Talk Deeply About Your Projects
+
+This will probably make up **50% of the interview**.
+
+### Expect questions like:
+
+- Tell me about yourself.
+- Which AI project are you most proud of?
+- Walk me through one project from start to finish.
+- What was your contribution?
+- What challenges did you face?
+- If you had another month, what would you improve?
+
+## For Every Project on Your Resume, Prepare This Structure
+
+### Problem
+
+What problem were you solving?
+
+### Architecture
+
+```text
+Frontend
+    ↓
+Backend
+    ↓
+AI Model
+    ↓
+Database
+```
+
+Draw it on paper if needed.
+
+### Tech Stack
+
+Be prepared to explain why you chose:
+
+- Python
+- FastAPI
+- React
+- Azure/OpenAI
+- Vector database
+
+### Challenges
+
+Examples include:
+
+- Hallucinations
+- Latency
+- Prompt engineering
+- Authentication
+- Deployment
+- Scaling
+
+### Impact
+
+Numbers always help.
+
+Examples:
+
+- Reduced processing time by **30%**
+- Classified **10,000 documents**
+- Supported **100 users**
+
+---
+
+# Priority 2: Python + FastAPI
+
+The job description specifically mentions **FastAPI**.
+
+You don't need to memorize syntax.
+
+Know:
+
+- Why FastAPI?
+- Difference between Flask and FastAPI
+- REST APIs
+- GET vs POST
+- JSON
+- Request/Response
+- Async programming
+
+### Example Question
+
+> If React sends a prompt to your backend, what happens?
+
+### Good Answer
+
+```text
+React UI
+    ↓
+POST Request
+    ↓
+FastAPI Endpoint
+    ↓
+OpenAI API
+    ↓
+Receive Response
+    ↓
+Return JSON
+    ↓
+Display in UI
+```
+
+---
+
+# Priority 3: LLM Knowledge
+
+Expect several questions around GenAI.
+
+### Examples
+
+- What is an LLM?
+- How have you used OpenAI APIs?
+- What is prompt engineering?
+- What causes hallucinations?
+- How would you reduce hallucinations?
+
+### Good Answers Should Mention
+
+- Better prompting
+- RAG
+- Grounding
+- Citations
+- Temperature
+- Validation
+
+## RAG
+
+This appears in the preferred qualifications.
+
+### Expect
+
+> What is Retrieval-Augmented Generation (RAG)?
+
+### Know This Workflow
+
+```text
+User Question
+      ↓
+Embedding
+      ↓
+Vector Search
+      ↓
+Relevant Documents
+      ↓
+LLM
+      ↓
+Grounded Answer
+```
+
+### Why Is It Useful?
+
+- Enterprise data
+- Fewer hallucinations
+- Current information
+
+---
+
+# Priority 4: Azure
+
+Even if you haven't used Azure extensively, know the basics.
+
+Topics:
+
+- Azure OpenAI
+- Azure Functions
+- App Service
+- Storage
+- Key Vault
+
+### Good Response If Asked
+
+> "I haven't had an opportunity to use Azure extensively, but my projects on cloud platforms have given me a solid foundation, and I'm confident I can learn Azure quickly."
+
+This is a perfectly acceptable answer.
+
+---
+
+# Priority 5: React
+
+They're **not** hiring a React expert.
+
+Know:
+
+- Components
+- State
+- Props
+- Fetch API
+- Calling backend APIs
+
+---
+
+# Priority 6: AI Product Thinking
+
+This is important because the title is **AI Product Analyst**, not just AI Developer.
+
+### Possible Question
+
+> How would you improve IT operations using GenAI?
+
+### Ideas
+
+- ServiceNow ticket summarization
+- Incident classification
+- Root cause analysis
+- Chatbot for internal employees
+- Documentation search
+- Runbook generation
+
+---
+
+# Priority 7: Behavioral Questions
+
+Prepare STAR stories.
+
+### Examples
+
+- Tell me about a difficult project.
+- Tell me about a conflict.
+- Tell me about learning something quickly.
+- Tell me about failure.
+- Tell me about working with teammates.
+
+---
+
+# Questions They May Ask
+
+## Introduction
+
+- Tell me about yourself.
+
+## Resume
+
+- Walk me through your experience.
+
+## Project
+
+- Tell me about your chatbot.
+- How does it work?
+- Why did you choose that architecture?
+
+## AI
+
+- What is RAG?
+- How do embeddings work?
+- How would you reduce hallucinations?
+
+## Backend
+
+- How would you expose your model using an API?
+
+## Product
+
+- Suppose customer responses become slow.
+- How would you debug it?
+
+## Behavioral
+
+- Tell me about a challenge.
+
+## Your Questions
+
+- Any questions?
+
+---
+
+# Questions You Should Ask the AI Manager
+
+Good questions leave a strong impression.
+
+Examples:
+
+- "What types of GenAI applications is the team currently building?"
+- "How does the team evaluate whether an AI solution is successful once it's deployed?"
+- "What would success look like for someone in this role during the first three to six months?"
+- "What are the biggest technical challenges the team is working on right now?"
+- "How do junior team members typically receive mentorship and feedback?"
+
+---
+
+# 2-Day Preparation Plan
+
+## Session 1 (2–3 hours)
+
+Review every project on your resume.
+
+Be able to explain:
+
+- Architecture
+- Your specific contributions
+- Technical decisions
+- Challenges
+
+Do this without referring to notes.
+
+---
+
+## Session 2 (2 hours)
+
+Refresh:
+
+- Python
+- FastAPI
+- REST APIs
+- JSON
+- HTTP methods
+- How a frontend communicates with a backend
+
+---
+
+## Session 3 (2 hours)
+
+Review GenAI concepts:
+
+- LLMs
+- Prompt engineering
+- Embeddings
+- Vector databases
+- RAG
+- Hallucinations
+- Temperature
+- API-based integration
+
+---
+
+## Session 4 (1–2 hours)
+
+Practice:
+
+- Behavioral questions using the STAR method
+- A confident **60–90 second** introduction
+
+---
+---
+---
+---
+---
+# AI Product Analyst Interview Preparation (Resume-Based)
+
+Thanks for sharing your resume. Based on this, I think the interview is likely to be **resume-driven rather than algorithm-heavy**.
+
+One thing I want to point out before we get into preparation:
+
+> **Make sure every bullet on your resume is something you can explain in detail.**
+
+For example, if you wrote:
+
+> "Reduced ticket resolution by 30%."
+
+Be prepared to answer:
+
+- How was that measured?
+- What was the baseline?
+- How much of the improvement came from your work versus the team's?
+- What exactly did your application do?
+
+The AI manager will often dig one or two levels deeper. If your resume accurately reflects your experience and you can explain it clearly, that's a strong position to be in.
+
+---
+
+# What I Think the Interview Flow Will Look Like
+
+A 30-minute technical manager interview often follows this structure:
+
+| Time | Focus |
+|------|-------|
+| **5 minutes** | Introductions and "Tell me about yourself." |
+| **15–18 minutes** | Deep dive into your experience and projects |
+| **5–7 minutes** | AI and technical concepts |
+| **3–5 minutes** | Your questions |
+
+I would be surprised if there were live coding in such a short session, but they may ask you to describe how you'd design or debug something.
+
+---
+
+# Your Biggest Strength
+
+Your experience aligns very closely with the job description.
+
+| Job Description | Your Resume |
+|----------------|------------|
+| Python | ✅ |
+| FastAPI | ✅ |
+| React | ✅ |
+| REST APIs | ✅ |
+| Azure OpenAI | ✅ |
+| RAG | ✅ |
+| Docker | ✅ |
+| CI/CD | ✅ |
+| Agile | ✅ |
+| ServiceNow | ✅ |
+| Observability | ✅ |
+
+This means the interviewer's focus will likely be **less on checking off skills and more on understanding how well you know what you've built.**
+
+---
+
+# Question 1: "Tell Me About Yourself"
+
+This will almost certainly come up.
+
+Aim for **60–90 seconds**.
+
+Cover:
+
+- Your education
+- Your software development experience
+- How you became interested in AI
+- Your current focus
+- Why you're interested in this role
+
+## Example
+
+> "I'm currently completing my Master's in Applied Computing with a specialization in AI at the University of Windsor. During my recent co-op as an AI Application Developer, I worked on building AI-powered tools for IT operations using FastAPI, React, and Azure OpenAI. One of my main projects focused on automating incident summarization and supporting faster ticket resolution. Before that, I worked as a full-stack developer building Python APIs and React applications. I enjoy working at the intersection of software engineering and AI, especially building practical tools that improve workflows, which is what attracted me to this role at Manulife."
+
+Notice that this is conversational rather than just listing technologies.
+
+---
+
+# They Will Almost Certainly Ask About Your AI Application Developer Role
+
+Expect to spend **10–15 minutes** discussing this experience.
+
+### Possible Questions
+
+- What problem was the application solving?
+- Walk me through the architecture.
+
+### Architecture
+
+```text
+React Frontend
+        ↓
+FastAPI Backend
+        ↓
+Azure OpenAI API
+        ↓
+Response
+        ↓
+Frontend Displays Summary
+```
+
+Then expect follow-up questions:
+
+- Why FastAPI?
+- Why React?
+- How did Azure OpenAI fit in?
+- What prompts did you use?
+- How did you test it?
+- What challenges did you face?
+- How did users interact with it?
+- How was it deployed?
+
+---
+
+# They May Ask About RAG
+
+Since your project includes RAG, I'd expect questions such as:
+
+> Explain RAG to me.
+
+### Concise Answer
+
+> Instead of relying only on the LLM's training data, RAG retrieves relevant documents from a knowledge base first. Those documents are included in the prompt so the model generates answers grounded in the organization's own data. This helps improve accuracy and reduce hallucinations.
+
+### Follow-up Questions
+
+- What are embeddings?
+- What is a vector database?
+- How are documents retrieved?
+- Why is RAG useful in an enterprise setting?
+
+---
+
+# FastAPI Questions
+
+Since FastAPI is explicitly mentioned in the job description, expect questions like:
+
+- Why FastAPI over Flask?
+- What is a REST API?
+- Explain a POST request.
+- What does JSON look like?
+- How does the frontend communicate with the backend?
+- How do you handle errors?
+- How would you secure an API?
+
+---
+
+# Azure OpenAI
+
+Potential questions:
+
+- How did you integrate Azure OpenAI?
+- What's the difference between Azure OpenAI and OpenAI?
+
+### Good High-Level Answer
+
+> The models are similar, but Azure OpenAI integrates with Azure services, provides enterprise security and governance features, and helps organizations meet compliance requirements.
+
+---
+
+# Docker
+
+Don't just say:
+
+> "I used Docker."
+
+Instead, explain **why**:
+
+> Docker let us package the application and its dependencies so it behaved consistently across development, testing, and production environments.
+
+---
+
+# CI/CD
+
+You mention GitHub Actions.
+
+Be ready to explain the deployment pipeline:
+
+```text
+Code Push
+     ↓
+Tests Run
+     ↓
+Docker Image Builds
+     ↓
+Deploy
+```
+
+---
+
+# Observability
+
+The interviewer may ask:
+
+> What is observability?
+
+Be prepared to discuss:
+
+- Logs
+- Metrics
+- Traces
+
+Explain how engineers use these to diagnose issues, monitor application health, and troubleshoot production systems.
+
+---
+
+# Product Thinking
+
+Since the title is **AI Product Analyst**, don't focus only on implementation.
+
+Be prepared for questions like:
+
+> How would you know if your AI solution is successful?
+
+Talk about measurable outcomes such as:
+
+- Reduced resolution time
+- Improved user satisfaction
+- Fewer repeated tickets
+- Lower manual effort
+- Better response quality
+
+Showing that you think about **business outcomes—not just code—will help distinguish you.**
+
+---
+
+# Behavioral Questions
+
+Prepare STAR examples for:
+
+- A technical challenge
+- Working with teammates
+- Learning a new technology quickly
+- Receiving feedback
+- Handling multiple priorities
+
+---
+
+# Questions to Ask the AI Manager
+
+I would ask one or two thoughtful questions, such as:
+
+- "What kinds of GenAI use cases is the team most excited about right now?"
+- "How do you balance experimenting with new AI capabilities while maintaining reliability in production?"
+- "What would you hope someone in this role accomplishes during their first six months?"
+
+These questions show interest in both the technology and the business context.
+
+---
+
+# One Final Suggestion
+
+One thing stands out to me:
+
+Your resume reads as an almost perfect match to the job description—so much so that the AI manager may naturally probe to understand the depth of your experience.
+
+That's not a bad thing, but it means you should be ready to go beyond the bullet points.
+
+If you can clearly explain:
+
+- The architecture
+- Technical trade-offs
+- Challenges
+- Design decisions
+- Your individual contributions
+- The business impact
+
+...you'll likely make a much stronger impression than someone who simply lists the technologies they used.
