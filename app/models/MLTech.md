@@ -329,9 +329,38 @@ A lightweight feedback mechanism (e.g., 👍 / 👎 on suggestions) should also 
 ---
 ---
 
+# What is RAG
+
+RAG stands for Retrieval-Augmented Generation. It's a technique where an AI model first retrieves relevant information from an external knowledge source—such as documents, a database, or a vector store—and then uses that information to generate a more accurate and context-aware response. This helps reduce hallucinations and allows the model to answer questions using up-to-date or domain-specific data without retraining the model.
+
 # Cosine Similarity
 
 Cosine similarity measures how similar two vectors are by looking at the angle between them, not their length. Every piece of text (a query or a ticket) becomes a vector — a long list of numbers positioned somewhere in this high-dimensional "meaning space." Cosine similarity gives you a score between -1 and 1 (in practice usually 0 to 1 for text embeddings): 1 means the vectors point in exactly the same direction (essentially identical meaning), 0 means they're unrelated, and negative means opposite meaning.
+
+# Hallucinations
+
+explicitly instruct the model to only use the provided context and to say "no matching precedent found" when retrieval confidence is low; always display the source ticket numbers so the analyst can verify against the original before acting; and consider a similarity score threshold — if the best match is still weakly similar, don't even attempt to generate an answer, just show "no strong match found" instead of forcing a shaky one.
+
+# Measuring Success
+
+1. Retrieval quality (does it find the right past tickets?)
+2. Answer quality (is the generated suggestion actually helpful?)
+3. Adoption and usage
+4. Feedback signal (A simple thumbs up/down on each suggested answer gives you a running satisfaction rate, and — importantly — lets you flag which source tickets are consistently linked to bad suggestions)
+5. Business outcome metrics — the ones that matter most to leadership
+
+
+
+
+# Prompt Engineering
+- Step 1 — Start with a baseline prompt
+- Step 2 — Build a test set of real incidents
+- Step 3 — Run the test set and manually review outputs
+- Step 4 — Iterate on specific, isolated changes
+- Step 5 — Version and log your prompts
+- Step 6 — Monitor in production, not just in testing
+- Step 7 — Separate "retrieval problems" from "prompt problems" when debugging
+
 
 
 # Semantic Search
