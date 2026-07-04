@@ -64,6 +64,48 @@ Each record comes back as JSON:
   "resolved_at": "2025-11-02 14:32:10"
 }
 ```
+```json
+{
+  "number": "INC0012389",
+  "short_description": "Printer offline in Finance department",
+  "description": "User reports HP LaserJet M501 on 3rd floor showing offline status, unable to print invoices.",
+  "close_notes": "Print spooler service was hung. Restarted spooler service and re-added printer queue. Confirmed test print successful.",
+  "category": "Hardware",
+  "subcategory": "Printer",
+  "cmdb_ci": "HP LaserJet M501",
+  "priority": "4",
+  "resolution_code": "Solved (Permanently)",
+  "resolved_at": "2025-09-14 09:15:22"
+}
+```
+```json
+{
+  "number": "INC0012410",
+  "short_description": "Outlook crashes on startup after latest update",
+  "description": "Multiple users in Sales team reporting Outlook 365 crashes immediately after opening, error code 0x80070005.",
+  "close_notes": "Identified conflict with a third-party add-in (Salesforce Outlook plugin). Disabled add-in via Outlook safe mode, then updated to latest plugin version 4.2.1. Issue resolved after reboot.",
+  "category": "Software",
+  "subcategory": "Email",
+  "cmdb_ci": "Microsoft Outlook 365",
+  "priority": "2",
+  "resolution_code": "Solved (Permanently)",
+  "resolved_at": "2025-08-03 11:42:07"
+}
+```
+```json
+{
+  "number": "INC0012455",
+  "short_description": "User unable to access shared drive",
+  "description": "User reports 'Access Denied' error when trying to open \\\\fileserver01\\finance share, worked fine yesterday.",
+  "close_notes": "User's AD group membership had been removed during a recent security group cleanup. Re-added user to Finance_ReadWrite AD group, confirmed access restored after group policy refresh.",
+  "category": "Access Management",
+  "subcategory": "File Share",
+  "cmdb_ci": "fileserver01",
+  "priority": "3",
+  "resolution_code": "Solved (Permanently)",
+  "resolved_at": "2025-10-21 16:03:55"
+}
+```
 
 For a first load, you'd export the last **1–3 years** of closed incidents (however far back the data is still relevant—old tickets referencing decommissioned systems should be excluded).
 
@@ -292,7 +334,7 @@ A lightweight feedback mechanism (e.g., 👍 / 👎 on suggestions) should also 
 Cosine similarity measures how similar two vectors are by looking at the angle between them, not their length. Every piece of text (a query or a ticket) becomes a vector — a long list of numbers positioned somewhere in this high-dimensional "meaning space." Cosine similarity gives you a score between -1 and 1 (in practice usually 0 to 1 for text embeddings): 1 means the vectors point in exactly the same direction (essentially identical meaning), 0 means they're unrelated, and negative means opposite meaning.
 
 
-### Semantic Search
+# Semantic Search
 
 Semantic search is the process built on top of vector embeddings. Instead of matching exact keywords like a traditional database query (e.g., `WHERE description LIKE '%VPN%'`), it compares the **meaning** of a user's query with the meaning of every stored document.
 
@@ -305,6 +347,12 @@ can successfully retrieve a ticket titled:
 > "VPN client failing to authenticate"
 
 Even though the two texts share few or no exact keywords, they express nearly the same idea. Their embedding vectors therefore point in similar directions in vector space, resulting in a high **cosine similarity** score.
+
+
+# Deployment
+
+A common minimal setup: FastAPI backend in a container on Azure App Service/AWS ECS, managed vector DB (Pinecone or Weaviate Cloud) or pgvector on an existing Postgres instance, and a scheduled Azure Function/Lambda for ingestion.
+
 
 ---
 ---
