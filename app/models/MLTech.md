@@ -352,10 +352,19 @@ explicitly instruct the model to only use the provided context and to say "no ma
 - **Knowledge-base updates:** Keep retrieval indexes and external data sources current so the model uses fresh information.
 
 
+# Temperature in LLMs
+
+Temperature in an LLM controls how random or creative the model’s output is.
+
+## Simple idea
+
+- **Low temperature** → more strict, predictable, factual  
+- **High temperature** → more creative, diverse, unpredictable
 
 - **Smaller context windows with relevant retrieval:** Provide only the most relevant information to reduce distractions from irrelevant context.
 - **Fact-checking pipelines:** Run the generated response through a secondary model or rule-based fact checker before presenting it.
 - **Model selection:** Use models that are optimized for factual accuracy and tool use for knowledge-intensive tasks.
+
 
 # Measuring Success
 
@@ -392,6 +401,21 @@ can successfully retrieve a ticket titled:
 > "VPN client failing to authenticate"
 
 Even though the two texts share few or no exact keywords, they express nearly the same idea. Their embedding vectors therefore point in similar directions in vector space, resulting in a high **cosine similarity** score.
+
+# React
+
+React steps:
+
+When the user submits a prompt in the React frontend, React sends an HTTP request (usually a POST request) to the backend API. The backend processes the request, calls the LLM or other services if needed, gets the response, and sends it back to React. React then updates the UI and displays the response to the user.
+
+**React Advantages:**
+
+- **Reusable components:** Write a component once (for example, a Button or ProductCard) and use it throughout your app.
+- **Automatic UI updates:** When data changes, React updates the affected parts of the page automatically.
+- **Easier maintenance:** Splitting the UI into components makes the codebase easier to understand and modify.
+- **Good performance:** React efficiently updates only the parts of the page that changed, rather than rebuilding the entire page.
+- **Large ecosystem:** There are many libraries and tools that integrate well with React.
+
 
 
 # Deployment
@@ -1267,3 +1291,78 @@ If you can clearly explain:
 - The business impact
 
 ...you'll likely make a much stronger impression than someone who simply lists the technologies they used.
+
+# API Basics:
+
+## Why FastAPI?
+
+FastAPI is a modern Python framework for building APIs that is fast, easy to use, and supports automatic validation and documentation out of the box.
+
+---
+
+## Difference between Flask and FastAPI
+
+Flask is simpler and synchronous by default, while FastAPI is faster, supports async programming, and automatically generates API docs and data validation.
+
+---
+
+## REST APIs
+
+REST APIs are a way for applications to communicate over HTTP using standard methods like GET, POST, PUT, and DELETE to manage resources.
+
+---
+
+## GET vs POST
+
+- **GET** is used to retrieve data from a server  
+- **POST** is used to send data to a server (often to create or process something)
+
+---
+
+## JSON
+
+JSON is a lightweight data format used to store and exchange data between a client and a server in a readable key-value structure.
+
+---
+
+## Request / Response
+
+- A **request** is what a client sends to a server (asking for data or action)  
+- A **response** is what the server sends back after processing it
+
+---
+
+## Async Programming
+
+Async programming allows a program to handle multiple tasks at the same time without waiting for each one to finish, improving efficiency especially for I/O operations.
+
+
+# React Basics:
+
+## Components
+
+Components are reusable building blocks of a React app that define part of the UI, like a button, navbar, or product card.
+
+---
+
+## State
+
+State is data inside a component that can change over time and automatically updates the UI when it changes.
+
+---
+
+## Props
+
+Props are inputs passed from a parent component to a child component to make components reusable and dynamic.
+
+---
+
+## Fetch API
+
+Fetch API is a built-in JavaScript method used in React to make HTTP requests to get or send data from/to a server.
+
+---
+
+## Calling Backend APIs
+
+Calling backend APIs in React means sending requests (like GET or POST) to a server to fetch or update data and then using that data to update the UI.
