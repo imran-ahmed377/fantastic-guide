@@ -1366,3 +1366,27 @@ Fetch API is a built-in JavaScript method used in React to make HTTP requests to
 ## Calling Backend APIs
 
 Calling backend APIs in React means sending requests (like GET or POST) to a server to fetch or update data and then using that data to update the UI.
+
+# Azure Basics
+
+## Azure Functions
+
+Azure Functions is a serverless compute service that runs small pieces of code in response to events (like HTTP requests) without managing servers.
+
+---
+
+## Azure App Service
+
+Azure App Service is a platform for hosting web apps and APIs, where Microsoft handles infrastructure, scaling, and deployment.
+
+---
+
+## Azure Storage
+
+Azure Storage is a service for saving data in the cloud, such as files, blobs, tables, and queues, in a scalable and durable way.
+
+---
+
+## Azure Key Vault
+
+Azure Key Vault is a secure service used to store and manage sensitive information like API keys, passwords, and certificates.
