@@ -341,6 +341,22 @@ Cosine similarity measures how similar two vectors are by looking at the angle b
 
 explicitly instruct the model to only use the provided context and to say "no matching precedent found" when retrieval confidence is low; always display the source ticket numbers so the analyst can verify against the original before acting; and consider a similarity score threshold — if the best match is still weakly similar, don't even attempt to generate an answer, just show "no strong match found" instead of forcing a shaky one.
 
+- **Grounding (RAG):** Retrieve relevant documents, databases, or web results and generate answers based on that evidence.
+- **Prompt engineering:** Instruct the model to answer only from provided context and say "I don't know" when evidence is insufficient.
+- **Use system instructions:** Set clear behavioral rules, such as avoiding speculation and requiring evidence-backed responses.
+- **Citations and source attribution:** Ask the model to provide references or quote the source used for each claim.
+- **Confidence thresholds:** Require the model to abstain or flag uncertainty when confidence is low.
+
+
+- **Human-in-the-loop review:** Route high-risk or low-confidence responses to a human reviewer.
+- **Knowledge-base updates:** Keep retrieval indexes and external data sources current so the model uses fresh information.
+
+
+
+- **Smaller context windows with relevant retrieval:** Provide only the most relevant information to reduce distractions from irrelevant context.
+- **Fact-checking pipelines:** Run the generated response through a secondary model or rule-based fact checker before presenting it.
+- **Model selection:** Use models that are optimized for factual accuracy and tool use for knowledge-intensive tasks.
+
 # Measuring Success
 
 1. Retrieval quality (does it find the right past tickets?)
@@ -380,7 +396,245 @@ Even though the two texts share few or no exact keywords, they express nearly th
 
 # Deployment
 
-A common minimal setup: FastAPI backend in a container on Azure App Service/AWS ECS, managed vector DB (Pinecone or Weaviate Cloud) or pgvector on an existing Postgres instance, and a scheduled Azure Function/Lambda for ingestion.
+**Overview:**
+
+FastAPI backend in a container on Azure App Service, managed vector DB (Pinecone), and a scheduled Azure Function for ingestion.
+
+## **Deployment Details:**
+## Architecture Recap
+
+| Component | Technology |
+|-----------|------------|
+| **Compute** | Azure Container Apps or Azure App Service (hosting the FastAPI backend) |
+| **LLM + Embeddings** | Azure OpenAI Service |
+| **Vector Database** | Pinecone (external SaaS, accessed via API) |
+| **Secrets Management** | Azure Key Vault |
+| **Scheduled Ingestion** | Azure Functions (Timer Trigger) |
+| **Identity** | Microsoft Entra ID (Azure Active Directory) |
+| **Monitoring** | Azure Application Insights |
+| **CI/CD** | GitHub Actions or Azure DevOps Pipelines |
+
+---
+
+## Step 1 — Provision Azure OpenAI
+
+Request access and deploy your models in Azure OpenAI Studio:
+
+- Deploy a **chat model** (e.g., GPT-4o)
+- Deploy an **embedding model** (e.g., `text-embedding-3-large`)
+
+Record the following information:
+
+- Azure OpenAI endpoint URL
+- Chat deployment name
+- Embedding deployment name
+- API key or Managed Identity configuration
+
+> Both deployments are required:
+>
+> - **Embeddings** are used during ingestion and retrieval.
+> - **Chat model** is used to generate responses.
+
+---
+
+## Step 2 — Set Up Pinecone
+
+Create a Pinecone project and index.
+
+Configure:
+
+- Index dimensions matching your embedding model
+  - Example: **3072 dimensions** for `text-embedding-3-large`
+- Similarity metric:
+  - **Cosine similarity**
+
+Pinecone is fully managed, so no infrastructure needs provisioning.
+
+Record:
+
+- Pinecone API key
+- Environment/Host URL
+
+---
+
+## Step 3 — Store Secrets in Azure Key Vault
+
+Store every credential in Key Vault rather than embedding them in code or CI/CD.
+
+Recommended secrets:
+
+- Azure OpenAI endpoint
+- Azure OpenAI API key (or use Managed Identity)
+- Pinecone API key
+- ServiceNow credentials
+- OAuth client secrets
+
+---
+
+## Step 4 — Containerize the FastAPI Backend
+
+### `requirements.txt`
+
+```text
+fastapi
+uvicorn
+openai
+pinecone-client
+azure-identity
+azure-keyvault-secrets
+```
+
+### Dockerfile
+
+```dockerfile
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+```
+
+---
+
+## Step 5 — Push the Image to Azure Container Registry
+
+---
+
+## Step 6 — Deploy the Backend to Azure Container Apps
+
+Azure Container Apps is generally preferable to Azure App Service because it:
+
+- Scales to zero when idle
+- Is cost-efficient for internal tools
+- Supports streaming HTTP responses for chat applications
+
+Create the Container Apps environment:
+
+---
+
+## Step 7 — Enable Managed Identity
+
+Instead of storing Azure OpenAI credentials as environment variables:
+
+1. Assign a Managed Identity to the Container App.
+2. Grant it access to:
+   - Azure Key Vault
+   - Azure OpenAI
+
+Benefits:
+
+- No Azure secrets stored in GitHub.
+- Credentials never appear in deployment files.
+- Runtime authentication is automatic.
+
+---
+
+## Step 8 — Deploy the Ingestion Pipeline
+
+Deploy a Timer-triggered Azure Function.
+
+Responsibilities:
+
+- Retrieve newly closed ServiceNow incidents
+- Clean and preprocess text
+- Generate embeddings
+- Upsert vectors into Pinecone
+
+Create the Function App:
+
+
+Configure:
+
+- Managed Identity
+- Key Vault access
+- Azure OpenAI access
+- Timer trigger
+
+Example timer schedule:
+
+```text
+0 0 2 * * *
+```
+
+(Runs daily at **2:00 AM**.)
+
+---
+
+## Step 9 — Configure CI/CD
+
+Deploy automatically on every push to `main`.
+
+
+Only one GitHub secret is required:
+
+
+All other credentials remain inside Azure Key Vault.
+
+---
+
+## Step 10 (Future Development) — Secure Analyst Access
+
+If the chatbot is a standalone web application:
+
+1. Register it in Microsoft Entra ID.
+2. Enable Easy Auth on the Container App **or** implement OIDC in FastAPI.
+
+Analysts authenticate using their existing corporate credentials.
+
+Example:
+
+---
+
+## Step 11 — Configure Monitoring
+
+Create an Application Insights instance.
+
+Connect both:
+
+- Container App
+- Azure Function
+
+Capture telemetry including:
+
+- Request latency
+- Errors and exceptions
+- Token usage
+- Retrieved Pinecone documents
+- Prompt version
+- User feedback (thumbs up/down)
+
+---
+
+## Step 12 (Future Developments) — Create a Staging Environment
+
+Provision a duplicate environment with a `-staging` suffix.
+
+Use:
+
+- Separate Azure Container App
+- Separate Azure OpenAI deployment
+- Separate Pinecone index
+- Separate resource group (recommended)
+
+Validate:
+
+- Prompt updates
+- Retrieval improvements
+- Model changes
+
+before promoting to production.
+
+Azure Container Apps also supports **traffic-splitting between revisions** for gradual rollouts.
+
+---
+
+
 
 
 ---
