@@ -29,7 +29,7 @@ I enjoy solving problems using modern tools and technologies. I am always eager 
 
 Overview of the Project:
 
-The goal was to build a system that could understand the meaning of an incident, retrieve the most relevant historical resolutions, and use an LLM to generate a grounded recommendation instead of relying on general knowledge.
+The goal was to build a system that could understand the meaning of an incident and  retrieve the most relevant historical resolutions, and use an LLM to generate a grounded recommendation instead of relying on general knowledge.
 
 # Phase 1: Building the Knowledge Base (Steps in Detail)
 
