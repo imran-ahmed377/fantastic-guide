@@ -237,6 +237,28 @@ This metadata allows filtered searches such as:
 
 ---
 
+# Table of Content
+- [Introduction](#introduction)
+- [Project/Exp Aspire](#projectexp-in-aspire-ontario-genai-incident-analyzer)
+- [Deployment](#deployment)
+- [What is RAG](#what-is-rag)
+- [Cosine Similarity](#cosine-similarity)
+- [Semantic Search](#semantic-search)
+- [Hallucinations](#hallucinations)
+- [Temperatue](#temperature-in-llms)
+- [Measuring Success](#measuring-success)
+- [Docker](#docker)
+- [CI/CD](#cicd)
+- [Prompt Engineerring](#prompt-engineering)
+- [React](#react)
+- [API Basics](#api-basics)
+- [React Basics](#react-basics)
+- [Azure Basics](#azure-basics)
+- [Questions](#questions)
+
+
+---
+
 # Phase 2: Answering a New Incident
 
 ## Step 1 — Analyst Asks a Question
@@ -336,7 +358,29 @@ A lightweight feedback mechanism (e.g., 👍 / 👎 on suggestions) should also 
 
 
 ---
----
+
+
+# Table of Content
+- [Introduction](#introduction)
+- [Project/Exp Aspire](#projectexp-in-aspire-ontario-genai-incident-analyzer)
+- [Deployment](#deployment)
+- [What is RAG](#what-is-rag)
+- [Cosine Similarity](#cosine-similarity)
+- [Semantic Search](#semantic-search)
+- [Hallucinations](#hallucinations)
+- [Temperatue](#temperature-in-llms)
+- [Measuring Success](#measuring-success)
+- [Docker](#docker)
+- [CI/CD](#cicd)
+- [Prompt Engineerring](#prompt-engineering)
+- [React](#react)
+- [API Basics](#api-basics)
+- [React Basics](#react-basics)
+- [Azure Basics](#azure-basics)
+- [Questions](#questions)
+
+
+
 ---
 
 # Deployment
@@ -578,7 +622,28 @@ before promoting to production.
 Azure Container Apps also supports **traffic-splitting between revisions** for gradual rollouts.
 
 ---
----
+
+# Table of Content
+- [Introduction](#introduction)
+- [Project/Exp Aspire](#projectexp-in-aspire-ontario-genai-incident-analyzer)
+- [Deployment](#deployment)
+- [What is RAG](#what-is-rag)
+- [Cosine Similarity](#cosine-similarity)
+- [Semantic Search](#semantic-search)
+- [Hallucinations](#hallucinations)
+- [Temperatue](#temperature-in-llms)
+- [Measuring Success](#measuring-success)
+- [Docker](#docker)
+- [CI/CD](#cicd)
+- [Prompt Engineerring](#prompt-engineering)
+- [React](#react)
+- [API Basics](#api-basics)
+- [React Basics](#react-basics)
+- [Azure Basics](#azure-basics)
+- [Questions](#questions)
+
+
+
 ---
 
 # What is RAG
@@ -686,6 +751,29 @@ When the user submits a prompt in the React frontend, React sends an HTTP reques
 
 - [React Basics](#react-basics)
 
+---
+
+# Table of Content
+- [Introduction](#introduction)
+- [Project/Exp Aspire](#projectexp-in-aspire-ontario-genai-incident-analyzer)
+- [Deployment](#deployment)
+- [What is RAG](#what-is-rag)
+- [Cosine Similarity](#cosine-similarity)
+- [Semantic Search](#semantic-search)
+- [Hallucinations](#hallucinations)
+- [Temperatue](#temperature-in-llms)
+- [Measuring Success](#measuring-success)
+- [Docker](#docker)
+- [CI/CD](#cicd)
+- [Prompt Engineerring](#prompt-engineering)
+- [React](#react)
+- [API Basics](#api-basics)
+- [React Basics](#react-basics)
+- [Azure Basics](#azure-basics)
+- [Questions](#questions)
+
+
+---
 
 # API Basics:
 
@@ -797,3 +885,24 @@ Azure Key Vault is a secure service used to store and manage sensitive informati
 - What are the next steps of the hiring process?
 - What are the biggest technical challenges the team is working on right now?
 - How do junior team members typically receive mentorship and feedback?
+
+
+---
+# Table of Content
+- [Introduction](#introduction)
+- [Project/Exp Aspire](#projectexp-in-aspire-ontario-genai-incident-analyzer)
+- [Deployment](#deployment)
+- [What is RAG](#what-is-rag)
+- [Cosine Similarity](#cosine-similarity)
+- [Semantic Search](#semantic-search)
+- [Hallucinations](#hallucinations)
+- [Temperatue](#temperature-in-llms)
+- [Measuring Success](#measuring-success)
+- [Docker](#docker)
+- [CI/CD](#cicd)
+- [Prompt Engineerring](#prompt-engineering)
+- [React](#react)
+- [API Basics](#api-basics)
+- [React Basics](#react-basics)
+- [Azure Basics](#azure-basics)
+- [Questions](#questions)
