@@ -1,5 +1,17 @@
 # Table of Content
 - [Introduction](#introduction)
+- [Project/Exp Aspire](#projectexp-in-aspire-ontario-genai-incident-analyzer)
+- [Deployment](#deployment)
+- [What is RAG](#what-is-rag)
+- [Cosine Similarity](#cosine-similarity)
+- [Semantic Search](#semantic-search)
+- [Hallucinations](#hallucinations)
+- [Temperatue](#temperature-in-llms)
+- [Measuring Success](#measuring-success)
+- [Docker](#docker)
+- [CI/CD](#cicd)
+- [Prompt Engineerring](#prompt-engineering)
+- [React](#react)
 
 
 # Introduction
@@ -183,10 +195,6 @@ Each chunk gets converted into a vector (a list of numbers representing its mean
 Possible embedding models include:
 
 - OpenAI `text-embedding-3`
-- Cohere embedding models
-- Open-source models such as:
-  - `bge-large`
-  - `e5-large`
 
 This step is batched—you run it once over your historical data, then incrementally for new tickets.
 
@@ -199,10 +207,6 @@ The vectors plus their metadata get stored in a vector database that supports si
 Popular options include:
 
 - Pinecone
-- Weaviate
-- Qdrant
-- Milvus
-- `pgvector` (PostgreSQL extension)
 
 Each entry stores:
 
@@ -327,113 +331,9 @@ A lightweight feedback mechanism (e.g., 👍 / 👎 on suggestions) should also 
 - Improve future recommendations
 
 
-
 ---
 ---
 ---
-
-# What is RAG
-
-RAG stands for Retrieval-Augmented Generation. It's a technique where an AI model first retrieves relevant information from an external knowledge source—such as documents, a database, or a vector store—and then uses that information to generate a more accurate and context-aware response. This helps reduce hallucinations and allows the model to answer questions using up-to-date or domain-specific data without retraining the model.
-
-# Cosine Similarity
-
-Cosine similarity measures how similar two vectors are by looking at the angle between them, not their length. Every piece of text (a query or a ticket) becomes a vector — a long list of numbers positioned somewhere in this high-dimensional "meaning space." Cosine similarity gives you a score between -1 and 1 (in practice usually 0 to 1 for text embeddings): 1 means the vectors point in exactly the same direction (essentially identical meaning), 0 means they're unrelated, and negative means opposite meaning.
-
-# Hallucinations
-
-explicitly instruct the model to only use the provided context and to say "no matching precedent found" when retrieval confidence is low; always display the source ticket numbers so the analyst can verify against the original before acting; and consider a similarity score threshold — if the best match is still weakly similar, don't even attempt to generate an answer, just show "no strong match found" instead of forcing a shaky one.
-
-- **Grounding (RAG):** Retrieve relevant documents, databases, or web results and generate answers based on that evidence.
-- **Prompt engineering:** Instruct the model to answer only from provided context and say "I don't know" when evidence is insufficient.
-- **Use system instructions:** Set clear behavioral rules, such as avoiding speculation and requiring evidence-backed responses.
-- **Citations and source attribution:** Ask the model to provide references or quote the source used for each claim.
-- **Confidence thresholds:** Require the model to abstain or flag uncertainty when confidence is low.
-
-
-- **Human-in-the-loop review:** Route high-risk or low-confidence responses to a human reviewer.
-- **Knowledge-base updates:** Keep retrieval indexes and external data sources current so the model uses fresh information.
-
-
-# Temperature in LLMs
-
-Temperature in an LLM controls how random or creative the model’s output is.
-
-## Simple idea
-
-- **Low temperature** → more strict, predictable, factual  
-- **High temperature** → more creative, diverse, unpredictable
-
-- **Smaller context windows with relevant retrieval:** Provide only the most relevant information to reduce distractions from irrelevant context.
-- **Fact-checking pipelines:** Run the generated response through a secondary model or rule-based fact checker before presenting it.
-- **Model selection:** Use models that are optimized for factual accuracy and tool use for knowledge-intensive tasks.
-
-
-# Measuring Success
-
-1. Retrieval quality (does it find the right past tickets?)
-2. Answer quality (is the generated suggestion actually helpful?)
-3. Adoption and usage
-4. Feedback signal (A simple thumbs up/down on each suggested answer gives you a running satisfaction rate, and — importantly — lets you flag which source tickets are consistently linked to bad suggestions)
-5. Business outcome metrics — the ones that matter most to leadership
-
-
-# Docker
-
-> Docker let us package the application and its dependencies so it behaved consistently across development, testing, and production environments.
-
-
-# CI/CD
-```text
-Code Push
-     ↓
-Tests Run
-     ↓
-Docker Image Builds
-     ↓
-Deploy
-```
-
-# Prompt Engineering
-- Step 1 — Start with a baseline prompt
-- Step 2 — Build a test set of real incidents
-- Step 3 — Run the test set and manually review outputs
-- Step 4 — Iterate on specific, isolated changes
-- Step 5 — Version and log your prompts
-- Step 6 — Monitor in production, not just in testing
-- Step 7 — Separate "retrieval problems" from "prompt problems" when debugging
-
-
-
-# Semantic Search
-
-Semantic search is the process built on top of vector embeddings. Instead of matching exact keywords like a traditional database query (e.g., `WHERE description LIKE '%VPN%'`), it compares the **meaning** of a user's query with the meaning of every stored document.
-
-For example, a query such as:
-
-> "Can't connect to remote network"
-
-can successfully retrieve a ticket titled:
-
-> "VPN client failing to authenticate"
-
-Even though the two texts share few or no exact keywords, they express nearly the same idea. Their embedding vectors therefore point in similar directions in vector space, resulting in a high **cosine similarity** score.
-
-# React
-
-React steps:
-
-When the user submits a prompt in the React frontend, React sends an HTTP request (usually a POST request) to the backend API. The backend processes the request, calls the LLM or other services if needed, gets the response, and sends it back to React. React then updates the UI and displays the response to the user.
-
-**React Advantages:**
-
-- **Reusable components:** Write a component once (for example, a Button or ProductCard) and use it throughout your app.
-- **Automatic UI updates:** When data changes, React updates the affected parts of the page automatically.
-- **Easier maintenance:** Splitting the UI into components makes the codebase easier to understand and modify.
-- **Good performance:** React efficiently updates only the parts of the page that changed, rather than rebuilding the entire page.
-- **Large ecosystem:** There are many libraries and tools that integrate well with React.
-
-
 
 # Deployment
 
@@ -672,6 +572,117 @@ Validate:
 before promoting to production.
 
 Azure Container Apps also supports **traffic-splitting between revisions** for gradual rollouts.
+
+---
+---
+---
+
+# What is RAG
+
+RAG stands for Retrieval-Augmented Generation. It's a technique where an AI model first retrieves relevant information from an external knowledge source—such as documents, a database, or a vector store—and then uses that information to generate a more accurate and context-aware response. This helps reduce hallucinations and allows the model to answer questions using up-to-date or domain-specific data without retraining the model.
+
+# Cosine Similarity
+
+Cosine similarity measures how similar two vectors are by looking at the angle between them, not their length. Every piece of text (a query or a ticket) becomes a vector — a long list of numbers positioned somewhere in this high-dimensional "meaning space." Cosine similarity gives you a score between -1 and 1 (in practice usually 0 to 1 for text embeddings): 1 means the vectors point in exactly the same direction (essentially identical meaning), 0 means they're unrelated, and negative means opposite meaning.
+
+
+# Semantic Search
+
+Semantic search is the process built on top of vector embeddings. Instead of matching exact keywords like a traditional database query (e.g., `WHERE description LIKE '%VPN%'`), it compares the **meaning** of a user's query with the meaning of every stored document.
+
+For example, a query such as:
+
+> "Can't connect to remote network"
+
+can successfully retrieve a ticket titled:
+
+> "VPN client failing to authenticate"
+
+Even though the two texts share few or no exact keywords, they express nearly the same idea. Their embedding vectors therefore point in similar directions in vector space, resulting in a high **cosine similarity** score.
+
+
+# Hallucinations
+
+explicitly instruct the model to only use the provided context and to say "no matching precedent found" when retrieval confidence is low; always display the source ticket numbers so the analyst can verify against the original before acting; and consider a similarity score threshold — if the best match is still weakly similar, don't even attempt to generate an answer, just show "no strong match found" instead of forcing a shaky one.
+
+- **Grounding (RAG):** Retrieve relevant documents, databases, or web results and generate answers based on that evidence.
+- **Prompt engineering:** Instruct the model to answer only from provided context and say "I don't know" when evidence is insufficient.
+- **Use system instructions:** Set clear behavioral rules, such as avoiding speculation and requiring evidence-backed responses.
+- **Citations and source attribution:** Ask the model to provide references or quote the source used for each claim.
+- **Confidence thresholds:** Require the model to abstain or flag uncertainty when confidence is low.
+
+
+- **Human-in-the-loop review:** Route high-risk or low-confidence responses to a human reviewer.
+- **Knowledge-base updates:** Keep retrieval indexes and external data sources current so the model uses fresh information.
+
+
+# Temperature in LLMs
+
+Temperature in an LLM controls how random or creative the model’s output is.
+
+## Simple idea
+
+- **Low temperature** → more strict, predictable, factual  
+- **High temperature** → more creative, diverse, unpredictable
+
+- **Smaller context windows with relevant retrieval:** Provide only the most relevant information to reduce distractions from irrelevant context.
+- **Fact-checking pipelines:** Run the generated response through a secondary model or rule-based fact checker before presenting it.
+- **Model selection:** Use models that are optimized for factual accuracy and tool use for knowledge-intensive tasks.
+
+
+# Measuring Success
+
+1. Retrieval quality (does it find the right past tickets?)
+2. Answer quality (is the generated suggestion actually helpful?)
+3. Adoption and usage
+4. Feedback signal (A simple thumbs up/down on each suggested answer gives you a running satisfaction rate, and — importantly — lets you flag which source tickets are consistently linked to bad suggestions)
+5. Business outcome metrics — the ones that matter most to leadership
+
+
+# Docker
+
+> Docker let us package the application and its dependencies so it behaved consistently across development, testing, and production environments.
+
+
+# CI/CD
+```text
+Code Push
+     ↓
+Tests Run
+     ↓
+Docker Image Builds
+     ↓
+Deploy
+```
+
+# Prompt Engineering
+- Step 1 — Start with a baseline prompt
+- Step 2 — Build a test set of real incidents
+- Step 3 — Run the test set and manually review outputs
+- Step 4 — Iterate on specific, isolated changes
+- Step 5 — Version and log your prompts
+- Step 6 — Monitor in production, not just in testing
+- Step 7 — Separate "retrieval problems" from "prompt problems" when debugging
+
+
+
+# React
+
+React steps:
+
+When the user submits a prompt in the React frontend, React sends an HTTP request (usually a POST request) to the backend API. The backend processes the request, calls the LLM or other services if needed, gets the response, and sends it back to React. React then updates the UI and displays the response to the user.
+
+**React Advantages:**
+
+- **Reusable components:** Write a component once (for example, a Button or ProductCard) and use it throughout your app.
+- **Automatic UI updates:** When data changes, React updates the affected parts of the page automatically.
+- **Easier maintenance:** Splitting the UI into components makes the codebase easier to understand and modify.
+- **Good performance:** React efficiently updates only the parts of the page that changed, rather than rebuilding the entire page.
+- **Large ecosystem:** There are many libraries and tools that integrate well with React.
+
+
+
+
 
 ---
 
