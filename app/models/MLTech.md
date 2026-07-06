@@ -12,6 +12,10 @@
 - [CI/CD](#cicd)
 - [Prompt Engineerring](#prompt-engineering)
 - [React](#react)
+- [API Basics](#api-basics)
+- [React Basics](#react-basics)
+- [Azure Basics](#azure-basics)
+- [Questions](#questions)
 
 
 # Introduction
@@ -680,42 +684,8 @@ When the user submits a prompt in the React frontend, React sends an HTTP reques
 - **Good performance:** React efficiently updates only the parts of the page that changed, rather than rebuilding the entire page.
 - **Large ecosystem:** There are many libraries and tools that integrate well with React.
 
+- [React Basics](#react-basics)
 
-
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
----
 
 # API Basics:
 
