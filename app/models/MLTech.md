@@ -1,3 +1,14 @@
+# Table of Content
+- [Introduction](#introduction)
+
+
+# Introduction
+
+I recently finished my Master's in Applied Computing with a focus on AI at the University of Windsor. Alongside my studies, I worked as a Co-op AI Application Developer at Aspire Ontario, where I built an AI-powered IT support tool. Before that, I was a Full Stack Developer Intern at Meallens. Across both roles, I've built backend systems using Python, and frontend interfaces using React, and worked with AI tools like Azure OpenAI to automate real business processes.
+
+I enjoy solving problems using modern tools and technologies. I am always eager to learn and continuously improve my skills to stay updated with latest technologies and contribute effectively to build impactful solutions.
+
+
 # Project/Exp in Aspire Ontario: GenAI Incident Analyzer
 
 Overview of the Project:
@@ -24,15 +35,7 @@ project/
 
 ## Step 1 — Decide What Data You Need and From Where
 
-In ServiceNow, incident data lives mainly in the `incident` table, but the useful "solution" text is spread across a few places:
-
-- `incident.short_description` and `incident.description` — what the problem was
-- `incident.close_notes` — usually the actual fix (this is your gold data)
-- `incident.resolution_code`
-- Work notes / journal entries (`sys_journal_field`) — the back-and-forth troubleshooting steps
-- `incident.category`, `subcategory`, `cmdb_ci` (affected configuration item), `priority`, `assignment_group`
-- Linked `kb_knowledge` articles, if agents formalized fixes into KB entries
-- `sc_task` records if the incident spawned a change or fulfillment task
+In ServiceNow, incident data lives mainly in the `incident` table, but the useful "solution" text is spread across a few places.
 
 Not every ticket is useful—many closed tickets have empty or useless close notes (e.g., "fixed" or "resolved via reboot" with no detail). Part of the project is filtering for tickets that actually contain a usable resolution.
 
@@ -375,7 +378,21 @@ Temperature in an LLM controls how random or creative the model’s output is.
 5. Business outcome metrics — the ones that matter most to leadership
 
 
+# Docker
 
+> Docker let us package the application and its dependencies so it behaved consistently across development, testing, and production environments.
+
+
+# CI/CD
+```text
+Code Push
+     ↓
+Tests Run
+     ↓
+Docker Image Builds
+     ↓
+Deploy
+```
 
 # Prompt Engineering
 - Step 1 — Start with a baseline prompt
@@ -786,92 +803,8 @@ Display in UI
 ```
 
 ---
-
-# Priority 3: LLM Knowledge
-
-Expect several questions around GenAI.
-
-### Examples
-
-- What is an LLM?
-- How have you used OpenAI APIs?
-- What is prompt engineering?
-- What causes hallucinations?
-- How would you reduce hallucinations?
-
-### Good Answers Should Mention
-
-- Better prompting
-- RAG
-- Grounding
-- Citations
-- Temperature
-- Validation
-
-## RAG
-
-This appears in the preferred qualifications.
-
-### Expect
-
-> What is Retrieval-Augmented Generation (RAG)?
-
-### Know This Workflow
-
-```text
-User Question
-      ↓
-Embedding
-      ↓
-Vector Search
-      ↓
-Relevant Documents
-      ↓
-LLM
-      ↓
-Grounded Answer
-```
-
-### Why Is It Useful?
-
-- Enterprise data
-- Fewer hallucinations
-- Current information
-
 ---
-
-# Priority 4: Azure
-
-Even if you haven't used Azure extensively, know the basics.
-
-Topics:
-
-- Azure OpenAI
-- Azure Functions
-- App Service
-- Storage
-- Key Vault
-
-### Good Response If Asked
-
-> "I haven't had an opportunity to use Azure extensively, but my projects on cloud platforms have given me a solid foundation, and I'm confident I can learn Azure quickly."
-
-This is a perfectly acceptable answer.
-
 ---
-
-# Priority 5: React
-
-They're **not** hiring a React expert.
-
-Know:
-
-- Components
-- State
-- Props
-- Fetch API
-- Calling backend APIs
-
 ---
 
 # Priority 6: AI Product Thinking
@@ -909,26 +842,6 @@ Prepare STAR stories.
 
 # Questions They May Ask
 
-## Introduction
-
-- Tell me about yourself.
-
-## Resume
-
-- Walk me through your experience.
-
-## Project
-
-- Tell me about your chatbot.
-- How does it work?
-- Why did you choose that architecture?
-
-## AI
-
-- What is RAG?
-- How do embeddings work?
-- How would you reduce hallucinations?
-
 ## Backend
 
 - How would you expose your model using an API?
@@ -938,82 +851,12 @@ Prepare STAR stories.
 - Suppose customer responses become slow.
 - How would you debug it?
 
-## Behavioral
-
-- Tell me about a challenge.
-
-## Your Questions
-
-- Any questions?
 
 ---
-
-# Questions You Should Ask the AI Manager
-
-Good questions leave a strong impression.
-
-Examples:
-
-- "What types of GenAI applications is the team currently building?"
-- "How does the team evaluate whether an AI solution is successful once it's deployed?"
-- "What would success look like for someone in this role during the first three to six months?"
-- "What are the biggest technical challenges the team is working on right now?"
-- "How do junior team members typically receive mentorship and feedback?"
-
 ---
-
-# 2-Day Preparation Plan
-
-## Session 1 (2–3 hours)
-
-Review every project on your resume.
-
-Be able to explain:
-
-- Architecture
-- Your specific contributions
-- Technical decisions
-- Challenges
-
-Do this without referring to notes.
-
 ---
-
-## Session 2 (2 hours)
-
-Refresh:
-
-- Python
-- FastAPI
-- REST APIs
-- JSON
-- HTTP methods
-- How a frontend communicates with a backend
-
 ---
-
-## Session 3 (2 hours)
-
-Review GenAI concepts:
-
-- LLMs
-- Prompt engineering
-- Embeddings
-- Vector databases
-- RAG
-- Hallucinations
-- Temperature
-- API-based integration
-
 ---
-
-## Session 4 (1–2 hours)
-
-Practice:
-
-- Behavioral questions using the STAR method
-- A confident **60–90 second** introduction
-
 ---
 ---
 ---
@@ -1044,67 +887,13 @@ The AI manager will often dig one or two levels deeper. If your resume accuratel
 
 # What I Think the Interview Flow Will Look Like
 
-A 30-minute technical manager interview often follows this structure:
-
-| Time | Focus |
-|------|-------|
-| **5 minutes** | Introductions and "Tell me about yourself." |
-| **15–18 minutes** | Deep dive into your experience and projects |
-| **5–7 minutes** | AI and technical concepts |
-| **3–5 minutes** | Your questions |
-
-I would be surprised if there were live coding in such a short session, but they may ask you to describe how you'd design or debug something.
-
 ---
-
-# Your Biggest Strength
-
-Your experience aligns very closely with the job description.
-
-| Job Description | Your Resume |
-|----------------|------------|
-| Python | ✅ |
-| FastAPI | ✅ |
-| React | ✅ |
-| REST APIs | ✅ |
-| Azure OpenAI | ✅ |
-| RAG | ✅ |
-| Docker | ✅ |
-| CI/CD | ✅ |
-| Agile | ✅ |
-| ServiceNow | ✅ |
-| Observability | ✅ |
-
-This means the interviewer's focus will likely be **less on checking off skills and more on understanding how well you know what you've built.**
-
 ---
-
-# Question 1: "Tell Me About Yourself"
-
-This will almost certainly come up.
-
-Aim for **60–90 seconds**.
-
-Cover:
-
-- Your education
-- Your software development experience
-- How you became interested in AI
-- Your current focus
-- Why you're interested in this role
-
-## Example
-
-> "I'm currently completing my Master's in Applied Computing with a specialization in AI at the University of Windsor. During my recent co-op as an AI Application Developer, I worked on building AI-powered tools for IT operations using FastAPI, React, and Azure OpenAI. One of my main projects focused on automating incident summarization and supporting faster ticket resolution. Before that, I worked as a full-stack developer building Python APIs and React applications. I enjoy working at the intersection of software engineering and AI, especially building practical tools that improve workflows, which is what attracted me to this role at Manulife."
-
-Notice that this is conversational rather than just listing technologies.
-
 ---
 
 # They Will Almost Certainly Ask About Your AI Application Developer Role
 
 Expect to spend **10–15 minutes** discussing this experience.
-
 ### Possible Questions
 
 - What problem was the application solving?
@@ -1136,24 +925,6 @@ Then expect follow-up questions:
 - How was it deployed?
 
 ---
-
-# They May Ask About RAG
-
-Since your project includes RAG, I'd expect questions such as:
-
-> Explain RAG to me.
-
-### Concise Answer
-
-> Instead of relying only on the LLM's training data, RAG retrieves relevant documents from a knowledge base first. Those documents are included in the prompt so the model generates answers grounded in the organization's own data. This helps improve accuracy and reduce hallucinations.
-
-### Follow-up Questions
-
-- What are embeddings?
-- What is a vector database?
-- How are documents retrieved?
-- Why is RAG useful in an enterprise setting?
-
 ---
 
 # FastAPI Questions
@@ -1213,19 +984,6 @@ Deploy
 
 ---
 
-# Observability
-
-The interviewer may ask:
-
-> What is observability?
-
-Be prepared to discuss:
-
-- Logs
-- Metrics
-- Traces
-
-Explain how engineers use these to diagnose issues, monitor application health, and troubleshoot production systems.
 
 ---
 
@@ -1390,3 +1148,15 @@ Azure Storage is a service for saving data in the cloud, such as files, blobs, t
 ## Azure Key Vault
 
 Azure Key Vault is a secure service used to store and manage sensitive information like API keys, passwords, and certificates.
+
+
+# Questions
+- What would success look like in the first 3-6 months?
+  >>> That's great to hear. Thank you for sharing that.
+- What kinds of applications would I be building?
+  >>> That's helpful. Could you also tell me a bit about...
+- Are developers encouraged to experiment with new AI tools and workflows?
+  >>> That sounds like an environment I'd really enjoy working in. Thanks for sharing.
+- What are the next steps of the hiring process?
+- What are the biggest technical challenges the team is working on right now?
+- How do junior team members typically receive mentorship and feedback?
