@@ -1,10 +1,10 @@
 # Table of Contents
 
 - [Introduction](#introduction)
-- [Aspire Experience (Data Engineer)](#aspire-experience-data-engineer)
-- [Meallens Experience (Machine Learning)](#meallens-experience-machine-learning)
-- [Project 1: Enterprise ML Monitoring Platform](#project-1-enterprise-ml-monitoring-platform)
-- [Project 2: Retail Data Lakehouse Architecture](#project-2-retail-data-lakehouse-architecture)
+- [Aspire Experience (Business Analyst) (Sept 2025 - Present)](#aspire-experience-business-analyst-sept-2025---present)
+- [Vista Print (Business Systems Analyst) (June 2023 - Sept 2025)](#vista-print-business-systems-analyst-june-2023---sept-2025)
+- [Project 1: Maximo Asset Management Optimization](#project-1-maximo-asset-management-optimization)
+- [Project 2: KPI Dashboard for Infrastructure Performance](#project-2-kpi-dashboard-for-infrastructure-performance)
 - [Zapier](#zapier)
 ---
 
@@ -13,44 +13,18 @@
 # Introduction
 I'm currently working as a Business Analyst at Aspire Ontario, where I support asset management and business systems. My work includes implementing IBM Maximo, developing Power BI dashboards, gathering business requirements, and improving maintenance processes. Before that, I worked as a Business Systems Analyst, focusing on SAP, SharePoint, system upgrades, and process improvements. I also completed my Master's in Applied Computing from the University of Windsor. What attracted me to this TTC opportunity is that it combines business analysis, asset management, and data-driven decision making, which closely aligns with my experience.
 
-# Aspire Experience (Data Engineer)
-At Aspire Ontario, I contributed to building AI-driven solutions for a CRM platform named Exeevo.
+# Aspire Experience (Business Analyst) (Sept 2025 - Present)
+At Aspire Ontario, I work as a Business Analyst supporting business systems and process improvement initiatives. My main focus has been improving maintenance and asset management processes using tools like IBM Maximo, SAP, SharePoint, and Power BI. I have been involved in gathering business requirements, improving workflows, creating KPI dashboards, supporting system implementation, and training users. One of my key projects was implementing IBM Maximo, where I helped improve maintenance tracking and reporting. I also work closely with business users, IT teams, and management to make sure solutions meet operational needs.
 
-I worked on developing an AI-powered voice assistant for the CRM system. I used Azure services like Azure Data Factory, Azure Databricks, and Azure OpenAI integrations to process customer data and support real-time voice interactions.
+# Vista Print (Business Systems Analyst) (June 2023 - Sept 2025)
+At Vista Print, I worked as a Business Systems Analyst, where I focused on improving business processes and supporting enterprise systems like SAP and SharePoint. I worked with different teams to understand their needs, document requirements, and help implement system improvements. I also created reports and KPI summaries to support better decision-making, supported testing during system upgrades, and worked with vendors to make sure solutions met business requirements. This role helped me build strong skills in process improvement, stakeholder communication, and system analysis.
 
-I built data pipelines, prepared structured customer data, and ensured the AI system had clean and reliable inputs. I also helped integrate the backend data workflows with the AI assistant so it could respond accurately and quickly.
-
-The **impact** was improved customer support efficiency and faster access to CRM information through voice commands, reducing manual search effort for users. It also made the CRM system more interactive and easier to use for non-technical teams.
-
-# Meallens Experience (Machine Learning)
-At Meallens, I worked on building scalable data systems and supporting machine learning workflows.
-
-I designed and implemented a data lake architecture using Azure Data Lake and Delta Lake, which helped centralize and organize large volumes of structured and unstructured data. I also built distributed data processing jobs using PySpark for high-volume analytics use cases.
-
-On the ML side, I worked on automating model training and deployment workflows using TensorFlow and MLflow, which made releases more consistent and efficient.
-
-I also helped set up CI/CD pipelines using Jenkins and GitLab, which reduced deployment failures by about 25%.
-
-Overall, my work improved data organization, made ML deployments smoother, and helped the team deliver analytics solutions faster and more reliably.
-
-# Project 1: Enterprise ML Monitoring Platform
-I worked on an ML monitoring platform that tracked model performance after deployment and detected issues like data drift and accuracy drops.
-
-I used Azure Databricks and PySpark to process prediction data and generate monitoring metrics. Azure Data Factory handled scheduling, while Docker and Kubernetes helped scale the monitoring services.
-
-One challenge was processing large volumes of prediction data without impacting performance. I optimized the Spark workloads and used batch processing to keep the system efficient.
-
-The platform automatically flagged unusual model behavior and alerted the team early. This reduced manual monitoring and helped identify when models needed retraining.
+# Project 1: Maximo Asset Management Optimization
+"The goal of the Maximo Asset Management Optimization project was to improve how maintenance activities and equipment information were managed. I worked with users to understand the current challenges and identify areas for improvement. I helped redesign maintenance workflows, improve tracking processes, and create reports that provided better visibility into equipment history, repairs, and maintenance costs. I also supported testing to make sure the changes worked properly. As a result, the process became more organized, equipment downtime was reduced by about 20%, and teams were able to make better maintenance decisions."
 
 
-# Project 2: Retail Data Lakehouse Architecture
-I worked on a Retail Data Lakehouse project on Azure that brought together data from multiple retail systems into a single platform for analytics and reporting.
-
-I used Azure Data Lake for storage, Azure Data Factory for data ingestion, and Azure Databricks with PySpark for data processing and transformations. I also built SCD pipelines to maintain historical data accurately.
-
-One challenge was managing large volumes of historical data while keeping reports fast. I improved performance through query optimization, partitioning, and efficient data modeling.
-
-The solution created a scalable and reliable data platform. It improved data consistency, reduced dashboard load times by around 45%, and made historical reporting easier for business teams.
+# Project 2: KPI Dashboard for Infrastructure Performance
+The goal of the KPI Dashboard for Infrastructure Performance project was to give managers a clear view of maintenance and asset performance. Before the dashboard, information was coming from different systems, making it harder to analyze. I collected data from systems like Maximo, SAP, and SQL databases, and created a Power BI dashboard that showed important KPIs such as work order completion, equipment health, and maintenance response times. I worked with users to understand what information they needed and made sure the dashboard was easy to use. The dashboard helped managers quickly identify issues and make better decisions.
 
 # Zapier
 I have worked on an Automated Lead Capture and Follow-Up System project using Zapier. The goal was to reduce manual work and make sure every new lead gets a quick response.
