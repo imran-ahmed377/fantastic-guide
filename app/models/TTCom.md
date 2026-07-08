@@ -7,6 +7,20 @@
 - [Project 2: KPI Dashboard for Infrastructure Performance](#project-2-kpi-dashboard-for-infrastructure-performance)
 - [Zapier](#zapier)
 ---
+- [Why work at TTC?](#why-work-at-ttc)
+- [What do you know about this role?](#what-do-you-know-about-this-role)
+- [Tell us about your experience with IBM Maximo.](#tell-us-about-your-experience-with-ibm-maximo)
+- [Tell us about a project where you improved a business process.](#tell-us-about-a-project-where-you-improved-a-business-process)
+- [Tell us about a dashboard you built.](#tell-us-about-a-dashboard-you-built)
+- [How do you gather business requirements?](#how-do-you-gather-business-requirements)
+- [Tell us about working with different stakeholders.](#tell-us-about-working-with-different-stakeholders)
+- [Describe a difficult project.](#describe-a-difficult-project)
+---
+- [IBM Maximo](#ibm-maximo)
+- [SAP](#sap)
+- [SharePoint](#sharepoint)
+- [Power Automate](#power-automate)
+
 
 
 
