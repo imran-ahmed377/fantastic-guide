@@ -15,6 +15,12 @@
 - [How do you gather business requirements?](#how-do-you-gather-business-requirements)
 - [Tell us about working with different stakeholders.](#tell-us-about-working-with-different-stakeholders)
 - [Describe a difficult project.](#describe-a-difficult-project)
+- [Tell us about training end users.](#tell-us-about-training-end-users)
+- [Have you worked with SAP?](#have-you-worked-with-sap)
+- [Describe your SharePoint experience.](#describe-your-sharepoint-experience)
+- [Have you managed projects?](#have-you-managed-projects)
+- [How do you prioritize multiple projects?](#how-do-you-prioritize-multiple-projects)
+- [Questions](#questions)
 ---
 - [IBM Maximo](#ibm-maximo)
 - [SAP](#sap)
@@ -111,6 +117,19 @@ Yes. I have managed projects related to business systems and process improvement
 - Risk
 - Stakeholder communication
 - Tracking progress
+
+# Questions
+
+- What would success look like in the first 3-6 months?
+  >>> That's great to hear. Thank you for sharing that.
+- What kinds of applications would I be building?
+  >>> That's helpful. Could you also tell me a bit about...
+- Are developers encouraged to experiment with new AI tools and workflows?
+  >>> That sounds like an environment I'd really enjoy working in. Thanks for sharing.
+- What are the next steps of the hiring process?
+- What are the biggest technical challenges the team is working on right now?
+- How do junior team members typically receive mentorship and feedback?
+
 
 ---
 
