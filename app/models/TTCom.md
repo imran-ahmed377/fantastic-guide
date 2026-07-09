@@ -1,4 +1,4 @@
-# Table of Contents
+<!-- # Table of Contents
 
 - [Introduction](#introduction)
 - [Aspire Experience (Business Analyst) (Sept 2025 - Present)](#aspire-experience-business-analyst-sept-2025---present)
@@ -1012,4 +1012,4 @@ Update Completion Status
 - [IBM Maximo](#ibm-maximo)
 - [SAP](#sap)
 - [SharePoint](#sharepoint)
-- [Power Automate](#power-automate)
+- [Power Automate](#power-automate) -->
