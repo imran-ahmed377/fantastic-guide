@@ -537,9 +537,8 @@ SharePoint is commonly used as a company's **intranet**, allowing employees to c
 - **Communication Sites** – Publish company news, announcements, and policies.
 - **Permissions & Security** – Control access to documents and sites.
 - **Lists & Libraries** – Organize structured data, tasks, and documents.
-- **Workflow Automation** – Automate approvals and business processes using :contentReference[oaicite:1]{index=1}.
+- **Workflow Automation** – Automate approvals and business processes.
 - **Search** – Quickly find documents, people, and information.
-- **Microsoft 365 Integration** – Works seamlessly with :contentReference[oaicite:2]{index=2}, :contentReference[oaicite:3]{index=3}, :contentReference[oaicite:4]{index=4}, :contentReference[oaicite:5]{index=5}, and :contentReference[oaicite:6]{index=6}.
 
 ---
 
