@@ -10,17 +10,17 @@
 - [Why work at TTC?](#why-work-at-ttc)
 - [Why Leave current role?](#why-leave-your-current-role)
 - [What do you know about this role?](#what-do-you-know-about-this-role)
-- [Your experience with IBM Maximo.](#tell-us-about-your-experience-with-ibm-maximo)
-- [Improved a business process.](#tell-us-about-a-project-where-you-improved-a-business-process)
-- [Dashboard you built.](#tell-us-about-a-dashboard-you-built)
+- [Your experience with IBM Maximo.](#your-experience-with-ibm-maximo)
+- [Improved a business process.](#improved-a-business-process)
+- [DASHBOARD you built.](#dashboard-you-built)
 - [Gather business requirements?](#how-do-you-gather-business-requirements)
-- [Working with different STAKEHOLDERS.](#tell-us-about-working-with-different-stakeholders)
+- [Working with different STAKEHOLDERS.](#working-with-different-stakeholders)
 - [Describe a DIFFICULT project.](#describe-a-difficult-project)
-- [TRAINING end users.](#tell-us-about-training-end-users)
+- [TRAINING end users.](#training-end-users)
 - [Have you worked with SAP?](#have-you-worked-with-sap)
 - [Describe your SHAREPOINT experience.](#describe-your-sharepoint-experience)
 - [Have you MANAGED PROJECT?](#have-you-managed-projects)
-- [How do you prioritize MULTIPLE projects?](#how-do-you-prioritize-multiple-projects)
+- [Prioritize multiple projects?](#how-do-you-prioritize-multiple-projects)
 - [Questions](#questions)
 ---
 - [IBM Maximo](#ibm-maximo)
@@ -32,20 +32,20 @@
 
 
 # Introduction
-I'm currently working as a Business Analyst at Aspire Ontario, where I support asset management and business systems. My work includes implementing IBM Maximo, developing Power BI dashboards, gathering business requirements, and improving maintenance processes. Before that, I worked as a Business Systems Analyst, focusing on SAP, SharePoint, system upgrades, and process improvements. I also completed my Master's in Applied Computing from the University of Windsor. What attracted me to this TTC opportunity is that it combines business analysis, asset management, and data-driven decision making, which closely aligns with my experience.
+I'm currently working as a Business Analyst at Aspire Ontario, where I support asset management and business systems. My work includes implementing IBM Maximo, developing Power BI dashboards, gathering business requirements, and improving maintenance processes. Before that, I worked as a Business Systems Analyst, focusing on SAP, SharePoint, system upgrades, and process improvements. I also completed my Master's in Applied Computing from the University of Windsor. I enjoy solving problems using modern tools and technologies. I am always eager to learn and continuously improve my skills to stay updated with latest technologies and contribute effectively to build impactful solutions.
 
 # Aspire Experience (Business Analyst) (Sept 2025 - Present)
-At Aspire Ontario, I work as a Business Analyst supporting business systems and process improvement initiatives. My main focus has been improving maintenance and asset management processes using tools like IBM Maximo, SAP, SharePoint, and Power BI. I have been involved in gathering business requirements, improving workflows, creating KPI dashboards, supporting system implementation, and training users. One of my key projects was implementing IBM Maximo, where I helped improve maintenance tracking and reporting. I also work closely with business users, IT teams, and management to make sure solutions meet operational needs.
+At Aspire Ontario, I work as a Business Analyst supporting business systems and process. My main focus has been improving maintenance and asset management processes using tools like IBM Maximo, SAP, SharePoint, and Power BI. I have been involved in gathering business requirements, improving workflows, creating KPI dashboards, supporting system implementation, and training users. One of my key projects was implementing IBM Maximo, where I helped improve maintenance tracking and reporting. I also work closely with business users, IT teams, and management to make sure solutions meet operational needs.
 
 # Vista Print (Business Systems Analyst) (June 2023 - Sept 2025)
-At Vista Print, I worked as a Business Systems Analyst, where I focused on improving business processes and supporting enterprise systems like SAP and SharePoint. I worked with different teams to understand their needs, document requirements, and help implement system improvements. I also created reports and KPI summaries to support better decision-making, supported testing during system upgrades, and worked with vendors to make sure solutions met business requirements. This role helped me build strong skills in process improvement, stakeholder communication, and system analysis.
+At Vista Print, I worked as a Business Systems Analyst, where I focused on improving business processes and supporting enterprise systems like SAP and SharePoint. I worked with different teams to understand their needs, document requirements, and help implement system improvements. I also created reports and KPI summaries. 
 
 # Project 1: Maximo Asset Management Optimization
-"The goal of the Maximo Asset Management Optimization project was to improve how maintenance activities and equipment information were managed. I worked with users to understand the current challenges and identify areas for improvement. I helped redesign maintenance workflows, improve tracking processes, and create reports that provided better visibility into equipment history, repairs, and maintenance costs. I also supported testing to make sure the changes worked properly. As a result, the process became more organized, equipment downtime was reduced by about 20%, and teams were able to make better maintenance decisions."
+The goal of the project was to improve how maintenance activities and equipment information were managed. I worked with users to understand the current challenges and identify areas for improvement. I helped redesign maintenance workflows, improve tracking processes, and create reports that provided better visibility into equipment history, repairs, and maintenance costs. I also supported testing to make sure the changes worked properly. As a result, the process became more organized, equipment downtime was reduced by about 20%, and teams were able to make better maintenance decisions.
 
 
 # Project 2: KPI Dashboard for Infrastructure Performance
-The goal of the KPI Dashboard for Infrastructure Performance project was to give managers a clear view of maintenance and asset performance. Before the dashboard, information was coming from different systems, making it harder to analyze. I collected data from systems like Maximo, SAP, and SQL databases, and created a Power BI dashboard that showed important KPIs such as work order completion, equipment health, and maintenance response times. I worked with users to understand what information they needed and made sure the dashboard was easy to use. The dashboard helped managers quickly identify issues and make better decisions.
+The goal of the KPI Dashboard for Infrastructure Performance project was to give managers a clear view of maintenance and asset performance. Before the dashboard, information was coming from different systems, making it harder to analyze. I collected data from systems like Maximo, SAP, and SQL databases, and created a Power BI dashboard that showed important KPIs such as work order completion, equipment health, and maintenance response times. I worked with users to understand what information they needed and made sure the dashboard was easy to use. 
 
 # Zapier
 I have worked on an Automated Lead Capture and Follow-Up System project using Zapier. The goal was to reduce manual work and make sure every new lead gets a quick response.
@@ -67,17 +67,17 @@ Then, a notification is sent to the Slack channel so the team know a new lead ha
 - [Why work at TTC?](#why-work-at-ttc)
 - [Why Leave current role?](#why-leave-your-current-role)
 - [What do you know about this role?](#what-do-you-know-about-this-role)
-- [Your experience with IBM Maximo.](#tell-us-about-your-experience-with-ibm-maximo)
-- [Improved a business process.](#tell-us-about-a-project-where-you-improved-a-business-process)
-- [Dashboard you built.](#tell-us-about-a-dashboard-you-built)
+- [Your experience with IBM Maximo.](#your-experience-with-ibm-maximo)
+- [Improved a business process.](#improved-a-business-process)
+- [DASHBOARD you built.](#dashboard-you-built)
 - [Gather business requirements?](#how-do-you-gather-business-requirements)
-- [Working with different STAKEHOLDERS.](#tell-us-about-working-with-different-stakeholders)
+- [Working with different STAKEHOLDERS.](#working-with-different-stakeholders)
 - [Describe a DIFFICULT project.](#describe-a-difficult-project)
-- [TRAINING end users.](#tell-us-about-training-end-users)
+- [TRAINING end users.](#training-end-users)
 - [Have you worked with SAP?](#have-you-worked-with-sap)
 - [Describe your SHAREPOINT experience.](#describe-your-sharepoint-experience)
 - [Have you MANAGED PROJECT?](#have-you-managed-projects)
-- [How do you prioritize MULTIPLE projects?](#how-do-you-prioritize-multiple-projects)
+- [Prioritize multiple projects?](#how-do-you-prioritize-multiple-projects)
 - [Questions](#questions)
 ---
 - [IBM Maximo](#ibm-maximo)
@@ -96,7 +96,7 @@ Then, a notification is sent to the Slack channel so the team know a new lead ha
 
 
 # Why Leave your current role?
-I've really enjoyed my current role, but I've always been interested in working for a public organization where my work can have a direct impact on the community. The opportunity to support TTC's streetcar infrastructure and improve business systems is something I find very meaningful.
+I've really enjoyed my current role, but I've always been interested in working for a public organization where my work can have a direct impact on the community. The opportunity to support TTC's streetcar infrastructure is something I find very meaningful.
 
 
 # What do you know about this role?
@@ -111,13 +111,13 @@ This role is about:
 - Supporting maintenance operations
 - Training users
 
-# Tell us about your experience with IBM Maximo.
+# Experience with IBM Maximo.
 At Aspire Ontario, I worked on implementing IBM Maximo to improve how maintenance activities were tracked. I gathered requirements from users, helped set up workflows, tested the system, and supported the rollout. I also created reports to help managers monitor work orders and equipment performance. After implementation, maintenance tracking became more organized and efficient, with about a 35% improvement. I also provided support to users whenever they had questions or needed help using the system.
 
-# Tell us about a project where you improved a business process.
+# Improved a business process.
 One project I'm proud of was improving the maintenance workflow using IBM Maximo. Staff were spending too much time tracking work manually, which caused delays. I spoke with the users to understand their challenges and helped redesign the workflow to make it simpler. We removed unnecessary steps and made information easier to access. As a result, equipment downtime was reduced by around 20%, and the team could complete maintenance work more efficiently.
 
-# Tell us about a dashboard you built.
+# Dashboard you built.
 I built a Power BI dashboard that combined information from Maximo, SAP, and our database into one place. The dashboard showed important KPIs like work order completion, equipment health, and maintenance response times. Before this, managers had to look at different reports to find the information they needed. With the dashboard, they could quickly see performance and identify areas that needed attention, helping them make faster and better decisions.
 
 # How do you gather business requirements?
@@ -128,13 +128,13 @@ I built a Power BI dashboard that combined information from Maximo, SAP, and our
 - Validate with users
 - Obtain approval
 
-# Tell us about working with different stakeholders.
+# Working with different stakeholders.
 In my role, I regularly worked with maintenance staff, managers, IT teams, and vendors. My job was to understand what each group needed and make sure everyone stayed informed throughout the project. For example, during the SAP integration project, I gathered requirements from different departments, discussed technical needs with IT, and shared progress updates with management. Good communication helped us complete the project smoothly and meet everyone's expectations.
 
 # Describe a difficult project.
 One challenging project was implementing IBM Maximo because different teams had different ways of working and different expectations. My role was to understand everyone's needs, gather feedback, and help create a solution that worked for all users. We tested the system carefully before launching it and addressed issues as they came up. Although it took time and coordination, the project was successful and improved maintenance tracking by about 35%.
 
-# Tell us about training end users.
+# Training end users.
 At Aspire Ontario, I trained more than 50 employees on new business systems after implementation. I prepared simple user guides, demonstrated how to use the system, and answered questions during hands-on training sessions. I always tried to explain things in clear, everyday language so everyone felt comfortable using the system. After the training, users were more confident, and the transition to the new system was much smoother.
 
 # Have you worked with SAP?
@@ -146,7 +146,7 @@ I have experience managing SharePoint sites for over 200 users. I organized docu
 # Have you managed projects?
 Yes. I have managed projects related to business systems and process improvements. For example, I helped lead the implementation of IBM Maximo by planning tasks, working with different teams, tracking progress, and supporting testing before launch. I also kept managers updated and made sure the project stayed on schedule. I enjoy coordinating projects and helping teams achieve successful results.
 
-# How do you prioritize multiple projects?
+# Prioritize multiple projects?
 - Business impact
 - Deadlines
 - Risk
@@ -164,6 +164,7 @@ Yes. I have managed projects related to business systems and process improvement
 - What are the next steps of the hiring process?
 - What are the biggest technical challenges the team is working on right now?
 - How do junior team members typically receive mentorship and feedback?
+
 ---
 # Table of Contents
 
@@ -177,24 +178,23 @@ Yes. I have managed projects related to business systems and process improvement
 - [Why work at TTC?](#why-work-at-ttc)
 - [Why Leave current role?](#why-leave-your-current-role)
 - [What do you know about this role?](#what-do-you-know-about-this-role)
-- [Your experience with IBM Maximo.](#tell-us-about-your-experience-with-ibm-maximo)
-- [Improved a business process.](#tell-us-about-a-project-where-you-improved-a-business-process)
-- [Dashboard you built.](#tell-us-about-a-dashboard-you-built)
+- [Your experience with IBM Maximo.](#your-experience-with-ibm-maximo)
+- [Improved a business process.](#improved-a-business-process)
+- [DASHBOARD you built.](#dashboard-you-built)
 - [Gather business requirements?](#how-do-you-gather-business-requirements)
-- [Working with different STAKEHOLDERS.](#tell-us-about-working-with-different-stakeholders)
+- [Working with different STAKEHOLDERS.](#working-with-different-stakeholders)
 - [Describe a DIFFICULT project.](#describe-a-difficult-project)
-- [TRAINING end users.](#tell-us-about-training-end-users)
+- [TRAINING end users.](#training-end-users)
 - [Have you worked with SAP?](#have-you-worked-with-sap)
 - [Describe your SHAREPOINT experience.](#describe-your-sharepoint-experience)
 - [Have you MANAGED PROJECT?](#have-you-managed-projects)
-- [How do you prioritize MULTIPLE projects?](#how-do-you-prioritize-multiple-projects)
+- [Prioritize multiple projects?](#how-do-you-prioritize-multiple-projects)
 - [Questions](#questions)
 ---
 - [IBM Maximo](#ibm-maximo)
 - [SAP](#sap)
 - [SharePoint](#sharepoint)
 - [Power Automate](#power-automate)
-
 ---
 
 # IBM Maximo:
@@ -332,7 +332,7 @@ This creates a complete maintenance history for the server.
 
 ---
 
-# SAP
+# SAP (Systems, Applications, and Products)
 # Use Case: IT Company Managing Software Projects and Procurement
 
 ## Scenario
@@ -997,17 +997,17 @@ Update Completion Status
 - [Why work at TTC?](#why-work-at-ttc)
 - [Why Leave current role?](#why-leave-your-current-role)
 - [What do you know about this role?](#what-do-you-know-about-this-role)
-- [Your experience with IBM Maximo.](#tell-us-about-your-experience-with-ibm-maximo)
-- [Improved a business process.](#tell-us-about-a-project-where-you-improved-a-business-process)
-- [Dashboard you built.](#tell-us-about-a-dashboard-you-built)
+- [Your experience with IBM Maximo.](#your-experience-with-ibm-maximo)
+- [Improved a business process.](#improved-a-business-process)
+- [DASHBOARD you built.](#dashboard-you-built)
 - [Gather business requirements?](#how-do-you-gather-business-requirements)
-- [Working with different STAKEHOLDERS.](#tell-us-about-working-with-different-stakeholders)
+- [Working with different STAKEHOLDERS.](#working-with-different-stakeholders)
 - [Describe a DIFFICULT project.](#describe-a-difficult-project)
-- [TRAINING end users.](#tell-us-about-training-end-users)
+- [TRAINING end users.](#training-end-users)
 - [Have you worked with SAP?](#have-you-worked-with-sap)
 - [Describe your SHAREPOINT experience.](#describe-your-sharepoint-experience)
 - [Have you MANAGED PROJECT?](#have-you-managed-projects)
-- [How do you prioritize MULTIPLE projects?](#how-do-you-prioritize-multiple-projects)
+- [Prioritize multiple projects?](#how-do-you-prioritize-multiple-projects)
 - [Questions](#questions)
 ---
 - [IBM Maximo](#ibm-maximo)
