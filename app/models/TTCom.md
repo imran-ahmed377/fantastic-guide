@@ -8,18 +8,19 @@
 - [Zapier](#zapier)
 ---
 - [Why work at TTC?](#why-work-at-ttc)
+- [Why Leave current role?](#why-leave-your-current-role)
 - [What do you know about this role?](#what-do-you-know-about-this-role)
-- [Tell us about your experience with IBM Maximo.](#tell-us-about-your-experience-with-ibm-maximo)
-- [Tell us about a project where you improved a business process.](#tell-us-about-a-project-where-you-improved-a-business-process)
-- [Tell us about a dashboard you built.](#tell-us-about-a-dashboard-you-built)
-- [How do you gather business requirements?](#how-do-you-gather-business-requirements)
-- [Tell us about working with different stakeholders.](#tell-us-about-working-with-different-stakeholders)
-- [Describe a difficult project.](#describe-a-difficult-project)
-- [Tell us about training end users.](#tell-us-about-training-end-users)
+- [Your experience with IBM Maximo.](#tell-us-about-your-experience-with-ibm-maximo)
+- [Improved a business process.](#tell-us-about-a-project-where-you-improved-a-business-process)
+- [Dashboard you built.](#tell-us-about-a-dashboard-you-built)
+- [Gather business requirements?](#how-do-you-gather-business-requirements)
+- [Working with different STAKEHOLDERS.](#tell-us-about-working-with-different-stakeholders)
+- [Describe a DIFFICULT project.](#describe-a-difficult-project)
+- [TRAINING end users.](#tell-us-about-training-end-users)
 - [Have you worked with SAP?](#have-you-worked-with-sap)
-- [Describe your SharePoint experience.](#describe-your-sharepoint-experience)
-- [Have you managed projects?](#have-you-managed-projects)
-- [How do you prioritize multiple projects?](#how-do-you-prioritize-multiple-projects)
+- [Describe your SHAREPOINT experience.](#describe-your-sharepoint-experience)
+- [Have you MANAGED PROJECT?](#have-you-managed-projects)
+- [How do you prioritize MULTIPLE projects?](#how-do-you-prioritize-multiple-projects)
 - [Questions](#questions)
 ---
 - [IBM Maximo](#ibm-maximo)
@@ -54,14 +55,48 @@ When a customer fills out a form on the Google Forms, Zapier automatically start
 Then, a notification is sent to the Slack channel so the team know a new lead has arrived. After that, the system automatically sends a personalized welcome email to the customer through Gmail. If a lead meets certain criteria, Zapier automatically assigns that lead to the high-priority for faster follow-up.
 
 ---
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Aspire Experience (Business Analyst) (Sept 2025 - Present)](#aspire-experience-business-analyst-sept-2025---present)
+- [Vista Print (Business Systems Analyst) (June 2023 - Sept 2025)](#vista-print-business-systems-analyst-june-2023---sept-2025)
+- [Project 1: Maximo Asset Management Optimization](#project-1-maximo-asset-management-optimization)
+- [Project 2: KPI Dashboard for Infrastructure Performance](#project-2-kpi-dashboard-for-infrastructure-performance)
+- [Zapier](#zapier)
+---
+- [Why work at TTC?](#why-work-at-ttc)
+- [Why Leave current role?](#why-leave-your-current-role)
+- [What do you know about this role?](#what-do-you-know-about-this-role)
+- [Your experience with IBM Maximo.](#tell-us-about-your-experience-with-ibm-maximo)
+- [Improved a business process.](#tell-us-about-a-project-where-you-improved-a-business-process)
+- [Dashboard you built.](#tell-us-about-a-dashboard-you-built)
+- [Gather business requirements?](#how-do-you-gather-business-requirements)
+- [Working with different STAKEHOLDERS.](#tell-us-about-working-with-different-stakeholders)
+- [Describe a DIFFICULT project.](#describe-a-difficult-project)
+- [TRAINING end users.](#tell-us-about-training-end-users)
+- [Have you worked with SAP?](#have-you-worked-with-sap)
+- [Describe your SHAREPOINT experience.](#describe-your-sharepoint-experience)
+- [Have you MANAGED PROJECT?](#have-you-managed-projects)
+- [How do you prioritize MULTIPLE projects?](#how-do-you-prioritize-multiple-projects)
+- [Questions](#questions)
+---
+- [IBM Maximo](#ibm-maximo)
+- [SAP](#sap)
+- [SharePoint](#sharepoint)
+- [Power Automate](#power-automate)
+---
 
 # Why work at TTC?
 - Public service
-- Large enterprise systems
+- Opportunity to work with Large enterprise systems
 - Asset management
 - Infrastructure projects
 - Long-term career growth
 - Opportunity to improve transit operations
+
+
+# Why Leave your current role?
+I've really enjoyed my current role, but I've always been interested in working for a public organization where my work can have a direct impact on the community. The opportunity to support TTC's streetcar infrastructure and improve business systems is something I find very meaningful.
 
 
 # What do you know about this role?
@@ -129,7 +164,36 @@ Yes. I have managed projects related to business systems and process improvement
 - What are the next steps of the hiring process?
 - What are the biggest technical challenges the team is working on right now?
 - How do junior team members typically receive mentorship and feedback?
+---
+# Table of Contents
 
+- [Introduction](#introduction)
+- [Aspire Experience (Business Analyst) (Sept 2025 - Present)](#aspire-experience-business-analyst-sept-2025---present)
+- [Vista Print (Business Systems Analyst) (June 2023 - Sept 2025)](#vista-print-business-systems-analyst-june-2023---sept-2025)
+- [Project 1: Maximo Asset Management Optimization](#project-1-maximo-asset-management-optimization)
+- [Project 2: KPI Dashboard for Infrastructure Performance](#project-2-kpi-dashboard-for-infrastructure-performance)
+- [Zapier](#zapier)
+---
+- [Why work at TTC?](#why-work-at-ttc)
+- [Why Leave current role?](#why-leave-your-current-role)
+- [What do you know about this role?](#what-do-you-know-about-this-role)
+- [Your experience with IBM Maximo.](#tell-us-about-your-experience-with-ibm-maximo)
+- [Improved a business process.](#tell-us-about-a-project-where-you-improved-a-business-process)
+- [Dashboard you built.](#tell-us-about-a-dashboard-you-built)
+- [Gather business requirements?](#how-do-you-gather-business-requirements)
+- [Working with different STAKEHOLDERS.](#tell-us-about-working-with-different-stakeholders)
+- [Describe a DIFFICULT project.](#describe-a-difficult-project)
+- [TRAINING end users.](#tell-us-about-training-end-users)
+- [Have you worked with SAP?](#have-you-worked-with-sap)
+- [Describe your SHAREPOINT experience.](#describe-your-sharepoint-experience)
+- [Have you MANAGED PROJECT?](#have-you-managed-projects)
+- [How do you prioritize MULTIPLE projects?](#how-do-you-prioritize-multiple-projects)
+- [Questions](#questions)
+---
+- [IBM Maximo](#ibm-maximo)
+- [SAP](#sap)
+- [SharePoint](#sharepoint)
+- [Power Automate](#power-automate)
 
 ---
 
@@ -918,3 +982,35 @@ Update Completion Status
 | **Typical Users** | All departments | All employees | Finance, HR, Procurement, Operations | Maintenance and Asset Management teams |
 | **Tracks** | Workflows, approvals, tasks | Documents, lists, sites | Orders, invoices, budgets, inventory | Equipment, maintenance, asset history |
 | **Example** | Automating employee onboarding | Storing onboarding documents | Processing employee costs and purchases | Maintaining company servers |
+
+
+---
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Aspire Experience (Business Analyst) (Sept 2025 - Present)](#aspire-experience-business-analyst-sept-2025---present)
+- [Vista Print (Business Systems Analyst) (June 2023 - Sept 2025)](#vista-print-business-systems-analyst-june-2023---sept-2025)
+- [Project 1: Maximo Asset Management Optimization](#project-1-maximo-asset-management-optimization)
+- [Project 2: KPI Dashboard for Infrastructure Performance](#project-2-kpi-dashboard-for-infrastructure-performance)
+- [Zapier](#zapier)
+---
+- [Why work at TTC?](#why-work-at-ttc)
+- [Why Leave current role?](#why-leave-your-current-role)
+- [What do you know about this role?](#what-do-you-know-about-this-role)
+- [Your experience with IBM Maximo.](#tell-us-about-your-experience-with-ibm-maximo)
+- [Improved a business process.](#tell-us-about-a-project-where-you-improved-a-business-process)
+- [Dashboard you built.](#tell-us-about-a-dashboard-you-built)
+- [Gather business requirements?](#how-do-you-gather-business-requirements)
+- [Working with different STAKEHOLDERS.](#tell-us-about-working-with-different-stakeholders)
+- [Describe a DIFFICULT project.](#describe-a-difficult-project)
+- [TRAINING end users.](#tell-us-about-training-end-users)
+- [Have you worked with SAP?](#have-you-worked-with-sap)
+- [Describe your SHAREPOINT experience.](#describe-your-sharepoint-experience)
+- [Have you MANAGED PROJECT?](#have-you-managed-projects)
+- [How do you prioritize MULTIPLE projects?](#how-do-you-prioritize-multiple-projects)
+- [Questions](#questions)
+---
+- [IBM Maximo](#ibm-maximo)
+- [SAP](#sap)
+- [SharePoint](#sharepoint)
+- [Power Automate](#power-automate)
