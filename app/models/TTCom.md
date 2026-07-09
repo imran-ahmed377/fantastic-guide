@@ -524,7 +524,7 @@ This integration enables organizations to combine operational asset management w
 # SharePoint
 # What is SharePoint?
 
-:contentReference[oaicite:0]{index=0} is a web-based collaboration and document management platform developed by Microsoft. It enables organizations to store, organize, share, and manage documents, information, and business processes in a secure, centralized location.
+SharePoint is a web-based collaboration and document management platform developed by Microsoft. It enables organizations to store, organize, share, and manage documents, information, and business processes in a secure, centralized location.
 
 SharePoint is commonly used as a company's **intranet**, allowing employees to collaborate on files, access internal resources, automate workflows, and share knowledge across teams.
 
