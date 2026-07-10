@@ -1,5 +1,6 @@
 <!-- 
 # Notes: Details of the resume in the next round technical interview. Make sure to ready some example of your work experience and projects in detail.
+https://ca.linkedin.com/jobs/view/developer-data-science-at-corus-entertainment-4429975913
 
 ## Table of Contents
 
