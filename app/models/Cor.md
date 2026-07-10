@@ -25,17 +25,17 @@
 
 # Introduction
 
-I'm a software developer with X years of experience building data-driven applications using Python and SQL. Recently I've been working on developing ETL pipelines, automating data workflows, and deploying applications on cloud platforms. I've collaborated closely with data scientists to productionize analytics solutions and enjoy working where software engineering meets data science. I'm excited about this role because it combines backend engineering, cloud technologies, and machine learning applications.
+Hi, I'm a Data Scientist with a strong background in data analysis, machine learning, and statistical modeling. I enjoy working with data to solve real-world business problems and convert complex datasets into clear, actionable insights. I'm proficient in Python, SQL, and data visualization tools like Power BI and Tableau, and I have experience building predictive models and automating analytical workflows. What motivates me most is using data to support smarter decisions and create measurable business value. I'm always eager to learn new technologies and collaborate with teams to develop innovative, data-driven solutions.
 
 
 # Aspire Ontario Exp (Data Science Software Developer)(Sept 2025 – Present)
-At Aspire Ontario, I build data products that support analytics and AI. I work closely with data scientists, analysts, and business teams to understand their requirements and turn them into production-ready solutions. For example, if the marketing team needs a dashboard showing customer trends, I build an Airflow pipeline using Python to collect and transform data from different sources, load it into BigQuery, and create data models for Looker so they can access accurate, up-to-date insights. If the data science team develops a machine learning model, I deploy it as a FastAPI service on Cloud Run, making it available for other applications to use. I also monitor the pipelines and services, troubleshoot any issues, and use CI/CD to make deployments faster and more reliable.
+At Aspire Ontario, I build data products that are used in analytics and AI. I collaborate with the data scientists, analysts, and business teams to understand what their needs are and then build production-grade solutions to meet those needs. For example, if the marketing team wants a dashboard displaying information on customer trends, I build an Airflow pipeline using Python to gather and process the data from various sources and load it to BigQuery, then model data using Looker for their use. When the data science team builds a machine learning algorithm, I would deploy this in FastAPI on Cloud Run, and making it accessible to other applications.
 
 
 
 # Vista Print Exp (Software Developer Intern) (Jan 2023 – Dec 2024)
 
-At Vista Print, I worked as a Data Engineer, where I built and maintained data pipelines that supported analytics and machine learning projects. I worked closely with data scientists, software developers, and business teams to make sure they had reliable and high-quality data. For example, if the business wanted to analyze customer purchasing trends, I built ETL pipelines using Apache Beam and Dataflow to collect, clean, and transform data from different sources before loading it into BigQuery. I also developed REST APIs to expose processed data for other applications and collaborated with the data science team to turn machine learning prototypes into production-ready solutions. In addition, I implemented data quality checks and monitoring, which helped reduce data issues and improve the reliability of our pipelines.
+At Vista Print, I worked with data scientists, software engineers, and business units to ensure they received good quality data. For example, in case the business unit decided to study customer purchasing trends, I created data pipelines using Apache Beam and Dataflow for collecting, cleaning, and transforming data before loading it to BigQuery. I also built REST APIs to expose the transformed data for use by other systems and worked with the data science unit to operationalize machine learning solutions.
 
 
 # Project 1: Real-Time Analytics Platform on GCP
