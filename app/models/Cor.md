@@ -86,7 +86,9 @@ Corus Entertainment is one of Canada's leading media and content companies. It o
 
 
 # Why Leave Current Job?
-I've learned a lot in my current role, especially about building data pipelines, deploying machine learning models, and working on GCP. Now I'm looking for a new challenge where I can work on larger-scale data products, collaborate with a bigger team, and continue growing as a Data Science Software Developer. This role at Corus aligns well with my experience and long-term career goals.
+I've learned a lot in my current role, especially about building data pipelines, deploying machine learning models, and working on GCP. 
+
+Now I'm looking for a new challenge where I can work on larger-scale data products, collaborate with a bigger team, and continue growing as a Data Science Software Developer. This role at Corus aligns well with my experience and long-term career goals.
 
 
 # Why are you interested?
