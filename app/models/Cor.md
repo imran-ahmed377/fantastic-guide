@@ -104,7 +104,7 @@ When the requirements are not clear, I ask questions to understand what the goal
 
 
 # Non-Technical People.
-I worked with users who weren't technical. When explaining something to a non-technical user, I avoid technical jargon and focus on the business impact rather than the technology behind it. I try to use simple language, relatable examples, and break the explanation into small steps.
+When explaining something to a non-technical user, I avoid technical jargon and focus on the business impact rather than the technology behind it. I try to use simple language, relatable examples, and break the explanation into small steps.
 
 
 
