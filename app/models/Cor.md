@@ -1,3 +1,5 @@
+<!-- 
+# Notes: Details of the resume in the next round technical interview. Make sure to ready some example of your work experience and projects in detail.
 
 ## Table of Contents
 
@@ -181,4 +183,4 @@ I reproduced the issue, checked the deployment logs, compared the environments, 
 - [Describe a difficult bug.](#describe-a-difficult-bug)
 - [Questions](#questions)
 
-
+ -->
