@@ -94,7 +94,10 @@ I applied for this role because it brings together AI, data analysis, and solvin
 
 
 ## What you will learn from this role?
-I'm really looking forward to learning more about how AI models are deployed and monitored in a real business environment. I also want to get a better understanding of the entire AI lifecycle—from development to deployment and ongoing improvements. Working with experienced professionals and seeing how AI solutions create real business value is something I'm excited about, and I think it would be a great learning opportunity.
+- how AI models are deployed and monitored in a real business environment
+- the entire AI lifecycle—from development to deployment and ongoing improvements
+- working with experienced professionals and seeing how AI solutions create real business value
+- understanding the business context and translating it into technical requirements
 
 
 # what is ROC-AUC?
