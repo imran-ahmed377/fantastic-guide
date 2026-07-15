@@ -87,14 +87,50 @@ Based on what we found, I worked with the team to build AI recommendations that 
 We tested the solution by comparing the new AI-assisted process with the existing one. The results were very positive—we saw about an 8% reduction in net bad debt, which showed that better account prioritization could improve collections performance.
 
 # Why do you want to leave your current job?
+I'm looking for an opportunity where I can be involved in understanding business requirements, monitoring model performance and improving AI solutions after deployment, at the same time learning from experienced professionals. And working at a top technology company like Bell is a dream come true.
+
 # Why apply for this job?
+I applied for this role because it brings together AI, data analysis, and solving real business problems. I like that the role isn't just about building AI models but also improving them, tracking how they're performing, and collaborating with different teams to make them more effective. On top of that, Bell's focus on innovation and using AI to create a better customer experience is something that really interests me, and I'd love to be part of that.
+
+
 ## What you will learn from this role?
+I'm really looking forward to learning more about how AI models are deployed and monitored in a real business environment. I also want to get a better understanding of the entire AI lifecycle—from development to deployment and ongoing improvements. Working with experienced professionals and seeing how AI solutions create real business value is something I'm excited about, and I think it would be a great learning opportunity.
+
 
 # what is ROC-AUC?
+ROC-AUC is a metric used to measure how well a classification model can separate different classes. A higher ROC-AUC score means the model is better at distinguishing between positive and negative cases. A score close to 1 is excellent, while 0.5 means the model is performing about the same as random guessing.
+
 # How do you explain technical concepts to non-technical people
+- I avoid technical jargon 
+- use simple language 
+- real-life examples. 
+- I focus on the business problem instead of the technical details
+- check any questions they have.
+
 # Describe a time you solved a difficult problem.?
+In one of my projects, I ran into a situation where the machine learning model just wasn't performing as well as I expected. After looking into it, I realized the main issue was with the data—it had a lot of missing values and duplicate records.
+
+So, I started by cleaning the dataset. I removed the duplicates, handled the missing values, and spent some time exploring the features to better understand what was affecting the model's performance.
+
+Once I retrained the model using the cleaned data, the prediction accuracy improved quite a bit. That experience really showed me how important good-quality data is. Even a great model won't perform well if the data going into it isn't reliable.
+
+
 # How do you deal with ambiguity?
+- I start by asking questions to understand the goal.
+- I break down the problem into smaller parts and tackle them one at a time.
+- I make sure to communicate with the team and stakeholders to clarify any uncertainties.
+- For example, in one project at Exeevo, the requirements were not clear at first. I asked questions to clarify what the business needed, and then I worked with the team to define a clear plan. By breaking the problem down and keeping everyone informed, we were able to move forward successfully.
+
+
 # Questions
+- What would success look like in the first 3-6 months?
+  >>> That's great to hear. Thank you for sharing that.
+- What kinds of applications would I be building?
+  >>> That's helpful. Could you also tell me a bit about...
+- Are developers encouraged to experiment with new AI tools and workflows?
+  >>> That sounds like an environment I'd really enjoy working in. Thanks for sharing.
+- What are the next steps of the hiring process?
+
 
 # Steps of Data Preprocessing for ML Models
 
