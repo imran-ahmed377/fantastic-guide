@@ -31,6 +31,8 @@ Before that, during my internship at Exeevo, I worked on predictive models for c
 I enjoy solving business problems using AI and I'm excited about this opportunity at Bell, because it combines AI, analytics, and collaboration to create real business value.
 
 # Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)
+**What is Aspire:** It's an AI-enabled financial services organization focused on applying machine learning to optimize credit and collections processes.
+
 My role is a mix of business analysis, data analysis, AI operations, and working with different teams. My main goal is to make sure the AI solutions stayed accurate, reliable, and continued to support the business goals.
 
 I monitor the performance of our machine learning models using dashboards and KPIs. 
@@ -158,6 +160,9 @@ Example deliverables:
 
 
 # Exeevo (AI/ML Analyst Intern) (May 2024 – Dec 2024)
+**What is Exeevo:**
+Exeevo is an enterprise software company that develops AI-enabled business solutions.
+
 During my internship, I mainly worked on improving machine learning models that helped predict customer risk for collections.
 
 ## Typical Day as an AI/ML Analyst Intern
