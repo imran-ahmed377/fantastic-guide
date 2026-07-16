@@ -24,7 +24,7 @@
 # Introduction
 I recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence at the University of Windsor. During my studies, I worked on several AI and machine learning projects, which gave me a lot of hands-on experience.
 
-In my current role, I work closely with data scientists and engineers throughout the AI lifecycle. That includes understanding business requirements, analyzing how models are performing, helping retrain them when needed, and supporting their deployment into production. I also use data analytics to measure business impact and identify ways to improve AI solutions.
+In my current role, I work closely with data scientists and engineers throughout the AI lifecycle. Which includes understanding business requirements, analyzing how models are performing, helping retrain them when needed, and supporting their deployment into production. I also use data analytics to measure business impact and identify ways to improve AI solutions.
 
 Before that, during my internship at Exeevo, I worked on predictive models for customer risk scoring and worked with technical and business teams.
 
@@ -32,6 +32,22 @@ I enjoy solving business problems using AI and I'm excited about this opportunit
 
 # Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)
 My role is a mix of business analysis, data analysis, AI operations, and working with different teams. My main goal is to make sure the AI solutions stayed accurate, reliable, and continued to support the business goals.
+
+I monitor the performance of our machine learning models using dashboards and KPIs. 
+
+I reviewed metrics like prediction accuracy and looked for any signs that the models were underperforming because of the changes in the data.
+
+If I see any performance gap, I analyze the data to understand the root cause and document my findings. 
+
+I then collaborated with data scientists to discuss potential improvements, such as retraining the model or adjusting features.
+
+I validate results and ensure the updated models meet technical and business needs before deployment.
+
+I worked closely with the business teams to understand what they needed. Then I explained those requirements in a simple and clear way for the technical team so everyone was on the same page.
+
+When new AI models were ready, I test them to make sure they worked properly before and after they went live.
+
+I also tracked how much value these AI projects were bringing to the business. I created reports and dashboards to measure things like prediction accuracy and how much time or effort the business was saving.
 
 ## Typical Day as an AI Enablement Specialist
 
@@ -129,21 +145,6 @@ Example deliverables:
 - Coordinate with engineering teams on improvements for future releases.
 - Plan priorities for the next sprint or development cycle.
 
-<!-- I monitor the performance of our machine learning models using dashboards and KPIs. 
-
-I reviewed metrics like prediction accuracy and looked for any signs that the models were underperforming because of the changes in the data.
-
-If I see any performance gap, I analyze the data to understand the root cause and document my findings. 
-
-I then collaborated with data scientists to discuss potential improvements, such as retraining the model or adjusting features.
-
-I validate results and ensure the updated models meet technical and business needs before deployment.
-
-I worked closely with the business teams to understand what they needed. Then I explained those requirements in a simple and clear way for the technical team so everyone was on the same page.
-
-When new AI models were ready, I test them to make sure they worked properly before and after they went live.
-
-I also tracked how much value these AI projects were bringing to the business. I created reports and dashboards to measure things like prediction accuracy and how much time or effort the business was saving. -->
 
 ## Skills
 - **SQL** to query data
