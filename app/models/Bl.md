@@ -1,4 +1,24 @@
 # Table of Contents
+- [Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)](#aspire-ontario-ai-enablement-specialist-sept-2025---present)
+- [Exeevo (AI/ML Analyst Intern) (May 2024 – Dec 2024)](#exeevo-aiml-analyst-intern-may-2024--dec-2024)
+- [Project 1: Credit Risk Assessment Model Optimization](#project-1-credit-risk-assessment-model-optimization)
+- [Project 2: Collections Efficacy Enhancement](#project-2-collections-efficacy-enhancement)
+---
+- [Why do you want to leave your current job?](#why-do-you-want-to-leave-your-current-job)
+- [Why apply for this job?](#why-apply-for-this-job)
+- [What you will learn from this role?](#what-you-will-learn-from-this-role)
+- [What is ROC-AUC?](#what-is-roc-auc)
+- [How do you explain technical concepts to non-technical people](#how-do-you-explain-technical-concepts-to-non-technical-people)
+- [Describe a time you solved a difficult problem](#describe-a-time-you-solved-a-difficult-problem)
+- [How do you deal with ambiguity?](#how-do-you-deal-with-ambiguity)
+- [Questions](#questions)
+---
+- [Steps of Data Preprocessing for ML Models](#steps-of-data-preprocessing-for-ml-models)
+- [Missing Value Handling](#missing-value-handling)
+- [Machine Learning Q&A](#machine-learning-qa)
+- [MLOps Q&A](#mlops-qa)
+- [Monitoring Model in Production](#monitoring-model-in-production)
+- [Monitoring Data Drift](#monitoring-data-drift)
 
 
 # Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)
