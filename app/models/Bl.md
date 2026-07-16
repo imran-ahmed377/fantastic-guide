@@ -106,6 +106,28 @@ Based on what we found, I worked with the team to build AI recommendations that 
 
 We tested the solution by comparing the new AI-assisted process with the existing one. The results were very positive—we saw about an 8% reduction in net bad debt, which showed that better account prioritization could improve collections performance.
 
+# Table of Contents
+- [Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)](#aspire-ontario-ai-enablement-specialist-sept-2025---present)
+- [Exeevo (AI/ML Analyst Intern) (May 2024 – Dec 2024)](#exeevo-aiml-analyst-intern-may-2024--dec-2024)
+- [Project 1: Credit Risk Assessment Model Optimization](#project-1-credit-risk-assessment-model-optimization)
+- [Project 2: Collections Efficacy Enhancement](#project-2-collections-efficacy-enhancement)
+---
+- [Why do you want to leave your current job?](#why-do-you-want-to-leave-your-current-job)
+- [Why apply for this job?](#why-apply-for-this-job)
+- [What you will learn from this role?](#what-you-will-learn-from-this-role)
+- [What is ROC-AUC?](#what-is-roc-auc)
+- [How do you explain technical concepts to non-technical people](#how-do-you-explain-technical-concepts-to-non-technical-people)
+- [Describe a time you solved a difficult problem](#describe-a-time-you-solved-a-difficult-problem)
+- [How do you deal with ambiguity?](#how-do-you-deal-with-ambiguity)
+- [Questions](#questions)
+---
+- [Steps of Data Preprocessing for ML Models](#steps-of-data-preprocessing-for-ml-models)
+- [Missing Value Handling](#missing-value-handling)
+- [Machine Learning Q&A](#machine-learning-qa)
+- [MLOps Q&A](#mlops-qa)
+- [Monitoring Model in Production](#monitoring-model-in-production)
+- [Monitoring Data Drift](#monitoring-data-drift)
+
 # Why do you want to leave your current job?
 I'm looking for an opportunity where I can be involved in understanding business requirements, monitoring model performance and improving AI solutions after deployment, at the same time learning from experienced professionals. And working at a top technology company like Bell is a dream come true.
 
@@ -154,6 +176,28 @@ Once I retrained the model using the cleaned data, the prediction accuracy impro
   >>> That sounds like an environment I'd really enjoy working in. Thanks for sharing.
 - What are the next steps of the hiring process?
 
+
+# Table of Contents
+- [Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)](#aspire-ontario-ai-enablement-specialist-sept-2025---present)
+- [Exeevo (AI/ML Analyst Intern) (May 2024 – Dec 2024)](#exeevo-aiml-analyst-intern-may-2024--dec-2024)
+- [Project 1: Credit Risk Assessment Model Optimization](#project-1-credit-risk-assessment-model-optimization)
+- [Project 2: Collections Efficacy Enhancement](#project-2-collections-efficacy-enhancement)
+---
+- [Why do you want to leave your current job?](#why-do-you-want-to-leave-your-current-job)
+- [Why apply for this job?](#why-apply-for-this-job)
+- [What you will learn from this role?](#what-you-will-learn-from-this-role)
+- [What is ROC-AUC?](#what-is-roc-auc)
+- [How do you explain technical concepts to non-technical people](#how-do-you-explain-technical-concepts-to-non-technical-people)
+- [Describe a time you solved a difficult problem](#describe-a-time-you-solved-a-difficult-problem)
+- [How do you deal with ambiguity?](#how-do-you-deal-with-ambiguity)
+- [Questions](#questions)
+---
+- [Steps of Data Preprocessing for ML Models](#steps-of-data-preprocessing-for-ml-models)
+- [Missing Value Handling](#missing-value-handling)
+- [Machine Learning Q&A](#machine-learning-qa)
+- [MLOps Q&A](#mlops-qa)
+- [Monitoring Model in Production](#monitoring-model-in-production)
+- [Monitoring Data Drift](#monitoring-data-drift)
 
 # Steps of Data Preprocessing for ML Models
 
@@ -354,3 +398,24 @@ Data drift occurs when the input data changes over time, leading to model decay.
     2. Compare distributions (histograms): Look at how values are spread, not just the average.
     3. Statistical tests: Example: Kolmogorov-Smirnov (KS) Test Compare two dataset cumulative distribution (CDF) curves at every point, check the difference between them.
 
+# Table of Contents
+- [Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)](#aspire-ontario-ai-enablement-specialist-sept-2025---present)
+- [Exeevo (AI/ML Analyst Intern) (May 2024 – Dec 2024)](#exeevo-aiml-analyst-intern-may-2024--dec-2024)
+- [Project 1: Credit Risk Assessment Model Optimization](#project-1-credit-risk-assessment-model-optimization)
+- [Project 2: Collections Efficacy Enhancement](#project-2-collections-efficacy-enhancement)
+---
+- [Why do you want to leave your current job?](#why-do-you-want-to-leave-your-current-job)
+- [Why apply for this job?](#why-apply-for-this-job)
+- [What you will learn from this role?](#what-you-will-learn-from-this-role)
+- [What is ROC-AUC?](#what-is-roc-auc)
+- [How do you explain technical concepts to non-technical people](#how-do-you-explain-technical-concepts-to-non-technical-people)
+- [Describe a time you solved a difficult problem](#describe-a-time-you-solved-a-difficult-problem)
+- [How do you deal with ambiguity?](#how-do-you-deal-with-ambiguity)
+- [Questions](#questions)
+---
+- [Steps of Data Preprocessing for ML Models](#steps-of-data-preprocessing-for-ml-models)
+- [Missing Value Handling](#missing-value-handling)
+- [Machine Learning Q&A](#machine-learning-qa)
+- [MLOps Q&A](#mlops-qa)
+- [Monitoring Model in Production](#monitoring-model-in-production)
+- [Monitoring Data Drift](#monitoring-data-drift)
