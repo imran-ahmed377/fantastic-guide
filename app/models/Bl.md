@@ -1,4 +1,5 @@
 # Table of Contents
+- [Introduction](#introduction)
 - [Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)](#aspire-ontario-ai-enablement-specialist-sept-2025---present)
 - [Exeevo (AI/ML Analyst Intern) (May 2024 – Dec 2024)](#exeevo-aiml-analyst-intern-may-2024--dec-2024)
 - [Project 1: Credit Risk Assessment Model Optimization](#project-1-credit-risk-assessment-model-optimization)
@@ -20,6 +21,14 @@
 - [Monitoring Model in Production](#monitoring-model-in-production)
 - [Monitoring Data Drift](#monitoring-data-drift)
 
+# Introduction
+I recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence from the University of Windsor. I've gained hands-on experience working on AI and machine learning projects.
+
+In my current role, I work with data scientists and engineers to support the AI lifecycle by gathering business requirements, analyzing model performance, retraining models and helping them deploy into production. I also use data analytics to measure business impact and improve AI solutions.
+
+During my internship at Exeevo, I built predictive models for customer risk scoring and collaborated with cross-functional teams.
+
+I enjoy solving business problems using AI and working closely with both technical and business teams. And I'm excited about this opportunity at Bell, because it combines AI, analytics, and collaboration to create real business value.
 
 # Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)
 My role is a mix of business analysis, data analysis, AI operations, and working with different teams. My main goal is to make sure the AI solutions stayed accurate, reliable, and continued to support the business goals.
@@ -107,6 +116,7 @@ Based on what we found, I worked with the team to build AI recommendations that 
 We tested the solution by comparing the new AI-assisted process with the existing one. The results were very positive—we saw about an 8% reduction in net bad debt, which showed that better account prioritization could improve collections performance.
 
 # Table of Contents
+- [Introduction](#introduction)
 - [Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)](#aspire-ontario-ai-enablement-specialist-sept-2025---present)
 - [Exeevo (AI/ML Analyst Intern) (May 2024 – Dec 2024)](#exeevo-aiml-analyst-intern-may-2024--dec-2024)
 - [Project 1: Credit Risk Assessment Model Optimization](#project-1-credit-risk-assessment-model-optimization)
@@ -178,6 +188,7 @@ Once I retrained the model using the cleaned data, the prediction accuracy impro
 
 
 # Table of Contents
+- [Introduction](#introduction)
 - [Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)](#aspire-ontario-ai-enablement-specialist-sept-2025---present)
 - [Exeevo (AI/ML Analyst Intern) (May 2024 – Dec 2024)](#exeevo-aiml-analyst-intern-may-2024--dec-2024)
 - [Project 1: Credit Risk Assessment Model Optimization](#project-1-credit-risk-assessment-model-optimization)
@@ -399,6 +410,7 @@ Data drift occurs when the input data changes over time, leading to model decay.
     3. Statistical tests: Example: Kolmogorov-Smirnov (KS) Test Compare two dataset cumulative distribution (CDF) curves at every point, check the difference between them.
 
 # Table of Contents
+- [Introduction](#introduction)
 - [Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)](#aspire-ontario-ai-enablement-specialist-sept-2025---present)
 - [Exeevo (AI/ML Analyst Intern) (May 2024 – Dec 2024)](#exeevo-aiml-analyst-intern-may-2024--dec-2024)
 - [Project 1: Credit Risk Assessment Model Optimization](#project-1-credit-risk-assessment-model-optimization)
