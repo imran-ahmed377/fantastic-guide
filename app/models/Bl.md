@@ -33,7 +33,103 @@ I enjoy solving business problems using AI and I'm excited about this opportunit
 # Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)
 My role is a mix of business analysis, data analysis, AI operations, and working with different teams. My main goal is to make sure the AI solutions stayed accurate, reliable, and continued to support the business goals.
 
-I monitor the performance of our machine learning models using dashboards and KPIs. 
+## Typical Day as an AI Enablement Specialist
+
+### 🌅 Morning (9:00–10:00 AM): Team Sync & Operational Review
+
+- Attend the daily stand-up with data scientists, ML engineers, and business stakeholders.
+- Review the status of AI initiatives and deployment pipelines.
+- Discuss blockers, production issues, and upcoming releases.
+- Check dashboards tracking:
+  - Model performance
+  - Collections KPIs
+  - Operational metrics
+  - Data quality alerts
+
+---
+
+### 📊 Mid-Morning (10:00 AM–12:00 PM): Model Performance Analysis
+
+- Analyze AI/ML model performance using Python, SQL, or BI tools.
+- Compare current performance against business KPIs.
+- Investigate issues such as:
+  - Declining prediction accuracy
+  - Data drift
+  - Feature distribution changes
+  - Model stability
+- Prepare recommendations for improving model performance.
+
+Typical metrics include:
+- Precision
+- Recall
+- ROC-AUC
+- Accuracy
+- F1 Score
+- Business impact metrics (e.g., collections recovery rate)
+
+---
+
+### 🍽️ Lunch
+
+---
+
+### 🤝 Early Afternoon (1:00–2:30 PM): Cross-functional Collaboration
+
+- Meet with:
+  - Data scientists
+  - ML engineers
+  - Product managers
+  - Collections teams
+- Validate business requirements for new AI features.
+- Review testing results before production deployment.
+- Ensure AI solutions align with business objectives.
+
+#### Example Discussion
+
+**Business Team:**
+> "The model is missing customers who later become delinquent."
+
+**You:**
+- Review recent prediction results.
+- Analyze where the model is underperforming.
+- Work with data scientists to identify potential feature improvements.
+- Recommend retraining or threshold adjustments.
+
+---
+
+### 📈 Mid-Afternoon (2:30–4:00 PM): Business Analytics & Documentation
+
+- Analyze data to quantify the business impact of AI initiatives.
+- Build dashboards and reports showing:
+  - Cost savings
+  - Collections improvements
+  - Model adoption
+  - Productivity gains
+- Update:
+  - Technical documentation
+  - AI process documentation
+  - KPI reports
+  - Model validation records
+
+Example deliverables:
+- Power BI dashboards
+- Performance reports
+- AI project documentation
+- Requirements documents
+- KPI scorecards
+
+---
+
+### 🚀 Late Afternoon (4:00–5:00 PM): AI Operations & Continuous Improvement
+
+- Support model retraining activities.
+- Verify production deployments are functioning correctly.
+- Monitor operational KPIs for AI solutions.
+- Document issues discovered during production monitoring.
+- Coordinate with engineering teams on improvements for future releases.
+- Plan priorities for the next sprint or development cycle.
+
+<!-- I monitor the performance of our machine learning models using dashboards and KPIs. 
 
 I reviewed metrics like prediction accuracy and looked for any signs that the models were underperforming because of the changes in the data.
 
@@ -45,9 +141,9 @@ I validate results and ensure the updated models meet technical and business nee
 
 I worked closely with the business teams to understand what they needed. Then I explained those requirements in a simple and clear way for the technical team so everyone was on the same page.
 
-When new AI models or updates were ready, I helped test them to make sure they worked properly before and after they went live.
+When new AI models were ready, I test them to make sure they worked properly before and after they went live.
 
-I also tracked how much value these AI projects were bringing to the business. I created reports and dashboards to measure things like prediction accuracy and how much time or effort the business was saving.
+I also tracked how much value these AI projects were bringing to the business. I created reports and dashboards to measure things like prediction accuracy and how much time or effort the business was saving. -->
 
 ## Skills
 - **SQL** to query data
@@ -63,13 +159,90 @@ I also tracked how much value these AI projects were bringing to the business. I
 # Exeevo (AI/ML Analyst Intern) (May 2024 – Dec 2024)
 During my internship, I mainly worked on improving machine learning models that helped predict customer risk for collections.
 
-I used SQL and Python to analyze customer data, checked how the models were performing, and looked for any changes that could affect their accuracy over time.
+## Typical Day as an AI/ML Analyst Intern
+
+### 🌅 Morning (9:00–10:30 AM): Check-ins and Planning
+
+- Attend the daily stand-up with the AI or data science team.
+- Discuss ongoing projects, blockers, and priorities.
+- Review model performance dashboards or overnight pipeline results.
+- Plan tasks for the day, such as:
+  - Analyzing model drift
+  - Preparing reports
+  - Meeting with business stakeholders
+
+---
+
+### 💻 Mid-Morning (10:30 AM–12:00 PM): Data Analysis & Model Monitoring
+
+- Use **Python**, **SQL**, or **BI tools** to analyze customer risk data.
+- Evaluate the performance of the risk scoring model using metrics such as:
+  - Precision
+  - Recall
+  - ROC-AUC
+  - Accuracy
+  - Feature importance
+- Investigate whether model performance has degraded (drift detection).
+- Compare model predictions against actual customer outcomes.
+
+---
+
+### 🍽️ Lunch
+
+---
+
+### 🤝 Early Afternoon (1:00–2:30 PM): Business Collaboration
+
+- Meet with product managers, collections teams, or business analysts.
+- Discuss questions such as:
+  - Is the model identifying the right customers?
+  - What business rules need to change?
+  - Are there new data sources that could improve predictions?
+- Translate business requirements into technical specifications for the data science team.
+
+#### Example
+
+**Business:**
+> "We want to identify customers likely to miss their first payment."
+
+**You:**
+- Define the required data sources.
+- Specify the target variable.
+- Determine evaluation metrics.
+- Outline deployment expectations.
+
+---
+
+### 📄 Mid-Afternoon (2:30–4:00 PM): Documentation & Recommendations
+
+- Analyze trends in model performance over time.
+- Recommend whether the model should be retrained based on performance decline.
+- Document findings in reports or presentations.
+- Create technical specifications or user guides.
+
+#### Example Deliverables
+
+- PowerPoint presentations
+- Confluence documentation
+- JIRA tickets
+- Technical requirement documents
+
+---
+
+### 🚀 Late Afternoon (4:00–5:00 PM): AI Adoption & Cross-functional Support
+
+- Create training materials explaining how to use AI tools.
+- Demonstrate model outputs to end users.
+- Gather feedback from business users.
+- Help troubleshoot issues with deployed AI models.
+
+<!-- I used SQL and Python to analyze customer data, and checked how the models were performing, and looked for any changes that could affect their accuracy over time.
 
 I also worked closely with the business team to understand what they needed and explained those requirements to the data science team in a clear way. Once the models were ready, I helped test and validate them, compared their performance, and suggested retraining them if the results started getting worse.
 
 I also worked with engineers, product teams, and business users to make sure the models were successfully put into use. I created training materials and documentation to help people understand how to use the AI tools.
 
-One project I worked on helped improve the efficiency of early-stage collections by around 20%. It showed how better predictions can help the business make smarter decisions and improve results.
+One project I worked on helped improve the efficiency of early-stage collections by around 20%. It showed how better predictions can help the business make smarter decisions and improve results. -->
 ## Skills
 - **SQL**
 - **Python** (Pandas, scikit-learn, NumPy)
