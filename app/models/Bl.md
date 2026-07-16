@@ -22,13 +22,13 @@
 - [Monitoring Data Drift](#monitoring-data-drift)
 
 # Introduction
-I recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence from the University of Windsor. I've gained hands-on experience working on AI and machine learning projects.
+I recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence at the University of Windsor. During my studies, I worked on several AI and machine learning projects, which gave me a lot of hands-on experience.
 
-In my current role, I work with data scientists and engineers to support the AI lifecycle by gathering business requirements, analyzing model performance, retraining models and helping them deploy into production. I also use data analytics to measure business impact and improve AI solutions.
+In my current role, I work closely with data scientists and engineers throughout the AI lifecycle. That includes understanding business requirements, analyzing how models are performing, helping retrain them when needed, and supporting their deployment into production. I also use data analytics to measure business impact and identify ways to improve AI solutions.
 
-During my internship at Exeevo, I built predictive models for customer risk scoring and collaborated with cross-functional teams.
+Before that, during my internship at Exeevo, I worked on predictive models for customer risk scoring and worked with technical and business teams.
 
-I enjoy solving business problems using AI and working closely with both technical and business teams. And I'm excited about this opportunity at Bell, because it combines AI, analytics, and collaboration to create real business value.
+I enjoy solving business problems using AI and I'm excited about this opportunity at Bell, because it combines AI, analytics, and collaboration to create real business value.
 
 # Aspire Ontario (AI Enablement Specialist) (Sept 2025 - Present)
 My role is a mix of business analysis, data analysis, AI operations, and working with different teams. My main goal is to make sure the AI solutions stayed accurate, reliable, and continued to support the business goals.
