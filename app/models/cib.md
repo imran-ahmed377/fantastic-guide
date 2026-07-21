@@ -5,9 +5,9 @@
 # Exeevo Experience
 **Company Type:** A consulting firm providing fraud analytics services to clients
 
-**SAS Guide:**
+**Statistical Analysis System (SAS) Guide:**
 
-**SAS Miner:**
+**Statistical Analysis System (SAS) Miner:**
 
 
 **Day in a life:**
@@ -27,3 +27,13 @@
 
 # Salary Expectations?
 I'm looking for a base salary in the $80,000–90,000 range, but I'm flexible based on the overall compensation package.
+
+
+# Questions
+- What would success look like in the first 90 days?
+  >>> That's great to hear. Thank you for sharing that.
+- What kinds of applications would I be building?
+  >>> That's helpful. Could you also tell me a bit about...
+- Are developers encouraged to experiment with new AI tools and workflows?
+  >>> That sounds like an environment I'd really enjoy working in. Thanks for sharing.
+- What are the next steps of the hiring process?
