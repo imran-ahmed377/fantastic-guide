@@ -67,9 +67,23 @@ I mostly worked with SQL and Python. I used SQL to extract data from the company
 
 ---
 
+# Project 1: Credit Card Fraud Detection Model
 
-
----
+| Step | What I Did | Technical Details |
+|------|-------------|-------------------|
+| **1. Understand the problem** | Defined the goal of predicting fraudulent credit card transactions. | **Problem Type:** Binary Classification (Fraud = 1, Legitimate = 0) |
+| **2. Collect data** | Gathered historical transaction data from the database. | **Tools:** SQL, Python (Pandas) • **Dataset:** ~300,000 transactions |
+| **3. Explore the data** | Analyzed fraud distribution, missing values, and feature relationships. | **Libraries:** Pandas, Matplotlib, Seaborn • **Fraud Rate:** ~1–2% |
+| **4. Clean the data** | Removed duplicates, handled missing values, and treated outliers. | **Techniques:** `drop_duplicates()`, median imputation, IQR outlier detection |
+| **5. Engineer features** | Created meaningful features for model training. | **Features:** Transaction Amount, Merchant Category, Hour of Day, Device Type, Transaction Frequency |
+| **6. Handle imbalance** | Balanced fraud and non-fraud records before training. | **Technique:** SMOTE (Oversampling) + Random Undersampling • **Library:** imbalanced-learn |
+| **7. Split the data** | Divided data into training and testing datasets. | **Train/Test Split:** 80/20 • `random_state=42` |
+| **8. Train Decision Tree** | Built the first classification model. | **Scikit-learn:** `DecisionTreeClassifier(max_depth=10, criterion="gini")` |
+| **9. Train Neural Network** | Built and optimized a neural network model. | **TensorFlow/Keras:** 3 Dense Layers (64 → 32 → 16) • ReLU • Sigmoid Output • **Epochs:** 30 • **Batch Size:** 32 • **Optimizer:** Adam |
+| **10. Evaluate models** | Compared both models using classification metrics. | **Metrics:** Accuracy **94%**, Precision **91%**, Recall **88%**, F1-Score **89%**, ROC-AUC **0.96** |
+| **11. Cost-benefit analysis** | Measured business impact of fraud detection. | Estimated fraud losses prevented versus investigation costs and false-positive rate. |
+| **12. Select best model** | Selected the model with the best business performance. | Neural Network chosen due to higher Recall and ROC-AUC despite similar accuracy. |
+| **13. Present results** | Presented findings and deployment recommendations. | **Tools:** Tableau, PowerPoint • Explained model performance and business impact to stakeholders. |
 
 # Salary Expectations?
 I'm looking for a base salary in the $80,000–90,000 range, but I'm flexible based on the overall compensation package.
