@@ -2,7 +2,7 @@
 
 
 # Introduction
-
+I recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence from the University of Windsor. I have experience as a Data Analyst and a Fraud Analytics Consultant, where I worked mainly with SQL and Python for data analysis and predictive modeling, and used SAS for reporting and quick analytics. I also built Tableau dashboards to help stakeholders make data-driven decisions. I'm particularly interested in data analytics, fraud detection, and using data to solve business problems. I'm excited about the opportunity to apply my skills and continue learning in this role.
 
 # Exeevo Experience
 **Company Type:** A consulting firm providing fraud analytics services to clients
