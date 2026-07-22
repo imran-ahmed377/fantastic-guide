@@ -6,7 +6,7 @@ SAS Enterprise Guide (SAS EG) would be your **daily workhorse** for querying dat
 
 ### A. Extracting and Preparing Fraud Data
 
-You would use SAS EG to connect to CIBC's data repositories and pull information such as:
+You would use SAS EG to connect to company's data repositories and pull information such as:
 
 - Credit/debit card transactions
 - Online banking activity
@@ -403,4 +403,4 @@ Reduced
 
 ### Step 6 — Deploy Fraud Strategy
 
-Deploy the selected model and implement new fraud detection rules into CIBC's fraud monitoring systems.
+Deploy the selected model and implement new fraud detection rules into the company's fraud monitoring systems.
