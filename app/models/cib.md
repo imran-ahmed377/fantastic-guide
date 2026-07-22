@@ -27,6 +27,7 @@ I used SAS to generate reports and performed ad hoc analytics. I collaborated wi
 | **3:00–4:00 PM** | Validate model performance. Compare fraud detection rates, false positive rates, financial impact, and customer experience before recommending deployment. |
 | **4:00–5:00 PM** | Prepare reports or presentations explaining findings to business stakeholders. Update documentation and plan next analytical tasks. |
 
+# Vista Print Experience
 
 
 # Salary Expectations?
