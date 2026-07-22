@@ -7,9 +7,9 @@
 - [Salary Expectations](#salary-expectations)
 - [Questions](#questions)
 
-- [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg-—-data-access-analysis-reporting-and-rule-development)
-- [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner-—-predictive-modeling-and-machine-learning)
-
+- [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg--data-access-analysis-reporting-and-rule-development)
+- [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner--predictive-modeling-and-machine-learning)
+- [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
 
 # Introduction
 I recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence from the University of Windsor. I have experience as a Data Analyst and a Fraud Analytics, where I worked with SQL and Python for data analysis, predictive modeling, and used SAS for reporting and quick analytics. I also built Tableau dashboards to help stakeholders make data-driven decisions. AndI'm excited about the opportunity at CIBC to apply my skills and continue learning in this role.
