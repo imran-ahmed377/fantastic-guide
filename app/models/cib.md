@@ -1,3 +1,4 @@
+# Table of Contents
 
 
 # Introduction
@@ -27,8 +28,48 @@ I used SAS to generate reports and performed ad hoc analytics. I collaborated wi
 | **3:00–4:00 PM** | Validate model performance. Compare fraud detection rates, false positive rates, financial impact, and customer experience before recommending deployment. |
 | **4:00–5:00 PM** | Prepare reports or presentations explaining findings to business stakeholders. Update documentation and plan next analytical tasks. |
 
+---
+
 # Vista Print Experience
 
+**Day in a life Overview:**
+
+I mostly worked with SQL and Python. I used SQL to extract data from the company's data warehouse and Python to clean, analyze, and validate the data. I performed statistical analyses to detect anomalies and ensure data quality. Once the analysis was complete, I update Tableau dashboards so business teams could monitor key metrics like sales, customer behavior, and campaign performance. I also worked closely with cross-functional teams to understand their reporting needs and presented my findings with recommendations.
+
+## Example Project
+
+**Scenario:** VistaPrint launches a **20% off Business Cards** promotion.
+
+| Task | What You Did |
+|------|---------------|
+| **Extract campaign data** | Used SQL to retrieve customer orders, website traffic, and campaign information. |
+| **Analyze campaign performance** | Used Python to calculate conversion rates, revenue, average order value (AOV), and customer segments. |
+| **Detect anomalies** | Identified that one region had unusually low conversion due to an incorrect promotional pricing configuration. |
+| **Create dashboard** | Built a Tableau dashboard showing sales by region, campaign ROI, conversion rate, and customer demographics. |
+| **Present findings** | Recommended fixing the pricing issue and increasing marketing spend in high-performing regions, resulting in better campaign performance. |
+
+---
+#########################################################
+---
+
+**Day in a life:**
+| Time | What I Did | Tools Used | Business Purpose |
+|------|-------------|------------|------------------|
+| **9:00 AM** | Checked the status of overnight data pipelines and reviewed data quality reports. Investigated any missing or unusual data. | SQL, Python | Ensure stakeholders receive accurate and complete data. |
+| **9:30 AM** | Queried sales, customer, and marketing data from the data warehouse for ongoing analysis requests. | SQL | Extract relevant data for reporting and business analysis. |
+| **10:30 AM** | Cleaned and transformed data using Python. Removed duplicates, handled missing values, and prepared datasets for analysis. | Python (Pandas) | Produce reliable datasets for analysis and dashboards. |
+| **11:30 AM** | Performed statistical analysis to identify anomalies, such as unexpected drops in sales, duplicate orders, or abnormal customer behavior. | Python (NumPy, SciPy), SQL | Improve data quality and identify potential business issues. |
+| **1:00 PM** | Built or updated Tableau dashboards showing sales trends, customer acquisition, campaign performance, and operational KPIs. | Tableau | Provide business teams with interactive dashboards for decision-making. |
+| **2:00 PM** | Met with marketing, operations, or product teams to understand new reporting requirements or answer questions about existing dashboards. | Teams/Zoom, Tableau | Translate business needs into analytical solutions. |
+| **3:00 PM** | Worked on ad hoc analysis, such as evaluating the performance of a recent marketing campaign or identifying top-selling products. | SQL, Python | Help business teams make data-driven decisions. |
+| **4:00 PM** | Prepared reports or presentations summarizing key findings and recommendations for managers and stakeholders. | Tableau, PowerPoint, Excel | Clearly communicate insights and recommended actions. |
+| **5:00 PM** | Optimized SQL queries or Python scripts, documented analysis, and planned tasks for the next day. | SQL, Python | Improve efficiency and maintain reusable analytical workflows. |
+
+---
+
+
+
+---
 
 # Salary Expectations?
 I'm looking for a base salary in the $80,000–90,000 range, but I'm flexible based on the overall compensation package.
@@ -44,7 +85,7 @@ I'm looking for a base salary in the $80,000–90,000 range, but I'm flexible ba
 - What are the next steps of the hiring process?
 
 
-# SAS Experience
+---
 
 # 1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development
 
