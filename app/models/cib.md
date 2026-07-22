@@ -3,7 +3,7 @@
 - [Exeevo Experience](#exeevo-experience)
 - [Vista Print Experience](#vista-print-experience)
 - [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
-- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Project 2: Transaction Anomaly Monitoring Dashboard](#project-2-transaction-anomaly-monitoring-dashboard)
 - [Salary Expectations](#salary-expectations)
 - [Questions](#questions)
 
@@ -39,6 +39,21 @@ I used SAS to generate reports and performed ad hoc analytics. I collaborated wi
 | **1:30–3:00 PM** | Build analytical models or perform statistical analysis. Which  includes logistic regression, decision trees, random forests, or optimization techniques to predict fraudulent activity. |
 | **3:00–4:00 PM** | Validate model performance. Compare fraud detection rates, false positive rates, financial impact, and customer experience before recommending deployment. |
 | **4:00–5:00 PM** | Prepare reports or presentations explaining findings to business stakeholders. Update documentation and plan next analytical tasks. |
+
+---
+
+# Table of Contents
+- [Introduction](#introduction)
+- [Exeevo Experience](#exeevo-experience)
+- [Vista Print Experience](#vista-print-experience)
+- [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
+- [Project 2: Transaction Anomaly Monitoring Dashboard](#project-2-transaction-anomaly-monitoring-dashboard)
+- [Salary Expectations](#salary-expectations)
+- [Questions](#questions)
+
+- [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg--data-access-analysis-reporting-and-rule-development)
+- [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner--predictive-modeling-and-machine-learning)
+- [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
 
 ---
 
@@ -99,7 +114,7 @@ I mostly worked with SQL and Python. I used SQL to extract data from the company
 
 ---
 
-# Project 2: Credit Card Fraud Detection Model
+# Project 2: Transaction Anomaly Monitoring Dashboard
 
 
 
@@ -125,13 +140,14 @@ I mostly worked with SQL and Python. I used SQL to extract data from the company
 - [Exeevo Experience](#exeevo-experience)
 - [Vista Print Experience](#vista-print-experience)
 - [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
-- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Project 2: Transaction Anomaly Monitoring Dashboard](#project-2-transaction-anomaly-monitoring-dashboard)
 - [Salary Expectations](#salary-expectations)
 - [Questions](#questions)
 
 - [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg--data-access-analysis-reporting-and-rule-development)
 - [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner--predictive-modeling-and-machine-learning)
 - [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
+
 
 ---
 
@@ -157,13 +173,14 @@ I'm looking for a base salary in the $80,000–90,000 range, but I'm flexible ba
 - [Exeevo Experience](#exeevo-experience)
 - [Vista Print Experience](#vista-print-experience)
 - [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
-- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Project 2: Transaction Anomaly Monitoring Dashboard](#project-2-transaction-anomaly-monitoring-dashboard)
 - [Salary Expectations](#salary-expectations)
 - [Questions](#questions)
 
 - [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg--data-access-analysis-reporting-and-rule-development)
 - [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner--predictive-modeling-and-machine-learning)
 - [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
+
 ---
 
 # 1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development
@@ -283,13 +300,14 @@ These reports help determine whether fraud strategies are performing effectively
 - [Exeevo Experience](#exeevo-experience)
 - [Vista Print Experience](#vista-print-experience)
 - [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
-- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Project 2: Transaction Anomaly Monitoring Dashboard](#project-2-transaction-anomaly-monitoring-dashboard)
 - [Salary Expectations](#salary-expectations)
 - [Questions](#questions)
 
 - [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg--data-access-analysis-reporting-and-rule-development)
 - [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner--predictive-modeling-and-machine-learning)
 - [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
+
 
 ---
 
@@ -512,13 +530,14 @@ Too many false positives negatively impact customer experience.
 - [Exeevo Experience](#exeevo-experience)
 - [Vista Print Experience](#vista-print-experience)
 - [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
-- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Project 2: Transaction Anomaly Monitoring Dashboard](#project-2-transaction-anomaly-monitoring-dashboard)
 - [Salary Expectations](#salary-expectations)
 - [Questions](#questions)
 
 - [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg--data-access-analysis-reporting-and-rule-development)
 - [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner--predictive-modeling-and-machine-learning)
 - [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
+
 ---
 # How SAS Enterprise Guide and SAS Miner Work Together
 
@@ -600,12 +619,14 @@ Reduced
 
 Deploy the selected model and implement new fraud detection rules into the company's fraud monitoring systems.
 
+---
+
 # Table of Contents
 - [Introduction](#introduction)
 - [Exeevo Experience](#exeevo-experience)
 - [Vista Print Experience](#vista-print-experience)
 - [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
-- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Project 2: Transaction Anomaly Monitoring Dashboard](#project-2-transaction-anomaly-monitoring-dashboard)
 - [Salary Expectations](#salary-expectations)
 - [Questions](#questions)
 
