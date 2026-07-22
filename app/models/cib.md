@@ -1,8 +1,18 @@
 # Table of Contents
+- [Introduction](#introduction)
+- [Exeevo Experience](#exeevo-experience)
+- [Vista Print Experience](#vista-print-experience)
+- [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
+- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Salary Expectations](#salary-expectations)
+- [Questions](#questions)
+
+- [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg-—-data-access-analysis-reporting-and-rule-development)
+- [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner-—-predictive-modeling-and-machine-learning)
 
 
 # Introduction
-I recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence from the University of Windsor. I have experience as a Data Analyst and a Fraud Analytics, where I worked with SQL and Python for data analysis, predictive modeling, and used SAS for reporting and quick analytics. I also built Power BI dashboards to help stakeholders make data-driven decisions. AndI'm excited about the opportunity at CIBC to apply my skills and continue learning in this role.
+I recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence from the University of Windsor. I have experience as a Data Analyst and a Fraud Analytics, where I worked with SQL and Python for data analysis, predictive modeling, and used SAS for reporting and quick analytics. I also built Tableau dashboards to help stakeholders make data-driven decisions. AndI'm excited about the opportunity at CIBC to apply my skills and continue learning in this role.
 
 # Exeevo Experience
 **Company Type:** A consulting firm providing fraud analytics services to clients
@@ -85,6 +95,30 @@ I mostly worked with SQL and Python. I used SQL to extract data from the company
 | **12. Select best model** | Selected the model with the best business performance. | Neural Network chosen due to higher Recall and ROC-AUC despite similar accuracy. |
 | **13. Present results** | Presented findings and deployment recommendations. | **Tools:** Tableau, PowerPoint • Explained model performance and business impact to stakeholders. |
 
+---
+
+# Project 2: Credit Card Fraud Detection Model
+
+
+
+| Step | What I Did | Technical Details |
+|------|-------------|-------------------|
+| **1. Understand the problem** | Defined the goal of identifying suspicious transactions and reducing manual fraud review effort. | **Problem Type:** Real-time Transaction Monitoring and Anomaly Detection |
+| **2. Collect transaction data** | Extracted historical and real-time transaction data from company databases. | **Tools:** SQL, Python • **Data Sources:** Transaction logs, customer profiles, merchant information |
+| **3. Explore transaction patterns** | Analyzed normal and abnormal transaction behaviors to identify fraud indicators. | **Tools:** Python (Pandas, NumPy), SQL • **Analysis:** Transaction frequency, amount patterns, location changes |
+| **4. Clean and prepare data** | Processed transaction records before applying monitoring rules. | **Techniques:** Duplicate removal, missing value handling, data validation, data type conversion |
+| **5. Create anomaly detection rules** | Developed rules to flag suspicious transactions automatically. | **SQL Rules Examples:** High transaction amount, unusual location, multiple transactions within short intervals |
+| **6. Build SQL monitoring system** | Created SQL queries to continuously identify suspicious activities. | **Tools:** SQL, Stored Procedures • **Techniques:** Joins, Aggregations, Window Functions, CTEs |
+| **7. Calculate fraud risk metrics** | Created metrics to evaluate transaction risk and rule effectiveness. | **Metrics:** Alert Volume, Fraud Detection Rate, False Positive Rate, Rule Trigger Frequency |
+| **8. Automate anomaly detection** | Automated the process of identifying suspicious transactions instead of manual reviews. | **Tools:** SQL Scheduling, Python Scripts • **Result:** Reduced manual review time by 30% |
+| **9. Build Tableau dashboard** | Created interactive dashboards to visualize fraud trends and monitoring performance. | **Tools:** Tableau • **Visuals:** Fraud Trends, Alert Volume, Transaction Patterns, Rule Performance |
+| **10. Validate dashboard results** | Compared dashboard alerts against confirmed fraud cases. | **Techniques:** Data Validation, Accuracy Checks, Business Rule Testing |
+| **11. Optimize monitoring rules** | Improved detection rules by analyzing false positives and missed fraud cases. | **Analysis:** Rule Precision, False Positive Reduction, Investigation Efficiency |
+| **12. Present insights** | Shared fraud trends and recommendations with fraud analysts and business stakeholders. | **Tools:** Tableau, PowerPoint • Presented KPIs and improvement opportunities |
+| **13. Measure business impact** | Evaluated the effectiveness of the monitoring solution. | **Outcome:** 30% reduction in manual review time and improved fraud monitoring efficiency |
+
+---
+
 # Salary Expectations?
 I'm looking for a base salary in the $80,000–90,000 range, but I'm flexible based on the overall compensation package.
 
@@ -92,11 +126,14 @@ I'm looking for a base salary in the $80,000–90,000 range, but I'm flexible ba
 # Questions
 - What would success look like in the first 90 days?
   >>> That's great to hear. Thank you for sharing that.
-- What kinds of applications would I be building?
-  >>> That's helpful. Could you also tell me a bit about...
+
 - Are developers encouraged to experiment with new AI tools and workflows?
   >>> That sounds like an environment I'd really enjoy working in. Thanks for sharing.
+
 - What are the next steps of the hiring process?
+
+- What kinds of applications would I be building?
+  >>> That's helpful. Could you also tell me a bit about...
 
 
 ---
