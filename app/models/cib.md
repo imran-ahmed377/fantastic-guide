@@ -5,9 +5,12 @@
 # Exeevo Experience
 **Company Type:** A consulting firm providing fraud analytics services to clients
 
-**Statistical Analysis System (SAS) Guide:**
 
-**Statistical Analysis System (SAS) Miner:**
+**Day in a life Overview:**
+
+I reviewed fraud trends and checked any unusual spikes in fraud alerts. I used SQL to pull the latest transaction data and validated data quality. I used Python to investigate fraud patterns, and refined predictive models, and evaluated model performance. 
+
+I used SAS to generate reports and performed ad hoc analytics. I collaborated with fraud analysts to discuss findings, refine fraud rules, and present recommendations for improving fraud detection and minimized false positives.
 
 
 **Day in a life:**
@@ -37,3 +40,10 @@ I'm looking for a base salary in the $80,000–90,000 range, but I'm flexible ba
 - Are developers encouraged to experiment with new AI tools and workflows?
   >>> That sounds like an environment I'd really enjoy working in. Thanks for sharing.
 - What are the next steps of the hiring process?
+
+
+# SAS Experience
+
+## **Statistical Analysis System (SAS) Guide:**
+
+## **Statistical Analysis System (SAS) Miner:**
