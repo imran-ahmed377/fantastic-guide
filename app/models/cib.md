@@ -12,6 +12,8 @@
 - [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
 
 # Introduction
+Thank you for the opportunity.
+
 I recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence from the University of Windsor. I have experience as a Data Analyst and a Fraud Analytics, where I worked with SQL and Python for data analysis, predictive modeling, and used SAS for reporting and quick analytics. I also built Tableau dashboards to help stakeholders make data-driven decisions. AndI'm excited about the opportunity at CIBC to apply my skills and continue learning in this role.
 
 # Exeevo Experience
