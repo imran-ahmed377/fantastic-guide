@@ -118,6 +118,20 @@ I mostly worked with SQL and Python. I used SQL to extract data from the company
 | **13. Measure business impact** | Evaluated the effectiveness of the monitoring solution. | **Outcome:** 30% reduction in manual review time and improved fraud monitoring efficiency |
 
 ---
+# Table of Contents
+- [Introduction](#introduction)
+- [Exeevo Experience](#exeevo-experience)
+- [Vista Print Experience](#vista-print-experience)
+- [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
+- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Salary Expectations](#salary-expectations)
+- [Questions](#questions)
+
+- [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg--data-access-analysis-reporting-and-rule-development)
+- [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner--predictive-modeling-and-machine-learning)
+- [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
+
+---
 
 # Salary Expectations?
 I'm looking for a base salary in the $80,000–90,000 range, but I'm flexible based on the overall compensation package.
@@ -135,7 +149,19 @@ I'm looking for a base salary in the $80,000–90,000 range, but I'm flexible ba
 - What kinds of applications would I be building?
   >>> That's helpful. Could you also tell me a bit about...
 
+---
+# Table of Contents
+- [Introduction](#introduction)
+- [Exeevo Experience](#exeevo-experience)
+- [Vista Print Experience](#vista-print-experience)
+- [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
+- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Salary Expectations](#salary-expectations)
+- [Questions](#questions)
 
+- [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg--data-access-analysis-reporting-and-rule-development)
+- [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner--predictive-modeling-and-machine-learning)
+- [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
 ---
 
 # 1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development
@@ -247,6 +273,21 @@ Fraud prevented:           $4.2 million
 ```
 
 These reports help determine whether fraud strategies are performing effectively.
+
+---
+
+# Table of Contents
+- [Introduction](#introduction)
+- [Exeevo Experience](#exeevo-experience)
+- [Vista Print Experience](#vista-print-experience)
+- [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
+- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Salary Expectations](#salary-expectations)
+- [Questions](#questions)
+
+- [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg--data-access-analysis-reporting-and-rule-development)
+- [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner--predictive-modeling-and-machine-learning)
+- [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
 
 ---
 
@@ -464,7 +505,19 @@ False Positives:
 Too many false positives negatively impact customer experience.
 
 ---
+# Table of Contents
+- [Introduction](#introduction)
+- [Exeevo Experience](#exeevo-experience)
+- [Vista Print Experience](#vista-print-experience)
+- [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
+- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Salary Expectations](#salary-expectations)
+- [Questions](#questions)
 
+- [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg--data-access-analysis-reporting-and-rule-development)
+- [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner--predictive-modeling-and-machine-learning)
+- [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
+---
 # How SAS Enterprise Guide and SAS Miner Work Together
 
 ## Project Example: Reduce Credit Card Fraud Losses
@@ -544,3 +597,16 @@ Reduced
 ### Step 6 — Deploy Fraud Strategy
 
 Deploy the selected model and implement new fraud detection rules into the company's fraud monitoring systems.
+
+# Table of Contents
+- [Introduction](#introduction)
+- [Exeevo Experience](#exeevo-experience)
+- [Vista Print Experience](#vista-print-experience)
+- [Project 1: Credit Card Fraud Detection Model](#project-1-credit-card-fraud-detection-model)
+- [Project 2: Credit Card Fraud Detection Model](#project-2-credit-card-fraud-detection-model)
+- [Salary Expectations](#salary-expectations)
+- [Questions](#questions)
+
+- [1. SAS Enterprise Guide (SAS EG) — Data Access, Analysis, Reporting, and Rule Development](#1-sas-enterprise-guide-sas-eg--data-access-analysis-reporting-and-rule-development)
+- [2. SAS Enterprise Miner (SAS Miner) — Predictive Modeling and Machine Learning](#2-sas-enterprise-miner-sas-miner--predictive-modeling-and-machine-learning)
+- [SAS EG + SAS Miner](#how-sas-enterprise-guide-and-sas-miner-work-together)
