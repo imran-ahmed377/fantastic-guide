@@ -325,7 +325,7 @@ Too many false positives negatively impact customer experience.
 
 ---
 
-# How SAS EG and SAS Miner Work Together
+# How SAS Enterprise Guide and SAS Miner Work Together
 
 ## Project Example: Reduce Credit Card Fraud Losses
 
