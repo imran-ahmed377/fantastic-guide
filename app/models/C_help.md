@@ -1,9 +1,36 @@
+# Table of Contents
+- [Introduction](#introduction)
+- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
+- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
+- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+- [What is Canada Helps?](#what-is-canada-helps)
+- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
+- [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
+- [Messy Datasets](#messy-datasets)
+- [Example of A/B Testing](#example-of-ab-testing)
+- [Non-technical stakeholders?](#non-technical-stakeholders)
+- [Questions](#questions)
+- [Technical QnA](#technical-qna)
+  - [1. Overfitting](#1-overfitting)
+  - [2. Underfitting](#2-underfitting)
+  - [3. What evaluation metrics would you use?](#3-what-evaluation-metrics-would-you-use)
+  - [4. What is the difference between Random Forest and Logistic Regression?](#4-what-is-the-difference-between-random-forest-and-logistic-regression)
+    - [Random Forest](#random-forest)
+    - [Logistic Regression](#logistic-regression)
+    - [XGBoost](#xgboost)
+    - [K-Means](#k-means)
+    - [Linear Regression](#linear-regression)
+
+
 # Introduction
 
-# Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)
-At Exeevo, I worked as a Data Scientist. My main role was to analyze customer and product data to help the business make better decisions.
+I recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence from the University of Windsor. I have experience as a Data Scientist and Data Analyst Intern, where I worked with Python and SQL for data analysis, predictive modeling, customer segmentation, and churn prediction. I also built Power BI and Tableau dashboards to help stakeholders make data-driven decisions and communicated insights to both technical and non-technical teams. I'm excited about this opportunity to apply my analytical and machine learning skills while continuing to learn and grow in this role.
 
-For example, I built customer segmentation and churn prediction models, which improved targeting accuracy by 20%, helping the marketing team reach the right customers. I also analyzed user behavior, designed A/B tests to measure the impact of new features, and created Power BI dashboards so stakeholders could easily understand the data. I worked closely with the product and marketing teams to support data-driven business decisions.
+
+# Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)
+At Exeevo, I worked as a Data Scientist. My main role was to analyze customer and product data to help the team to make better decisions.
+
+For example, I built customer segmentation and churn prediction models, which improved targeting accuracy by 20%, and helped the marketing team reach the right customers. I also analyzed user behavior, and designed A/B tests to measure the impact of new features, and created Power BI dashboards so stakeholders could easily understand the data. And I also worked closely with the product and marketing teams.
 
 **Day in Life @ Exeevo:**
 | Time | Activity | Business Purpose |
@@ -19,9 +46,9 @@ For example, I built customer segmentation and churn prediction models, which im
 | 4:30 – 5:00 PM | Present findings to Product and Marketing teams | Recommend data-driven actions and next steps |
 
 # Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)
-At VistaPrint, I worked as a Data Analyst Intern. I analyzed large datasets with SQL and Python to find trends and identify areas for improvement. For example, I found patterns in marketing and operations data that helped the teams to understand performance and make better decisions.
+At VistaPrint, I worked as a Data Analyst Intern. I analyzed large datasets with SQL and Python to find trends and identify areas for improvement. For example, I found patterns in marketing and operations data that helped the teams to understand performance.
 
-I also built dashboards and visualizations so the teams could easily track important metrics instead of manually reviewing data. Also, I maintained data quality and documented my work, for others to use. Also I regularly shared my findings with both technical and non-technical teams.
+I also built dashboards and visualizations so the teams could easily track important metrics instead of manually reviewing data. Also, I maintained data quality and documented my work, for others to use. I also regularly shared my findings with both technical and non-technical teams.
 
 **Day in Life @ Vista Print:**
 
@@ -40,37 +67,60 @@ I also built dashboards and visualizations so the teams could easily track impor
 # Project 1: Customer Churn Prediction Model
 
 
-This project focused on predicting customer churn using donor behavioral data. The goal was to identify donors who were likely to stop donating so the organization could target them with retention campaigns before losing them.
+This project focused on predicting customer churn using behavioral data. The goal was to identify customer who were likely to stop using the platform so the organization could target them with retention campaigns before losing them.
 
-I first cleaned and prepared the data using Python and Pandas by handling missing values, creating new features like donation frequency and recency, and preparing the data for modeling. Then I built and compared several classification models in Scikit-learn, including Logistic Regression, Decision Tree, and Random Forest. Since missing a donor who might churn is more costly than incorrectly flagging one, I focused on improving recall, which increased by 25% after feature engineering and model tuning.
+I first cleaned and prepared the data using Python and Pandas by handling missing values, and creating new features like usage frequency and recency, and prepared the data for modeling. Then I built and compared several classification models in Scikit-learn, including Logistic Regression, Decision Tree, and Random Forest. I I focused on improving recall, which increased by 25% after feature engineering and model tuning.
 
-Finally, I created a Power BI dashboard that highlighted high-risk donor segments and key trends. This allowed the fundraising team to prioritize outreach efforts and make more informed decisions. I'm especially proud of this project because it combined data analysis, machine learning, and visualization to solve a real business problem and produce insights that stakeholders could easily use.
+Finally, I created a Power BI dashboard that highlighted high-risk customer segments and key trends. This allowed the fundraising team to change outreach efforts and make more informed decisions. I'm especially proud of this project because I learned some new techniques and the team really appreciated the dashboard I built.
+
 
 **Breakdown**
 | Section | Answer |
 |---------|--------|
-| Project Goal | The goal of this project was to identify donors who were likely to stop donating (churn) so that the organization could target them with retention campaigns before they left. |
-| Business Problem | It is more expensive to acquire a new donor than to retain an existing one. The organization wanted a data-driven way to identify at-risk donors and improve retention. |
-| My Role | I collected and analyzed donor behavior data, built the prediction model, evaluated its performance, and created dashboards to present the results. |
-| Dataset | Historical donor data including donation frequency, donation amount, recency of donations, and donor engagement history. |
+| Project Goal | The goal of this project was to identify customer who were likely to stop using the platform so that the organization could target them with retention campaigns before they left. |
+| Business Problem | It is more expensive to acquire a new customer than to retain an existing one. The organization wanted a data-driven way to identify at-risk customers and improve retention. |
+| My Role | I collected and analyzed customer behavior data, built the prediction model, evaluated its performance, and created dashboards to present the results. |
+| Dataset | Historical customer data including usage frequency,  amount, recency of logins, and customer engagement history. |
 | Tools Used | Python, Pandas, Scikit-learn, NumPy, Power BI, Jupyter Notebook |
-| Data Preparation | Cleaned missing values, removed duplicates, encoded categorical variables, scaled numerical features, and created new features such as average donation amount and days since last donation. |
-| Feature Engineering | Created features like donation frequency, recency, lifetime donation value, and average donation amount because these better represented donor behavior and improved model performance. |
+| Data Preparation | Cleaned missing values, removed duplicates, encoded categorical variables, scaled numerical features, and created new features such as average logins and days since last logins. |
+| Feature Engineering | Created features like usage frequency, recency, and average login time because these better represented customer behavior and improved model performance. |
 | Model Used | Built and compared classification models using Logistic Regression, Decision Tree, and Random Forest, then selected the model with the best performance. |
-| Evaluation Metrics | Evaluated the models using Recall, Precision, F1-score, and Accuracy. Since missing a donor who might churn is costly, Recall was the most important metric. |
-| Key Result | Improved the model's Recall by 25%, allowing the organization to identify significantly more at-risk donors than the baseline model. |
-| Visualization | Built an interactive Power BI dashboard showing high-risk donor segments, churn probability, donation trends, and key KPIs so stakeholders could easily identify which donors to target. |
-| Business Impact | The dashboard helped the fundraising team prioritize outreach efforts toward high-risk donors instead of contacting everyone. This made retention campaigns more focused, improved decision-making, and could reduce donor loss while using marketing resources more efficiently. |
-| Challenges | The dataset contained missing values and class imbalance because most donors did not churn. I handled this through data cleaning, feature engineering, and model tuning to improve prediction quality. |
+| Evaluation Metrics | Evaluated the models using Recall, Precision, F1-score, and Accuracy. Since missing a customer who might churn is costly, Recall was the most important metric. |
+| Key Result | Improved the model's Recall by 25%, allowing the organization to identify significantly more at-risk customers than the baseline model. |
+| Visualization | Built an interactive Power BI dashboard showing high-risk customer segments, churn probability, trends, and key KPIs so stakeholders could easily identify which customers to target. |
+| Business Impact | The dashboard helped the team prioritize outreach efforts toward high-risk customers instead of contacting everyone. This made retention campaigns more focused, improved decision-making, and could reduce customer loss while using marketing resources more efficiently. |
+| Challenges | The dataset contained missing values and class imbalance because most customers did not churn. I handled this through data cleaning, feature engineering, and model tuning to improve prediction quality. |
 | Why I'm Proud of This Project | I'm proud of this project because it combined data cleaning, machine learning, and visualization into one complete solution. Instead of only building a model, I translated the results into a Power BI dashboard that non-technical stakeholders could easily understand and use to make better business decisions. |
 
+---
 
-# Project 2:
+# Table of Contents
+- [Introduction](#introduction)
+- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
+- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
+- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+- [What is Canada Helps?](#what-is-canada-helps)
+- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
+- [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
+- [Messy Datasets](#messy-datasets)
+- [Example of A/B Testing](#example-of-ab-testing)
+- [Non-technical stakeholders?](#non-technical-stakeholders)
+- [Questions](#questions)
+- [Technical QnA](#technical-qna)
+  - [1. Overfitting](#1-overfitting)
+  - [2. Underfitting](#2-underfitting)
+  - [3. What evaluation metrics would you use?](#3-what-evaluation-metrics-would-you-use)
+  - [4. What is the difference between Random Forest and Logistic Regression?](#4-what-is-the-difference-between-random-forest-and-logistic-regression)
+    - [Random Forest](#random-forest)
+    - [Logistic Regression](#logistic-regression)
+    - [XGBoost](#xgboost)
+    - [K-Means](#k-means)
+    - [Linear Regression](#linear-regression)
 
 ---
 
 # What is Canada Helps?
-Canada Helps is an online platform that helps individuals to donnate to registered Canadian charities and it also provides tools for charities to manage their donations and fundraising campaigns. 
+Canada Helps is an online platform that helps people to donnate to registered Canadian charities and it also provides tools for charities to manage their donations and fundraising campaigns. 
 
 
 # Why you applied to Canada Helps?
@@ -80,11 +130,15 @@ I've actually used CanadaHelps to make donations, so I already appreciate the va
 
 # Work with Ambiguous Data/Problems
 
+I deal with these problems by understanding the business goal, asking the right questions, and breaking the problem into smaller steps. I validate the data, and adjust my approach based on feedback.
+
+**Example:**
+
+For Example, at VistaPrint, when working with marketing data, the business question was not always clearly defined. So, I first discussed with stakeholders what they wanted to understand, such as improving campaign performance. Then, I explored the data using SQL and Python, and checked for missing or incorrect information, and identified useful patterns. Then I shared my findings through dashboards and simple explanations.
 
 # Messy Datasets
 Almost every dataset I've worked with at Exeevo required cleaning.
 
-One project involved missing values, inconsistent formats, duplicate records, and outliers.
 
 I first explored the data to understand the issues before making changes. Depending on the situation, I imputed missing values, standardized formats, removed duplicates, and investigated outliers rather than automatically deleting them.
 
@@ -93,7 +147,7 @@ I also documented every cleaning step so the analysis remained reproducible.
 # Example of A/B Testing
 
 
-**Business Problem:** Product team wants to know if a new onboarding screen increases user engagement.
+**Business Problem:** At Exeevo the product team wants to know if a new onboarding screen increases user engagement.
 
 **Hypothesis:** The new onboarding screen will increase the 7-day user retention rate.
 
@@ -111,14 +165,52 @@ I also documented every cleaning step so the analysis remained reproducible.
 | 10 | Present recommendation | Power BI, PowerPoint | "Retention increased from 42% to 48% (p < 0.05). Recommend rolling out the new onboarding." |
 
 # Non-technical stakeholders?
-Based on experience
+I deal with non-technical people by explaining data in a simple way and focusing on the business impact rather than technical details. I avoid using complex terms and use visuals like dashboards or charts to make the insights easier to understand.
 
-# 
+**Example:**
+
+For example, at VistaPrint, whenever I shared analysis with marketing and operations teams, I did not focus on SQL queries or Python code. I explained what the data showed, such as which campaigns were performing better or there were opportunities to improve. I used dashboards and simple explanations so the teams could quickly understand the insights.
 
 
 # Questions
+- What would success look like in the first 90 days?
+  >>> That's great to hear. Thank you for sharing that.
+
+- Are developers encouraged to experiment with new AI tools and workflows?
+  >>> That sounds like an environment I'd really enjoy working in. Thanks for sharing.
+
+- What are the next steps of the hiring process?
+
+- What kinds of applications would I be building?
+  >>> That's helpful. Could you also tell me a bit about...
 
 ---
+
+# Table of Contents
+- [Introduction](#introduction)
+- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
+- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
+- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+- [What is Canada Helps?](#what-is-canada-helps)
+- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
+- [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
+- [Messy Datasets](#messy-datasets)
+- [Example of A/B Testing](#example-of-ab-testing)
+- [Non-technical stakeholders?](#non-technical-stakeholders)
+- [Questions](#questions)
+- [Technical QnA](#technical-qna)
+  - [1. Overfitting](#1-overfitting)
+  - [2. Underfitting](#2-underfitting)
+  - [3. What evaluation metrics would you use?](#3-what-evaluation-metrics-would-you-use)
+  - [4. What is the difference between Random Forest and Logistic Regression?](#4-what-is-the-difference-between-random-forest-and-logistic-regression)
+    - [Random Forest](#random-forest)
+    - [Logistic Regression](#logistic-regression)
+    - [XGBoost](#xgboost)
+    - [K-Means](#k-means)
+    - [Linear Regression](#linear-regression)
+
+---
+
 
 # Technical QnA
 ## 1. Overfitting:
@@ -271,3 +363,28 @@ Classification:
     - Assumes a linear relationship
     - Sensitive to outliers
     - Performs poorly on complex nonlinear data
+
+---
+
+# Table of Contents
+- [Introduction](#introduction)
+- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
+- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
+- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+- [What is Canada Helps?](#what-is-canada-helps)
+- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
+- [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
+- [Messy Datasets](#messy-datasets)
+- [Example of A/B Testing](#example-of-ab-testing)
+- [Non-technical stakeholders?](#non-technical-stakeholders)
+- [Questions](#questions)
+- [Technical QnA](#technical-qna)
+  - [1. Overfitting](#1-overfitting)
+  - [2. Underfitting](#2-underfitting)
+  - [3. What evaluation metrics would you use?](#3-what-evaluation-metrics-would-you-use)
+  - [4. What is the difference between Random Forest and Logistic Regression?](#4-what-is-the-difference-between-random-forest-and-logistic-regression)
+    - [Random Forest](#random-forest)
+    - [Logistic Regression](#logistic-regression)
+    - [XGBoost](#xgboost)
+    - [K-Means](#k-means)
+    - [Linear Regression](#linear-regression)
