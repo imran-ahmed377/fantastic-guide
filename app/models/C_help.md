@@ -19,11 +19,51 @@ For example, I built customer segmentation and churn prediction models, which im
 | 4:30 – 5:00 PM | Present findings to Product and Marketing teams | Recommend data-driven actions and next steps |
 
 # Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)
-At VistaPrint, I worked as a Data Analyst Intern, where I helped the team make better business decisions using data. I analyzed large datasets with SQL and Python to find trends and identify areas for improvement. For example, I found patterns in marketing and operations data that helped teams understand performance and make more informed decisions.
+At VistaPrint, I worked as a Data Analyst Intern. I analyzed large datasets with SQL and Python to find trends and identify areas for improvement. For example, I found patterns in marketing and operations data that helped the teams to understand performance and make better decisions.
 
-I also built dashboards and visualizations so teams could easily track important metrics instead of manually reviewing data. In addition, I maintained data quality and documented my work, which made the data more reliable and easier for others to use. I regularly shared my findings with both technical and non-technical teams, helping them turn data into actionable insights.
+I also built dashboards and visualizations so the teams could easily track important metrics instead of manually reviewing data. Also, I maintained data quality and documented my work, for others to use. Also I regularly shared my findings with both technical and non-technical teams.
 
-# Project 1:
+**Day in Life @ Vista Print:**
+
+| Time | Activity | Tools Used |
+|------|----------|------------|
+| 9:00 – 9:15 AM | Check emails, review tasks, and attend the daily team stand-up | Outlook, Microsoft Teams |
+| 9:15 – 11:00 AM | Query and explore marketing or operations data to answer business questions | SQL, Python |
+| 11:00 – 12:00 PM | Clean and validate data to ensure accuracy before analysis | Python (Pandas), SQL |
+| 12:00 – 1:00 PM | Lunch | — |
+| 1:00 – 2:30 PM | Create or update dashboards for business teams | Power BI or Tableau, Excel |
+| 2:30 – 3:15 PM | Analyze trends and summarize insights | Python, Excel |
+| 3:15 – 4:00 PM | Meet with marketing or operations teams to explain findings and answer questions | Microsoft Teams, PowerPoint |
+| 4:00 – 5:00 PM | Document work, update reports, and plan tasks for the next day | Confluence/SharePoint, Excel, Teams |
+
+
+# Project 1: Customer Churn Prediction Model
+
+
+This project focused on predicting customer churn using donor behavioral data. The goal was to identify donors who were likely to stop donating so the organization could target them with retention campaigns before losing them.
+
+I first cleaned and prepared the data using Python and Pandas by handling missing values, creating new features like donation frequency and recency, and preparing the data for modeling. Then I built and compared several classification models in Scikit-learn, including Logistic Regression, Decision Tree, and Random Forest. Since missing a donor who might churn is more costly than incorrectly flagging one, I focused on improving recall, which increased by 25% after feature engineering and model tuning.
+
+Finally, I created a Power BI dashboard that highlighted high-risk donor segments and key trends. This allowed the fundraising team to prioritize outreach efforts and make more informed decisions. I'm especially proud of this project because it combined data analysis, machine learning, and visualization to solve a real business problem and produce insights that stakeholders could easily use.
+
+**Breakdown**
+| Section | Answer |
+|---------|--------|
+| Project Goal | The goal of this project was to identify donors who were likely to stop donating (churn) so that the organization could target them with retention campaigns before they left. |
+| Business Problem | It is more expensive to acquire a new donor than to retain an existing one. The organization wanted a data-driven way to identify at-risk donors and improve retention. |
+| My Role | I collected and analyzed donor behavior data, built the prediction model, evaluated its performance, and created dashboards to present the results. |
+| Dataset | Historical donor data including donation frequency, donation amount, recency of donations, and donor engagement history. |
+| Tools Used | Python, Pandas, Scikit-learn, NumPy, Power BI, Jupyter Notebook |
+| Data Preparation | Cleaned missing values, removed duplicates, encoded categorical variables, scaled numerical features, and created new features such as average donation amount and days since last donation. |
+| Feature Engineering | Created features like donation frequency, recency, lifetime donation value, and average donation amount because these better represented donor behavior and improved model performance. |
+| Model Used | Built and compared classification models using Logistic Regression, Decision Tree, and Random Forest, then selected the model with the best performance. |
+| Evaluation Metrics | Evaluated the models using Recall, Precision, F1-score, and Accuracy. Since missing a donor who might churn is costly, Recall was the most important metric. |
+| Key Result | Improved the model's Recall by 25%, allowing the organization to identify significantly more at-risk donors than the baseline model. |
+| Visualization | Built an interactive Power BI dashboard showing high-risk donor segments, churn probability, donation trends, and key KPIs so stakeholders could easily identify which donors to target. |
+| Business Impact | The dashboard helped the fundraising team prioritize outreach efforts toward high-risk donors instead of contacting everyone. This made retention campaigns more focused, improved decision-making, and could reduce donor loss while using marketing resources more efficiently. |
+| Challenges | The dataset contained missing values and class imbalance because most donors did not churn. I handled this through data cleaning, feature engineering, and model tuning to improve prediction quality. |
+| Why I'm Proud of This Project | I'm proud of this project because it combined data cleaning, machine learning, and visualization into one complete solution. Instead of only building a model, I translated the results into a Power BI dashboard that non-technical stakeholders could easily understand and use to make better business decisions. |
+
 
 # Project 2:
 
