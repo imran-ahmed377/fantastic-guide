@@ -1,6 +1,22 @@
 # Introduction
 
 # Exp 1
+At Exeevo, I worked as a Data Scientist. My main role was to analyze customer and product data to help the business make better decisions.
+
+For example, I built customer segmentation and churn prediction models, which improved targeting accuracy by 20%, helping the marketing team reach the right customers. I also analyzed user behavior, designed A/B tests to measure the impact of new features, and created Power BI dashboards so stakeholders could easily understand the data. I worked closely with the product and marketing teams to support data-driven business decisions.
+
+Day in Life:
+| Time | Activity | Business Purpose |
+|------|----------|------------------|
+| 9:00 – 9:15 AM | Check emails, Slack, Jira tickets, review priorities | Understand new requests from Product and Marketing teams |
+| 9:15 – 9:30 AM | Daily stand-up meeting | Share progress, discuss blockers, align with team |
+| 9:30 – 11:00 AM | Query data using SQL and clean data using Python (Pandas, NumPy) | Prepare high-quality data for analysis |
+| 11:00 – 12:00 PM | Perform exploratory data analysis (EDA) using Python, Matplotlib, Seaborn | Identify customer behavior and trends |
+| 12:00 – 1:00 PM | Lunch | — |
+| 1:00 – 2:30 PM | Build machine learning models (Scikit-learn) for segmentation or churn prediction | Improve customer targeting and identify customers likely to leave |
+| 2:30 – 3:30 PM | Design or analyze A/B tests | Measure whether a new feature improves business metrics |
+| 3:30 – 4:30 PM | Build dashboards using Power BI | Help business teams monitor KPIs and make decisions |
+| 4:30 – 5:00 PM | Present findings to Product and Marketing teams | Recommend data-driven actions and next steps |
 
 # Exp 2
 
