@@ -1,11 +1,11 @@
 # Introduction
 
-# Exp 1
+# Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)
 At Exeevo, I worked as a Data Scientist. My main role was to analyze customer and product data to help the business make better decisions.
 
 For example, I built customer segmentation and churn prediction models, which improved targeting accuracy by 20%, helping the marketing team reach the right customers. I also analyzed user behavior, designed A/B tests to measure the impact of new features, and created Power BI dashboards so stakeholders could easily understand the data. I worked closely with the product and marketing teams to support data-driven business decisions.
 
-Day in Life:
+**Day in Life @ Exeevo:**
 | Time | Activity | Business Purpose |
 |------|----------|------------------|
 | 9:00 – 9:15 AM | Check emails, Slack, Jira tickets, review priorities | Understand new requests from Product and Marketing teams |
@@ -18,7 +18,10 @@ Day in Life:
 | 3:30 – 4:30 PM | Build dashboards using Power BI | Help business teams monitor KPIs and make decisions |
 | 4:30 – 5:00 PM | Present findings to Product and Marketing teams | Recommend data-driven actions and next steps |
 
-# Exp 2
+# Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)
+At VistaPrint, I worked as a Data Analyst Intern, where I helped the team make better business decisions using data. I analyzed large datasets with SQL and Python to find trends and identify areas for improvement. For example, I found patterns in marketing and operations data that helped teams understand performance and make more informed decisions.
+
+I also built dashboards and visualizations so teams could easily track important metrics instead of manually reviewing data. In addition, I maintained data quality and documented my work, which made the data more reliable and easier for others to use. I regularly shared my findings with both technical and non-technical teams, helping them turn data into actionable insights.
 
 # Project 1:
 
@@ -48,7 +51,24 @@ I first explored the data to understand the issues before making changes. Depend
 I also documented every cleaning step so the analysis remained reproducible.
 
 # Example of A/B Testing
-Based on real exp
+
+
+**Business Problem:** Product team wants to know if a new onboarding screen increases user engagement.
+
+**Hypothesis:** The new onboarding screen will increase the 7-day user retention rate.
+
+| Step | Activity | Tools Used | Example |
+|------|----------|------------|---------|
+| 1 | Understand the business problem | Jira, Confluence, Slack, Meetings | Product Manager asks if the new onboarding improves retention. |
+| 2 | Define success metric | SQL, Excel | Primary KPI = 7-day retention. Secondary KPI = Session duration. |
+| 3 | Form hypothesis | Documentation (Confluence/Word) | H0: No difference. H1: New onboarding increases retention. |
+| 4 | Identify eligible users | SQL | Select only new users who signed up during the experiment period. |
+| 5 | Randomly split users | SQL, Product Platform (or application logic) | Group A = Old onboarding (50%). Group B = New onboarding (50%). |
+| 6 | Launch experiment | Product Team, Feature Flag Tool (e.g., LaunchDarkly/Optimizely if available) | Only Group B sees the new onboarding screen. |
+| 7 | Collect experiment data | SQL, Data Warehouse | Store user IDs, retention, clicks, sessions, conversions. |
+| 8 | Analyze results | Python (Pandas, SciPy, Statsmodels) | Perform a two-proportion z-test or t-test to compare retention rates. |
+| 9 | Visualize results | Power BI, Matplotlib, Seaborn | Dashboard shows retention for both groups and confidence intervals. |
+| 10 | Present recommendation | Power BI, PowerPoint | "Retention increased from 42% to 48% (p < 0.05). Recommend rolling out the new onboarding." |
 
 # Non-technical stakeholders?
 Based on experience
