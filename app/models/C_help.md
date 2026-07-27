@@ -214,10 +214,10 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 
 # Technical QnA
 ## 1. Overfitting:
-Overfitting occurs when a model learns the training data too well, capturing noise and details that do not generalize to new data. This results in poor performance on unseen data.
+High training accuracy caused by noise and random patterns in training data, resulting in low test accuracy.
 
 ## 2. Underfitting:
-Underfitting occurs when a model is too simple to capture the underlying patterns in the data, leading to poor performance on both training and unseen data.
+The model is too simple to capture the underlying patterns. It performs poorly on both training and testing data.
 
 ## 3. What evaluation metrics would you use?
     
@@ -227,9 +227,9 @@ Regression:
 - RMSE
 
 Classification:
-- Precision: True positive out of all predicted positive cases.
-- Recall: True positive out of all actual positive cases.
-- F1 Score: The harmonic mean of precision and recall.
+- Precision: Out of all predicted positives, how many are actually correct.
+- Recall: Out of all actual positives, how many were correctly predicted.
+- F1 Score:  The harmonic mean of precision and recall, providing a balance between the two metrics.
 - ROC-AUC: Measures the model's ability to distinguish between classes.
 
 ## 4. What is the difference between Random Forest and Logistic Regression?
@@ -241,6 +241,7 @@ Classification:
 
 - When to use it:
     - Classification or regression
+        - example: predicting customer churn (classification) or predicting sales revenue (regression)    
     - Nonlinear relationships
     - Large datasets with many features
 
@@ -266,8 +267,11 @@ Classification:
 
 - When to use it:
     - Binary classification
+        - example: predicting whether a customer will churn or not
     - Baseline model
+        - example: when you want a simple model to compare against more complex models
     - When interpretability is important
+        - example: when you want to understand the relationship between features and the target variable
 
 - Evaluation metrics:
     - Accuracy
@@ -346,6 +350,7 @@ Classification:
 
 - When to use it:
     - Predict continuous values
+        - example: predicting sales revenue or donation amounts
     - Understand relationships between variables
     - Baseline regression model
 
