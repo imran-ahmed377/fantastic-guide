@@ -30,7 +30,7 @@ I recently completed my Master's in Applied Computing with a specialization in A
 # Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)
 At Exeevo, I worked as a Data Scientist. My main role was to analyze customer and product data to help the team to make better decisions.
 
-For example, I built customer segmentation and churn prediction models, which improved targeting accuracy by 20%, and helped the marketing team reach the right customers. I also analyzed user behavior, and designed A/B tests to measure the impact of new features, and created Power BI dashboards so stakeholders could easily understand the data. And I also worked closely with the product and marketing teams.
+For example, I built customer segmentation and churn prediction models, which improved targeting accuracy by 20%, and helped the marketing team reach the right customers. I also analyzed user behavior, and worked with A/B testing to measure the impact of new features, and created Power BI dashboards so stakeholders could easily understand the data.
 
 **Day in Life @ Exeevo:**
 | Time | Activity | Business Purpose |
@@ -69,7 +69,7 @@ I also built dashboards and visualizations so the teams could easily track impor
 
 This project focused on predicting customer churn using behavioral data. The goal was to identify customer who were likely to stop using the platform so the organization could target them with retention campaigns before losing them.
 
-I first cleaned and prepared the data using Python and Pandas by handling missing values, and creating new features like usage frequency and recency, and prepared the data for modeling. Then I built and compared several classification models in Scikit-learn, including Logistic Regression, Decision Tree, and Random Forest. I I focused on improving recall, which increased by 25% after feature engineering and model tuning.
+I first cleaned and prepared the data using Python and Pandas by handling missing values, and creating new features like usage frequency and recency, and prepared the data for modeling. Then I built and compared several classification models in Scikit-learn, including Logistic Regression, Decision Tree, and Random Forest. I focused on improving recall, which increased by 25% after feature engineering and model tuning.
 
 Finally, I created a Power BI dashboard that highlighted high-risk customer segments and key trends. This allowed the fundraising team to change outreach efforts and make more informed decisions. I'm especially proud of this project because I learned some new techniques and the team really appreciated the dashboard I built.
 
