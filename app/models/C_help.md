@@ -3,6 +3,7 @@
 - [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
 - [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
 - [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+---
 - [What is Canada Helps?](#what-is-canada-helps)
 - [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
 - [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
@@ -10,6 +11,7 @@
 - [Example of A/B Testing](#example-of-ab-testing)
 - [Non-technical stakeholders?](#non-technical-stakeholders)
 - [Questions](#questions)
+---
 - [Technical QnA](#technical-qna)
   - [1. Overfitting](#1-overfitting)
   - [2. Underfitting](#2-underfitting)
@@ -99,6 +101,7 @@ Finally, I created a Power BI dashboard that highlighted high-risk customer segm
 - [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
 - [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
 - [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+---
 - [What is Canada Helps?](#what-is-canada-helps)
 - [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
 - [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
@@ -106,6 +109,7 @@ Finally, I created a Power BI dashboard that highlighted high-risk customer segm
 - [Example of A/B Testing](#example-of-ab-testing)
 - [Non-technical stakeholders?](#non-technical-stakeholders)
 - [Questions](#questions)
+---
 - [Technical QnA](#technical-qna)
   - [1. Overfitting](#1-overfitting)
   - [2. Underfitting](#2-underfitting)
@@ -191,6 +195,7 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 - [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
 - [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
 - [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+---
 - [What is Canada Helps?](#what-is-canada-helps)
 - [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
 - [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
@@ -198,6 +203,7 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 - [Example of A/B Testing](#example-of-ab-testing)
 - [Non-technical stakeholders?](#non-technical-stakeholders)
 - [Questions](#questions)
+---
 - [Technical QnA](#technical-qna)
   - [1. Overfitting](#1-overfitting)
   - [2. Underfitting](#2-underfitting)
@@ -376,6 +382,7 @@ Classification:
 - [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
 - [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
 - [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+---
 - [What is Canada Helps?](#what-is-canada-helps)
 - [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
 - [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
@@ -383,6 +390,7 @@ Classification:
 - [Example of A/B Testing](#example-of-ab-testing)
 - [Non-technical stakeholders?](#non-technical-stakeholders)
 - [Questions](#questions)
+---
 - [Technical QnA](#technical-qna)
   - [1. Overfitting](#1-overfitting)
   - [2. Underfitting](#2-underfitting)
