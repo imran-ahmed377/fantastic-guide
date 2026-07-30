@@ -1,4 +1,4 @@
-
+<!-- 
 ## Table of Contents
 
 - [Introduce](#introduce)
@@ -18,7 +18,7 @@
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
 - [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
 - [Questions](#questions)
-- [Bonus Questions](#bonus-questions)
+- [Bonus Questions](#bonus-questions) -->
 
 
 <!-- - [How would you refactor a large legacy application?](#how-would-you-refactor-a-large-legacy-application)
@@ -30,7 +30,7 @@
 - [What's your experience with SQL and databases?](#whats-your-experience-with-sql-and-databases)
 - [How do you measure whether the software you built actually improved the business?](#how-do-you-measure-whether-the-software-you-built-actually-improved-the-business)
 - [Questions](#questions) -->
-
+<!-- 
 # Introduce
 I'm a software developer with experience building full-stack applications using Python, JavaScript/TypeScript, SQL, and modern web frameworks. In my recent projects, I've worked on building production-ready applications, REST APIs, and database-driven systems.
 
@@ -363,4 +363,4 @@ I reproduced the issue, checked the deployment logs, compared the environments, 
 - [What's your biggest weakness?](#whats-your-biggest-weakness)
 - [Describe a difficult bug you solved.](#describe-a-difficult-bug-you-solved)
 - [Questions](#questions)
-- [Bonus Questions](#bonus-questions)
+- [Bonus Questions](#bonus-questions) -->
