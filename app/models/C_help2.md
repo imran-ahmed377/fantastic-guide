@@ -1,4 +1,7 @@
 
+# Greetings
+
+Thank you! I'm excited to be here.
 
 # Introduction
 
@@ -15,6 +18,12 @@ I first cleaned and prepared the data using Python and Pandas by handling missin
 Finally, I created a Power BI dashboard that highlighted high-risk customer segments and key trends. This allowed the fundraising team to change outreach efforts and make more informed decisions. I'm especially proud of this project because I learned some new techniques and the team really appreciated the dashboard I built.
 
 ---
+
+## What I Learned
+- **Extreme Class Imbalance**: I learned how to handle extreme class imbalance in the dataset by using techniques like SMOTE and adjusting class weights in the models. 
+- **Streamlit**: I learned how to use Streamlit to create interactive dashboards for data visualization and model results.
+- **Feature Engineering**: I learned how to create new features from existing data, which improved model performance and provided more insights into customer behavior.
+- **ROC AUC**: I learned how to use ROC AUC as a performance metric for classification models, which helped me evaluate the models more effectively.
 
 ## Feature List
     - account_id
