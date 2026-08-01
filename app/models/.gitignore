@@ -1,8 +1,8 @@
 
 # Ignore cache and build directories
-.FP_Ca.md
-.BL.md
-.CT.md
-.MLI.md
-.MLTech.md
-.TTCom.md
+/.FP_Ca.md
+/.BL.md
+/.CT.md
+/.MLI.md
+/.MLTech.md
+/.TTCom.md
