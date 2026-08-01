@@ -26,7 +26,9 @@
 
 # Introduction
 
-I recently completed my Master's in Applied Computing with a specialization in Artificial Intelligence from the University of Windsor. I have experience as a Data Scientist and Data Analyst Intern, where I worked with Python and SQL for data analysis, predictive modeling, customer segmentation, and churn prediction. I also built Power BI and Tableau dashboards to help stakeholders make data-driven decisions and communicated insights to both technical and non-technical teams. I'm excited about this opportunity to apply my analytical and machine learning skills while continuing to learn and grow in this role.
+I recently completed my Master's in Applied Computing from the University of Windsor, with a specialization in Artificial Intelligence. I have worked as a Data Scientist and Data Analyst Intern, where I used Python, SQL, and machine learning models to predict customer churn. I have also built RAG based AI agent for real-time data analysis. I presented my findings to both technical and non-technical stakeholders. And I am very excited about this opportunity to apply my skills and continue to learn and grow in this role and contribute to CanadaHelps' mission of sparking generosity and powering positive change.
+
+
 
 
 # Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)
