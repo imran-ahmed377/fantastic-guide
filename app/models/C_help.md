@@ -1,4 +1,5 @@
 # Table of Contents
+- [Greetings](#greetings)
 - [Introduction](#introduction)
 - [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
 - [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
@@ -13,6 +14,13 @@
 - [Questions](#questions)
 ---
 - [Technical QnA](#technical-qna)
+- [Machine Learning](#machine-learning)
+- [Statistics](#statistics)
+- [Data Visualization](#data-visualization)
+- [Monitoring Data Drift](#monitoring-data-drift)
+- [Handling Missing Data](#handling-missing-data)
+- [Libraries Used](#libraries-used)
+
   - [1. Overfitting](#1-overfitting)
   - [2. Underfitting](#2-underfitting)
   - [3. What evaluation metrics would you use?](#3-what-evaluation-metrics-would-you-use)
@@ -23,6 +31,10 @@
     - [K-Means](#k-means)
     - [Linear Regression](#linear-regression)
 
+
+# Greetings
+
+Thank you! I'm excited to be here.
 
 # Introduction
 
@@ -109,6 +121,22 @@ Finally, I created a Power BI dashboard that highlighted high-risk customer segm
     - health_score_bucket
     - activity_per_user
     - support_burden_per_active_user
+
+
+## What I Learned
+- **Extreme Class Imbalance**: I learned how to handle extreme class imbalance in the dataset by using techniques like SMOTE and adjusting class weights in the models. 
+
+- **uvicorn**: I learned how to use uvicorn to run a streamlit app locally and deploy it to a server for others to access.
+
+- **Streamlit**: I learned how to use Streamlit to create interactive dashboards for data visualization and model results.
+
+- **Feature Engineering**: I learned how to create new features from existing data, which improved model performance and provided more insights into customer behavior.
+
+- **ROC AUC**: I learned how to use ROC AUC as a performance metric for classification models, which helped me evaluate the models more effectively.
+
+- **Dashboard**: Highlights high-risk customer accounts, compares model performance, and visualizes churn probability, trends, and segment risk. It shows a 71.2% accuracy, 0.745 ROC-AUC, 53.8% recall, and 5.4% overall churn, helping stakeholders prioritize retention actions effectively for better customer retention outcomes.
+
+---
 
 **Breakdown**
 | Section | Answer |
@@ -251,15 +279,46 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 
 ---
 
-
 # Technical QnA
-## 1. Overfitting:
-High training accuracy caused by noise and random patterns in training data, resulting in low test accuracy.
 
-## 2. Underfitting:
-The model is too simple to capture the underlying patterns. It performs poorly on both training and testing data.
+## Data Processing and Cleaning
+### Handling Missing Data
+*   **Imputation**: Fill in missing values with mean, median, or mode.
+*   **Model-Based Imputation**: Use regression or KNN to predict missing values.
+*   **Deletion**: Remove rows or columns with missing values if they are not critical to the analysis.
+*   **Flagging**: Create a new feature indicating whether the data was missing.
+*   **Domain Knowledge**: Use business understanding to make informed decisions about missing data.
 
-## 3. What evaluation metrics would you use?
+## Statistics
+
+- **Mean vs Median**: The mean is the average of all values, while the median is the middle value when the data is sorted.
+- **Confidence intervals**: A range of values that is likely to contain the true population parameter with a certain level of confidence.
+- **Hypothesis testing**: A statistical method used to make inferences about a population based on sample data.
+- **A/B testing**: A method of comparing two versions of a variable to determine which one performs better, often used in marketing and product development.
+
+---
+
+## Machine Learning
+
+- **Overfitting**: High training accuracy caused by noise and random patterns in training data, resulting in low test accuracy.
+
+- **Underfitting**: The model is too simple to capture the underlying patterns. It performs poorly on both training and testing data.
+
+- **Difference between classification and regression**: Classification is used to predict categorical outcomes, while regression is used to predict continuous outcomes.
+
+- **What is overfitting?**: Overfitting occurs when a model learns the training data too well, capturing noise and details that do not generalize to new data, leading to poor performance on unseen data.
+
+- **Cross-validation**: Cross-validation is a technique used to assess the performance of a model by partitioning the data into subsets, training the model on some subsets, and validating it on others. This helps ensure that the model generalizes well to new data.
+
+- **Random Forest vs XGBoost**: Random Forest is an ensemble learning method that combines multiple decision trees, while XGBoost is a gradient boosting algorithm that builds trees sequentially to minimize prediction errors.
+
+- **Feature engineering**: Feature engineering is the process of creating new features or modifying existing ones to improve model performance. This can involve transforming variables, creating interaction terms, or aggregating data.
+
+- **Clustering**: Clustering is an unsupervised learning technique used to group similar data points together based on their features. Common algorithms include K-Means, DBSCAN, and hierarchical clustering.
+
+- **Recommendation systems**: Recommendation systems are algorithms designed to suggest items to users based on their preferences and behavior. They can be content-based, collaborative filtering, or hybrid approaches.
+
+## Evaluation Metrics
     
 Regression:
 
@@ -271,6 +330,36 @@ Classification:
 - Recall: Out of all actual positives, how many were correctly predicted.
 - F1 Score:  The harmonic mean of precision and recall, providing a balance between the two metrics.
 - ROC-AUC: Measures the model's ability to distinguish between classes.
+
+
+## Monitoring Data Drift
+Data drift occurs when the input data changes over time, leading to model decay.
+*   **Continuous Monitoring**: Watch for statistical shifts in input features.
+*   **Regular Retraining**: Schedule model training sessions on new data.
+*   **Trigger Alerts**: Automatically notify the team when performance drops below a threshold.
+
+    ### Data Drift Detection Techniques
+    1. Compare averages (mean): Check if the average value of a feature has changed.
+    2. Compare distributions (histograms): Look at how values are spread, not just the average.
+    3. Statistical tests: Example: Kolmogorov-Smirnov (KS) Test Compare two dataset cumulative distribution (CDF) curves at every point, check the difference between them.
+
+
+
+## Libraries Used
+- **Python**: For data manipulation, analysis, and modeling.
+- **Pandas**: For data cleaning and preprocessing.
+- **NumPy**: For numerical operations and array handling.
+- **Scikit-learn**: For machine learning algorithms and model evaluation.
+- **Matplotlib & Seaborn**: For data visualization and plotting.
+- **Power BI**: For creating interactive dashboards and visualizations.
+- **Streamlit**: For building interactive web applications to showcase model results and dashboards.
+- **Uvicorn**: For running the Streamlit app locally and deploying it to a server.
+- **SMOTE**: For handling class imbalance in the dataset by generating synthetic samples of the minority class.
+- **ROC AUC**: For evaluating the performance of classification models, especially in imbalanced datasets.
+
+---
+
+
 
 ## 4. What is the difference between Random Forest and Logistic Regression?
 
