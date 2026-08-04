@@ -237,6 +237,12 @@ I deal with non-technical people by explaining data in a simple way and focusing
 
 For example, at VistaPrint, whenever I shared analysis with marketing and operations teams, I did not focus on SQL queries or Python code. I explained what the data showed, such as which campaigns were performing better or there were opportunities to improve. I used dashboards and simple explanations so the teams could quickly understand the insights.
 
+# Prioritize tasks
+I prioritize tasks by understanding the business goals, deadlines, and dependencies. I break down larger tasks into smaller steps, and I use tools like Jira or Trello to track progress. I also communicate with stakeholders to ensure alignment and adjust priorities as needed.
+
+# Ambiguous data
+I deal with ambiguous data by first understanding the business context and goals. I ask clarifying questions to stakeholders, explore the data to identify patterns or inconsistencies, and then make informed decisions on how to clean, transform, or analyze the data. I document my assumptions and methods so that others can understand my approach.
+
 
 # Questions
 - What would success look like in the first 90 days?

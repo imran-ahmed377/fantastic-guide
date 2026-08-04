@@ -63,10 +63,10 @@ Since there's no coding test, expect conceptual questions.
 
 #### Statistics
 
-- Mean vs Median
-- Confidence intervals
-- Hypothesis testing
-- A/B testing (listed as an asset)
+- ~~Mean vs Median~~
+- ~~Confidence intervals~~
+- ~~Hypothesis testing~~
+- ~~A/B testing (listed as an asset)~~
 
 > **Note:** Nothing in the job posting suggests they'll ask you to derive formulas or solve advanced math problems.
 
@@ -117,8 +117,8 @@ Expect questions like:
 - Tell us about a disagreement with a teammate.
 - Describe a time you explained technical results to a non-technical audience.
 - Tell us about a mistake you made.
-- How do you prioritize work?
-- What do you do when you don't know something?
+- ~~How do you prioritize work?~~
+- ~~What do you do when you don't know something?~~
 
 ---
 
