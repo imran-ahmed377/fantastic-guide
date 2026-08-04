@@ -8,10 +8,10 @@ Each interviewer will introduce themselves.
 
 They may ask:
 
-- Tell us about yourself.
-- Walk us through your background.
-- Why are you interested in CanadaHelps?
-- Why this role?
+- ~~Tell us about yourself.~~
+- ~~Walk us through your background.~~
+- ~~Why are you interested in CanadaHelps?~~
+- ~~Why this role?~~
 
 ---
 
@@ -21,14 +21,14 @@ This is likely the biggest section.
 
 Expect questions like:
 
-- Tell us about a machine learning project you've worked on.
-- What's your favorite data science project?
-- How did you clean messy data?
-- Tell us about a challenging dataset.
-- How do you decide which model to use?
-- Have you worked with SQL?
-- Tell us about a dashboard you built.
-- Have you ever presented findings to non-technical stakeholders?
+- ~~Tell us about a machine learning project you've worked on.~~
+- ~~What's your favorite data science project?~~
+- ~~How did you clean messy data?~~
+- ~~Tell us about a challenging dataset.~~
+- ~~How do you decide which model to use?~~
+- ~~Have you worked with SQL?~~
+- ~~Tell us about a dashboard you built.~~
+- ~~Have you ever presented findings to non-technical stakeholders?~~
 
 > **Note:** These aren't asking for textbook definitions—they're asking about your own experience and decision-making.
 

@@ -21,9 +21,17 @@ Finally, I created a Power BI dashboard that highlighted high-risk customer segm
 
 ## What I Learned
 - **Extreme Class Imbalance**: I learned how to handle extreme class imbalance in the dataset by using techniques like SMOTE and adjusting class weights in the models. 
+
+- **uvicorn**: I learned how to use uvicorn to run a streamlit app locally and deploy it to a server for others to access.
+
 - **Streamlit**: I learned how to use Streamlit to create interactive dashboards for data visualization and model results.
+
 - **Feature Engineering**: I learned how to create new features from existing data, which improved model performance and provided more insights into customer behavior.
+
 - **ROC AUC**: I learned how to use ROC AUC as a performance metric for classification models, which helped me evaluate the models more effectively.
+
+- **Dashboard**: Highlights high-risk customer accounts, compares model performance, and visualizes churn probability, trends, and segment risk. It shows a 71.2% accuracy, 0.745 ROC-AUC, 53.8% recall, and 5.4% overall churn, helping stakeholders prioritize retention actions effectively for better customer retention outcomes.
+
 
 ## Feature List
     - account_id
@@ -72,3 +80,22 @@ Data drift occurs when the input data changes over time, leading to model decay.
     1. Compare averages (mean): Check if the average value of a feature has changed.
     2. Compare distributions (histograms): Look at how values are spread, not just the average.
     3. Statistical tests: Example: Kolmogorov-Smirnov (KS) Test Compare two dataset cumulative distribution (CDF) curves at every point, check the difference between them.
+
+# Handling Missing Data
+*   **Imputation**: Fill in missing values with mean, median, or mode.
+*   **Model-Based Imputation**: Use regression or KNN to predict missing values.
+*   **Deletion**: Remove rows or columns with missing values if they are not critical to the analysis.
+*   **Flagging**: Create a new feature indicating whether the data was missing.
+*   **Domain Knowledge**: Use business understanding to make informed decisions about missing data.
+
+# Libraries Used
+- **Python**: For data manipulation, analysis, and modeling.
+- **Pandas**: For data cleaning and preprocessing.
+- **NumPy**: For numerical operations and array handling.
+- **Scikit-learn**: For machine learning algorithms and model evaluation.
+- **Matplotlib & Seaborn**: For data visualization and plotting.
+- **Power BI**: For creating interactive dashboards and visualizations.
+- **Streamlit**: For building interactive web applications to showcase model results and dashboards.
+- **Uvicorn**: For running the Streamlit app locally and deploying it to a server.
+- **SMOTE**: For handling class imbalance in the dataset by generating synthetic samples of the minority class.
+- **ROC AUC**: For evaluating the performance of classification models, especially in imbalanced datasets.
