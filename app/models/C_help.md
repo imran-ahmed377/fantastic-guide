@@ -41,7 +41,6 @@ Thank you! I'm excited to be here.
 I recently completed my Master's in Applied Computing from the University of Windsor, with a specialization in Artificial Intelligence. I have worked as a Data Scientist and Data Analyst Intern, where I used Python, SQL, and machine learning models to predict customer churn. I have also built RAG based AI agent for real-time data analysis. I presented my findings to both technical and non-technical stakeholders. And I am very excited about this opportunity to apply my skills and continue to learn and grow in this role and contribute to CanadaHelps' mission of sparking generosity and powering positive change.
 
 
-
 # Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)
 At Exeevo, I worked as a Data Scientist. My main role was to analyze customer and product data to help the team to make better decisions.
 
@@ -205,13 +204,23 @@ For Example, at VistaPrint, when working with marketing data, the business quest
 # Messy Datasets
 Almost every dataset I've worked with at Exeevo required cleaning.
 
-
 I first explored the data to understand the issues before making changes. Depending on the situation, I imputed missing values, standardized formats, removed duplicates, and investigated outliers rather than automatically deleting them.
 
 I also documented every cleaning step so the analysis remained reproducible.
 
-# Example of A/B Testing
+# Prioritize tasks
+I prioritize tasks by understanding the business goals, deadlines, and dependencies. I break down larger tasks into smaller steps, and I use tools like Jira or Trello to track progress. I also communicate with stakeholders to ensure alignment and adjust priorities as needed.
 
+
+# Non-technical stakeholders?
+I deal with non-technical people by explaining data in a simple way and focusing on the business impact rather than technical details. I avoid using complex terms and use visuals like dashboards or charts to make the insights easier to understand.
+
+**Example:**
+
+For example, at VistaPrint, whenever I shared analysis with marketing and operations teams, I did not focus on SQL queries or Python code. I explained what the data showed, such as which campaigns were performing better or there were opportunities to improve. I used dashboards and simple explanations so the teams could quickly understand the insights.
+
+
+# Example of A/B Testing
 
 **Business Problem:** At Exeevo the product team wants to know if a new onboarding screen increases user engagement.
 
@@ -230,18 +239,11 @@ I also documented every cleaning step so the analysis remained reproducible.
 | 9 | Visualize results | Power BI, Matplotlib, Seaborn | Dashboard shows retention for both groups and confidence intervals. |
 | 10 | Present recommendation | Power BI, PowerPoint | "Retention increased from 42% to 48% (p < 0.05). Recommend rolling out the new onboarding." |
 
-# Non-technical stakeholders?
-I deal with non-technical people by explaining data in a simple way and focusing on the business impact rather than technical details. I avoid using complex terms and use visuals like dashboards or charts to make the insights easier to understand.
 
-**Example:**
 
-For example, at VistaPrint, whenever I shared analysis with marketing and operations teams, I did not focus on SQL queries or Python code. I explained what the data showed, such as which campaigns were performing better or there were opportunities to improve. I used dashboards and simple explanations so the teams could quickly understand the insights.
 
-# Prioritize tasks
-I prioritize tasks by understanding the business goals, deadlines, and dependencies. I break down larger tasks into smaller steps, and I use tools like Jira or Trello to track progress. I also communicate with stakeholders to ensure alignment and adjust priorities as needed.
 
-# Ambiguous data
-I deal with ambiguous data by first understanding the business context and goals. I ask clarifying questions to stakeholders, explore the data to identify patterns or inconsistencies, and then make informed decisions on how to clean, transform, or analyze the data. I document my assumptions and methods so that others can understand my approach.
+
 
 
 # Questions
