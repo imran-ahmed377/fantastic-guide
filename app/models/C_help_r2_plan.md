@@ -40,26 +40,26 @@ Since there's no coding test, expect conceptual questions.
 
 #### Python
 
-- Which libraries do you use?
-- pandas vs NumPy
-- How do you handle missing values?
+- ~~Which libraries do you use?~~
+- ~~pandas vs NumPy~~
+- ~~How do you handle missing values?~~
 
 #### SQL
 
-- Explain a JOIN you've used.
-- How would you find duplicate records?
-- How do you aggregate data?
+- ~~Explain a JOIN you've used.~~
+- ~~How would you find duplicate records?~~
+- ~~How do you aggregate data?~~
 
 #### Machine Learning
 
-- Difference between classification and regression
-- What is overfitting?
-- Cross-validation
-- Precision vs Recall
-- Random Forest vs XGBoost
-- Feature engineering
-- Clustering
-- Recommendation systems (mentioned in the job posting)
+- ~~Difference between classification and regression~~
+- ~~What is overfitting?~~
+- ~~Cross-validation~~
+- ~~Precision vs Recall~~
+- ~~Random Forest vs XGBoost~~
+- ~~Feature engineering~~
+- ~~Clustering~~
+- ~~Recommendation systems (mentioned in the job posting)~~
 
 #### Statistics
 

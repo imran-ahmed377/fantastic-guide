@@ -30,7 +30,6 @@ I recently completed my Master's in Applied Computing from the University of Win
 
 
 
-
 # Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)
 At Exeevo, I worked as a Data Scientist. My main role was to analyze customer and product data to help the team to make better decisions.
 
@@ -77,6 +76,39 @@ I first cleaned and prepared the data using Python and Pandas by handling missin
 
 Finally, I created a Power BI dashboard that highlighted high-risk customer segments and key trends. This allowed the fundraising team to change outreach efforts and make more informed decisions. I'm especially proud of this project because I learned some new techniques and the team really appreciated the dashboard I built.
 
+## Feature List
+    - account_id
+    - account_type
+    - region
+    - product_tier
+    - support_level
+    - acquisition_channel
+    - tenure_months
+    - active_users
+    - licensed_users
+    - logins_30d
+    - sessions_30d
+    - support_tickets_90d
+    - avg_response_time_hours
+    - training_completion_pct
+    - feature_adoption_pct
+    - campaign_engagement_score
+    - nps_score
+    - monthly_spend
+    - contract_value
+    - payment_delays_days
+    - account_health_score
+    - renewal_window_days
+    - executive_sponsor
+    - churned_last_quarter
+    - last_activity_date
+    - last_support_date
+    - onboarding_date
+    - churn_probability
+    - churned
+    - health_score_bucket
+    - activity_per_user
+    - support_burden_per_active_user
 
 **Breakdown**
 | Section | Answer |

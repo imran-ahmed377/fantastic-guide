@@ -70,6 +70,31 @@ Finally, I created a Power BI dashboard that highlighted high-risk customer segm
 
 ---
 
+# Machine Learning
+
+- Difference between classification and regression: Classification is used to predict categorical outcomes, while regression is used to predict continuous outcomes.
+
+- What is overfitting?: Overfitting occurs when a model learns the training data too well, capturing noise and details that do not generalize to new data, leading to poor performance on unseen data.
+
+- Cross-validation: Cross-validation is a technique used to assess the performance of a model by partitioning the data into subsets, training the model on some subsets, and validating it on others. This helps ensure that the model generalizes well to new data.
+
+
+- Random Forest vs XGBoost: Random Forest is an ensemble learning method that combines multiple decision trees, while XGBoost is a gradient boosting algorithm that builds trees sequentially to minimize prediction errors.
+
+- Feature engineering: Feature engineering is the process of creating new features or modifying existing ones to improve model performance. This can involve transforming variables, creating interaction terms, or aggregating data.
+
+- Clustering: Clustering is an unsupervised learning technique used to group similar data points together based on their features. Common algorithms include K-Means, DBSCAN, and hierarchical clustering.
+
+- Recommendation systems: Recommendation systems are algorithms designed to suggest items to users based on their preferences and behavior. They can be content-based, collaborative filtering, or hybrid approaches.
+
+# Statistics
+
+- Mean vs Median: The mean is the average of all values, while the median is the middle value when the data is sorted.
+- Confidence intervals: A range of values that is likely to contain the true population parameter with a certain level of confidence.
+- Hypothesis testing: A statistical method used to make inferences about a population based on sample data.
+- A/B testing: A method of comparing two versions of a variable to determine which one performs better, often used in marketing and product development.
+
+
 # Monitoring Data Drift
 Data drift occurs when the input data changes over time, leading to model decay.
 *   **Continuous Monitoring**: Watch for statistical shifts in input features.
@@ -99,3 +124,24 @@ Data drift occurs when the input data changes over time, leading to model decay.
 - **Uvicorn**: For running the Streamlit app locally and deploying it to a server.
 - **SMOTE**: For handling class imbalance in the dataset by generating synthetic samples of the minority class.
 - **ROC AUC**: For evaluating the performance of classification models, especially in imbalanced datasets.
+
+# A/B Testing
+## Example of A/B Testing
+
+**Business Problem:** At Exeevo the product team wants to know if a new onboarding screen increases user engagement.
+
+**Hypothesis:** The new onboarding screen will increase the 7-day user retention rate.
+
+| Step | Activity | Tools Used | Example |
+|------|----------|------------|---------|
+| 1 | Understand the business problem | Jira, Confluence, Slack, Meetings | Product Manager asks if the new onboarding improves retention. |
+| 2 | Define success metric | SQL, Excel | Primary KPI = 7-day retention. Secondary KPI = Session duration. |
+| 3 | Form hypothesis | Documentation (Confluence/Word) | H0: No difference. H1: New onboarding increases retention. |
+| 4 | Identify eligible users | SQL | Select only new users who signed up during the experiment period. |
+| 5 | Randomly split users | SQL, Product Platform (or application logic) | Group A = Old onboarding (50%). Group B = New onboarding (50%). |
+| 6 | Launch experiment | Product Team, Feature Flag Tool (e.g., LaunchDarkly/Optimizely if available) | Only Group B sees the new onboarding screen. |
+| 7 | Collect experiment data | SQL, Data Warehouse | Store user IDs, retention, clicks, sessions, conversions. |
+| 8 | Analyze results | Python (Pandas, SciPy, Statsmodels) | Perform a two-proportion z-test or t-test to compare retention rates. |
+| 9 | Visualize results | Power BI, Matplotlib, Seaborn | Dashboard shows retention for both groups and confidence intervals. |
+| 10 | Present recommendation | Power BI, PowerPoint | "Retention increased from 42% to 48% (p < 0.05). Recommend rolling out the new onboarding." |
+
