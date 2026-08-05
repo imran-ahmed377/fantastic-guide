@@ -1,35 +1,4 @@
-# Table of Contents
-- [Greetings](#greetings)
-- [Introduction](#introduction)
-- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
-- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
-- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
----
-- [What is Canada Helps?](#what-is-canada-helps)
-- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
-- [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
-- [Messy Datasets](#messy-datasets)
-- [Example of A/B Testing](#example-of-ab-testing)
-- [Non-technical stakeholders?](#non-technical-stakeholders)
-- [Questions](#questions)
----
-- [Technical QnA](#technical-qna)
-- [Machine Learning](#machine-learning)
-- [Statistics](#statistics)
-- [Data Visualization](#data-visualization)
-- [Monitoring Data Drift](#monitoring-data-drift)
-- [Handling Missing Data](#handling-missing-data)
-- [Libraries Used](#libraries-used)
 
-  - [1. Overfitting](#1-overfitting)
-  - [2. Underfitting](#2-underfitting)
-  - [3. What evaluation metrics would you use?](#3-what-evaluation-metrics-would-you-use)
-  - [4. What is the difference between Random Forest and Logistic Regression?](#4-what-is-the-difference-between-random-forest-and-logistic-regression)
-    - [Random Forest](#random-forest)
-    - [Logistic Regression](#logistic-regression)
-    - [XGBoost](#xgboost)
-    - [K-Means](#k-means)
-    - [Linear Regression](#linear-regression)
 
 
 # Greetings
@@ -121,6 +90,17 @@ Finally, I created a Power BI dashboard that highlighted high-risk customer segm
     - activity_per_user
     - support_burden_per_active_user
 
+## Feature Engineering
+    - days since last activity
+    - days since last support contact
+    - account age in days
+    - usage per user and spend per user
+    - engagement_score
+    - risk_signal
+    - renewal_urgency
+    - high_touch_account
+    - low_activity_flag
+
 
 ## What I Learned
 - **Extreme Class Imbalance**: I learned how to handle extreme class imbalance in the dataset by using techniques like SMOTE and adjusting class weights in the models. 
@@ -157,32 +137,6 @@ Finally, I created a Power BI dashboard that highlighted high-risk customer segm
 
 ---
 
-# Table of Contents
-- [Introduction](#introduction)
-- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
-- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
-- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
----
-- [What is Canada Helps?](#what-is-canada-helps)
-- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
-- [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
-- [Messy Datasets](#messy-datasets)
-- [Example of A/B Testing](#example-of-ab-testing)
-- [Non-technical stakeholders?](#non-technical-stakeholders)
-- [Questions](#questions)
----
-- [Technical QnA](#technical-qna)
-  - [1. Overfitting](#1-overfitting)
-  - [2. Underfitting](#2-underfitting)
-  - [3. What evaluation metrics would you use?](#3-what-evaluation-metrics-would-you-use)
-  - [4. What is the difference between Random Forest and Logistic Regression?](#4-what-is-the-difference-between-random-forest-and-logistic-regression)
-    - [Random Forest](#random-forest)
-    - [Logistic Regression](#logistic-regression)
-    - [XGBoost](#xgboost)
-    - [K-Means](#k-means)
-    - [Linear Regression](#linear-regression)
-
----
 
 # What is Canada Helps?
 Canada Helps is an online platform that helps people to donnate to registered Canadian charities and it also provides tools for charities to manage their donations and fundraising campaigns. 
@@ -193,7 +147,7 @@ I've actually used CanadaHelps to make donations, so I already appreciate the va
 
 
 
-# Work with Ambiguous Data/Problems
+# Ambiguous Data/Problems
 
 I deal with these problems by understanding the business goal, asking the right questions, and breaking the problem into smaller steps. I validate the data, and adjust my approach based on feedback.
 
@@ -258,32 +212,6 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 - What kinds of applications would I be building?
   >>> That's helpful. Could you also tell me a bit about...
 
----
-
-# Table of Contents
-- [Introduction](#introduction)
-- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
-- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
-- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
----
-- [What is Canada Helps?](#what-is-canada-helps)
-- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
-- [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
-- [Messy Datasets](#messy-datasets)
-- [Example of A/B Testing](#example-of-ab-testing)
-- [Non-technical stakeholders?](#non-technical-stakeholders)
-- [Questions](#questions)
----
-- [Technical QnA](#technical-qna)
-  - [1. Overfitting](#1-overfitting)
-  - [2. Underfitting](#2-underfitting)
-  - [3. What evaluation metrics would you use?](#3-what-evaluation-metrics-would-you-use)
-  - [4. What is the difference between Random Forest and Logistic Regression?](#4-what-is-the-difference-between-random-forest-and-logistic-regression)
-    - [Random Forest](#random-forest)
-    - [Logistic Regression](#logistic-regression)
-    - [XGBoost](#xgboost)
-    - [K-Means](#k-means)
-    - [Linear Regression](#linear-regression)
 
 ---
 
@@ -296,6 +224,8 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 *   **Deletion**: Remove rows or columns with missing values if they are not critical to the analysis.
 *   **Flagging**: Create a new feature indicating whether the data was missing.
 *   **Domain Knowledge**: Use business understanding to make informed decisions about missing data.
+
+
 
 ## Statistics
 
@@ -350,6 +280,11 @@ Data drift occurs when the input data changes over time, leading to model decay.
     1. Compare averages (mean): Check if the average value of a feature has changed.
     2. Compare distributions (histograms): Look at how values are spread, not just the average.
     3. Statistical tests: Example: Kolmogorov-Smirnov (KS) Test Compare two dataset cumulative distribution (CDF) curves at every point, check the difference between them.
+
+    ### Data Drift Tools
+    1. Evidently AI: Monitors data drift and model performance in real-time, providing alerts and insights.
+    2. NannyML: Detects data drift and performance degradation in machine learning models
+    3. Arize: Monitors data drift and model performance, providing visualizations and alerts for changes in data distribution.
 
 
 
@@ -508,27 +443,8 @@ Data drift occurs when the input data changes over time, leading to model decay.
 
 ---
 
-# Table of Contents
-- [Introduction](#introduction)
-- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
-- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
-- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
----
-- [What is Canada Helps?](#what-is-canada-helps)
-- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
-- [Work with Ambiguous Data/Problems](#work-with-ambiguous-dataproblems)
-- [Messy Datasets](#messy-datasets)
-- [Example of A/B Testing](#example-of-ab-testing)
-- [Non-technical stakeholders?](#non-technical-stakeholders)
-- [Questions](#questions)
----
-- [Technical QnA](#technical-qna)
-  - [1. Overfitting](#1-overfitting)
-  - [2. Underfitting](#2-underfitting)
-  - [3. What evaluation metrics would you use?](#3-what-evaluation-metrics-would-you-use)
-  - [4. What is the difference between Random Forest and Logistic Regression?](#4-what-is-the-difference-between-random-forest-and-logistic-regression)
-    - [Random Forest](#random-forest)
-    - [Logistic Regression](#logistic-regression)
-    - [XGBoost](#xgboost)
-    - [K-Means](#k-means)
-    - [Linear Regression](#linear-regression)
+# SQL
+https://github.com/imran-ahmed377/prep-codex/blob/main/SQL.md
+
+# OOP
+https://github.com/imran-ahmed377/prep-codex/blob/main/Python.md
