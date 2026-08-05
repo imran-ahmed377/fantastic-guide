@@ -1,5 +1,32 @@
+# Table of Contents
+- [Greetings](#greetings)
+- [Introduction](#introduction)
+- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
+- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
+- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+---
+- [What is Canada Helps?](#what-is-canada-helps)
+- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
+- [Ambiguous Data/Problems](#ambiguous-dataproblems)
+- [Messy Datasets](#messy-datasets)
+- [Prioritize tasks](#prioritize-tasks)
+- [Non-technical stakeholders?](#non-technical-stakeholders)
+- [Example of A/B Testing](#example-of-ab-testing)
+- [Questions](#questions)
+---
+- [Technical QnA](#technical-qna)
+  - [Data Processing and Cleaning](#data-processing-and-cleaning)
+    - [Handling Missing Data](#handling-missing-data)
+  - [Statistics](#statistics)
+  - [Machine Learning](#machine-learning)
+  - [Evaluation Metrics](#evaluation-metrics)
+  - [Monitoring Data Drift](#monitoring-data-drift)
+  - [Libraries Used](#libraries-used)
+  - [What is the difference between Random Forest and Logistic Regression?](#what-is-the-difference-between-random-forest-and-logistic-regression)
+- [SQL](#sql)
+- [OOP](#oop)
 
-
+---
 
 # Greetings
 
@@ -135,6 +162,37 @@ Finally, I created a Power BI dashboard that highlighted high-risk customer segm
 | Challenges | The dataset contained missing values and class imbalance because most customers did not churn. I handled this through data cleaning, feature engineering, and model tuning to improve prediction quality. |
 | Why I'm Proud of This Project | I'm proud of this project because it combined data cleaning, machine learning, and visualization into one complete solution. Instead of only building a model, I translated the results into a Power BI dashboard that non-technical stakeholders could easily understand and use to make better business decisions. |
 
+
+---
+
+# Table of Contents
+- [Greetings](#greetings)
+- [Introduction](#introduction)
+- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
+- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
+- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+---
+- [What is Canada Helps?](#what-is-canada-helps)
+- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
+- [Ambiguous Data/Problems](#ambiguous-dataproblems)
+- [Messy Datasets](#messy-datasets)
+- [Prioritize tasks](#prioritize-tasks)
+- [Non-technical stakeholders?](#non-technical-stakeholders)
+- [Example of A/B Testing](#example-of-ab-testing)
+- [Questions](#questions)
+---
+- [Technical QnA](#technical-qna)
+  - [Data Processing and Cleaning](#data-processing-and-cleaning)
+    - [Handling Missing Data](#handling-missing-data)
+  - [Statistics](#statistics)
+  - [Machine Learning](#machine-learning)
+  - [Evaluation Metrics](#evaluation-metrics)
+  - [Monitoring Data Drift](#monitoring-data-drift)
+  - [Libraries Used](#libraries-used)
+  - [What is the difference between Random Forest and Logistic Regression?](#what-is-the-difference-between-random-forest-and-logistic-regression)
+- [SQL](#sql)
+- [OOP](#oop)
+
 ---
 
 
@@ -196,10 +254,6 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 
 
 
-
-
-
-
 # Questions
 - What would success look like in the first 90 days?
   >>> That's great to hear. Thank you for sharing that.
@@ -211,6 +265,39 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 
 - What kinds of applications would I be building?
   >>> That's helpful. Could you also tell me a bit about...
+
+
+
+---
+
+# Table of Contents
+- [Greetings](#greetings)
+- [Introduction](#introduction)
+- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
+- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
+- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+---
+- [What is Canada Helps?](#what-is-canada-helps)
+- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
+- [Ambiguous Data/Problems](#ambiguous-dataproblems)
+- [Messy Datasets](#messy-datasets)
+- [Prioritize tasks](#prioritize-tasks)
+- [Non-technical stakeholders?](#non-technical-stakeholders)
+- [Example of A/B Testing](#example-of-ab-testing)
+- [Questions](#questions)
+---
+- [Technical QnA](#technical-qna)
+  - [Data Processing and Cleaning](#data-processing-and-cleaning)
+    - [Handling Missing Data](#handling-missing-data)
+  - [Statistics](#statistics)
+  - [Machine Learning](#machine-learning)
+  - [Evaluation Metrics](#evaluation-metrics)
+  - [Monitoring Data Drift](#monitoring-data-drift)
+  - [Libraries Used](#libraries-used)
+  - [What is the difference between Random Forest and Logistic Regression?](#what-is-the-difference-between-random-forest-and-logistic-regression)
+- [SQL](#sql)
+- [OOP](#oop)
+
 
 
 ---
@@ -255,6 +342,12 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 - **Clustering**: Clustering is an unsupervised learning technique used to group similar data points together based on their features. Common algorithms include K-Means, DBSCAN, and hierarchical clustering.
 
 - **Recommendation systems**: Recommendation systems are algorithms designed to suggest items to users based on their preferences and behavior. They can be content-based, collaborative filtering, or hybrid approaches.
+
+- **Hyperparameter tuning**: Hyperparameter tuning is the process of selecting the best set of hyperparameters for a machine learning model to optimize its performance. This can be done using techniques like grid search, random search, or Bayesian optimization.
+    - Example: 
+        - For a Random Forest model, hyperparameters like the number of trees, maximum depth, and minimum samples per leaf can be tuned to improve performance.
+        - For an XGBoost model, hyperparameters like learning rate, number of estimators, and maximum depth can be tuned to achieve better results.
+        - For Logistic Regression, hyperparameters like regularization strength (C) and penalty type (L1 or L2) can be tuned to enhance model performance.
 
 ## Evaluation Metrics
     
@@ -303,8 +396,7 @@ Data drift occurs when the input data changes over time, leading to model decay.
 ---
 
 
-
-## 4. What is the difference between Random Forest and Logistic Regression?
+## What is the difference between Random Forest and Logistic Regression?
 
 ### **Random Forest:**
 - How it works: 
@@ -448,3 +540,35 @@ https://github.com/imran-ahmed377/prep-codex/blob/main/SQL.md
 
 # OOP
 https://github.com/imran-ahmed377/prep-codex/blob/main/Python.md
+
+---
+
+# Table of Contents
+- [Greetings](#greetings)
+- [Introduction](#introduction)
+- [Exp 1: Data Scientist @ Exeevo (Sept 2025 – Apr 2026)](#exp-1-data-scientist--exeevo-sept-2025--apr-2026)
+- [Exp 2: Data Analyst Intern @ VistaPrint (June 2024 – Sept 2024)](#exp-2-data-analyst-intern--vistaprint-june-2024--sept-2024)
+- [Project 1: Customer Churn Prediction Model](#project-1-customer-churn-prediction-model)
+---
+- [What is Canada Helps?](#what-is-canada-helps)
+- [Why you applied to Canada Helps?](#why-you-applied-to-canada-helps)
+- [Ambiguous Data/Problems](#ambiguous-dataproblems)
+- [Messy Datasets](#messy-datasets)
+- [Prioritize tasks](#prioritize-tasks)
+- [Non-technical stakeholders?](#non-technical-stakeholders)
+- [Example of A/B Testing](#example-of-ab-testing)
+- [Questions](#questions)
+---
+- [Technical QnA](#technical-qna)
+  - [Data Processing and Cleaning](#data-processing-and-cleaning)
+    - [Handling Missing Data](#handling-missing-data)
+  - [Statistics](#statistics)
+  - [Machine Learning](#machine-learning)
+  - [Evaluation Metrics](#evaluation-metrics)
+  - [Monitoring Data Drift](#monitoring-data-drift)
+  - [Libraries Used](#libraries-used)
+  - [What is the difference between Random Forest and Logistic Regression?](#what-is-the-difference-between-random-forest-and-logistic-regression)
+- [SQL](#sql)
+- [OOP](#oop)
+
+---
