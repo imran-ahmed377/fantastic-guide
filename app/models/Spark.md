@@ -17,12 +17,11 @@
 - [Technical QnA](#technical-qna)
   - [Data Processing and Cleaning](#data-processing-and-cleaning)
     - [Handling Missing Data](#handling-missing-data)
-  - [Statistics](#statistics)
   - [Machine Learning](#machine-learning)
   - [Evaluation Metrics](#evaluation-metrics)
   - [Monitoring Data Drift](#monitoring-data-drift)
   - [Libraries Used](#libraries-used)
-  - [What is the difference between Random Forest and Logistic Regression?](#what-is-the-difference-between-random-forest-and-logistic-regression)
+  - [ML Algorithms](#ml-algorithms)
 - [SQL](#sql)
 - [OOP](#oop)
 
@@ -184,12 +183,11 @@ Finally, I created a Power BI dashboard that highlighted high-risk customer segm
 - [Technical QnA](#technical-qna)
   - [Data Processing and Cleaning](#data-processing-and-cleaning)
     - [Handling Missing Data](#handling-missing-data)
-  - [Statistics](#statistics)
   - [Machine Learning](#machine-learning)
   - [Evaluation Metrics](#evaluation-metrics)
   - [Monitoring Data Drift](#monitoring-data-drift)
   - [Libraries Used](#libraries-used)
-  - [What is the difference between Random Forest and Logistic Regression?](#what-is-the-difference-between-random-forest-and-logistic-regression)
+  - [ML Algorithms](#ml-algorithms)
 - [SQL](#sql)
 - [OOP](#oop)
 
@@ -289,12 +287,11 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 - [Technical QnA](#technical-qna)
   - [Data Processing and Cleaning](#data-processing-and-cleaning)
     - [Handling Missing Data](#handling-missing-data)
-  - [Statistics](#statistics)
   - [Machine Learning](#machine-learning)
   - [Evaluation Metrics](#evaluation-metrics)
   - [Monitoring Data Drift](#monitoring-data-drift)
   - [Libraries Used](#libraries-used)
-  - [What is the difference between Random Forest and Logistic Regression?](#what-is-the-difference-between-random-forest-and-logistic-regression)
+  - [ML Algorithms](#ml-algorithms)
 - [SQL](#sql)
 - [OOP](#oop)
 
@@ -314,13 +311,6 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 
 
 
-## Statistics
-
-- **Mean vs Median**: The mean is the average of all values, while the median is the middle value when the data is sorted.
-- **Confidence intervals**: A range of values that is likely to contain the true population parameter with a certain level of confidence.
-- **Hypothesis testing**: A statistical method used to make inferences about a population based on sample data.
-- **A/B testing**: A method of comparing two versions of a variable to determine which one performs better, often used in marketing and product development.
-
 ---
 
 ## Machine Learning
@@ -330,8 +320,6 @@ For example, at VistaPrint, whenever I shared analysis with marketing and operat
 - **Underfitting**: The model is too simple to capture the underlying patterns. It performs poorly on both training and testing data.
 
 - **Difference between classification and regression**: Classification is used to predict categorical outcomes, while regression is used to predict continuous outcomes.
-
-- **What is overfitting?**: Overfitting occurs when a model learns the training data too well, capturing noise and details that do not generalize to new data, leading to poor performance on unseen data.
 
 - **Cross-validation**: Cross-validation is a technique used to assess the performance of a model by partitioning the data into subsets, training the model on some subsets, and validating it on others. This helps ensure that the model generalizes well to new data.
 
@@ -396,7 +384,7 @@ Data drift occurs when the input data changes over time, leading to model decay.
 ---
 
 
-## What is the difference between Random Forest and Logistic Regression?
+## ML Algorithms
 
 ### **Random Forest:**
 - How it works: 
@@ -562,12 +550,11 @@ https://github.com/imran-ahmed377/prep-codex/blob/main/Python.md
 - [Technical QnA](#technical-qna)
   - [Data Processing and Cleaning](#data-processing-and-cleaning)
     - [Handling Missing Data](#handling-missing-data)
-  - [Statistics](#statistics)
   - [Machine Learning](#machine-learning)
   - [Evaluation Metrics](#evaluation-metrics)
   - [Monitoring Data Drift](#monitoring-data-drift)
   - [Libraries Used](#libraries-used)
-  - [What is the difference between Random Forest and Logistic Regression?](#what-is-the-difference-between-random-forest-and-logistic-regression)
+  - [ML Algorithms](#ml-algorithms)
 - [SQL](#sql)
 - [OOP](#oop)
 
