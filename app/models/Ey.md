@@ -4,9 +4,9 @@
 Thank you! I'm excited to be here.
 
 # Introduction
-Sure. I have a background in data engineering, data architecture, and AI.
+I worked as a Data Engineer at Vistaprint. In that role, I worked mainly with Azure, I built data pipelines and designed data models, and developed analytics and reporting. I also worked with different teams to improve data platforms and introduce AI and machine learning solutions.
 
-I started my career as a Data Engineer and Solutions Analyst at Vistaprint. In that role, I worked mainly with Azure, built data pipelines, designed data models, and supported analytics and reporting. I also worked with different teams to improve data platforms and introduce AI and machine learning solutions.
+After that, I complted my Master's degree in Applied Computing from the University of Windsor with specialization in AI. 
 
 After that, I worked as a Data Architect at Exeevo. My main responsibility was designing modern data and AI solutions using Microsoft Fabric, Azure, and Azure OpenAI. I worked on things like Lakehouse architecture, data pipelines, AI agents, and RAG-based Copilots.
 
@@ -26,11 +26,59 @@ I also built RAG-based Copilot experiences using Azure OpenAI, which improved us
 So overall, my focus at Exeevo was not just building technology. It was using data and AI to make business processes faster, reduce manual work, and help users get better access to information.
 
 # Exp 2:
+At Vistaprint, I worked as a Data Engineer. My main responsibility was building and maintaining data pipelines using Azure Data Factory and SQL. I also worked on data modeling and reporting solutions.
+
+I collaborated with different teams to make data more available and reliable. I also helped improve the deployment process by using CI/CD and DataOps practices.
+
+Overall, my role was mainly focused on building reliable data solutions, improving data availability, and supporting business analytics.
 
 # Project 1: 
+I built a multi-agent AI platform on Microsoft Fabric where an orchestrator assigned tasks to specialized agents, agents used enterprise data and APIs through RAG, and human-in-the-loop controls ensured safe and governed automation, reducing manual work by about 40%.
 
-# What is EY
+**Situation:**
 
-# Why EY
+The business had some manual tasks that required people to collect information from different systems and make decisions. This was taking time and was difficult to scale.
 
-# 
+**Task:**
+
+My goal was to design an AI-based solution that could automate these tasks while still keeping the process secure and controlled.
+
+**Action:**
+
+I designed an Agentic AI platform using Microsoft Fabric. I used multiple AI agents, where each agent had a specific responsibility.
+
+The basic flow was: first, a user sends a request. Then an orchestrator understands the request and decides which agent should handle it. The agents access the required enterprise data and APIs, process the information, and provide a response or recommendation.
+
+I used Microsoft Fabric and OneLake for the data platform, Azure OpenAI for the AI capabilities, and RAG to allow the agents to work with company data. I also added human approval steps, security controls, and monitoring so that important decisions were not made completely automatically.
+
+**Result:**
+
+The solution reduced manual task handling by about 40%. It also gave the business a more scalable and governed way to use AI.
+
+
+
+# What is EY?
+
+EY (Ernst & Young) is a global professional services firm that provides audit, tax, and advisory services to businesses and organizations.
+
+# Why EY?
+I like the goal of EY to build a better working world. I also like the focus on innovation and technology, especially in areas like data and AI. I think my experience in building data and AI solutions aligns well with EY's mission to help clients solve complex problems and improve their business processes.
+
+# Questions
+- What would success look like in the first 90 days?
+  >>> That's great to hear. Thank you for sharing that.
+
+- What are the biggest challenge in this role?
+  >>> That's helpful. Could you also tell me a bit about...
+
+- What are the next steps of the hiring process?
+
+- What kinds of applications would I be building?
+  >>> That's helpful. Could you also tell me a bit about...
+
+# Technical QnA
+- What is Microsoft Fabric?
+  >>> Microsoft Fabric is a unified data platform that combines data engineering, data warehousing, data science, and real-time analytics into a single environment. It allows organizations to build end-to-end data solutions with integrated AI capabilities.
+
+- What is OneLake?
+  >>> OneLake is a unified data lake storage solution that allows organizations to store and manage large volumes of structured and unstructured data. It provides a single source of truth for data, enabling better analytics and AI capabilities.
