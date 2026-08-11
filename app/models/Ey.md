@@ -82,3 +82,25 @@ I like the goal of EY to build a better working world. I also like the focus on 
 
 - What is OneLake?
   >>> OneLake is a unified data lake storage solution that allows organizations to store and manage large volumes of structured and unstructured data. It provides a single source of truth for data, enabling better analytics and AI capabilities.
+
+
+  - What is Azure Data Factory?
+  >>> Azure Data Factory is a cloud-based data integration service that allows you to create, schedule, and orchestrate data pipelines. It enables you to move and transform data from various sources to destinations, supporting both batch and real-time processing.
+  
+  >>> Suppose every night at 12 AM, a company wants to copy sales data from SQL Server into Azure Data Lake.
+
+ADF can do:
+
+12:00 AM
+   ↓
+Trigger starts
+   ↓
+Connect to SQL Server
+   ↓
+Read sales data
+   ↓
+Transform data
+   ↓
+Save to Data Lake
+   ↓
+DONE ✅
