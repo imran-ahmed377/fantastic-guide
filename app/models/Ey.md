@@ -1,3 +1,16 @@
+# Table of Contents
+- [Greetings](#greetings)
+- [Introduction](#introduction)
+- [Exp 1: Data Architect Exeevo (Sept 2025 - Apr 2026)](#exp-1-data-architect-exeevo-sept-2025---apr-2026)
+- [Exp 2: Data Engineer Vistaprint (Jan 2023 - Sept 2024)](#exp-2-data-engineer-vistaprint-jan-2023---sept-2024)
+- [Project 1: Microsoft Fabric Multi-Agent AI Platform](#project-1-microsoft-fabric-multi-agent-ai-platform)
+---
+- [What is EY?](#what-is-ey)
+- [Why EY?](#why-ey)
+- [Questions](#questions)
+- [Technical QnA](#technical-qna)
+
+
 
 
 # Greetings
@@ -61,7 +74,7 @@ The solution reduced manual task handling by about 40%. It also gave the busines
 
 # What is EY?
 
-EY (Ernst & Young) is a global professional services firm that provides audit, tax, and advisory services to businesses and organizations.
+EY (Ernst & Young) is one of the largest global professional services firms that provides audit, tax, and advisory services to businesses and organizations.
 
 # Why EY?
 I like the goal of EY to build a better working world. I also like the focus on innovation and technology, especially in areas like data and AI. I think my experience in building data and AI solutions aligns well with EY's mission to help clients solve complex problems and improve their business processes.
