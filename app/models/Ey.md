@@ -47,6 +47,20 @@ I collaborated with different teams to make data more available and reliable. I 
 
 Overall, my role was mainly focused on building reliable data solutions, improving data availability, and supporting business analytics.
 
+
+# Table of Contents
+- [Greetings](#greetings)
+- [Introduction](#introduction)
+- [Exp 1: Data Architect Exeevo (Sept 2025 - Apr 2026)](#exp-1-data-architect-exeevo-sept-2025---apr-2026)
+- [Exp 2: Data Engineer Vistaprint (Jan 2023 - Sept 2024)](#exp-2-data-engineer-vistaprint-jan-2023---sept-2024)
+- [Project 1: Microsoft Fabric Multi-Agent AI Platform](#project-1-microsoft-fabric-multi-agent-ai-platform)
+---
+- [What is EY?](#what-is-ey)
+- [Why EY?](#why-ey)
+- [Questions](#questions)
+- [Technical QnA](#technical-qna)
+---
+
 # Project 1: Microsoft Fabric Multi-Agent AI Platform 
 I built a multi-agent AI platform on Microsoft Fabric where an orchestrator assigned tasks to specialized agents, agents used enterprise data and APIs through RAG, and human-in-the-loop controls ensured safe and governed automation, reducing manual work by about 40%.
 
@@ -70,7 +84,20 @@ I used Microsoft Fabric and OneLake for the data platform, Azure OpenAI for the 
 
 The solution reduced manual task handling by about 40%. It also gave the business a more scalable and governed way to use AI.
 
+---
 
+# Table of Contents
+- [Greetings](#greetings)
+- [Introduction](#introduction)
+- [Exp 1: Data Architect Exeevo (Sept 2025 - Apr 2026)](#exp-1-data-architect-exeevo-sept-2025---apr-2026)
+- [Exp 2: Data Engineer Vistaprint (Jan 2023 - Sept 2024)](#exp-2-data-engineer-vistaprint-jan-2023---sept-2024)
+- [Project 1: Microsoft Fabric Multi-Agent AI Platform](#project-1-microsoft-fabric-multi-agent-ai-platform)
+---
+- [What is EY?](#what-is-ey)
+- [Why EY?](#why-ey)
+- [Questions](#questions)
+- [Technical QnA](#technical-qna)
+---
 
 # What is EY?
 
@@ -91,6 +118,19 @@ I like the goal of EY to build a better working world. I also like the focus on 
 
 - What kinds of applications would I be building?
   >>> That's helpful. Could you also tell me a bit about...
+
+  # Table of Contents
+- [Greetings](#greetings)
+- [Introduction](#introduction)
+- [Exp 1: Data Architect Exeevo (Sept 2025 - Apr 2026)](#exp-1-data-architect-exeevo-sept-2025---apr-2026)
+- [Exp 2: Data Engineer Vistaprint (Jan 2023 - Sept 2024)](#exp-2-data-engineer-vistaprint-jan-2023---sept-2024)
+- [Project 1: Microsoft Fabric Multi-Agent AI Platform](#project-1-microsoft-fabric-multi-agent-ai-platform)
+---
+- [What is EY?](#what-is-ey)
+- [Why EY?](#why-ey)
+- [Questions](#questions)
+- [Technical QnA](#technical-qna)
+---
 
 # Technical QnA
 - What is Microsoft Fabric?
@@ -116,3 +156,16 @@ I like the goal of EY to build a better working world. I also like the focus on 
   >>> Semantic modeling is the process of creating a layer of abstraction over raw data to make it more understandable and usable for business users. It involves defining relationships, hierarchies, and business logic to enable easier querying and reporting.
 
   >>> Example: In a sales dataset, semantic modeling would define relationships between customers, orders, and products, allowing users to easily analyze sales performance without needing to understand the underlying data structure.
+
+---
+  # Table of Contents
+- [Greetings](#greetings)
+- [Introduction](#introduction)
+- [Exp 1: Data Architect Exeevo (Sept 2025 - Apr 2026)](#exp-1-data-architect-exeevo-sept-2025---apr-2026)
+- [Exp 2: Data Engineer Vistaprint (Jan 2023 - Sept 2024)](#exp-2-data-engineer-vistaprint-jan-2023---sept-2024)
+- [Project 1: Microsoft Fabric Multi-Agent AI Platform](#project-1-microsoft-fabric-multi-agent-ai-platform)
+---
+- [What is EY?](#what-is-ey)
+- [Why EY?](#why-ey)
+- [Questions](#questions)
+- [Technical QnA](#technical-qna)
