@@ -12,7 +12,7 @@
 - [Technical Topics Simplified](#technical-topics-simplified)
 
 # Greetings 
-I as very happy to be here.
+I am very happy to be here.
 
 # Intro
 I am an AI and automation professional. I have experience building AI agents, automating business processes, and working with tools like Copilot Studio, Power Automate, Python, and APIs. I enjoy solving problems, learning new technology, and building simple solutions that save time.
