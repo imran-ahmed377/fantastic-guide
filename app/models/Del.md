@@ -51,9 +51,11 @@ The main goal was to reduce the time employees spent looking for information. Th
 - [Exp 1: AI Automation Engineer (Exeevo Sept 2025 – Apr 2026)](#exp-1-ai-automation-engineer-exeevo-sept-2025--apr-2026)
 - [Exp 2: Software Developer (Vista Print June 2023 – Sept 2024)](#exp-2-software-developer-vista-print-june-2023--sept-2024)
 - [Poject1: Enterprise Q&A Copilot Agent](#poject1-enterprise-qa-copilot-agent)
+---
 - [What is Deloitte](#what-is-deloitte)
 - [Why Deloitte](#why-deloitte)
 - [What you will Learn?](#what-you-will-learn)
+- [How do you make sure your Copilot Studio AI agent gives accurate answers?](#how-do-you-make-sure-your-copilot-studio-ai-agent-gives-accurate-answers)
 - [Technical Topics Simplified](#technical-topics-simplified)
 
 ---
@@ -98,7 +100,9 @@ To ensure your Copilot Studio AI agent gives accurate answers, you should:
 - [Exp 1: AI Automation Engineer (Exeevo Sept 2025 – Apr 2026)](#exp-1-ai-automation-engineer-exeevo-sept-2025--apr-2026)
 - [Exp 2: Software Developer (Vista Print June 2023 – Sept 2024)](#exp-2-software-developer-vista-print-june-2023--sept-2024)
 - [Poject1: Enterprise Q&A Copilot Agent](#poject1-enterprise-qa-copilot-agent)
+---
 - [What is Deloitte](#what-is-deloitte)
 - [Why Deloitte](#why-deloitte)
 - [What you will Learn?](#what-you-will-learn)
+- [How do you make sure your Copilot Studio AI agent gives accurate answers?](#how-do-you-make-sure-your-copilot-studio-ai-agent-gives-accurate-answers)
 - [Technical Topics Simplified](#technical-topics-simplified)
