@@ -81,6 +81,7 @@ To ensure your Copilot Studio AI agent gives accurate answers, you should:
 5. **Set Up Guardrails**: Establish guardrails to prevent the agent from generating harmful or inappropriate content.
 
 
+
 # Technical Topics Simplified
 
 - **Copilot Studio**: Copilot Studio is a Microsoft tool used to build AI agents. We can use it to create conversation flows, add knowledge sources, connect systems like SharePoint and Teams, and add rules or guardrails. We can also test the agent and improve its responses. In simple words, Copilot Studio helps us build AI agents that can understand users and help them with different tasks.
@@ -92,6 +93,8 @@ To ensure your Copilot Studio AI agent gives accurate answers, you should:
 - **QRM**: QRM means Quality Risk Management
 
 - **RPA**: RPA stands for Robotic Process Automation. RPA tools are Robotic Process Automation tools, which are used to automate repetitive tasks and processes in business operations. Examples: n8n, Zapier, Power Automate.
+
+- **Testing Copilot Studio Agents**: Testing Copilot Studio agents means checking if the AI agent works correctly and gives accurate answers. We can test the agent by asking different questions, checking its responses, and making sure it follows the rules we set. We can also ask users to test the agent and give feedback. This helps us find problems and improve the agent's performance.
 
 ---
 # Table of Contents
