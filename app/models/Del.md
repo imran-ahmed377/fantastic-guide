@@ -11,6 +11,7 @@
 ---
 
 # What is Deloitte
+Deloitte is a multinational professional services network that provides consulting, audit, tax, and advisory services. It is one of the "Big Four" accounting firms and operates in over 150 countries worldwide. Deloitte helps organizations navigate complex business challenges, improve performance, and drive innovation through its expertise in various industries and functional areas.
 
 # Why Deloitte
 
