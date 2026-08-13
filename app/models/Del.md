@@ -3,7 +3,7 @@
 - [Intro](#intro)
 - [Exp 1: AI Automation Engineer (Exeevo Sept 2025 – Apr 2026)](#exp-1-ai-automation-engineer-exeevo-sept-2025--apr-2026)
 - [Exp 2: Software Developer (Vista Print June 2023 – Sept 2024)](#exp-2-software-developer-vista-print-june-2023--sept-2024)
-- [Poject1: Enterprise Q&A Copilot Agent](#poject1-enterprise-qa-copilot-agent)
+- [Project1: Enterprise Q&A Copilot Agent](#project1-enterprise-qa-copilot-agent)
 ---
 - [What is Deloitte](#what-is-deloitte)
 - [Why Deloitte](#why-deloitte)
@@ -25,7 +25,7 @@ At Exeevo, I worked as an AI Automation Engineer. I built Copilot agents, connec
 At Vista Print, I worked as a Software Developer. I automated manual tasks using RPA and scripts. I also worked with HTML, CSS, and JavaScript to improve internal tools. My work helped teams save time and made their daily processes easier.
 
 
-# Poject1: Enterprise Q&A Copilot Agent
+# Project1: Enterprise Q&A Copilot Agent
 
 **Task:**
 My Enterprise Q&A Copilot Agent was built to help employees quickly find answers to common company questions.
@@ -51,7 +51,7 @@ The main goal was to reduce the time employees spent looking for information. Th
 - [Intro](#intro)
 - [Exp 1: AI Automation Engineer (Exeevo Sept 2025 – Apr 2026)](#exp-1-ai-automation-engineer-exeevo-sept-2025--apr-2026)
 - [Exp 2: Software Developer (Vista Print June 2023 – Sept 2024)](#exp-2-software-developer-vista-print-june-2023--sept-2024)
-- [Poject1: Enterprise Q&A Copilot Agent](#poject1-enterprise-qa-copilot-agent)
+- [Project1: Enterprise Q&A Copilot Agent](#project1-enterprise-qa-copilot-agent)
 ---
 - [What is Deloitte](#what-is-deloitte)
 - [Why Deloitte](#why-deloitte)
@@ -114,7 +114,7 @@ To ensure your Copilot Studio AI agent gives accurate answers, you should:
 - [Intro](#intro)
 - [Exp 1: AI Automation Engineer (Exeevo Sept 2025 – Apr 2026)](#exp-1-ai-automation-engineer-exeevo-sept-2025--apr-2026)
 - [Exp 2: Software Developer (Vista Print June 2023 – Sept 2024)](#exp-2-software-developer-vista-print-june-2023--sept-2024)
-- [Poject1: Enterprise Q&A Copilot Agent](#poject1-enterprise-qa-copilot-agent)
+- [Project1: Enterprise Q&A Copilot Agent](#project1-enterprise-qa-copilot-agent)
 ---
 - [What is Deloitte](#what-is-deloitte)
 - [Why Deloitte](#why-deloitte)
