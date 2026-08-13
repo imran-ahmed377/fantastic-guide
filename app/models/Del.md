@@ -9,6 +9,7 @@
 - [Why Deloitte](#why-deloitte)
 - [What you will Learn?](#what-you-will-learn)
 - [How do you make sure your Copilot Studio AI agent gives accurate answers?](#how-do-you-make-sure-your-copilot-studio-ai-agent-gives-accurate-answers)
+- [Questions](#questions)
 - [Technical Topics Simplified](#technical-topics-simplified)
 
 # Greetings 
@@ -56,6 +57,7 @@ The main goal was to reduce the time employees spent looking for information. Th
 - [Why Deloitte](#why-deloitte)
 - [What you will Learn?](#what-you-will-learn)
 - [How do you make sure your Copilot Studio AI agent gives accurate answers?](#how-do-you-make-sure-your-copilot-studio-ai-agent-gives-accurate-answers)
+- [Questions](#questions)
 - [Technical Topics Simplified](#technical-topics-simplified)
 
 ---
@@ -80,7 +82,17 @@ To ensure your Copilot Studio AI agent gives accurate answers, you should:
 4. **Feedback Loops**: Implement feedback mechanisms to continuously improve the agent's performance based on user interactions and corrections.
 5. **Set Up Guardrails**: Establish guardrails to prevent the agent from generating harmful or inappropriate content.
 
+# Questions
+- What would success look like in the first 90 days?
+  >>> That's great to hear. Thank you for sharing that.
 
+- What are the biggest challenge in this role?
+  >>> That's helpful. Could you also tell me a bit about...
+
+- What are the next steps of the hiring process?
+
+- What kinds of applications would I be building?
+  >>> That's helpful. Could you also tell me a bit about...
 
 # Technical Topics Simplified
 
@@ -108,4 +120,5 @@ To ensure your Copilot Studio AI agent gives accurate answers, you should:
 - [Why Deloitte](#why-deloitte)
 - [What you will Learn?](#what-you-will-learn)
 - [How do you make sure your Copilot Studio AI agent gives accurate answers?](#how-do-you-make-sure-your-copilot-studio-ai-agent-gives-accurate-answers)
+- [Questions](#questions)
 - [Technical Topics Simplified](#technical-topics-simplified)
