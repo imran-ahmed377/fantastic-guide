@@ -22,7 +22,7 @@ I am an AI and automation professional. I have experience building AI agents, au
 At Exeevo, I worked as an AI Automation Engineer. I built Copilot agents, connected APIs and SharePoint, and created automation workflows. I also worked with business teams to understand their needs, tested agents, and improved their answers and performance.
 
 # Exp 2: Software Developer (Vista Print June 2023 – Sept 2024)
-At Vista Print, I worked as a Software and Automation Developer. I automated manual tasks using RPA and scripts. I also worked with HTML, CSS, and JavaScript to improve internal tools. My work helped teams save time and made their daily processes easier.
+At Vista Print, I worked as a Software Developer. I automated manual tasks using RPA and scripts. I also worked with HTML, CSS, and JavaScript to improve internal tools. My work helped teams save time and made their daily processes easier.
 
 
 # Poject1: Enterprise Q&A Copilot Agent
