@@ -1,4 +1,10 @@
 
+
+# RAG
+
+
+
+
 # RAG Design
 - Suppose you have 20pdfs and you want to build a RAG system to answer questions based on the content of these PDFs. Who do you design the system? 
 
