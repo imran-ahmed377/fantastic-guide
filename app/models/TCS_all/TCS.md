@@ -3,6 +3,9 @@
 # RAG
 https://github.com/imran-ahmed377/fantastic-guide/blob/main/app/models/TCS_all/RAG.md
 
+# RAG_Azure
+https://github.com/imran-ahmed377/fantastic-guide/blob/main/app/models/TCS_all/RAG_Azure.md
+
 # Python
 https://github.com/imran-ahmed377/fantastic-guide/blob/main/app/models/TCS_all/Python.md
 
