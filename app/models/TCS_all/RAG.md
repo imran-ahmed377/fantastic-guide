@@ -81,7 +81,7 @@ This allows you to perform metadata filtering before or during retrieval. For ex
 
 ### Step 6 — Determine the chunk size
 
-This is one of the most important parts of the RAG system. I would not arbitrarily say "chunk size = 500 tokens." Instead, start with experiments around 300–700 tokens with 10–20% overlap, then evaluate retrieval quality against a manually created question-answer dataset. For policy documents, semantic boundaries are usually more important than an exact token count, so I would use heading-aware/recursive semantic chunking with LangChain's `RecursiveCharacterTextSplitter` or a custom section-aware splitter. For example, if a return-policy section contains a complete rule across 800 tokens, splitting it mechanically at token 500 may separate the condition from the exception. Therefore, chunk according to headings, paragraphs, bullet groups, and tables first, and use token size only as a secondary constraint. I would test combinations such as 300, 500, 700, and 1,000 tokens and measure Recall@K, Precision@K, MRR, and answer faithfulness using Ragas or custom evaluation scripts.
+This is one of the most important parts of the RAG system. I would not arbitrarily say "chunk size = 500 tokens." Instead, start with experiments around 300–700 tokens with 10–20% overlap, then evaluate retrieval quality against a manually created question-answer dataset. For policy documents, semantic boundaries are usually more important than an exact token count, so I would use heading-aware/recursive semantic chunking with LangChain's `RecursiveCharacterTextSplitter` or a custom section-aware splitter. For example, if a return-policy section contains a complete rule across 800 tokens, splitting it mechanically at token 500 may separate the condition from the exception. Therefore, chunk according to headings, paragraphs, bullet groups, and tables first, and use token size only as a secondary constraint. I would test combinations such as 300, 500, 700, and 1,000 tokens and measure Recall@K, Precision@K, MRR (Mean Reciprocal Rank), and answer faithfulness using Ragas (is a Python library for evaluating RAG systems) or custom evaluation scripts.
 
 ### Step 7 — Create embeddings
 
@@ -97,7 +97,7 @@ Start by retrieving something like top 20 chunks, rather than immediately sendin
 
 ### Step 10 — Add a reranker
 
-The reranker is extremely important because vector similarity alone can retrieve text that is semantically related but not actually sufficient to answer the question. I would use Cohere Rerank, Jina AI Reranker, or a self-hosted cross-encoder such as BAAI BGE Reranker. The pipeline becomes Question → retrieve top 20 → reranker → top 5. The reranker receives both the customer question and each candidate chunk and estimates how relevant the chunk is to that exact question. This generally produces better context than simply taking the five highest vector similarities.
+The reranker is extremely important because vector similarity alone can retrieve text that is semantically related but not actually sufficient to answer the question. I would use Cohere Rerank (is a cloud-based reranking service), Jina AI Reranker, or a self-hosted cross-encoder such as BAAI BGE Reranker. The pipeline becomes Question → retrieve top 20 → reranker → top 5. The reranker receives both the customer question and each candidate chunk and estimates how relevant the chunk is to that exact question. This generally produces better context than simply taking the five highest vector similarities.
 
 ### Step 11 — Add context filtering
 
