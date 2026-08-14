@@ -9,8 +9,6 @@ https://github.com/imran-ahmed377/fantastic-guide/blob/main/app/models/TCS_all/P
 # SQL
 https://github.com/imran-ahmed377/fantastic-guide/blob/main/app/models/TCS_all/SQL.md
 
-# 
-
 
 
 # What is TCS
