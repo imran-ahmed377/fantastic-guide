@@ -1,16 +1,25 @@
-
+# TCS Home
 
 # RAG
+https://github.com/imran-ahmed377/fantastic-guide/blob/main/app/models/TCS_all/RAG.md
 
+# Python
+https://github.com/imran-ahmed377/fantastic-guide/blob/main/app/models/TCS_all/Python.md
 
+# SQL
+https://github.com/imran-ahmed377/fantastic-guide/blob/main/app/models/TCS_all/SQL.md
+
+# 
 
 
 # RAG Design
+- RAG response in md, design it for Exeevo with azure ai search and azure openai and azure service, create md table. 
+
 - Suppose you have 20pdfs and you want to build a RAG system to answer questions based on the content of these PDFs. Who do you design the system? 
 
 - Chunk size determination
 
-- Re-ranker : Instead of sending 20 retrieved documents to the LLM, retrieve a larger candidate set and then rank the best ones.
+- Re-ranker aka Context filtering : Instead of sending 20 retrieved documents to the LLM, retrieve a larger candidate set and then rank the best ones.
 
 - llm observability
 
@@ -25,6 +34,10 @@
 - data drift
 
 - multi agent architecture
+
+- Langchain, Langgraph, langsmith
+
+- PII handling techniques
 
 
 # What is TCS
