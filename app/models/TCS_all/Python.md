@@ -402,8 +402,35 @@ for student in students:
         print(student["name"], "passed.")
 ```
 
+### Find the duplicate in a list
+
+```python
+numbers = [1, 2, 3, 4, 5, 3, 6, 7, 8, 9]
+duplicates = []
+
+for num in numbers:
+    if numbers.count(num) > 1 and num not in duplicates:
+        duplicates.append(num)
+
+print("Duplicates:", duplicates)
+```
+
 This example combines **lists, dictionaries, loops, strings, numbers, and if statements**.
 
+# Pandas Basics
+## Pandas DataFrame
+```python
+import pandas as pd
+
+# Create a DataFrame
+data = {
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Age": [25, 30, 35],
+    "City": ["New York", "Los Angeles", "Chicago"]
+}
+df = pd.DataFrame(data)
+print(df)
+```
 
 
 
