@@ -39,6 +39,11 @@ https://github.com/imran-ahmed377/fantastic-guide/blob/main/app/models/TCS_all/S
 
 - PII handling techniques
 
+- Prcision
+
+- Rccall
+
+
 
 # What is TCS
 Tata Consultancy Services (TCS) is an Indian multinational information technology services and consulting company headquartered in Mumbai, Maharashtra, India.
