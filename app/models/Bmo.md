@@ -32,6 +32,7 @@ The result was a more consistent AI review process and reduced governance review
 
 # Why BMO
 I like the mission of BMO and its focus on making a positive impact for customers, employees, and communities. I’m also excited about BMO’s focus on using AI to improve the employee and customer experience. This role is a great fit for me because it combines the areas I’ve been working in—AI solutions, GenAI, data science, and AI governance
+
 ---
 
 # Questions 
