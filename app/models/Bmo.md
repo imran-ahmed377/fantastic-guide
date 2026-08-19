@@ -29,16 +29,217 @@ For the action, I created governance templates in Confluence and SharePoint to d
 The result was a more consistent AI review process and reduced governance review turnaround time by about 20%. It also made it easier for business, risk, and compliance teams to understand and approve AI solutions.
 
 ---
-# What is BMO
 
 # Why BMO
-
+I like the mission of BMO and its focus on making a positive impact for customers, employees, and communities. I’m also excited about BMO’s focus on using AI to improve the employee and customer experience. This role is a great fit for me because it combines the areas I’ve been working in—AI solutions, GenAI, data science, and AI governance
 ---
 
 # Questions 
 
+- What would success look like in this role?
+- What are the key challenges in this role?
+- How do you measure the impact of your work?
+
 # Technical QnA:
 
-## LLMs / AI Agents / MCP / Tool Calling
+## 1. LLMs
 
-## Securing RAG Pipelines
+**Simple definition:**
+An **LLM (Large Language Model)** is an AI model that understands and generates human-like text.
+
+**Simple example:**
+Think of ChatGPT. You ask, *“Write an email to a customer explaining a delayed order,”* and the LLM generates the response.
+
+**Business use cases:**
+
+- Summarizing documents or customer feedback
+- Writing emails and reports
+- Answering employee questions
+- Extracting information from documents
+- Generating business content
+
+**Interview answer:**
+
+> “An LLM is the underlying AI model that understands and generates text. For example, an employee could ask a question in natural language, and the LLM can understand the question and generate a useful response.”
+
+---
+
+# 2. AI Agents
+
+**Simple definition:**
+An **AI agent** is an AI system that can **understand a goal, decide what steps to take, and use tools or information to complete the task**.
+
+The easiest way to remember it:
+
+**LLM = thinks and generates**  
+**AI Agent = thinks + takes action**
+
+**Simple example:**
+
+An employee asks:
+
+> “I’m joining the company next Monday. What do I need to complete?”
+
+An AI agent could:
+
+1. Understand the request.
+2. Look up the onboarding policy.
+3. Check the employee's information.
+4. Create a checklist.
+5. Send the relevant information to the employee.
+
+**Business use cases:**
+
+- HR onboarding agents
+- Customer service agents
+- IT support agents
+- Scheduling agents
+- Employee policy assistants
+- Automated workflow agents
+
+**Interview answer:**
+
+> “An AI agent goes beyond simply answering a question. It can understand a goal, access information or tools, and take actions to complete a task. For example, an HR agent could look up onboarding policies and provide an employee with the specific steps they need to complete.”
+
+---
+
+# 3. MCP
+
+**Simple definition:**
+**MCP (Model Context Protocol)** is a standard way for AI applications to **connect to external tools, data, and systems**.
+
+Think of MCP as a **universal connector between an AI agent and business systems**.
+
+**Simple example:**
+
+Imagine an AI agent needs to answer:
+
+> “What is the status of my vacation request?”
+
+The information may be stored in an HR system.
+
+Instead of building a completely different connection for every AI application, MCP provides a standardized way for the AI application to access that system.
+
+**Business use cases:**
+
+- AI accessing HR systems
+- AI accessing CRM data
+- AI working with databases
+- AI accessing company documents
+- AI interacting with business applications
+
+**Interview answer:**
+
+> “MCP is a standard that makes it easier for AI applications to connect with external tools and data. For example, an HR AI agent could use an MCP connection to access an approved HR system and retrieve an employee's vacation information.”
+
+### Easy distinction
+
+**RAG:** AI **reads information**  
+**MCP:** AI **connects to systems/tools**  
+**Tool calling:** AI **asks a specific tool to perform an action**
+
+---
+
+# 4. Tool Calling
+
+**Simple definition:**
+**Tool calling** allows an AI model or agent to decide when it needs an external tool and send that tool a structured request.
+
+**Simple example:**
+
+User asks:
+
+> “What is the current USD to CAD exchange rate?”
+
+The LLM doesn't need to guess. It can call an **exchange-rate tool**, get the current rate, and then give the user the answer.
+
+Another business example:
+
+> “Create a support ticket for my laptop issue.”
+
+The AI agent can call the company's **ticketing system** and create the ticket.
+
+**Business use cases:**
+
+- Creating support tickets
+- Sending emails
+- Checking inventory
+- Retrieving customer information
+- Booking appointments
+- Querying databases
+- Updating CRM records
+
+**Interview answer:**
+
+> “Tool calling allows an AI agent to use external tools when it needs to perform a task. For example, if an employee asks an IT agent to create a support ticket, the agent can call the company's ticketing system and create the ticket instead of just telling the employee how to do it.”
+
+---
+
+# 5. Securing RAG Pipelines
+
+This one is **particularly important for your BMO interview**.
+
+### First: What is RAG?
+
+**RAG = Retrieval-Augmented Generation.**
+
+**Simple definition:**
+RAG allows an AI system to **search approved company information before generating an answer**.
+
+Instead of relying only on what the LLM learned during training:
+
+**Question → Search company information → Find relevant information → LLM generates answer**
+
+### Simple example
+
+An employee asks:
+
+> “What is BMO's parental leave policy?”
+
+The AI searches the approved HR documents, retrieves the relevant policy, and uses that information to answer.
+
+---
+
+## What does "securing RAG" mean?
+
+It means making sure the AI **only retrieves information that the user is allowed to see** and doesn't expose sensitive or incorrect information.
+
+### Simple example
+
+Imagine the company has:
+
+- Public HR policies
+- Employee salary information
+- Manager-only documents
+- Confidential legal documents
+
+An employee asks:
+
+> “Show me the salary information for my department.”
+
+A secure RAG system should **check the employee's permissions before retrieving the information**.
+
+The AI should not simply search everything in the database.
+
+### Important security techniques
+
+You can remember these five:
+
+**1. Access control**  
+Only retrieve documents the user is authorized to access.
+
+**2. Data filtering**  
+Filter sensitive information before it reaches the AI.
+
+**3. Secure document storage**  
+Protect the documents and vector database where information is stored.
+
+**4. Prompt-injection protection**  
+Prevent malicious instructions inside documents or user prompts from manipulating the AI.
+
+**5. Logging and monitoring**  
+Track what information was retrieved and monitor unusual behavior.
+
+### Interview answer
+
+> **“Securing a RAG pipeline means making sure the AI only retrieves and provides information that the user is authorized to access. For example, in an HR assistant, an employee might be allowed to see company policies but not confidential salary information. So I would use access controls and document-level permissions before retrieval, apply data filtering, protect against prompt injection, and monitor the system through logging and testing.”**
