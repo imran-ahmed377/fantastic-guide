@@ -1,6 +1,15 @@
-
+# Table of Contents
+- [Greetings](#greetings)
+- [Intro](#intro)
+- [EXP1: AI Developer (Exeevo sept 2025 - Apr 2026)](#exp1-ai-developer-exeevo-sept-2025---apr-2026)
+- [EXP2: Python Backend Developer (Vista Print june 2023 - Aug 2024)](#exp2-python-backend-developer-vista-print-june-2023---aug-2024)
+- [Project: LLM-Powered RAG Chatbot API](#project-llm-powered-rag-chatbot-api)
+- [Technical QnA](#technical-qna)
+  - [1. Python Backend — FastAPI & Flask](#1-python-backend--fastapi--flask)
+  - [2. End-to-End RAG Pipeline for Enterprise](#2-end-to-end-rag-pipeline-for-enterprise)
 
 # Greetings
+I am so happy to be here!
 
 # Intro
 Hi, I’m an AI Developer with a strong background in Python backend development and production LLM applications. I’ve built scalable FastAPI and Flask APIs, RAG pipelines with pgvector, and agent workflows using MCP and tool calling. I also have hands-on experience with PostgreSQL, SQL Server, Docker, and CI/CD. What I enjoy most is taking AI solutions from an idea to a reliable, production-ready system that is secure, scalable, and cost-effective.
@@ -24,6 +33,16 @@ For example, if an employee asked, ‘What is our vacation policy?’, the chatb
 My role was to build the backend using Python and FastAPI. I used RAG (Retrieval-Augmented Generation) to first find relevant information from documents using embeddings and pgvector in PostgreSQL, and then provided that information to a GPT model to generate the answer. I also added prompt versioning, authentication, and content-filtering guardrails to make the system more reliable and secure. I tested different prompts and models to balance answer quality, speed, and cost.
 
 As a result, the chatbot provided more accurate, context-specific answers, and the guardrails improved output safety by about 30%. The project demonstrated how we could turn an LLM into a practical business application rather than just a general-purpose chatbot.
+
+# Table of Contents
+- [Greetings](#greetings)
+- [Intro](#intro)
+- [EXP1: AI Developer (Exeevo sept 2025 - Apr 2026)](#exp1-ai-developer-exeevo-sept-2025---apr-2026)
+- [EXP2: Python Backend Developer (Vista Print june 2023 - Aug 2024)](#exp2-python-backend-developer-vista-print-june-2023---aug-2024)
+- [Project: LLM-Powered RAG Chatbot API](#project-llm-powered-rag-chatbot-api)
+- [Technical QnA](#technical-qna)
+  - [1. Python Backend — FastAPI & Flask](#1-python-backend--fastapi--flask)
+  - [2. End-to-End RAG Pipeline for Enterprise](#2-end-to-end-rag-pipeline-for-enterprise)
 
 # Technical QnA:
 ### 1. Python Backend — FastAPI & Flask
@@ -111,3 +130,13 @@ It means you build and manage the **whole process**, from getting the company's 
 ### Easy interview explanation
 
 > “RAG allows an AI application to answer questions using a company's own information. In my project, I used **Python and FastAPI** for the backend, **PostgreSQL with pgvector** for storing and searching document embeddings, and **GPT** to generate the final answer. The pipeline takes company documents, converts them into searchable information, retrieves the relevant content when a user asks a question, and then gives that context to the LLM to generate a more accurate answer.”
+
+# Table of Contents
+- [Greetings](#greetings)
+- [Intro](#intro)
+- [EXP1: AI Developer (Exeevo sept 2025 - Apr 2026)](#exp1-ai-developer-exeevo-sept-2025---apr-2026)
+- [EXP2: Python Backend Developer (Vista Print june 2023 - Aug 2024)](#exp2-python-backend-developer-vista-print-june-2023---aug-2024)
+- [Project: LLM-Powered RAG Chatbot API](#project-llm-powered-rag-chatbot-api)
+- [Technical QnA](#technical-qna)
+  - [1. Python Backend — FastAPI & Flask](#1-python-backend--fastapi--flask)
+  - [2. End-to-End RAG Pipeline for Enterprise](#2-end-to-end-rag-pipeline-for-enterprise)
