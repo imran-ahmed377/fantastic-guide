@@ -1,3 +1,27 @@
+# Table of Contents
+- [Greetings](#greetings)
+- [Intro](#intro)
+- [Why do you want to leave your current role?](#why-do-you-want-to-leave-your-current-role)
+- [EXP1: AI Solutions Analyst (Exeevo sept 2025 - Present)](#exp1-ai-solutions-analyst-exeevo-sept-2025---present)
+- [EXP2: Data Analyst (Vista Print june 2023 - Aug 2024)](#exp2-data-analyst-vista-print-june-2023---aug-2024)
+- [Project: Enterprise AI Governance Framework](#project-enterprise-ai-governance-framework)
+
+---
+
+- [Why BMO](#why-bmo)
+- [Questions](#questions)
+
+---
+
+- [Technical QnA](#technical-qna)
+  - [1. LLMs](#1-llms)
+  - [2. AI Agents](#2-ai-agents)
+  - [3. MCP](#3-mcp)
+  - [4. Tool Calling](#4-tool-calling)
+  - [5. Securing RAG Pipelines](#5-securing-rag-pipelines)
+
+---
+
 # Greetings
 
 I am so happy to be here!
@@ -40,6 +64,30 @@ I like the mission of BMO and its focus on making a positive impact for customer
 - What would success look like in this role?
 - What are the key challenges in this role?
 - How do you measure the impact of your work?
+
+# Table of Contents
+- [Greetings](#greetings)
+- [Intro](#intro)
+- [Why do you want to leave your current role?](#why-do-you-want-to-leave-your-current-role)
+- [EXP1: AI Solutions Analyst (Exeevo sept 2025 - Present)](#exp1-ai-solutions-analyst-exeevo-sept-2025---present)
+- [EXP2: Data Analyst (Vista Print june 2023 - Aug 2024)](#exp2-data-analyst-vista-print-june-2023---aug-2024)
+- [Project: Enterprise AI Governance Framework](#project-enterprise-ai-governance-framework)
+
+---
+
+- [Why BMO](#why-bmo)
+- [Questions](#questions)
+
+---
+
+- [Technical QnA](#technical-qna)
+  - [1. LLMs](#1-llms)
+  - [2. AI Agents](#2-ai-agents)
+  - [3. MCP](#3-mcp)
+  - [4. Tool Calling](#4-tool-calling)
+  - [5. Securing RAG Pipelines](#5-securing-rag-pipelines)
+
+---
 
 # Technical QnA:
 
@@ -244,3 +292,28 @@ Track what information was retrieved and monitor unusual behavior.
 ### Interview answer
 
 > **“Securing a RAG pipeline means making sure the AI only retrieves and provides information that the user is authorized to access. For example, in an HR assistant, an employee might be allowed to see company policies but not confidential salary information. So I would use access controls and document-level permissions before retrieval, apply data filtering, protect against prompt injection, and monitor the system through logging and testing.”**
+
+
+# Table of Contents
+- [Greetings](#greetings)
+- [Intro](#intro)
+- [Why do you want to leave your current role?](#why-do-you-want-to-leave-your-current-role)
+- [EXP1: AI Solutions Analyst (Exeevo sept 2025 - Present)](#exp1-ai-solutions-analyst-exeevo-sept-2025---present)
+- [EXP2: Data Analyst (Vista Print june 2023 - Aug 2024)](#exp2-data-analyst-vista-print-june-2023---aug-2024)
+- [Project: Enterprise AI Governance Framework](#project-enterprise-ai-governance-framework)
+
+---
+
+- [Why BMO](#why-bmo)
+- [Questions](#questions)
+
+---
+
+- [Technical QnA](#technical-qna)
+  - [1. LLMs](#1-llms)
+  - [2. AI Agents](#2-ai-agents)
+  - [3. MCP](#3-mcp)
+  - [4. Tool Calling](#4-tool-calling)
+  - [5. Securing RAG Pipelines](#5-securing-rag-pipelines)
+
+---
