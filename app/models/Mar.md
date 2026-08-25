@@ -7,6 +7,8 @@
 ---
 - [What is Marsh](#what-is-marsh)
 - [Why Marsh](#why-marsh)
+- [Questions]
+
 ---
 - [Technical QnA](#technical-qna)
   - [1. Python Backend — FastAPI & Flask](#1-python-backend--fastapi--flask)
@@ -38,10 +40,17 @@ As a result, the chatbot provided more accurate, context-specific answers, and t
 ---
 
 # What is Marsh
-Marsh is a global professional services company that helps businesses identify, manage, and reduce risks, especially through insurance and risk management.
+Marsh is a global risk and insurance advisory company that helps businesses understand their risks, protect themselves from major financial losses, and make better decisions about the future.
 
 # Why Marsh
 I want to work at Marsh because I really connect with its purpose of building the confidence to thrive through the power of perspective. I like the idea of using technology and AI to turn complex information into useful insights, and I believe my experience building AI and RAG solutions can help Marsh deliver practical solutions for its clients.
+
+# Questions
+- What would success look like in this position during the first six months?
+- What are the biggest challenges someone in this role would be expected to tackle?
+- How would you describe the team I would be working with?
+- What will be the next round of interviews like? Will there be any technical assessments or coding challenges?
+
 
 # Table of Contents
 - [Greetings](#greetings)
