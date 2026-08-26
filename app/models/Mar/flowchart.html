@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>End-to-End Agentic AI System — Architecture</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#161923; --card2:#1c2030; --border:#2a2f42;
+    --text:#e8eaf0; --muted:#9aa1b5; --accent:#6ea8fe; --accent2:#7ee7c7;
+    --amber:#f2b544; --pink:#f28ac2; --coral:#f2876b; --purple:#b39ddb;
+  }
+  *{box-sizing:border-box;}
+  body{
+    background:var(--bg); color:var(--text); font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    margin:0; padding:32px 16px 80px; line-height:1.5;
+  }
+  h1{font-size:22px; font-weight:600; text-align:center; margin:0 0 4px;}
+  .subtitle{text-align:center; color:var(--muted); font-size:14px; margin-bottom:32px;}
+  .flow{max-width:1000px; margin:0 auto; display:flex; flex-direction:column; align-items:stretch; gap:0;}
+  .layer{
+    background:var(--card); border:1px solid var(--border); border-radius:14px;
+    padding:18px 20px; position:relative;
+  }
+  .layer-title{font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--accent); font-weight:600; margin-bottom:10px;}
+  .layer-title.alt{color:var(--accent2);}
+  .layer-title.warn{color:var(--amber);}
+  .layer-title.pink{color:var(--pink);}
+  .layer-title.coral{color:var(--coral);}
+  .layer-title.purple{color:var(--purple);}
+  .row{display:flex; flex-wrap:wrap; gap:10px;}
+  .box{
+    background:var(--card2); border:1px solid var(--border); border-radius:10px;
+    padding:10px 12px; flex:1; min-width:150px; font-size:13px;
+  }
+  .box .name{font-weight:600; margin-bottom:3px;}
+  .box .desc{color:var(--muted); font-size:12px;}
+  .tag{
+    display:inline-block; background:#242a3d; border:1px solid var(--border); color:var(--accent2);
+    border-radius:6px; padding:1px 7px; font-size:11px; font-weight:600; margin-right:5px;
+  }
+  .arrow{display:flex; justify-content:center; align-items:center; height:34px; color:var(--muted); font-size:20px;}
+  .arrow::after{content:"↓";}
+  .split{display:flex; gap:16px; flex-wrap:wrap;}
+  .split > .layer{flex:1; min-width:280px;}
+  .sidebar-note{
+    max-width:1000px; margin:14px auto 0; font-size:12px; color:var(--muted);
+    border-left:3px solid var(--border); padding-left:10px;
+  }
+  .cross{
+    max-width:1000px; margin:28px auto 0; background:#191c26; border:1px dashed var(--border);
+    border-radius:14px; padding:16px 20px;
+  }
+  .cross-title{font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--pink); font-weight:600; margin-bottom:10px;}
+  .legend{max-width:1000px; margin:40px auto 0;}
+  .legend h2{font-size:16px; margin-bottom:12px;}
+  .legend-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:6px 16px; font-size:13px;}
+  .legend-grid div span.n{color:var(--accent2); font-weight:600; margin-right:6px;}
+</style>
+</head>
+<body>
+
+<h1>End-to-end agentic AI system with RAG</h1>
+<div class="subtitle">Request lifecycle from client → backend → agent → RAG/LLM → data → infra</div>
+
+<div class="flow">
+
+  <div class="layer">
+    <div class="layer-title">1 · Client layer</div>
+    <div class="row">
+      <div class="box"><div class="name">Web / app frontend <span class="tag">30</span></div><div class="desc">JavaScript UI — chat window, forms, dashboards</div></div>
+      <div class="box"><div class="name">REST call (sync) <span class="tag">18</span></div><div class="desc">Standard request/response e.g. "submit claim form"</div></div>
+      <div class="box"><div class="name">WebSocket call (async) <span class="tag">19</span></div><div class="desc">Persistent connection e.g. live chat, streamed tokens</div></div>
+    </div>
+  </div>
+
+  <div class="arrow"></div>
+
+  <div class="layer">
+    <div class="layer-title alt">2 · Backend API layer (Python)</div>
+    <div class="row">
+      <div class="box"><div class="name">Flask <span class="tag">16</span> <span class="tag">15</span></div><div class="desc">Sync REST endpoints — CRUD, admin, simple lookups</div></div>
+      <div class="box"><div class="name">FastAPI <span class="tag">17</span></div><div class="desc">Async endpoints — chat/agent calls, WebSocket <span class="tag">19</span> streaming, high concurrency</div></div>
+      <div class="box"><div class="name">REST APIs <span class="tag">18</span> <span class="tag">31</span></div><div class="desc">Uniform contract other systems/UI call into</div></div>
+    </div>
+    <div class="sidebar-note">Sync (Flask) handles quick, blocking calls. Async (FastAPI) handles slow I/O like waiting on an LLM or DB — many requests are served concurrently instead of queued.</div>
+  </div>
+
+  <div class="arrow"></div>
+
+  <div class="layer">
+    <div class="layer-title warn">3 · Agent orchestration layer</div>
+    <div class="row">
+      <div class="box"><div class="name">Prompt design <span class="tag">7</span></div><div class="desc">System prompt + instructions shaping how the agent reasons</div></div>
+      <div class="box"><div class="name">Agent / tool-calling <span class="tag">6</span></div><div class="desc">Decides: answer directly, retrieve docs, or call a tool</div></div>
+      <div class="box"><div class="name">Function calling <span class="tag">5</span></div><div class="desc">Structured JSON call to a specific Python function</div></div>
+      <div class="box"><div class="name">MCP <span class="tag">4</span></div><div class="desc">Standard protocol connecting the agent to tools/data sources (DB, files, Slack) without custom glue code per tool</div></div>
+    </div>
+  </div>
+
+  <div class="arrow"></div>
+
+  <div class="split">
+    <div class="layer">
+      <div class="layer-title pink">4a · RAG pipeline</div>
+      <div class="row">
+        <div class="box"><div class="name">Embeddings <span class="tag">12</span></div><div class="desc">Turn query + documents into vectors</div></div>
+        <div class="box"><div class="name">Vector search <span class="tag">13</span></div><div class="desc">Find nearest/most-relevant document chunks</div></div>
+        <div class="box"><div class="name">pgvector <span class="tag">14</span></div><div class="desc">Vector index living inside PostgreSQL <span class="tag">22</span></div></div>
+      </div>
+      <div class="sidebar-note">Retrieved chunks get injected into the prompt so the LLM answers from real Marsh documents, not memory.</div>
+    </div>
+
+    <div class="layer">
+      <div class="layer-title coral">4b · Other agent tools (via MCP / function calling)</div>
+      <div class="row">
+        <div class="box"><div class="name">SQL query tool <span class="tag">21</span> <span class="tag">20</span></div><div class="desc">SQLAlchemy → SQL Server / PostgreSQL</div></div>
+        <div class="box"><div class="name">ML scoring tool <span class="tag">24</span> <span class="tag">25</span></div><div class="desc">scikit-learn model / statistical checks (e.g. risk score)</div></div>
+        <div class="box"><div class="name">File systems <span class="tag">32</span></div><div class="desc">Read/write reports, policy docs</div></div>
+        <div class="box"><div class="name">Messaging platforms <span class="tag">33</span></div><div class="desc">Post updates to Slack/Teams, send email</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow"></div>
+
+  <div class="layer">
+    <div class="layer-title">5 · LLM layer</div>
+    <div class="row">
+      <div class="box"><div class="name">GPT <span class="tag">1</span></div><div class="desc">Hosted API model for general reasoning/answers</div></div>
+      <div class="box"><div class="name">Open-source LLMs <span class="tag">2</span></div><div class="desc">Self-hosted model (e.g. Llama/Mistral) — cheaper or private-data use cases</div></div>
+      <div class="box"><div class="name">Guardrails <span class="tag">10</span></div><div class="desc">Blocks unsafe/off-policy outputs before they return</div></div>
+      <div class="box"><div class="name">Content filtering <span class="tag">11</span></div><div class="desc">Screens for PII, toxicity, prohibited content</div></div>
+    </div>
+  </div>
+
+  <div class="arrow"></div>
+
+  <div class="layer">
+    <div class="layer-title alt">6 · Response delivery</div>
+    <div class="row">
+      <div class="box"><div class="name">REST response <span class="tag">18</span></div><div class="desc">Full JSON answer returned once (sync path)</div></div>
+      <div class="box"><div class="name">WebSocket stream <span class="tag">19</span></div><div class="desc">Tokens streamed live as the LLM generates (async path)</div></div>
+    </div>
+  </div>
+
+  <div class="arrow"></div>
+
+  <div class="layer">
+    <div class="layer-title purple">7 · Observability</div>
+    <div class="row">
+      <div class="box"><div class="name">LLM evaluation <span class="tag">8</span></div><div class="desc">Offline scoring — is the answer accurate/relevant?</div></div>
+      <div class="box"><div class="name">LLM monitoring <span class="tag">9</span></div><div class="desc">Live tracking — latency, cost, error rate, drift</div></div>
+      <div class="box"><div class="name">Performance profiling <span class="tag">38</span></div><div class="desc">Finds slow endpoints/queries under load</div></div>
+    </div>
+  </div>
+
+  <div class="arrow"></div>
+
+  <div class="layer">
+    <div class="layer-title">8 · Data layer</div>
+    <div class="row">
+      <div class="box"><div class="name">PostgreSQL + pgvector <span class="tag">22</span> <span class="tag">14</span></div><div class="desc">Relational + vector store, one database</div></div>
+      <div class="box"><div class="name">SQL Server <span class="tag">21</span></div><div class="desc">Legacy/core transactional business data</div></div>
+      <div class="box"><div class="name">SQLAlchemy <span class="tag">20</span></div><div class="desc">Python ORM — one interface to both databases</div></div>
+      <div class="box"><div class="name">Indexing/optimization <span class="tag">40</span></div><div class="desc">Fast lookups on large tables</div></div>
+      <div class="box"><div class="name">Transaction handling <span class="tag">39</span></div><div class="desc">Keeps multi-step writes consistent (all-or-nothing)</div></div>
+    </div>
+  </div>
+
+  <div class="arrow"></div>
+
+  <div class="layer">
+    <div class="layer-title warn">9 · DevOps / deployment</div>
+    <div class="row">
+      <div class="box"><div class="name">Docker <span class="tag">26</span></div><div class="desc">Packages the app + dependencies into one container</div></div>
+      <div class="box"><div class="name">Kubernetes <span class="tag">27</span></div><div class="desc">Runs, scales, and restarts containers automatically</div></div>
+      <div class="box"><div class="name">GitHub Actions <span class="tag">28</span></div><div class="desc">Runs tests/builds on every code push</div></div>
+      <div class="box"><div class="name">CI/CD <span class="tag">29</span></div><div class="desc">Automated pipeline: code → test → build → deploy</div></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="cross">
+  <div class="cross-title">Cross-cutting: security &amp; engineering (touches every layer above)</div>
+  <div class="row">
+    <div class="box"><div class="name">Authentication <span class="tag">34</span></div><div class="desc">Verifies who is calling the API</div></div>
+    <div class="box"><div class="name">Access control <span class="tag">36</span></div><div class="desc">What that caller is allowed to see/do</div></div>
+    <div class="box"><div class="name">Secret management <span class="tag">35</span></div><div class="desc">API keys, DB passwords never hardcoded</div></div>
+    <div class="box"><div class="name">Data handling / privacy <span class="tag">37</span></div><div class="desc">PII masking, retention rules, compliance</div></div>
+  </div>
+</div>
+
+<div class="legend">
+  <h2>Full tool list → where it sits</h2>
+  <div class="legend-grid">
+    <div><span class="n">1</span>GPT — LLM layer</div>
+    <div><span class="n">2</span>Open-source LLMs — LLM layer</div>
+    <div><span class="n">3</span>RAG — spans 4a</div>
+    <div><span class="n">4</span>MCP — agent orchestration</div>
+    <div><span class="n">5</span>Function calling — agent orchestration</div>
+    <div><span class="n">6</span>Agent/tool-calling — agent orchestration</div>
+    <div><span class="n">7</span>Prompt design — agent orchestration</div>
+    <div><span class="n">8</span>LLM evaluation — observability</div>
+    <div><span class="n">9</span>LLM monitoring — observability</div>
+    <div><span class="n">10</span>Guardrails — LLM layer</div>
+    <div><span class="n">11</span>Content filtering — LLM layer</div>
+    <div><span class="n">12</span>Embeddings — RAG pipeline</div>
+    <div><span class="n">13</span>Vector search — RAG pipeline</div>
+    <div><span class="n">14</span>pgvector — RAG pipeline / data layer</div>
+    <div><span class="n">15</span>Python — everywhere in backend</div>
+    <div><span class="n">16</span>Flask — backend API (sync)</div>
+    <div><span class="n">17</span>FastAPI — backend API (async)</div>
+    <div><span class="n">18</span>REST APIs — client ↔ backend</div>
+    <div><span class="n">19</span>WebSocket — client ↔ backend (streaming)</div>
+    <div><span class="n">20</span>SQLAlchemy — data layer</div>
+    <div><span class="n">21</span>SQL Server — data layer</div>
+    <div><span class="n">22</span>PostgreSQL — data layer</div>
+    <div><span class="n">23</span>pgvector — data layer</div>
+    <div><span class="n">24</span>scikit-learn — agent tool (4b)</div>
+    <div><span class="n">25</span>Statistical techniques — agent tool (4b)</div>
+    <div><span class="n">26</span>Docker — DevOps</div>
+    <div><span class="n">27</span>Kubernetes — DevOps</div>
+    <div><span class="n">28</span>GitHub Actions — DevOps</div>
+    <div><span class="n">29</span>CI/CD — DevOps</div>
+    <div><span class="n">30</span>JavaScript — client layer</div>
+    <div><span class="n">31</span>APIs — client ↔ backend</div>
+    <div><span class="n">32</span>File systems — agent tool (4b)</div>
+    <div><span class="n">33</span>Messaging platforms — agent tool (4b)</div>
+    <div><span class="n">34</span>Authentication — cross-cutting security</div>
+    <div><span class="n">35</span>Secret management — cross-cutting security</div>
+    <div><span class="n">36</span>Access control — cross-cutting security</div>
+    <div><span class="n">37</span>Data handling/privacy — cross-cutting security</div>
+    <div><span class="n">38</span>Performance profiling — observability</div>
+    <div><span class="n">39</span>Transaction handling — data layer</div>
+    <div><span class="n">40</span>Database indexing/optimization — data layer</div>
+  </div>
+</div>
+
+</body>
+</html>

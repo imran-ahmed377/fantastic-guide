@@ -1,3 +1,39 @@
+“Why would you choose FastAPI over Flask?”
+
+“How would you handle asynchronous operations in Python?”
+
+“How would you design a scalable API?”
+
+
+“Tell me about yourself.”
+
+“Why are you interested in this position?”
+
+“Why do you want to work for our company?”
+
+“Tell me about your relevant experience.”
+
+“Tell me about a challenging situation you faced and how you handled it.”
+
+“Why should we hire you?”
+
+RAG Pipeline Design Considerations:
+  - Document ingestion
+  - Chunking
+  - Embeddings
+  - Vector search
+  - Prompt construction
+  - LLM selection
+  - Citations/source grounding
+  - Authentication
+  - Access control
+  - Hallucination prevention
+  - Logging
+  - Latency
+  - Cost
+  - Evaluation
+
+
 # Table of Contents
 - [Greetings](#greetings)
 - [Intro](#intro)
@@ -42,14 +78,24 @@ As a result, the chatbot provided more accurate, context-specific answers, and t
 # What is Marsh
 Marsh is a global risk and insurance advisory company that helps businesses understand their risks, protect themselves from major financial losses, and make better decisions about the future.
 
+
 # Why Marsh
+- I worked on a very similar Project at Exeevo, where I built a RAG-based chatbot that could answer questions using company-specific documents.  
+
 I want to work at Marsh because I really connect with its purpose of building the confidence to thrive through the power of perspective. I like the idea of using technology and AI to turn complex information into useful insights, and I believe my experience building AI and RAG solutions can help Marsh deliver practical solutions for its clients.
+
 
 # Questions
 - What would success look like in this position during the first six months?
+>I appreciate you explaining that
 - What are the biggest challenges someone in this role would be expected to tackle?
+>That’s really helpful
 - How would you describe the team I would be working with?
+>That’s really helpful
 - What will be the next round of interviews like? Will there be any technical assessments or coding challenges?
+>That’s really helpful
+
+>I believe that covers everything I wanted to ask.
 
 
 # Table of Contents
@@ -168,3 +214,90 @@ It means you build and manage the **whole process**, from getting the company's 
 - [Technical QnA](#technical-qna)
   - [1. Python Backend — FastAPI & Flask](#1-python-backend--fastapi--flask)
   - [2. End-to-End RAG Pipeline for Enterprise](#2-end-to-end-rag-pipeline-for-enterprise)
+
+
+# Notes
+- The legacy system maybe using Flask (Why do they want flask?) so they maybe want new system to communicate with the older system
+
+- How the system will calculate this years data with last years data? 
+
+- How embeddings works? How to retrieve the most relevant information from the database?
+
+- How hallucinations can be prevented? How to make sure the answer is accurate and relevant?
+
+- How to design the vector database schema for storing embeddings? How to optimize retrieval speed and accuracy?
+
+- how asynchronous and synchronous processing can be used in the RAG pipeline to improve performance and scalability?
+
+- caching strategies for frequently asked questions to reduce retrieval time and improve response speed.
+
+- Can User A accidentally retrieve User B's client information?
+
+- system prompt design
+
+
+
+# End to end system design
+                         ┌──────────────────────┐
+                         │   Marsh Employee     │
+                         │   / Client / App     │
+                         └──────────┬───────────┘
+                                    │
+                                    │ REST (sync) / WebSocket (async)
+                                    ▼
+                         ┌──────────────────────┐
+                         │ Backend API Layer    │
+                         │ • Flask  (sync)      │
+                         │ • FastAPI (async)    │
+                         │ • Auth, rate limit   │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │  Agent Orchestrator  │
+                         │ • Prompt design      │
+                         │ • Tool/function call │
+                         │ • MCP                │
+                         └──────────┬───────────┘
+                                    │
+                     ┌──────────────┼──────────────┐
+                     ▼                             ▼
+        ┌─────────────────────┐        ┌─────────────────────┐
+        │   RAG Pipeline       │        │   Other Tools        │
+        │ • Embeddings         │        │ • SQL (SQLAlchemy)   │
+        │ • Vector search      │        │ • scikit-learn       │
+        │ • pgvector           │        │ • Files / messaging  │
+        └──────────┬───────────┘        └──────────┬───────────┘
+                    │                               │
+                    └───────────────┬───────────────┘
+                                     ▼
+                         ┌──────────────────────┐
+                         │      LLM Layer       │
+                         │ • GPT / open-source  │
+                         │ • Guardrails         │
+                         │ • Content filtering  │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │  Response to Client  │
+                         │ • REST (full JSON)   │
+                         │ • WebSocket (stream) │
+                         └──────────┬───────────┘
+                                    │
+                                    ▼
+                         ┌──────────────────────┐
+                         │    Observability     │
+                         │ • Eval / monitoring  │
+                         │ • Perf profiling     │
+                         └──────────────────────┘
+
+        ┌─────────────────────────────────────────────────┐
+        │  Data Layer: PostgreSQL + pgvector, SQL Server,  │
+        │  SQLAlchemy, indexing, transactions              │
+        └─────────────────────────────────────────────────┘
+
+        ┌─────────────────────────────────────────────────┐
+        │  DevOps: Docker → Kubernetes → GitHub Actions    │
+        │  → CI/CD                                         │
+        └─────────────────────────────────────────────────┘
