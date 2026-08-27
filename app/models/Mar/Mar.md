@@ -1,9 +1,6 @@
-“Why would you choose FastAPI over Flask?”
 
-“How would you handle asynchronous operations in Python?”
 
 “How would you design a scalable API?”
-
 
 “Tell me about yourself.”
 
@@ -54,10 +51,20 @@ RAG Pipeline Design Considerations:
 I am so happy to be here!
 
 # Intro
-Hi, I’m an AI Developer with a strong background in Python backend development and production LLM applications. I’ve built scalable FastAPI and Flask APIs, RAG pipelines with pgvector, and agent workflows using MCP and tool calling. I also have hands-on experience with PostgreSQL, SQL Server, Docker, and CI/CD. What I enjoy most is taking AI solutions from an idea to a reliable, production-ready system that is secure, scalable, and cost-effective.
+Thank you for giving me the opportunity, I am Imran Ahmed, I am an AI Developer with experience in AI Agent Development, LLM, RAG, and FastAPI. In my recent role at Exeevo I have developed and deployed end to end RAG based Agentic AI solution. My proudest results are improving retrieval accuracy by 25% through better embeddings and vector search, reducing query latency by 20% by optimizing PostgreSQL and SQL Server integrations.
+
+I am a very organized person, I like to work in teams, and I pick up new technologies quickly.
+
+I am applying to this job because of the use of AI for risk assessment and use of AI for something actually useful for the society. Also lot of skills perfecty allign with my experience.
+
+Outside of work, I spend my time learning new AI technologies, and contributing to open-source projects. Currently I am working on a open-source project that ranks city's based on multiple factors like safety, cost of living, and quality of life. I also enjoy traveling, and swiming. 
+
+
 
 # EXP1: AI Developer (Exeevo sept 2025 - Apr 2026)
-In my most recent role as an AI Developer at Exeevo, I worked on AI solutions that helped employees quickly find information and automate repetitive tasks. For example, I built an AI-powered chatbot using Python, FastAPI, and RAG, where company information was stored in PostgreSQL with pgvector. The system could understand a user's question, find the most relevant information from internal documents, and generate an answer using an LLM such as GPT. I also built AI agents using MCP and tool calling that could interact with internal APIs and databases to automate multi-step tasks. I focused on testing and improving the quality of AI responses, which helped improve retrieval accuracy by 25% and reduce AI-related errors by 35%. So, my main responsibility was taking AI capabilities like GPT and turning them into reliable applications that could be used in real business processes.
+In my most recent role as an AI Developer at Exeevo, I worked on AI solutions that helped employees quickly find information and automate repetitive tasks. 
+
+For example, I built an AI-powered chatbot using Python, FastAPI, and RAG, where company information was stored in PostgreSQL with pgvector. The system could understand a user's question, find the most relevant information from internal documents, and generate an answer using an LLM such as GPT. I also built AI agents using MCP and tool calling that could interact with internal APIs and databases to automate multi-step tasks. I focused on testing and improving the quality of AI responses, which helped improve retrieval accuracy by 25% and reduce AI-related errors by 35%. So, my main responsibility was taking AI capabilities like GPT and turning them into reliable applications that could be used in real business processes.
 
 
 # EXP2: Python Backend Developer (Vista Print june 2023 - Aug 2024)
