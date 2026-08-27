@@ -2,8 +2,6 @@
 
 “How would you design a scalable API?”
 
-“Tell me about yourself.”
-
 “Why are you interested in this position?”
 
 “Why do you want to work for our company?”
