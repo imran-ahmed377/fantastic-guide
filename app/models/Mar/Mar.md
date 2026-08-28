@@ -1,34 +1,3 @@
-
-
-“How would you design a scalable API?”
-
-“Why are you interested in this position?”
-
-“Why do you want to work for our company?”
-
-“Tell me about your relevant experience.”
-
-“Tell me about a challenging situation you faced and how you handled it.”
-
-“Why should we hire you?”
-
-RAG Pipeline Design Considerations:
-  - Document ingestion
-  - Chunking
-  - Embeddings
-  - Vector search
-  - Prompt construction
-  - LLM selection
-  - Citations/source grounding
-  - Authentication
-  - Access control
-  - Hallucination prevention
-  - Logging
-  - Latency
-  - Cost
-  - Evaluation
-
-
 # Table of Contents
 - [Greetings](#greetings)
 - [Intro](#intro)
@@ -38,12 +7,13 @@ RAG Pipeline Design Considerations:
 ---
 - [What is Marsh](#what-is-marsh)
 - [Why Marsh](#why-marsh)
-- [Questions]
+- [Questions](#questions)
 
 ---
-- [Technical QnA](#technical-qna)
-  - [1. Python Backend — FastAPI & Flask](#1-python-backend--fastapi--flask)
-  - [2. End-to-End RAG Pipeline for Enterprise](#2-end-to-end-rag-pipeline-for-enterprise)
+- [End to end Agentic AI system design](#end-to-end-agentic-ai-system-design)
+- [End to End Embedding Steps](#end-to-end-embedding-steps)
+- [After Embadding: Searching for Answers](#after-embadding-searching-for-answers)
+- [End to End RAG Steps](#end-to-end-rag-steps)
 
 # Greetings
 I am so happy to be here!
@@ -112,135 +82,15 @@ I want to work at Marsh because I really connect with its purpose of building th
 ---
 - [What is Marsh](#what-is-marsh)
 - [Why Marsh](#why-marsh)
----
-- [Technical QnA](#technical-qna)
-  - [1. Python Backend — FastAPI & Flask](#1-python-backend--fastapi--flask)
-  - [2. End-to-End RAG Pipeline for Enterprise](#2-end-to-end-rag-pipeline-for-enterprise)
+- [Questions](#questions)
 
 ---
-
-# Technical QnA:
-### 1. Python Backend — FastAPI & Flask
-
-**Simple definition:**
-A Python backend is the **part of an application that runs behind the scenes**. It receives requests, processes information, talks to databases or AI models, and sends a response back to the user.
-
-**FastAPI and Flask** are Python frameworks that help us build these backend services and APIs.
-
-**Simple example:**
-Imagine an employee asks a chatbot:
-
-> “How many vacation days do I have?”
-
-The backend receives the question → checks the employee's information in the database → processes the request → sends the answer back to the chatbot.
-
-**Common use cases:**
-
-- Building REST APIs
-- Connecting applications to databases
-- Building AI/LLM APIs
-- User authentication
-- Processing business requests
-- Real-time responses using WebSockets
-
-**Easy interview explanation:**
-
-> “I use Python with FastAPI or Flask to build the backend services that connect the user interface with databases, AI models, and other business systems.”
+- [End to end Agentic AI system design](#end-to-end-agentic-ai-system-design)
+- [End to End Embedding Steps](#end-to-end-embedding-steps)
+- [After Embadding: Searching for Answers](#after-embadding-searching-for-answers)
+- [End to End RAG Steps](#end-to-end-rag-steps)
 
 ---
-
-# 2. End-to-End RAG Pipeline for Enterprise
-
-### Simple definition
-
-**RAG (Retrieval-Augmented Generation)** is a way to make an AI model answer questions using **an organization's own information**.
-
-Instead of asking GPT to answer from its general knowledge, we first **search the company's trusted documents**, find the relevant information, and give that information to the AI to generate the answer.
-
-### Simple example
-
-Imagine a company has thousands of documents containing:
-
-- HR policies
-- Employee benefits
-- Product information
-- Customer support documents
-- Company procedures
-
-An employee asks:
-
-> **“What is the company's work-from-home policy?”**
-
-The RAG system does this:
-
-**1. Documents →** Collect company documents  
-↓  
-**2. Chunking →** Break documents into smaller pieces  
-↓  
-**3. Embeddings →** Convert those pieces into numerical representations  
-↓  
-**4. Vector Database →** Store them in **PostgreSQL + pgvector**  
-↓  
-**5. User Question →** Employee asks a question  
-↓  
-**6. Retrieval →** Find the most relevant document sections  
-↓  
-**7. LLM →** Send the question + relevant information to **GPT**  
-↓  
-**8. Answer →** Generate a response based on the company's information
-
-### What does "end-to-end" mean?
-
-It means you build and manage the **whole process**, from getting the company's documents into the system to delivering the final answer to the user.
-
-### Enterprise RAG use cases
-
-- **HR:** “What is our parental leave policy?”
-- **Customer support:** “How do I troubleshoot this product?”
-- **Legal:** “What does this contract say about termination?”
-- **Finance:** “What is our expense reimbursement policy?”
-- **IT:** “How do I request access to this system?”
-- **Sales:** “What features are included in our enterprise plan?”
-
-### Easy interview explanation
-
-> “RAG allows an AI application to answer questions using a company's own information. In my project, I used **Python and FastAPI** for the backend, **PostgreSQL with pgvector** for storing and searching document embeddings, and **GPT** to generate the final answer. The pipeline takes company documents, converts them into searchable information, retrieves the relevant content when a user asks a question, and then gives that context to the LLM to generate a more accurate answer.”
-
-# Table of Contents
-- [Greetings](#greetings)
-- [Intro](#intro)
-- [EXP1: AI Developer (Exeevo sept 2025 - Apr 2026)](#exp1-ai-developer-exeevo-sept-2025---apr-2026)
-- [EXP2: Python Backend Developer (Vista Print june 2023 - Aug 2024)](#exp2-python-backend-developer-vista-print-june-2023---aug-2024)
-- [Project: LLM-Powered RAG Chatbot API](#project-llm-powered-rag-chatbot-api)
----
-- [What is Marsh](#what-is-marsh)
-- [Why Marsh](#why-marsh)
----
-- [Technical QnA](#technical-qna)
-  - [1. Python Backend — FastAPI & Flask](#1-python-backend--fastapi--flask)
-  - [2. End-to-End RAG Pipeline for Enterprise](#2-end-to-end-rag-pipeline-for-enterprise)
-
-
-# Notes
-- The legacy system maybe using Flask (Why do they want flask?) so they maybe want new system to communicate with the older system
-
-- How the system will calculate this years data with last years data? 
-
-- How embeddings works? How to retrieve the most relevant information from the database?
-
-- How hallucinations can be prevented? How to make sure the answer is accurate and relevant?
-
-- How to design the vector database schema for storing embeddings? How to optimize retrieval speed and accuracy?
-
-- how asynchronous and synchronous processing can be used in the RAG pipeline to improve performance and scalability?
-
-- caching strategies for frequently asked questions to reduce retrieval time and improve response speed.
-
-- Can User A accidentally retrieve User B's client information?
-
-- system prompt design
-
-
 
 
 # End to end Agentic AI system design
@@ -308,7 +158,25 @@ It means you build and manage the **whole process**, from getting the company's 
         │  → CI/CD                                         │
         └─────────────────────────────────────────────────┘
 
+---
 
+# Table of Contents
+- [Greetings](#greetings)
+- [Intro](#intro)
+- [EXP1: AI Developer (Exeevo sept 2025 - Apr 2026)](#exp1-ai-developer-exeevo-sept-2025---apr-2026)
+- [EXP2: Python Backend Developer (Vista Print june 2023 - Aug 2024)](#exp2-python-backend-developer-vista-print-june-2023---aug-2024)
+- [Project: LLM-Powered RAG Chatbot API](#project-llm-powered-rag-chatbot-api)
+---
+- [What is Marsh](#what-is-marsh)
+- [Why Marsh](#why-marsh)
+- [Questions](#questions)
+
+---
+- [End to end Agentic AI system design](#end-to-end-agentic-ai-system-design)
+- [End to End Embedding Steps](#end-to-end-embedding-steps)
+- [After Embadding: Searching for Answers](#after-embadding-searching-for-answers)
+- [End to End RAG Steps](#end-to-end-rag-steps)
+---
 
 # End to End Embedding Steps
 
@@ -495,3 +363,20 @@ Azure OpenAI GPT-4o
        ↓
 Answer Generated
 ```
+
+# Table of Contents
+- [Greetings](#greetings)
+- [Intro](#intro)
+- [EXP1: AI Developer (Exeevo sept 2025 - Apr 2026)](#exp1-ai-developer-exeevo-sept-2025---apr-2026)
+- [EXP2: Python Backend Developer (Vista Print june 2023 - Aug 2024)](#exp2-python-backend-developer-vista-print-june-2023---aug-2024)
+- [Project: LLM-Powered RAG Chatbot API](#project-llm-powered-rag-chatbot-api)
+---
+- [What is Marsh](#what-is-marsh)
+- [Why Marsh](#why-marsh)
+- [Questions](#questions)
+
+---
+- [End to end Agentic AI system design](#end-to-end-agentic-ai-system-design)
+- [End to End Embedding Steps](#end-to-end-embedding-steps)
+- [After Embadding: Searching for Answers](#after-embadding-searching-for-answers)
+- [End to End RAG Steps](#end-to-end-rag-steps)
