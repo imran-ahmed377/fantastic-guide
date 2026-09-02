@@ -27,16 +27,33 @@
 I am so happy to be here!
 
 # Intro
-I’m a Data Scientist with over two years of experience working on AI and analytics solutions. In my current role, I’ve been working on GenAI and building AI agents with Copilot Studio, with testing,and monitoring. I also have a strong foundation in machine learning and Python. What attracted me to this role is that it brings together building practical AI solutions, working with business stakeholders, and making sure AI is deployed responsibly in a regulated environment.
+I am Imran Ahmed. I’m a Data Scientist with over two years of experience working on AI and analytics solutions. In my current role, I’ve been working on GenAI and building AI agents with Copilot Studio, with testing,and monitoring. I also have a strong foundation in machine learning and Python. What attracted me to this role is that it brings together building practical AI solutions, working with business stakeholders, and making sure AI is deployed responsibly in a regulated environment.
 
 # Why do you want to leave your current role?
 I’m looking for a new opportunity where I can take on more responsibility and have a bigger impact.
 
 # EXP1: AI Solutions Analyst (Exeevo sept 2025 - Present)
 
-In my current role at Exeevo, I implemented practical AI solutions for business teams. Such as, I built AI agents using Microsoft Copilot Studio to automate employee questions and repetitive workflows. For one HR use case, I connected the agent to the company’s internal knowledge base using a RAG approach, so it could retrieve approved information before generating an answer. This achieved about 90% response accuracy and reduced query resolution time by 35%.
+In my current role at Exeevo, I implemented practical AI solutions for business teams. Such as, I built AI agents using Microsoft Copilot Studio to automate employee questions and repetitive workflows. 
 
-I follow a full process: first, I understand the business problem, then prototype the AI solution, test its accuracy and reliability, monitor its performance, and prepare the documentation. I also evaluate third-party AI tools and work with business and risk teams to make sure the solutions are practical, reliable, and compliant.
+- I built Copilot studio agent so that employees could ask questions about HR policies and get accurate answers. Also request for vacation, check their benefits, and get onboarding information. Also send emails to HR for vacation requests and other HR related tasks. 
+  
+  Steps I followed: I connected the agent to the company’s internal knowledge base using a RAG approach, so it could retrieve approved information before generating an answer. This achieved about 90% response accuracy and reduced query resolution time by 35%. For sending emails, I connected the agent to the company’s email system using a secure tool calling approach, so it could send emails on behalf of employees without exposing sensitive information. This achieved about 95% email success rate and reduced email response time by 40%.
+
+- I built another Copilot studio agent for company policies and procedures, so employees could ask questions about company policies and get accurate answers.
+  
+  Steps I followed: I stored the company policies in sharepoint and connected the agent to the sharepoint.
+
+- I built a Copilot studio agent for making presentations, so employees could ask questions about how to create presentations and get accurate answers. Also, the agent could generate slides based on the employee's input.
+  
+  Steps I followed: I used Copilot Studio presentation generation feature to generate slides based on the employee's input. 
+
+- I built a Copilot studio agent for sales data analysis, so employees could ask questions about sales data and get accurate answers. Also, the agent could generate reports based on the employee's input.
+  
+  Steps I followed: I used datavarse to store the sales data and connected the agent to the dataverse. I also used Copilot Studio report generation feature to generate reports based on the employee's input.
+
+
+Publishing Process I follow: first, I understand the business problem, then prototype the AI solution, test its accuracy and reliability, monitor its performance, and prepare the documentation. I also evaluate third-party AI tools and work with business and risk teams to make sure the solutions are practical, reliable, and compliant.
 
 # EXP2: Data Analyst (Vista Print june 2023 - Aug 2024)
 I worked as a Data Analyst at VistaPrint, where I used data to identify operational issues and help teams make better decisions. I mainly worked with Python and SQL to clean and analyze data, and built predictive models using techniques such as regression and classification to identify patterns and forecast outcomes.
