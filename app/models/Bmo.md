@@ -27,7 +27,7 @@
 I am so happy to be here!
 
 # Intro
-I am Imran Ahmed. I’m a Data Scientist with over two years of experience working on AI and analytics solutions. In my current role, I’ve been working on GenAI and building AI agents with Copilot Studio, with testing,and monitoring. I also have a strong foundation in machine learning and Python. What attracted me to this role is that it brings together building practical AI solutions, working with business stakeholders, and making sure AI is deployed responsibly in a regulated environment.
+Thank you for giving me the opportunity, I am Imran Ahmed. I’m a Data Scientist with experience working on AI and analytics solutions. In my current role, I’ve been working on GenAI and building AI agents with Copilot Studio, with testing,and monitoring. I also have a strong foundation in machine learning and Python. What attracted me to this role is that it brings together building practical AI solutions, working with business stakeholders, and making sure AI is deployed responsibly in a regulated environment.
 
 # Why do you want to leave your current role?
 I’m looking for a new opportunity where I can take on more responsibility and have a bigger impact.
