@@ -73,7 +73,7 @@ Action:
 I split the documents into small chunks, turned each chunk into a vector, and stored them in a vector database. When someone asks a question, the system finds the most similar chunks and passes them to the model with the question, so the answer is based on real text instead of guesses. I used LangChain to wire it together and tuned the chunk size and how many chunks to retrieve. I determined the chunk size by testing different sizes such as 200 words, 400 words, and 800 words and seeing which one gave the best results. 
 
 
- I served it from Django as a REST API so the frontend could call it.
+I served it from Django as a REST API so the frontend could call it.
 
 Result:
 
@@ -93,7 +93,7 @@ Which embedding model?
 
 How many documents / what scale?
 
-"It was a personal project, so roughly [X] documents and a few thousand chunks. It wasn't a scale challenge — the interesting part was making the answers correct, not making it big."
+"It was a personal project, so roughly 1200 documents and a few thousand chunks. It wasn't a scale challenge — the interesting part was making the answers correct, not making it big."
 
 Say the real size. Small is fine. Pretending it was huge is not.
 
@@ -128,3 +128,11 @@ Honest limits are fine here. Pretending you solved OCR invites a question you ca
 What does a bad retrieval look like, and how do you debug it?
 
 "A bad retrieval is when the model gives a wrong or vague answer, and the reason is that the right chunk never came back. So the first thing I do is print the retrieved chunks, not the answer. If the right text isn't in there, it's a retrieval problem — chunk size, embedding, or search. If the right text is there and the answer is still wrong, it's a prompt problem."
+
+
+# Question to Ask:
+- How do you currently evaluate extraction accuracy across such heterogeneous building documents?
+
+- What's the biggest AI reliability problem the team is fighting right now?
+
+- How is the Waterloo team structured relative to SF and New York?
