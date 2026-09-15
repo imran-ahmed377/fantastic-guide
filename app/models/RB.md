@@ -765,3 +765,178 @@ That lands far better than reciting the percentages on your resume. Nobody follo
 | "How do you test something with no exact right answer?" | Boundary cases + aggregate behavior comparison (Section 4). |
 | "What's the difference between a test failure and a bug?" | Triage: app broke vs. test broke vs. flaky. |
 | "What would you test on a checkout page?" | Happy path, empty cart, invalid card, expired session, quantity 0, quantity 9999. |
+
+
+
+---
+
+
+
+# RBC — AI Quality Engineer
+## Interview Question Bank (30-min screen)
+
+---
+
+## 1. Opening
+
+**Q: Tell me about yourself.**
+
+- Follow-up: Why did you leave Exeevo? / Are you currently working?
+- Follow-up: Walk me through your Master's — what did you focus on?
+- Follow-up: What kind of role are you looking for next?
+
+---
+
+## 2. Test Optimization Framework ⭐
+
+**Q: Walk me through the AI-driven test optimization framework you built.**
+
+- Follow-up: What features did the model use?
+- Follow-up: What if your model skips a test that would have caught a real bug?
+- Follow-up: How did you measure the 30% reduction?
+- Follow-up: How often did you retrain the model?
+- Follow-up: How would this scale to a codebase 100x larger?
+
+---
+
+## 3. Data Drift ⭐
+
+**Q: What is data drift, and how did you detect it?**
+
+- Follow-up: What's the difference between data drift and concept drift?
+- Follow-up: Which statistical tests did you use, and why those?
+- Follow-up: How did you set the alert thresholds?
+- Follow-up: What did you do when an alert fired?
+- Follow-up: How did you avoid alert fatigue / false positives?
+- Follow-up: How did you measure the 20% reliability improvement?
+
+---
+
+## 4. AI Testing Fundamentals
+
+**Q: How is testing an AI system different from testing traditional software?**
+
+- Follow-up: How do you write an assertion when the output isn't deterministic?
+- Follow-up: What's a metamorphic or invariance test? Give an example.
+- Follow-up: How do you test for bias or fairness in a model?
+- Follow-up: What does "test the data, not just the code" mean in practice?
+
+---
+
+## 5. LLM Evaluation ⭐ (gap area — prepare carefully)
+
+**Q: How would you test an LLM-powered feature?**
+
+- Follow-up: What is a golden dataset and how do you build one?
+- Follow-up: What is LLM-as-judge? How do you know the judge is right?
+- Follow-up: How do you regression-test a prompt change?
+- Follow-up: How would you test for prompt injection or PII leakage?
+- Follow-up: How do you evaluate a RAG system specifically?
+- Follow-up: How would you detect hallucination at scale?
+
+---
+
+## 6. Test Data Management
+
+**Q: Tell me about the test data management protocols you established.**
+
+- Follow-up: How did you handle sensitive or personal data?
+- Follow-up: Synthetic data vs. masked production data — when do you use each?
+- Follow-up: How did you keep tests independent so they could run in parallel?
+- Follow-up: What is Great Expectations and how did you use it?
+- Follow-up: How did you version test data alongside test code?
+
+---
+
+## 7. CI/CD & Pipelines
+
+**Q: Walk me through how validation fits into your CI/CD pipeline.**
+
+- Follow-up: What were the actual stages, in order?
+- Follow-up: What fails the build vs. what just warns?
+- Follow-up: How did you set the model performance gate threshold?
+- Follow-up: How did you keep the pipeline from getting slow or flaky?
+- Follow-up: How did you handle flaky tests?
+- Follow-up: Jenkins vs. GitHub Actions — why did you use which?
+- Follow-up: How did Docker and Kubernetes fit in?
+
+---
+
+## 8. Metrics & Critical Thinking
+
+**Q: You took coverage from 65% to 90%. Is coverage a good measure of quality?**
+
+- Follow-up: What metrics would you actually report to leadership?
+- Follow-up: How do you show ROI on a testing investment?
+- Follow-up: How do you define "quality" for an AI feature?
+- Follow-up: What's your definition of escaped defect rate / MTTD?
+
+---
+
+## 9. Experience Level ⭐ (expect this)
+
+**Q: This role calls for 7+ years and building teams. Walk me through your experience level.**
+
+- Follow-up: Have you ever mentored or onboarded anyone?
+- Follow-up: Have you had to influence a decision without authority?
+- Follow-up: How would you approach building a center of excellence?
+- Follow-up: How do you handle working in an ambiguous environment with no existing process?
+
+---
+
+## 10. Financial Services / Regulated Environment
+
+**Q: What's different about QA in a regulated financial environment?**
+
+- Follow-up: What do you know about model risk management / OSFI E-23?
+- Follow-up: How do you make a test run auditable?
+- Follow-up: What does "independent validation" mean and why does it matter?
+- Follow-up: How would you explain a model decision to a non-technical auditor?
+
+---
+
+## 11. Behavioural
+
+**Q: Tell me about a time you found a critical bug late.**
+
+**Q: Tell me about a time you disagreed with a developer or stakeholder.**
+
+**Q: Tell me about a project that didn't go as planned.**
+
+**Q: How do you prioritize when everything is urgent?**
+
+**Q: Tell me about a time you had to explain something technical to a non-technical audience.**
+
+- Follow-up on any of these: What would you do differently now?
+
+---
+
+## 12. Closing
+
+**Q: Why RBC?**
+
+**Q: Why this role specifically?**
+
+**Q: Where do you see yourself in 3 years?**
+
+**Q: Do you have any questions for us?**
+
+---
+
+## Questions to Ask Them (have 3, ask 2)
+
+1. How mature is the AISDLC framework today — is there something in place that needs modernizing, or is this closer to a blank page?
+2. What does the team look like right now, and what would the first 90 days ideally look like?
+3. Is RBC's AI testing work mostly around predictive models, or is a lot of it LLM-based features?
+
+*Don't ask about salary or work-from-home in a 30-minute screen unless they raise it first.*
+
+---
+
+## Pre-Interview Checklist
+
+- [ ] Rehearse Q1, Q2, and Q9 out loud until smooth — these three carry the interview
+- [ ] Know how you measured every number on your resume
+- [ ] Resume open on a second screen
+- [ ] Camera, mic, and meeting link tested 15 minutes early
+- [ ] Have a clean one-sentence answer for why you left Exeevo
