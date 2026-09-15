@@ -9,10 +9,6 @@ Thank you for giving me the opportunity. I am Imran Ahmed, I have been working a
 
 ## 1. The Role at a Glance
 
-The title says **AI Engineer**, but the work described is about **testing AI systems** rather than building them. This is sometimes called QA for ML or ML test engineering.
-
-Be ready for this in interviews: someone reading "AI Engineer" may expect model-training stories, but your work is about making sure models and pipelines behave correctly.
-
 ### A typical day
 
 | Time | What you're doing |
