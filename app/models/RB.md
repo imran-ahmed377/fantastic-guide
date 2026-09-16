@@ -1,3 +1,27 @@
+# Table of Contents
+- [Intro](#intro)
+- [AI Engineer (Exeevo Inc) — What the Job Actually Looks Like](#ai-engineer-exeevo-inc-—-what-the-job-actually-looks-like)
+  - [1. The Role at a Glance](#1-the-role-at-a-glance)
+  - [2. Regression Testing & Test Coverage](#2-regression-testing--test-coverage)
+  - [3. AI-Driven Test Optimization](#3-ai-driven-test-optimization)
+  - [4. CI/CD Pipeline with Jenkins](#4-cicd-pipeline-with-jenkins)
+  - [5. Data Drift Monitoring](#5-data-drift-monitoring)
+  - [6. Test Data Management](#6-test-data-management)
+  - [7. Cross-Functional Collaboration](#7-cross-functional-collaboration)
+  - [8. Interview Prep](#8-interview-prep)
+
+
+
+- [Quality Assurance Intern (Vistaprint) — What the Job Actually Looks Like](#quality-assurance-intern-vistaprint-—-what-the-job-actually-looks-like)
+- [1. The Role at a Glance](#1-the-role-at-a-glance-1)
+  - [2. Selenium + Java Automation](#2-selenium--java-automation)
+  - [3. Flaky Tests (The Real Daily Pain)](#3-flaky-tests-the-real-daily-pain)
+  - [4. Validating ML Model Outputs](#4-validating-ml-model-outputs)
+  - [5. ETL Data Validation in Python](#5-etl-data-validation-in-python)
+  - [6. CI/CD Pipeline Monitoring](#6-cicd-pipeline-monitoring)
+  - [7. Interview Prep](#7-interview-prep)
+
+-
 # Intro
 
 Thank you for giving me the opportunity. I am Imran Ahmed, I have been working as an AI Engineer at Exeevo. I have developed end to end AI solutions and testing framework. 
