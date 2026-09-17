@@ -1,3 +1,12 @@
+# Table of content
+1. [Intro](#intro)
+2. [Experience](#experience)
+   - [Exeevo Experience as Supply Chain Data Analyst](#exeevo-experience-as-supply-chain-data-analyst)
+
+   - [Project: Carrier Performance Scorecard & Freight Cost Dashboard](#project-carrier-performance-scorecard--freight-cost-dashboard)
+   - [Vista Print Experience: Logistics Analyst (Co-op)](#vista-print-experience-logistics-analyst-co-op)
+
+
 # Intro:
 - Thank you for giving me the opportunity. 
 - I am Imran Ahmed, I am a Supply Chain Data Analyst 
