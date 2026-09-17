@@ -1,4 +1,15 @@
+# Intro:
+- Thank you for giving me the opportunity. 
+- I am Imran Ahmed, I am a Supply Chain Data Analyst 
+- Experience in logistics, data analysis, and process improvement. 
+- Strong background in using tools like Power BI, SQL, and Python
+- Extract insights from complex datasets and drive operational efficiency.
+- Experienced in building dashboards, automating data pipelines, and conducting cost-to-serve analyses that have led to significant savings and performance improvements. 
+- I am very excited about the opportunity to contribute my skills and expertise to Coca-Cola Canada Bottling and help achieve the business objectives.
+
+
 # Exeevo Experience as Supply Chain Data Analyst
+
 ## 1. Power BI dashboards
 
 **The bullet:** Built Power BI dashboards tracking 12 logistics KPIs, cutting weekly manual reporting effort by 8 hours
