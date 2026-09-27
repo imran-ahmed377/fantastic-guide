@@ -235,3 +235,34 @@ The posted range is **$80,000–$131,000**. With about one year of full-time exp
 - [ ] Keep your resume open beside the camera
 - [ ] Use "I" (not "we") when describing your own work
 - [ ] Keep answers short, then stop and let them follow up
+
+
+
+# Interview Answers: Monitoring, Health Checks & Staging
+
+---
+
+## 1. How do you know there's a production incident?
+
+> "Mostly through automated alerts. We set alerts on key signals like high error rates, slow response times (latency), failed health checks, or a sudden jump in token usage or cost. When a threshold is crossed, the on-call person gets notified by email, Teams, or a paging tool. Sometimes we also learn from users or support tickets, but the goal is to catch problems before users notice."
+
+### Common tools (Azure setup, which matches this job)
+
+- **Azure Monitor alert rules** watch metrics like error rate, latency, and CPU, and fire when a threshold is crossed.
+- **Application Insights** collects requests, failures, and traces from your apps, and runs availability tests (health checks).
+- **Log Analytics** lets you write queries (in a language called KQL) to create alerts from logs, like *"more than 20 errors in 5 minutes."*
+- **Action Groups** decide who gets notified and how: email, SMS, Microsoft Teams, or a paging tool like **PagerDuty** or **Opsgenie**.
+
+---
+
+## 2. Which monitoring tool did you use for health checks on production endpoints?
+
+> "We used Azure Monitor with Application Insights. Application Insights has a feature called availability tests, which pings our endpoints every few minutes from different locations. If an endpoint doesn't respond or returns an error, it triggers an alert. That same data is how we calculated our 99.5% uptime."
+
+> **Note:** Only say Azure Monitor if that's what you used. If you used something else, like Datadog, Grafana, or Prometheus, name that instead. Interviewers often ask a follow-up about the tool.
+
+---
+
+## 3. What is "deploy to staging"?
+
+> "Staging is a copy of the production environment that real users don't use. Before releasing a new model or agent to production, we deploy it to staging first to test it in realistic conditions: checking that it connects correctly to other services, responds quickly, and gives good answers. If everything works, we promote the same version to production. It's like a dress rehearsal before the real show."
