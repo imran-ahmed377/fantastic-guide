@@ -2,6 +2,8 @@
 
 > **Format:** 30-minute video interview (likely first round). Expect ~5 min intro, 15–20 min questions, 5 min for your questions. Keep each answer to 1–2 minutes.
 >
+> **Code examples:** Simple snippets are included under several questions to help you understand the ideas. You won't need to write code in a 30-min interview, but understanding it helps you explain clearly.
+>
 > **Tip:** Swap in your real details (tool names, numbers, incidents). Real details sound more confident than memorized ones.
 
 ---
@@ -75,6 +77,79 @@ Build one strong story from your Exeevo work. You can reuse parts of it for *"te
 - **"How do you test an LLM before deploying it? Outputs change every time."**
   *"You can't test for exact matches. Instead, I use an evaluation dataset and score things like groundedness, relevance, and safety, sometimes using another LLM as a judge. I set a minimum score, and if the new version scores lower than the current one, the pipeline stops."*
 
+#### Code example: A simple CI/CD pipeline (GitHub Actions)
+
+This is what "every model goes through the same steps" looks like in real life. Each `job` is a stage.
+
+```yaml
+# .github/workflows/deploy.yml
+name: Deploy AI Agent
+
+on:
+  push:
+    branches: [main]          # Run when code is merged to main
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4                      # 1. Get the code
+      - run: pip install -r requirements.txt           # 2. Install packages
+      - run: pytest tests/                             # 3. Run unit tests
+      - run: python evaluate.py                        # 4. Run LLM evaluation (fails if score is low)
+      - run: docker build -t myregistry.azurecr.io/my-agent:${{ github.sha }} .   # 5. Build image
+      - run: docker push myregistry.azurecr.io/my-agent:${{ github.sha }}         # 6. Save image
+
+  deploy-staging:
+    needs: test-and-build     # Only runs if the step above passed
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Deploying to STAGING..."
+
+  deploy-production:
+    needs: deploy-staging
+    runs-on: ubuntu-latest
+    environment: production   # This setting can require a human to click "Approve"
+    steps:
+      - run: echo "Deploying to PRODUCTION..."
+```
+
+**Key idea:** Each image is tagged with the commit ID (`github.sha`), so every version is unique and easy to roll back.
+
+#### Code example: The evaluation "quality gate" (`evaluate.py`)
+
+This shows how the pipeline stops a bad LLM version. Real teams use better scoring (like Azure AI evaluation or an LLM judge), but the idea is the same.
+
+```python
+import sys
+
+# A small test set: questions and words the answer SHOULD contain
+test_cases = [
+    {"question": "What is your return policy?", "must_include": "90 days"},
+    {"question": "Do you sell tires?",           "must_include": "yes"},
+]
+
+def ask_agent(question):
+    # In real life, this calls your deployed agent in the test environment
+    return "Yes, you can return items within 90 days."
+
+passed = 0
+for case in test_cases:
+    answer = ask_agent(case["question"]).lower()
+    if case["must_include"].lower() in answer:
+        passed += 1
+
+score = passed / len(test_cases)
+print(f"Evaluation score: {score:.0%}")
+
+MIN_SCORE = 0.8
+if score < MIN_SCORE:
+    print("Score too low. Stopping deployment.")
+    sys.exit(1)      # Exit code 1 = the pipeline FAILS and stops here
+```
+
+**Key idea:** `sys.exit(1)` tells the pipeline "something failed," so nothing bad reaches production.
+
 ---
 
 ### 4. "What's the difference between traditional MLOps and GenAI or LLMOps?"
@@ -99,6 +174,53 @@ Build one strong story from your Exeevo work. You can reuse parts of it for *"te
 - **"What's the difference between logs, metrics, and traces?"**
   *"Logs are detailed event records. Metrics are numbers over time, like latency. Traces follow a single request through every step and service."*
 
+#### Code example: A health check endpoint (FastAPI)
+
+This is what the monitoring tool "pings" every few minutes. If it doesn't answer, an alert fires.
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}     # Monitoring tool expects HTTP 200 + this response
+```
+
+#### Code example: Sending a custom metric (token usage) to Azure Monitor
+
+The platform tracks errors and latency automatically. Python adds **custom** metrics, like tokens.
+
+```python
+from azure.monitor.opentelemetry import configure_azure_monitor
+from opentelemetry import metrics
+
+# Connect this app to Application Insights (one line!)
+configure_azure_monitor(connection_string="InstrumentationKey=...")
+
+meter = metrics.get_meter("my-agent")
+token_counter = meter.create_counter("llm_tokens_used")
+
+# After each LLM call, record how many tokens it used
+tokens_used = 850
+token_counter.add(tokens_used, {"app": "customer-help-agent"})
+```
+
+#### Code example: An alert query in Log Analytics (KQL)
+
+This is the kind of query behind an alert like "more than 20 errors in 5 minutes."
+
+```kusto
+requests
+| where timestamp > ago(5m)          // Look at the last 5 minutes
+| where success == false             // Only failed requests
+| summarize failed_count = count()   // Count them
+| where failed_count > 20            // Alert fires if this returns a row
+```
+
+**Key idea:** You don't write alerting from scratch. You write a small query, and Azure Monitor runs it on a schedule and notifies people.
+
 ---
 
 ### 6. "Tell me about a production incident and how you fixed it."
@@ -112,6 +234,37 @@ Build one strong story from your Exeevo work. You can reuse parts of it for *"te
 - **"How do you do root cause analysis?"**
   *"Start with what changed: a deployment, traffic, or config. Check the dashboards to find when it started, then use logs and traces to narrow it down. Fix the immediate issue first, then find the real cause so it doesn't happen again."*
 
+#### Code example: Retry with backoff (the short-term fix for 429 errors)
+
+"Backoff" means: if it fails, wait a little, then try again, waiting longer each time.
+
+```python
+import time
+from openai import AzureOpenAI, RateLimitError
+
+client = AzureOpenAI(
+    azure_endpoint="https://my-openai.openai.azure.com/",
+    api_version="2024-06-01",
+    # No API key here: in real code, use managed identity (see Section 8)
+)
+
+def ask_llm(question, max_retries=3):
+    for attempt in range(max_retries):
+        try:
+            response = client.chat.completions.create(
+                model="gpt-4o",
+                messages=[{"role": "user", "content": question}],
+            )
+            return response.choices[0].message.content
+        except RateLimitError:                 # This is the 429 error
+            wait = 2 ** attempt                # Wait 1s, then 2s, then 4s
+            print(f"Rate limited. Retrying in {wait} seconds...")
+            time.sleep(wait)
+    raise Exception("Still failing after retries")
+```
+
+**Key idea:** Retrying immediately makes the problem worse. Waiting longer each time gives the service room to recover.
+
 ---
 
 ### 7. "You established model and agent registries. What's in them and why do they matter?"
@@ -122,6 +275,64 @@ Build one strong story from your Exeevo work. You can reuse parts of it for *"te
 
 - **"How does this support responsible AI?"**
   *"Nothing reaches production without passing evaluation and getting approval, and every change is recorded. That gives us an audit trail and clear ownership."*
+
+#### Code example: Registering a model and moving it to production (MLflow)
+
+```python
+import mlflow
+from mlflow import MlflowClient
+
+client = MlflowClient()
+
+# 1. Register a trained model as a new version
+result = mlflow.register_model(
+    model_uri="runs:/abc123/model",     # Where the trained model is saved
+    name="demand-forecast",
+)
+print(f"Registered version: {result.version}")   # e.g., version 5
+
+# 2. Add useful info for governance
+client.set_model_version_tag("demand-forecast", result.version, "owner", "ml-team")
+client.set_model_version_tag("demand-forecast", result.version, "approved_by", "jane.doe")
+
+# 3. Point the "champion" (production) label to the new version
+client.set_registered_model_alias("demand-forecast", "champion", result.version)
+```
+
+The old version (v4) is **not deleted**. The "champion" label just moves from v4 to v5.
+
+#### Code example: Rollback
+
+If v5 has a problem, move the label back. That's it.
+
+```python
+client.set_registered_model_alias("demand-forecast", "champion", 4)
+```
+
+#### Code example: What the production app loads
+
+The app always asks for "whatever is champion," so it never needs to know the version number.
+
+```python
+model = mlflow.pyfunc.load_model("models:/demand-forecast@champion")
+```
+
+#### Example: What an agent registry entry looks like
+
+```json
+{
+  "agent_name": "customer-help-agent",
+  "version": "3",
+  "owner": "ai-team",
+  "llm_model": "gpt-4o",
+  "prompt_version": "v7",
+  "tools": ["search_products", "check_order_status"],
+  "evaluation_score": 0.92,
+  "approval_status": "approved",
+  "approved_by": "jane.doe",
+  "deployed_on": "2026-06-15"
+}
+```
 
 ---
 
@@ -138,6 +349,71 @@ Build one strong story from your Exeevo work. You can reuse parts of it for *"te
 - **"How do you handle secrets?"**
   *"Never in code. Secrets go in Azure Key Vault, and services use managed identities so they don't need passwords at all."*
 
+#### Code example: Simple Terraform file
+
+```hcl
+# Store Terraform "state" remotely in Azure, with locking
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "tfstate-rg"
+    storage_account_name = "tfstatestorage"
+    container_name       = "tfstate"
+    key                  = "ai-platform.tfstate"
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
+# A resource group to hold the AI platform resources
+resource "azurerm_resource_group" "ai" {
+  name     = "ai-platform-${var.environment}"   # e.g., ai-platform-dev, ai-platform-prod
+  location = "canadacentral"
+}
+
+# A storage account for model files and data
+resource "azurerm_storage_account" "models" {
+  name                     = "aimodels${var.environment}"
+  resource_group_name      = azurerm_resource_group.ai.name
+  location                 = azurerm_resource_group.ai.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+}
+
+variable "environment" {
+  type = string    # Pass "dev", "staging", or "prod"
+}
+```
+
+**Key idea:** The same file creates dev, staging, and prod. Only the `environment` value changes, so all environments match.
+
+Common commands:
+
+```bash
+terraform plan  -var="environment=dev"   # Preview what will change
+terraform apply -var="environment=dev"   # Actually create/update resources
+```
+
+#### Code example: Reading a secret from Key Vault with managed identity (no password in code)
+
+```python
+from azure.identity import DefaultAzureCredential
+from azure.keyvault.secrets import SecretClient
+
+# DefaultAzureCredential uses the app's managed identity automatically
+credential = DefaultAzureCredential()
+
+client = SecretClient(
+    vault_url="https://my-ai-keyvault.vault.azure.net/",
+    credential=credential,
+)
+
+db_password = client.get_secret("database-password").value
+```
+
+**Key idea:** The code never contains a password. Azure checks the app's identity and decides if it's allowed.
+
 ---
 
 ### 9. "Explain RAG in simple terms."
@@ -148,6 +424,37 @@ Build one strong story from your Exeevo work. You can reuse parts of it for *"te
 
 - **"What if the RAG answers are poor?"**
   *"First check whether retrieval is the problem: are the right documents being found? If not, adjust chunk size, improve the embeddings, or add hybrid search. If retrieval is good but answers are bad, improve the prompt. I'd measure both parts separately with an evaluation set."*
+
+#### Code example: RAG in its simplest form
+
+```python
+def search_documents(question):
+    # In real life: search a vector database like Azure AI Search
+    return [
+        "Return policy: Items can be returned within 90 days with a receipt.",
+        "Exchanges are free at any store location.",
+    ]
+
+def answer_with_rag(question):
+    # Step 1: RETRIEVE the most relevant pieces of company data
+    docs = search_documents(question)
+
+    # Step 2: AUGMENT the prompt with that data
+    prompt = f"""Answer the question using ONLY the information below.
+If the answer is not there, say "I don't know."
+
+Information:
+{chr(10).join(docs)}
+
+Question: {question}"""
+
+    # Step 3: GENERATE the answer with the LLM
+    return ask_llm(prompt)     # ask_llm() from Section 6
+
+print(answer_with_rag("How long do I have to return something?"))
+```
+
+**Key idea:** Retrieval + Augmented prompt + Generation = RAG. The "use ONLY the information below" line helps reduce hallucinations.
 
 ---
 
@@ -160,6 +467,35 @@ Build one strong story from your Exeevo work. You can reuse parts of it for *"te
 - **"How would you stop an agent from doing something harmful?"**
   *"Least-privilege access to tools, content safety filters, input checks against prompt injection, human-in-the-loop for high-impact actions, and full logging for audits."*
 
+#### Code example: Simple agent guardrails
+
+```python
+ALLOWED_TOOLS = {"search_products", "check_order_status"}   # Least privilege
+NEEDS_HUMAN_APPROVAL = {"issue_refund"}                    # High-impact actions
+MAX_STEPS = 5                                               # Stop endless loops
+
+def run_tool(tool_name, step):
+    # Guardrail 1: limit the number of steps
+    if step > MAX_STEPS:
+        return "Stopped: too many steps."
+
+    # Guardrail 2: human approval for risky actions
+    if tool_name in NEEDS_HUMAN_APPROVAL:
+        return "Waiting for human approval."
+
+    # Guardrail 3: only allow approved tools
+    if tool_name not in ALLOWED_TOOLS:
+        return f"Blocked: '{tool_name}' is not allowed."
+
+    # Guardrail 4: log every action for audits
+    print(f"[AUDIT] step={step} tool={tool_name}")
+    return f"Running {tool_name}..."
+
+print(run_tool("check_order_status", step=1))   # Allowed
+print(run_tool("issue_refund", step=2))         # Needs approval
+print(run_tool("delete_database", step=3))      # Blocked
+```
+
 ---
 
 ### 11. "What's your experience with Docker and Kubernetes?"
@@ -170,6 +506,52 @@ Build one strong story from your Exeevo work. You can reuse parts of it for *"te
 
 - **"How do you scale a model service?"**
   *"Horizontal Pod Autoscaling based on CPU, memory, or request count. For LLM apps calling Azure OpenAI, the bottleneck is often the API quota, not our pods, so we monitor that too."*
+
+#### Code example: A simple Dockerfile
+
+```dockerfile
+# Start from a small Python image
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install packages
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the app code
+COPY . .
+
+# Start the API
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+```
+
+#### Code example: Kubernetes autoscaling (HPA)
+
+"If average CPU goes above 70%, add more copies (pods), up to 10."
+
+```yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: my-agent-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: my-agent          # The app to scale
+  minReplicas: 2            # Always keep at least 2 running
+  maxReplicas: 10           # Never more than 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 70
+```
+
+**Key idea:** `minReplicas: 2` means if one pod crashes, the other keeps serving users. That helps uptime.
 
 ---
 
@@ -182,11 +564,52 @@ Build one strong story from your Exeevo work. You can reuse parts of it for *"te
 - **"How would you handle customer PII in prompts?"**
   *"Mask or remove PII before sending data to the model where possible, keep data inside our Azure environment, and avoid logging full prompts that contain personal data."*
 
+#### Code example: Masking PII before sending text to an LLM
+
+```python
+import re
+
+def mask_pii(text):
+    text = re.sub(r"[\w.+-]+@[\w-]+\.[\w.]+", "[EMAIL]", text)          # Emails
+    text = re.sub(r"\b\d{3}[-.\s]?\d{3}[-.\s]?\d{4}\b", "[PHONE]", text)  # Phone numbers
+    return text
+
+message = "Hi, I'm Sam. Email me at sam@gmail.com or call 416-555-1234."
+print(mask_pii(message))
+# Hi, I'm Sam. Email me at [EMAIL] or call [PHONE].
+```
+
+**Key idea:** This is a simple example. In production, teams often use a dedicated service (like Azure AI Language PII detection) because simple patterns can miss things.
+
 ---
 
 ### 13. "How would you reduce the cost of AI workloads?"
 
 > "For LLMs: use smaller models for simple tasks and bigger models only when needed, cache repeated answers, and keep prompts short. For infrastructure: autoscale down when traffic is low, and set budgets and cost alerts. Most important is visibility: a dashboard showing cost per application so teams can see what they spend."
+
+#### Code example: Two simple cost savers (model routing + caching)
+
+```python
+cache = {}   # In production, use something like Redis
+
+def pick_model(question):
+    # Short, simple questions -> cheaper, smaller model
+    if len(question.split()) < 15:
+        return "gpt-4o-mini"
+    return "gpt-4o"          # Complex questions -> bigger model
+
+def answer(question):
+    # 1. Caching: if we've answered this before, don't pay again
+    if question in cache:
+        return cache[question]
+
+    # 2. Routing: use the cheapest model that can do the job
+    model = pick_model(question)
+    result = f"(answer from {model})"   # In real life: call the LLM here
+
+    cache[question] = result
+    return result
+```
 
 ---
 
