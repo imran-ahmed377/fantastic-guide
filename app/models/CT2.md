@@ -1,46 +1,4 @@
-# Interview Prep: AI ModelOps Engineer, Canadian Tire Corporation
 
-> **Format:** 30-minute video interview (likely first round). Expect ~5 min intro, 15–20 min questions, 5 min for your questions. Keep each answer to 1–2 minutes.
->
-> **Code examples:** Simple snippets are included under several questions to help you understand the ideas. You won't need to write code in a 30-min interview, but understanding it helps you explain clearly.
->
-> **Tip:** Swap in your real details (tool names, numbers, incidents). Real details sound more confident than memorized ones.
-
----
-
-## Part 1: Your Core Story (use it again and again)
-
-Build one strong story from your Exeevo work. You can reuse parts of it for *"tell me about a project,"* *"tell me about a challenge,"* and *"what are you proud of."*
-
-### Situation
-> "At Exeevo, our data science and AI teams were building ML models and GenAI agents, but deployments were mostly manual. Nobody had one place to see which model or agent version was in production, who owned it, or whether it was healthy. Releases were slow, and we often learned about problems from users."
-
-### Task
-> "My job was to make AI deployment faster, safer, and easier to monitor."
-
-### Action
-> "I did three main things.
->
-> **First**, I built CI/CD pipelines. Every model or agent went through the same steps: build a Docker container, run tests and evaluations, register the version, deploy to staging, then deploy to production after approval.
->
-> **Second**, I set up a model and agent registry. We used MLflow for models, and for agents we tracked the owner, version, prompt version, LLM used, tools, evaluation scores, and approval status.
->
-> **Third**, I built the observability stack: logs, metrics, and alerts for latency, error rates, token usage, and cost. I provisioned all the infrastructure with Terraform, so every environment was the same and could be recreated."
-
-### Result
-> "Release time dropped by about 30%, incident response time dropped by about 40%, and we kept 99.5% platform uptime. More than 5 AI solutions were managed through the registry, which made governance and audits much easier."
-
-### Be ready to explain your numbers
-
-| Metric | How to explain it |
-|---|---|
-| **30% faster releases** | "We compared average time from code merge to production before and after the pipeline. It went from about X days to Y days." |
-| **40% faster incident response** | "We measured the time from when a problem started to when someone started working on it. Alerts meant we found issues ourselves instead of waiting for user reports." |
-| **99.5% uptime** | "We tracked availability of our production endpoints through health checks in our monitoring tool, measured monthly." |
-
----
-
-## Part 2: Likely Questions, Answers, and Follow-ups
 
 ### 1. "Tell me about yourself."
 
