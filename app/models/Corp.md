@@ -224,6 +224,42 @@ Breach Count = CALCULATE(COUNTROWS(Clients), Clients[Exposure] > Clients[Limit])
 "DIVIDE is safer than a plain slash because it handles divide-by-zero."
 
 ---
+## Project1 : Credit Risk Reporting Dashboard
+
+"Sure. I built this at Exeevo.
+
+In credit risk, the data is usually spread across different systems. People pull it together by hand in Excel. That takes time. And sometimes a risky account gets missed.
+
+So I wanted one dashboard. It would show exposure and limit use in one place. And it would flag risky accounts on its own.
+
+I used sample data for about 500 accounts in SQL Server. I wrote SQL queries to pull balances, limits, and payment history. Then I checked the totals against the source tables. I wanted the numbers to match before building anything.
+
+Next, I moved the data into Power BI. I cleaned it with Power Query. I used DAX to work out things like how much of each limit was used.
+
+Then I set a few simple rules. If an account was over 90% of its limit, it got flagged. Same if it had a bounced payment. Or if money was still owed after two days.
+
+In the end, a report that took about two hours in Excel took a few minutes. You could see the risky accounts right away.
+
+The main thing I learned is that people only use a report if they trust the numbers. That's why I spent so much time checking the data."
+
+## Project2 : Financial Statement Analysis Tool
+
+"Sure. This was another project from my Master's.
+
+When you review a company's credit, you look at its financial statements. You work out ratios to see if it can pay its bills. Doing this by hand for each company is slow. It's also easy to make mistakes.
+
+So I built an Excel tool to do it faster. You paste in a company's numbers, and the ratios fill in on their own.
+
+I used public financial statements from about 15 companies. I set up the data as Excel tables so everything stayed in the same format. Then I wrote formulas for the key ratios. For liquidity, I used the current ratio. For leverage, I used debt to equity. I also looked at operating cash flow and working capital.
+
+I used XLOOKUP to pull each company's numbers into one place. I added IF formulas and colour coding. Green meant healthy, yellow meant watch, and red meant risk.
+
+After that, I wrote a short summary for each company. It covered the main risks, what helped offset them, and whether I'd approve, watch, or decline.
+
+In the end, a review that took about an hour by hand took around 10 minutes. And every company was checked the same way, so the results were easy to compare.
+
+The main thing I learned is that ratios alone don't tell the full story. You have to look at the trend and the reason behind the numbers."
+---
 
 ## Part 6: Behavioral Questions (answer with Situation → Action → Result)
 
