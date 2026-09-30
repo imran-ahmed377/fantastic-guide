@@ -259,6 +259,7 @@ After that, I wrote a short summary for each company. It covered the main risks,
 In the end, a review that took about an hour by hand took around 10 minutes. And every company was checked the same way, so the results were easy to compare.
 
 The main thing I learned is that ratios alone don't tell the full story. You have to look at the trend and the reason behind the numbers."
+
 ---
 
 ## Part 6: Behavioral Questions (answer with Situation → Action → Result)
