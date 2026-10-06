@@ -2,9 +2,19 @@
 
 ---
 
-## Part 1: Your Core Story
+## My Introduction
 
-Two things to have ready: they may ask what Exeevo does as a business, so be ready to explain it in one true sentence, and your job start (Sept 2025) overlaps your Master's (ending Dec 2025), so expect "Were you working while studying?" A simple answer: "Yes, I started the role while finishing my final term and graduated in December 2025."
+"Hi, my name is Imran Ahmed. I finished my Master's in [your program] in December 2025.
+
+Most recently, I worked as a Junior Risk Analyst at Exeevo in Toronto. My job was to help protect the company from losses when clients paid late or didn't pay at all.
+
+Every morning, I checked how much money clients owed us and whether their payments had come in. If something was still unpaid after two days, I followed up and escalated it. I also reviewed requests from clients who wanted to go over their limit, and I made sure the right documents and approvals were in place. I used Excel and SQL to look at client financials and payment patterns.
+
+My biggest project was moving our Excel reports into Power BI. I rebuilt 8 reports and checked every number against the source system. Along the way, I found and fixed some errors, like duplicate records. In the end, our daily report went from about 3 hours to 30 minutes, and managers started using it every morning.
+
+Before that, at Vistaprint, I built Excel and SQL reports, which taught me how to check data carefully.
+
+I'm excited about this role because it's very close to what I've already done, but in cross-border payments. I want to keep growing in payments risk, and Corpay is a great place to do that."
 
 ### The Story (structure: Company → Problem → What I Did → Projects → Why Corpay)
 
@@ -33,6 +43,9 @@ Use the story above, shortened to about 90 seconds: education, current role, mai
 "The responsibilities match my experience almost exactly: settlement exposure, limit exceptions, credit reviews, and moving reports to Power BI. Cross-border payments adds a new layer I want to learn, like FX and international funding. Corpay is a large, growing payments company, so it's a great place to build my risk career."
 
 *Follow-up: "What do you know about our Cross-Border business?"* → "It helps businesses send international payments and manage currency risk. Risk matters because Corpay often commits to paying out before a client's funds arrive."
+
+### Q2.1. What do you know about Corpay?
+Corpay is a global business payments company. It helps businesses manage and pay their expenses, through things like cross-border payments, commercial cards, and bill payment.
 
 ### Q3. Why did you leave Exeevo?
 Pick the one that's true for you:
