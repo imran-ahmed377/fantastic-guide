@@ -4,7 +4,7 @@
 
 ## My Introduction
 
-"Hi, my name is Imran Ahmed. I finished my Master's in [your program] in December 2025.
+"Hi, my name is Imran Ahmed. I finished my Master's in Applied Computing in December 2025.
 
 Most recently, I worked as a Junior Risk Analyst at Exeevo in Toronto. My job was to help protect the company from losses when clients paid late or didn't pay at all.
 
